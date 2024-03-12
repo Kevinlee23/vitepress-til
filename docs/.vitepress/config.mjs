@@ -44,11 +44,26 @@ export default defineConfig({
           ],
         },
       ],
+      "/vue3/": [
+        {
+          text: "Vue3",
+          items: [
+            {
+              text: "getCurrentInsatance",
+              link: "/vue3/get-component-instance-in-setup",
+            },
+            { text: "global-properties", link: "/vue3/global-properties" },
+            { text: "v-bind-in-style", link: "/vue3/v-bind-in-style" },
+            { text: "v-model", link: "/vue3/v-model" },
+            { text: "watchEffect", link: "/vue3/watchEffect" },
+          ],
+        },
+      ],
     },
 
     socialLinks: [
       { icon: "github", link: "https://github.com/Kevinlee23/TIL" },
     ],
   },
-  cleanUrls: true
+  cleanUrls: true,
 });

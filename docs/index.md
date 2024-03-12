@@ -16,11 +16,13 @@ hero:
 
 features:
   - title: 前端基础
-    details: Javascript, Typescript, CSS, Nodejs, HTTP, and etc.
+    details: Javascript, Typescript, CSS, Nodejs, HTTP...
     link: /front-end-map
   - title: 框架
-    details: Vue3, React, Nuxt, NestJs, Pinia and etc.
+    details: Vue3, React, Nuxt, NestJs, qiankun...
     link: /framework-map
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 工具
+    details: git, webpack...
+  - title: 第三方类库
+    details: Pinia, rxjs...
 ---
