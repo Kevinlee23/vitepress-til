@@ -8,21 +8,25 @@ hero:
   # tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 归档 Mark
+      link: /mark/mark-timeline-2024
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 杂谈 Ordinary
+      link: /ordinary/What-marriage-brings-to-me
 
 features:
   - title: 前端基础
+    icon: 📘
     details: Javascript, Typescript, CSS, Nodejs, HTTP...
     link: /front-end-map
   - title: 框架
+    icon: 🔪
     details: Vue3, React, Nuxt, NestJs, qiankun...
     link: /framework-map
-  - title: 工具
-    details: git, webpack...
   - title: 第三方类库
+    icon: ⚙️
     details: Pinia, rxjs...
+  - title: 工具
+    icon: 🧰
+    details: git, webpack...
 ---

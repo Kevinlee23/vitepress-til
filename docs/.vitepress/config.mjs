@@ -145,6 +145,28 @@ export default defineConfig({
         },
         { text: "返回上层", link: "/others-map" },
       ],
+      "/mark/": [
+        {
+          text: "时间线",
+          items: [{ text: "2024", link: "/mark/mark-timeline-2024" }],
+        },
+        { text: "返回上层", link: "/" },
+      ],
+      "/ordinary/": [
+        {
+          text: "时间线",
+          items: [
+            {
+              text: "结婚带给我的",
+              link: "/ordinary/What-marriage-brings-to-me",
+            },
+          ],
+        },
+        {
+          text: "返回上层",
+          link: "/",
+        },
+      ],
     },
 
     // https://vitepress.dev/zh/reference/default-theme-config#sociallinks
