@@ -23,7 +23,6 @@ export default defineConfig({
         {
           text: "Javascript",
           items: [
-            { text: "download", link: "/javascript/download" },
             { text: "event-loop", link: "/javascript/event-loop" },
             { text: "iframe", link: "/javascript/iframe" },
             { text: "jsx-in-vue3", link: "/javascript/jsx-in-vue3" },
@@ -31,13 +30,13 @@ export default defineConfig({
               text: "regular-expression ",
               link: "/javascript/regular-expression",
             },
-
             { text: "web-worker ", link: "/javascript/web-worker" },
           ],
         },
         {
-          text: "source code",
+          text: "Source Code",
           items: [
+            { text: "download", link: "/javascript/download" },
             {
               text: "wapper-for-websocket-vue3 ",
               link: "/javascript/wapper-for-websocket-vue3",
@@ -51,4 +50,5 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/Kevinlee23/TIL" },
     ],
   },
+  cleanUrls: true
 });
