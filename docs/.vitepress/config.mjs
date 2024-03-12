@@ -5,7 +5,7 @@ export default defineConfig({
   base: "/vitepress-til/",
   title: "Vitepress-TIL",
   description: "A VitePress Site",
-  head: [["link", { ref: "icon", href: "/assets/favion.ico" }]],
+  head: [["link", { rel: "icon", href: "/vitepress-til/assets/favion.ico" }]],
   themeConfig: {
     logo: "/assets/cola.svg",
 
