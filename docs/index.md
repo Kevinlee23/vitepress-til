@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Vitepress-TIL"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "My-TIL"
+  text: "Today I Learned"
+  # tagline: My great project tagline
   actions:
     - theme: brand
       text: Markdown Examples
@@ -15,11 +15,12 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 前端基础
+    details: Javascript, Typescript, Css, Nodejs, HTTP, and etc.
+    link: /front-end-map
+  - title: 框架
+    details: Vue3, React, Nuxt, NestJs, Pinia and etc.
+    link: /framework-map
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
