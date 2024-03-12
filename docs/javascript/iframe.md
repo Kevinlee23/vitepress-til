@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# iframe (跨窗口通信)
+# iframe
 
 ## 同源
 
@@ -10,15 +10,15 @@ outline: deep
 
 同源策略规定：
 
-- 如果我们有对另一个窗口的引用 (window.open || iframe)，并且该窗口是同源的，那么我们就具有对该窗口的全部访问权限
-- 如果不是同源的，我们就不能访问窗口中的内容：变量，文档，任何东西。唯一例外是 location：我们可以修改它，使用它进行重定向。但是我们无法读取 location 。因此，我们无法看到用户当前所处的位置，也就不会泄露任何信息。
+- 如果我们有对另一个窗口的引用 (`window.open` || `iframe`)，并且该窗口是同源的，那么我们就具有对该窗口的全部访问权限
+- 如果不是同源的，我们就不能访问窗口中的内容：变量，文档，任何东西。唯一例外是 `location`: 我们可以修改它，使用它进行重定向。但是我们无法读取 `location`. 因此，我们无法看到用户当前所处的位置，也就不会泄露任何信息。
 
 ## iframe
 
-iframe 标签承载了一个单独的嵌入的窗口，它有自己的 document 和 window:
+`iframe` 标签承载了一个单独的嵌入的窗口，它有自己的 document 和 window:
 
-- iframe.contentWindow 来获取 中的 window
-- iframe.contentDocument 来获取 中的 document
+- `iframe.contentWindow` 来获取 中的 window
+- `iframe.contentDocument` 来获取 中的 document
 
 ::: code-group
 
@@ -83,7 +83,7 @@ iwin.postMessage("message", "http://127.0.0.1:8080");
 window.addEventListener("message", (event) => {
   /**
    * event 通信事件对象
-   * 
+   *
    * data: postMessage 传递的数据
    * origin: 发送方的源
    * source 对发送方窗口的引用, 可以通过 source.postMessage(...) 立即回传数据
