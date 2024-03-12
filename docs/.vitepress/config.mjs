@@ -16,6 +16,8 @@ export default defineConfig({
         items: [
           { text: "Javascript", link: "/javascript/event-loop" },
           { text: "JS Code", link: "/javascript/download" },
+          { text: "Typescript", link: "/typescript/basic-object-and-function" },
+          { text: "类型编程", link: "/typescript/internal-tool-type" },
         ],
       },
       {
@@ -66,6 +68,34 @@ export default defineConfig({
             },
           ],
         },
+        { text: "返回上层", link: "/front-end-map" },
+      ],
+      "/typescript/": [
+        {
+          text: "Typescript Basic",
+          items: [
+            { text: "类型标注", link: "/typescript/basic-object-and-function" },
+            { text: "类型声明文件", link: "/typescript/declare-and-[.d.ts]" },
+            { text: "类型断言", link: "/typescript/type-declare" },
+            {
+              text: "TopType-to-BottomType",
+              link: "/typescript/top-type-to-bottom-type",
+            },
+            { text: "索引类型", link: "/typescript/index-and-mapping" },
+            { text: "类型逻辑运算", link: "/typescript/extend-and-infer" },
+          ],
+        },
+        {
+          text: "类型编程",
+          items: [
+            { text: "内置工具类型", link: "/typescript/internal-tool-type" },
+            {
+              text: "类型编程进阶 一",
+              link: "/typescript/tool-type-advance-01",
+            },
+          ],
+        },
+        { text: "返回上层", link: "/front-end-map" },
       ],
       "/vue3/": [
         {
@@ -81,6 +111,7 @@ export default defineConfig({
             { text: "watchEffect", link: "/vue3/watchEffect" },
           ],
         },
+        { text: "返回上层", link: "/framework-map" },
       ],
     },
 
@@ -90,4 +121,5 @@ export default defineConfig({
     ],
   },
   cleanUrls: true,
+  lastUpdated: true,
 });
