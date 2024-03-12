@@ -5,7 +5,7 @@ export default defineConfig({
   base: "/vitepress-til/",
   title: "Vitepress-TIL",
   description: "A VitePress Site",
-  head: [["link", { ref: "icon", href: "/vitepress-til/assets/favion.ico" }]],
+  head: [["link", { ref: "icon", href: "/assets/favion.ico" }]],
   themeConfig: {
     logo: "/assets/cola.svg",
 
@@ -151,6 +151,11 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/Kevinlee23/TIL" },
     ],
+
+    // https://github.com/lucaong/minisearch/
+    search: {
+      provider: "local",
+    },
   },
   cleanUrls: true,
   lastUpdated: true,
