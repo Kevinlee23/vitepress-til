@@ -6,8 +6,31 @@ export default defineConfig({
   title: "Vitepress-TIL",
   description: "A VitePress Site",
   themeConfig: {
+    logo: "./public/assets/cola.svg",
+
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Home", link: "/" }],
+    nav: [
+      { text: "首页", link: "/" },
+      {
+        text: "前端基础",
+        items: [
+          { text: "Javascript", link: "/javascript/event-loop" },
+          { text: "JS Code", link: "/javascript/download" },
+        ],
+      },
+      {
+        text: "框架",
+        items: [
+          { text: "Vue3", link: "/vue3/get-component-instance-in-setup" },
+          { text: "React", link: "..." },
+          { text: "Nuxt", link: "..." },
+          { text: "NestJs", link: "..." },
+        ],
+      },
+      { text: "工具", link: "..." },
+      { text: "第三方类库", link: "..." },
+      { text: "杂项", link: "..." },
+    ],
 
     sidebar: {
       "/": [
@@ -61,6 +84,7 @@ export default defineConfig({
       ],
     },
 
+    // https://vitepress.dev/zh/reference/default-theme-config#sociallinks
     socialLinks: [
       { icon: "github", link: "https://github.com/Kevinlee23/TIL" },
     ],
