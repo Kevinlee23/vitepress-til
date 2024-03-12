@@ -31,7 +31,7 @@ export default defineConfig({
       },
       { text: "工具", link: "..." },
       { text: "第三方类库", link: "..." },
-      { text: "杂项", link: "..." },
+      { text: "杂项", link: "/others-map" },
     ],
 
     sidebar: {
@@ -41,6 +41,7 @@ export default defineConfig({
           items: [
             { text: "前端基础", link: "/front-end-map" },
             { text: "框架", link: "/framework-map" },
+            { text: "杂项", link: "/others-map" },
           ],
         },
       ],
@@ -112,6 +113,36 @@ export default defineConfig({
           ],
         },
         { text: "返回上层", link: "/framework-map" },
+      ],
+      "/config/": [
+        {
+          text: "配置",
+          items: [
+            {
+              text: "关闭 windows 系统的休眠指令",
+              link: "/config/off-hibernate",
+            },
+            { text: "vscode 配置", link: "/config/setting-vscode" },
+            {
+              text: "vitepress 部署",
+              link: "/config/vitepress-deploy-in-github-page",
+            },
+          ],
+        },
+        { text: "返回上层", link: "/others-map" },
+      ],
+      "/fix/": [
+        {
+          text: "错误修复",
+          items: [
+            {
+              text: "MacOs 中设置 node 默认版本",
+              link: "/fix/nvm-president-problem-for-mac",
+            },
+            { text: "MacOs 中 svn 的证书问题", link: "/fix/svn-ssh-problem" },
+          ],
+        },
+        { text: "返回上层", link: "/others-map" },
       ],
     },
 
