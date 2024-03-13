@@ -118,6 +118,14 @@ export default defineConfig({
             { text: "watchEffect", link: "/vue3/watchEffect" },
           ],
         },
+        {
+          text: "pinia",
+          items: [{ text: "pinia-basic", link: "/vue3/pinia-basic" }],
+        },
+        {
+          text: "VueUse",
+          items: [{ text: "useSortable", link: "/vue3/useSortable" }],
+        },
         { text: "返回上层", link: "/framework-map" },
       ],
       "/config/": [
@@ -219,6 +227,10 @@ export default defineConfig({
             { text: "推送时 message 规范", link: "/git/git-push-standard" },
             { text: "ssh 公钥生成", link: "/git/ssh-pubKey-generate" },
           ],
+        },
+        {
+          text: "返回上层",
+          link: "/tools-map",
         },
       ],
     },
