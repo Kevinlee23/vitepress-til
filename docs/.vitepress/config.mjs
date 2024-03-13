@@ -26,7 +26,7 @@ export default defineConfig({
         text: "框架",
         items: [
           { text: "Vue3", link: "/vue3/get-component-instance-in-setup" },
-          { text: "React", link: "..." },
+          { text: "React", link: "/react/avoid-mutation" },
           { text: "Nuxt", link: "..." },
           { text: "NestJs", link: "..." },
         ],
@@ -122,12 +122,27 @@ export default defineConfig({
           text: "pinia",
           items: [
             { text: "pinia-basic", link: "/vue3/pinia-basic" },
-            { text: "presistedstate", link: '/vue3/pinia-plugin-persistedstate' },
+            {
+              text: "presistedstate",
+              link: "/vue3/pinia-plugin-persistedstate",
+            },
           ],
         },
         {
           text: "VueUse",
           items: [{ text: "useSortable", link: "/vue3/useSortable" }],
+        },
+        { text: "返回上层", link: "/framework-map" },
+      ],
+      "/react/": [
+        {
+          text: "react",
+          items: [
+            { text: "avoid-mutation", link: "/react/avoid-mutation" },
+            { text: "render-list", link: "/react/render-list" },
+            { text: "side-effect", link: "/react/side-effect" },
+            { text: "slot", link: "/react/slot" },
+          ],
         },
         { text: "返回上层", link: "/framework-map" },
       ],
