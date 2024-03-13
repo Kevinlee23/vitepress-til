@@ -37,13 +37,13 @@ ps:ipconfig /displaydns #显示DNS缓存内容
 
 `linux`
 
-```shell
-systemctl restart nscd
+```sh
+$ systemctl restart nscd
 ```
 
 ## 解决方案二：使用代理
 
-```cmd/shell
-git config --global http.proxy 127.0.0.1:ssrport
-git config --global https.proxy 127.0.0.1:ssrport
+```sh
+$ git config --global http.proxy 127.0.0.1:ssrport
+$ git config --global https.proxy 127.0.0.1:ssrport
 ```

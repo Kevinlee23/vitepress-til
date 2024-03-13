@@ -6,7 +6,7 @@
 
 初始提交:
 
-```cmd
+```sh
 $ git add *.c
 $ git add LICENSE
 $ git commit -m 'initial project version'

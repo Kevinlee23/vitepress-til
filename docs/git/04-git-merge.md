@@ -14,28 +14,28 @@
 
 `将 branch-1 分支的内容合并到 主分支 (master)`
 
-```git
-git checkout master
-git merge branch-1
+```sh
+$ git checkout master
+$ git merge branch-1
 ```
 
 `将主分支的内容合并到 branch-1 分支`
 
-```git
-git checkout branch-1
-git merge master
+```sh
+$ git checkout branch-1
+$ git merge master
 ```
 
 ## 合并时出现冲突
 
-```git
-git merge branch-1
+```sh
+$ git merge branch-1
 
 # CONFLICT (content): Merge conflict in index.html // [!code error]
 # Automatic merge failed; fix conflicts and then commit the result. // [!code error]
 
 # to fix: 找到发生冲突的文件，解决冲突
-git commit -m -a 'xxx' # 重新提交合并
+$ git commit -m -a 'xxx' # 重新提交合并
 ```
 
 ## 删除分支

@@ -1,15 +1,15 @@
 # ssh 公钥生成
 
-```cmd
+```sh
 # 查看用户名和邮箱是否配置
-git config --global --list
+$ git config --global --list
 
 # 配置用户名和邮箱
-git config --global user.name "your username"
-git config --global user.emial "your email"
+$ git config --global user.name "your username"
+$ git config --global user.emial "your email"
 
 # 生成秘钥
-ssh-keygen -t rsa -C "xxx@xxx.com"
+$ ssh-keygen -t rsa -C "xxx@xxx.com"
 ```
 
 生成秘钥后, `cd ~/.ssh` 进入 ssh 目录下
