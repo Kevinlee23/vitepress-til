@@ -6,6 +6,22 @@ outline: deep
 
 记录从 2024 年 3 月 12 日建站后的笔记
 
+标签:
+
+[Javascript](/javascript/event-loop) &nbsp;
+[Typescript](/typescript/basic-object-and-function) &nbsp;
+[HTTP](/http/HTTP-request-and-response-header) <Badge type="tip" text="前端基础" />
+
+[Vue3](/vue3/get-component-instance-in-setup) &nbsp;
+[React](/react/avoid-mutation) <Badge type="tip" text="框架" />
+
+[Git](/git/01-git-pull-repository) <Badge type="tip" text="工具" />
+
+[Config](/config/off-hibernate) &nbsp;
+[Error Fix](/fix/nvm-president-problem-for-mac) <Badge type="tip" text="杂项" />
+
+[Ordinary](/ordinary/What-marriage-brings-to-me) <Badge type="tip" text="杂谈" />
+
 ## 2024
 
 ### 三月
