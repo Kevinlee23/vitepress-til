@@ -120,7 +120,10 @@ export default defineConfig({
         },
         {
           text: "pinia",
-          items: [{ text: "pinia-basic", link: "/vue3/pinia-basic" }],
+          items: [
+            { text: "pinia-basic", link: "/vue3/pinia-basic" },
+            { text: "presistedstate", link: '/vue3/pinia-plugin-persistedstate' },
+          ],
         },
         {
           text: "VueUse",
