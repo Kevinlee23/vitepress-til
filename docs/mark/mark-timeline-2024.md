@@ -10,6 +10,10 @@ outline: deep
 
 ### 三月
 
+[pinia-plugin-persistedstate](/vue3/pinia-plugin-persistedstate)
+`/` [Vue3](/vue3/get-component-instance-in-setup)
+`/2024-03-13`
+
 [熊家菜谱(新增利村牛肉)](/ordinary/cook-menu)
 `/` [Ordinary](/ordinary/What-marriage-brings-to-me)
 `/2024-03-13`
