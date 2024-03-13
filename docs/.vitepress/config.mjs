@@ -19,6 +19,7 @@ export default defineConfig({
           { text: "JS Code", link: "/javascript/download" },
           { text: "Typescript", link: "/typescript/basic-object-and-function" },
           { text: "类型编程", link: "/typescript/internal-tool-type" },
+          { text: "HTTP", link: "/http/HTTP-request-and-response-header" },
         ],
       },
       {
@@ -165,6 +166,17 @@ export default defineConfig({
         {
           text: "返回上层",
           link: "/",
+        },
+      ],
+      "/http/": [
+        {
+          text: "http",
+          items: [
+            {
+              text: "请求头和响应头",
+              link: "/http/HTTP-request-and-response-header",
+            },
+          ],
         },
       ],
     },
