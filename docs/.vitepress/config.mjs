@@ -31,7 +31,10 @@ export default defineConfig({
           { text: "NestJs", link: "..." },
         ],
       },
-      { text: "工具", link: "..." },
+      {
+        text: "工具",
+        items: [{ text: "Git", link: "/git/01-git-pull-repository" }],
+      },
       { text: "第三方类库", link: "..." },
       { text: "杂项", link: "/others-map" },
     ],
@@ -43,6 +46,7 @@ export default defineConfig({
           items: [
             { text: "前端基础", link: "/front-end-map" },
             { text: "框架", link: "/framework-map" },
+            { text: "工具", link: "/tools-map" },
             { text: "杂项", link: "/others-map" },
           ],
         },
@@ -158,8 +162,12 @@ export default defineConfig({
           text: "时间线",
           items: [
             {
-              text: "结婚带给我的",
+              text: "结婚带给我的 🔝",
               link: "/ordinary/What-marriage-brings-to-me",
+            },
+            {
+              text: "熊家菜谱",
+              link: "/ordinary/cook-menu",
             },
           ],
         },
@@ -176,6 +184,40 @@ export default defineConfig({
               text: "请求头和响应头",
               link: "/http/HTTP-request-and-response-header",
             },
+          ],
+        },
+      ],
+      "/git/": [
+        {
+          text: "Git 基础",
+          items: [
+            { text: "获取现有仓库内容", link: "/git/01-git-pull-repository" },
+            {
+              text: "提交更新并推送到远程仓库",
+              link: "/git/02-git-add-and-push",
+            },
+            { text: "查看提交历史", link: "/git/03-git-log-history" },
+            { text: "分支操作", link: "/git/04-git-merge" },
+            { text: "git标签", link: "/git/05-git-tag" },
+          ],
+        },
+        {
+          text: "Git 工具",
+          items: [
+            { text: "git-rebase", link: "/git/[git-tools]-git-rebase" },
+            { text: "git-reset", link: "/git/[git-tools]-git-reset" },
+            {
+              text: "git-stash-and-clean",
+              link: "/git/[git-tools]-git-stash-and-clean",
+            },
+          ],
+        },
+        {
+          text: "Git 配置及问题解决",
+          items: [
+            { text: "github 连接超时问题", link: "/git/connect-timeout" },
+            { text: "推送时 message 规范", link: "/git/git-push-standard" },
+            { text: "ssh 公钥生成", link: "/git/ssh-pubKey-generate" },
           ],
         },
       ],

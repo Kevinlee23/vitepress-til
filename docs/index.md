@@ -29,4 +29,5 @@ features:
   - title: 工具
     icon: 🧰
     details: git, webpack...
+    link: /tools-map
 ---
