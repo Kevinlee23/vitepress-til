@@ -166,6 +166,10 @@ export default defineConfig({
               text: "vitepress 部署",
               link: "/config/vitepress-deploy-in-github-page",
             },
+            {
+              text: "将 js 文件 当做 shell 脚本执行",
+              link: "/config/using-js-as-shell-script",
+            },
           ],
         },
         { text: "返回上层", link: "/others-map" },
