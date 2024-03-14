@@ -20,7 +20,10 @@ outline: deep
 - `'name|count.dcount': value`
 - `'name|+step': value`
 
-属性值中可以使用占位符，见 [DPD 章节](/3-party-library/mockjs-DPD)
+**tips:**
+- 生成规则的含义需要依赖属性值的类型才能确定
+- 属性值中可以使用占位符，见 [DPD 章节](/3-party-library/mockjs-DPD)
+- 属性值还指定了最终值的初始值和类型
 
 ## 数据模板定义
 

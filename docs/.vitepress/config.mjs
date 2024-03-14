@@ -268,7 +268,7 @@ export default defineConfig({
           text: "mockJs",
           items: [
             {
-              text: "mockJs 基本使用",
+              text: "基本使用",
               link: "/3-party-library/how-to-use-mockjs",
             },
             { text: "范式", link: "/3-party-library/mockjs-DTD" },

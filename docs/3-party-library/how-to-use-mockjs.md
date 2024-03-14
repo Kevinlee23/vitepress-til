@@ -85,6 +85,25 @@ Mock.mock({
 
 :::
 
+## 拦截 Ajax 请求
+
+```js
+import Mock from "mockjs";
+Mock.mock(rurl, template);
+/**
+ * 拦截匹配 rurl 的请求, 将回调函数的执行结果作为相应数据返回
+ * rtype: get, post, put, delete...
+ * options: url, type, body
+ */
+Mock.mock(rurl, function(options));
+Mock.mock(rurl, rtype, template);
+Mock.mock(rurl, rtype, function(options));
+```
+
+配合拦截 Ajax 请求的行为, 设置模拟接口的响应时间
+
+`Mock.setup({ timeout: 400 })`
+
 ## 速查
 
 [官方样例查阅](http://mockjs.com/examples.html){target="_blank"}
