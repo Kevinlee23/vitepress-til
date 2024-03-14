@@ -53,4 +53,11 @@
 }
 ```
 
+```json [npm-script 插件配置]
+{
+  // npm, pnpm, yarn 取决于你用的哪个包管理器
+  "npm.packageManager": "npm"
+}
+```
+
 :::
