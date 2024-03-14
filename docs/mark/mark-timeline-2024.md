@@ -9,7 +9,9 @@ outline: deep
 标签:
 
 [Javascript](/javascript/event-loop) &nbsp;
+[JS Code](/javascript/download) &nbsp;
 [Typescript](/typescript/basic-object-and-function) &nbsp;
+[类型编程](/typescript/internal-tool-type) &nbsp;
 [HTTP](/http/HTTP-request-and-response-header) <Badge type="tip" text="前端基础" />
 
 [Vue3](/vue3/get-component-instance-in-setup) &nbsp;

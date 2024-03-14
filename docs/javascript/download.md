@@ -1,9 +1,10 @@
-```javascript
-// 辅助函数
+:::code-group
 
+```javascript [辅助函数]
 const DONE = "4";
 const Range_SIZE = 1024 * 1024 * 1;
 
+// 获取文件长度
 function getContentLength(url) {
   return new Promise((resolve) => {
     var xhr = new XMLHttpRequest();
@@ -17,6 +18,7 @@ function getContentLength(url) {
   });
 }
 
+// 获取范围内的文件分块
 function getRangeContent(startIndex, endIndex, url) {
   return new Promise((resolve) => {
     var xhr = new XMLHttpRequest();
@@ -32,6 +34,7 @@ function getRangeContent(startIndex, endIndex, url) {
   });
 }
 
+// 文件分块拼接
 function concatArrayBuffer(arrayBufferArray) {
   let totalLength = 0;
   arrayBufferArray.forEach((arrayBuffer) => {
@@ -47,7 +50,7 @@ function concatArrayBuffer(arrayBufferArray) {
 }
 ```
 
-```javascript
+```javascript [constant]
 // 文件类型
 export const imageFiles = [
   ".png",
@@ -75,7 +78,7 @@ export const fileList = [
 ];
 ```
 
-```javascript
+```javascript [download]
 function downloadArrayBufferFile(arrayBuffer, fileName) {
   const blob = new Blob([arrayBuffer], { type: "application/octet-stream" });
   const a = document.createElement("a");
@@ -93,9 +96,11 @@ function downloadFileUrl(url, name, size) {
       let contentLength = size;
 
       if (!contentLength) {
+        // 没有显式传入文件长度, 向服务器请求长度值
         contentLength = await getContentLength(url);
       }
 
+      // 计算需要发送多少次分片请求
       const numberRequest = Math.ceil(contentLength / RANGE_SIZE);
       const ret = [];
       for (let i = 0; i < numberRequest; i++) {
@@ -139,3 +144,5 @@ function saveWithData(data, name) {
   }
 }
 ```
+
+:::

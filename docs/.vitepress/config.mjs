@@ -50,6 +50,7 @@ export default defineConfig({
             { text: "前端基础", link: "/front-end-map" },
             { text: "框架", link: "/framework-map" },
             { text: "工具", link: "/tools-map" },
+            { text: "第三方类库", link: "/3-party-map" },
             { text: "杂项", link: "/others-map" },
           ],
         },
@@ -69,13 +70,16 @@ export default defineConfig({
           ],
         },
         {
-          text: "Source Code",
+          text: "JS Code",
           items: [
             { text: "download", link: "/javascript/download" },
             {
               text: "wapper-for-websocket-vue3 ",
               link: "/javascript/wapper-for-websocket-vue3",
             },
+            { text: "flat", link: "/javascript/flat" },
+            { text: "repeat", link: "/javascript/repeat" },
+            { text: "p-limit", link: "/javascript/p-limit" },
           ],
         },
         { text: "返回上层", link: "/front-end-map" },
@@ -215,6 +219,7 @@ export default defineConfig({
             },
           ],
         },
+        { text: "返回上层", link: "/front-end-map" },
       ],
       "/git/": [
         {
@@ -258,11 +263,15 @@ export default defineConfig({
         {
           text: "mockJs",
           items: [
-            { text: "mockJs 基本使用", link: "/3-party-library/how-to-use-mockjs" },
+            {
+              text: "mockJs 基本使用",
+              link: "/3-party-library/how-to-use-mockjs",
+            },
             { text: "范式", link: "/3-party-library/mockjs-DTD" },
             { text: "占位符", link: "/3-party-library/mockjs-DPD" },
           ],
         },
+        { text: "返回上层", link: "/3-party-map" },
       ],
     },
 
