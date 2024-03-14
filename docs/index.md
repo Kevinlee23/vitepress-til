@@ -17,17 +17,18 @@ hero:
 features:
   - title: 前端基础
     icon: 📘
-    details: Javascript, Typescript, CSS, Nodejs, HTTP...
+    details: 如书本熟记的知识
     link: /front-end-map
   - title: 框架
     icon: 🔪
-    details: Vue3, React, Nuxt, NestJs, qiankun...
+    details: 锋利如刀
     link: /framework-map
   - title: 第三方类库
     icon: ⚙️
-    details: Pinia, rxjs...
+    details: 项目开发中关键的齿轮
+    link: /3-party-map
   - title: 工具
     icon: 🧰
-    details: git, webpack...
+    details: 解决问题的百宝箱
     link: /tools-map
 ---

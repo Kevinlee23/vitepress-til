@@ -35,7 +35,10 @@ export default defineConfig({
         text: "工具",
         items: [{ text: "Git", link: "/git/01-git-pull-repository" }],
       },
-      { text: "第三方类库", link: "..." },
+      {
+        text: "第三方类库",
+        items: [{ text: "mockJs", link: "/3-party-library/how-to-use-mockjs" }],
+      },
       { text: "杂项", link: "/others-map" },
     ],
 
@@ -249,6 +252,16 @@ export default defineConfig({
         {
           text: "返回上层",
           link: "/tools-map",
+        },
+      ],
+      "/3-party-library/": [
+        {
+          text: "mockJs",
+          items: [
+            { text: "mockJs 基本使用", link: "/3-party-library/how-to-use-mockjs" },
+            { text: "范式", link: "/3-party-library/mockjs-DTD" },
+            { text: "占位符", link: "/3-party-library/mockjs-DPD" },
+          ],
         },
       ],
     },

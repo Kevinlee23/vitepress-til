@@ -17,6 +17,8 @@ outline: deep
 
 [Git](/git/01-git-pull-repository) <Badge type="tip" text="工具" />
 
+[mockJs](/3-party-library/how-to-use-mockjs) <Badge type="tip" text="第三方库" />
+
 [Config](/config/off-hibernate) &nbsp;
 [Error Fix](/fix/nvm-president-problem-for-mac) <Badge type="tip" text="杂项" />
 
@@ -25,6 +27,10 @@ outline: deep
 ## 2024
 
 ### 三月
+
+[mockJs 基本使用](/3-party-library/how-to-use-mockjs)
+`/` [mockJs](/3-party-library/how-to-use-mockjs)
+`/2024-03-14`
 
 [pinia-plugin-persistedstate](/vue3/pinia-plugin-persistedstate)
 `/` [Vue3](/vue3/get-component-instance-in-setup)
