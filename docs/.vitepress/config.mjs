@@ -18,6 +18,7 @@ export default defineConfig({
           { text: "Javascript", link: "/javascript/event-loop" },
           { text: "JS Code", link: "/javascript/download" },
           { text: "Typescript", link: "/typescript/basic-object-and-function" },
+          { text: "CSS", link: "/css/gradient-color" },
           { text: "类型编程", link: "/typescript/internal-tool-type" },
           { text: "HTTP", link: "/http/HTTP-request-and-response-header" },
         ],
@@ -124,6 +125,13 @@ export default defineConfig({
             { text: "style 初始化", link: "/css/style-init" },
             { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
             { text: "布局实例一", link: "/css/layout-1" },
+          ],
+        },
+        {
+          text: "一些很好看的设计",
+          items: [
+            { text: "图片设计", link: "/css/picture-design" },
+            { text: "纵轴进度条", link: "/css/vertical-progress-bar" },
           ],
         },
         { text: "返回上层", link: "/front-end-map" },

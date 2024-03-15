@@ -11,6 +11,7 @@ outline: deep
 [Javascript](/javascript/event-loop) &nbsp;
 [JS Code](/javascript/download) &nbsp;
 [Typescript](/typescript/basic-object-and-function) &nbsp;
+[CSS](/css/gradient-color) &nbsp;
 [类型编程](/typescript/internal-tool-type) &nbsp;
 [HTTP](/http/HTTP-request-and-response-header) <Badge type="tip" text="前端基础" />
 
@@ -29,6 +30,14 @@ outline: deep
 ## 2024
 
 ### 三月
+
+[纵轴进度条](/css/vertical-progress-bar)
+`/` [CSS](/css/gradient-color)
+`/2024-03-15`
+
+[图片设计](/css/picture-design)
+`/` [CSS](/css/gradient-color)
+`/2024-03-15`
 
 [mockJs 基本使用](/3-party-library/how-to-use-mockjs)
 `/` [mockJs](/3-party-library/how-to-use-mockjs)

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "My-TIL"
   text: "Today I Learned"
-  # tagline: My great project tagline
+  tagline: A week is 2% of a year, keep learning
   actions:
     - theme: brand
       text: 归档 Mark
