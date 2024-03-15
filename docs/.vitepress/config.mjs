@@ -29,11 +29,16 @@ export default defineConfig({
           { text: "React", link: "/react/avoid-mutation" },
           { text: "Nuxt", link: "..." },
           { text: "NestJs", link: "..." },
+          { text: "qiankun", link: "..." },
         ],
       },
       {
         text: "工具",
-        items: [{ text: "Git", link: "/git/01-git-pull-repository" }],
+        items: [
+          { text: "Git", link: "/git/01-git-pull-repository" },
+          { text: "webpack", link: "..." },
+          { text: "SQL", link: "..." },
+        ],
       },
       {
         text: "第三方类库",
@@ -107,6 +112,18 @@ export default defineConfig({
               text: "类型编程进阶 一",
               link: "/typescript/tool-type-advance-01",
             },
+          ],
+        },
+        { text: "返回上层", link: "/front-end-map" },
+      ],
+      "/css/": [
+        {
+          text: "CSS",
+          items: [
+            { text: "gradient-color", link: "/css/gradient-color" },
+            { text: "style 初始化", link: "/css/style-init" },
+            { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
+            { text: "布局实例一", link: "/css/layout-1" },
           ],
         },
         { text: "返回上层", link: "/front-end-map" },
