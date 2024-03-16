@@ -151,6 +151,10 @@ export default defineConfig({
           ],
         },
         {
+          text: "MY VITESSE",
+          items: [{ text: "my-vitesse [beta]", link: "/vue3/my-vitesse" }],
+        },
+        {
           text: "pinia",
           items: [
             { text: "pinia-basic", link: "/vue3/pinia-basic" },

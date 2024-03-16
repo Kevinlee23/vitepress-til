@@ -31,6 +31,10 @@ outline: deep
 
 ### 三月
 
+[My Vitesse](/vue3/my-vitesse) <Badge type="warning" text="beta" />
+`/` [Vue3](/vue3/get-component-instance-in-setup)
+`/2024-03-16`
+
 [纵轴进度条](/css/vertical-progress-bar)
 `/` [CSS](/css/gradient-color)
 `/2024-03-15`
