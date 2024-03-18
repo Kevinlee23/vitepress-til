@@ -199,6 +199,7 @@ export default defineConfig({
               text: "将 js 文件 当做 shell 脚本执行",
               link: "/config/using-js-as-shell-script",
             },
+            { text: "修复 Naive UI 中的潜在的样式冲突", link: "/config/fix-naive-css-bug" },
           ],
         },
         { text: "返回上层", link: "/others-map" },

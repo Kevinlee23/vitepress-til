@@ -31,6 +31,10 @@ outline: deep
 
 ### 三月
 
+[修复 Naive UI 中的潜在的样式冲突](/config/fix-naive-css-bug)
+`/` [Config](/config/off-hibernate)
+`/2024-03-18`
+
 [My Vitesse](/vue3/my-vitesse) <Badge type="warning" text="beta" />
 `/` [Vue3](/vue3/get-component-instance-in-setup)
 `/2024-03-16`
