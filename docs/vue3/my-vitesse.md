@@ -26,6 +26,35 @@ yarn create vite --template vue
 - `Vuetify`
 - `Vant 4 (Mobile) ***`
 - `Nut UI (Mobile)`
+- `Tailwind CSS ***`
+
+#### Tailwind CSS ***
+
+:::code-group
+
+```sh [install]
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+```js [tailwindcss.config.js]
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+```css [@/plugins/tailwind/index.css]
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+:::
 
 ### 状态管理
 
@@ -50,9 +79,7 @@ yarn add vue-rotuer@4
 
 ### 插件
 
-#### vue-use
-
-`VueUse ***`
+#### vue-use \*\*\*
 
 ```sh
 yarn add @vueuse/core
@@ -60,7 +87,7 @@ yarn add @vueuse/core
 
 #### unplugin-vue-components
 
-可以不需要显式 `import` 组件
+自动引入组件（不需要显示地 `import` 引入）
 
 ```sh
 yarn install unplugin-vue-components -D
@@ -100,7 +127,7 @@ export default defineConfig({
 
 #### unplugin-auto-import
 
-自动引入库文件
+自动引入核心库文件
 
 `配置`
 
@@ -126,9 +153,7 @@ export default defineConfig({
 
 [Configuration](https://github.com/unplugin/unplugin-auto-import?tab=readme-ov-file#configuration)
 
-#### Vue-i18n
-
-`Vue-i18n`
+#### Vue-i18n ***
 
 国际化插件
 
