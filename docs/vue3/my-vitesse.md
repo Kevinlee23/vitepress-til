@@ -71,7 +71,12 @@ yarn install unplugin-vue-components -D
 ```ts
 // vite.config.ts
 
-import components from "unplugin-vue-components";
+import components from "unplugin-vue-components/vite";
+import {
+  AntDesignVueResolver,
+  ElementPlusResolver,
+  VantResolver,
+} from "unplugin-vue-components/resolvers";
 
 // default dir: src/components
 // { dirs: [...] } to set dirs
@@ -79,6 +84,13 @@ export default defineConfig({
   plugins: [
     components({
       /* options */
+      dirs: ["src/views", "src/components"],
+      // 第三方 UI 库的设置
+      resolvers: [
+        AntDesignVueResolver(),
+        ElementPlusResolver(),
+        VantResolver(),
+      ],
     }),
   ],
 });
@@ -125,17 +137,17 @@ yarn add vue-i18n@9
 ```
 
 ```ts
-import { createApp } from 'vue'
-import { createI18n } from 'vue-i18n'
+import { createApp } from "vue";
+import { createI18n } from "vue-i18n";
 
 const i18n = createI18n({
   // something vue-i18n options here ...
-})
+});
 
 const app = createApp({
   // something vue options here ...
-})
+});
 
-app.use(i18n)
-app.mount('#app')
+app.use(i18n);
+app.mount("#app");
 ```
