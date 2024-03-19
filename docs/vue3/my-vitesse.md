@@ -28,12 +28,12 @@ yarn create vite --template vue
 - `Nut UI (Mobile)`
 - `Tailwind CSS ***`
 
-#### Tailwind CSS ***
+#### Tailwind CSS \*\*\*
 
 :::code-group
 
 ```sh [install]
-npm install -D tailwindcss postcss autoprefixer
+yarn add -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
@@ -58,7 +58,7 @@ export default {
 
 ### 状态管理
 
-`pinia ***`
+#### pinia \*\*\*
 
 ```sh
 # or npm install pinia
@@ -71,11 +71,41 @@ yarn add pinia
 
 ### 路由管理
 
-`vue-router@4 ***`
+#### vue-router@4 \*\*\*
 
 ```sh
 yarn add vue-rotuer@4
 ```
+
+### 工具库
+
+#### lodash \*\*\*
+
+无需多言，每个前端应该都接触过的工具类库
+
+```sh
+yarn add lodash
+```
+
+#### radash
+
+`Readable`
+
+与同类竞品相比, `Radash` 的源码易于阅读和学习
+
+`Semi-Functional`
+
+大多数的 `Radash` 函数是确定性和纯函数
+
+`Types`
+
+`Radash` 使用 `Typescript` 编写
+
+```sh
+yarn add radash
+```
+
+[官方文档](https://radash-docs.vercel.app/docs/getting-started#love-and-hate)
 
 ### 插件
 
@@ -83,6 +113,30 @@ yarn add vue-rotuer@4
 
 ```sh
 yarn add @vueuse/core
+```
+
+#### Vue-i18n \*\*\*
+
+国际化插件
+
+```sh
+yarn add vue-i18n@9
+```
+
+```ts
+import { createApp } from "vue";
+import { createI18n } from "vue-i18n";
+
+const i18n = createI18n({
+  // something vue-i18n options here ...
+});
+
+const app = createApp({
+  // something vue options here ...
+});
+
+app.use(i18n);
+app.mount("#app");
 ```
 
 #### unplugin-vue-components
@@ -153,26 +207,3 @@ export default defineConfig({
 
 [Configuration](https://github.com/unplugin/unplugin-auto-import?tab=readme-ov-file#configuration)
 
-#### Vue-i18n ***
-
-国际化插件
-
-```sh
-yarn add vue-i18n@9
-```
-
-```ts
-import { createApp } from "vue";
-import { createI18n } from "vue-i18n";
-
-const i18n = createI18n({
-  // something vue-i18n options here ...
-});
-
-const app = createApp({
-  // something vue options here ...
-});
-
-app.use(i18n);
-app.mount("#app");
-```
