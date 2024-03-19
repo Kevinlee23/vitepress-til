@@ -4,7 +4,7 @@ outline: deep
 
 # My Vitesse
 
-基座: `Vue3`, `Vite`
+基座: `Vue3`, `Vite`, `Yarn`
 
 ## 项目启动
 
