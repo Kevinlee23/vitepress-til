@@ -113,7 +113,7 @@ const handleClick = (type, index) => {
     v-for="(color, index) in yellowColor"
     :class=$style.card
     :style="{backgroundColor: color}"
-    :onClick="() => handleClick('yelow', index)"
+    :onClick="() => handleClick('yellow', index)"
   >
     <div>{{ color }}</div>
     <div>{{ yellowColorName[index] }}</div>
