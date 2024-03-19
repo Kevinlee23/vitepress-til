@@ -27,22 +27,27 @@ const handleClick = (type, index) => {
       selected = blueColorName.value
       temp = blueColorName.value[index]
       copy = blueColor.value[index]
-    case 'blue': 
+      break
+    case 'green': 
       selected = greenColorName.value
       temp = greenColorName.value[index]
       copy = greenColor.value[index]
-    case 'blue': 
+      break
+    case 'red': 
       selected = redColorName.value
       temp = redColorName.value[index]
       copy = redColor.value[index]
-    case 'blue': 
+      break
+    case 'purple': 
       selected = purpleColorName.value
       temp = purpleColorName.value[index]
       copy = purpleColor.value[index]
-    case 'blue': 
+      break
+    case 'yellow': 
       selected = yellowColorName.value
       temp = yellowColorName.value[index]
       copy = yellowColor.value[index]
+      break
     default: 
       selected = whiteColorName.value
       temp = whiteColorName.value[index]
