@@ -17,6 +17,15 @@ const purpleColorName = ref(PURPLE_COLOR_NAME)
 const whiteColor = ref(WHITE_COLOR)
 const whiteColorName = ref(WHITE_COLOR_NAME)
 
+const hiddenFlag = ref({
+  blue: {},
+  green: {},
+  red: {},
+  yellow: {},
+  purple: {},
+  white: {}
+})
+
 const handleClick = (type, index) => {
   let selected = null
   let temp = ''
@@ -54,10 +63,12 @@ const handleClick = (type, index) => {
       copy = whiteColor.value[index]
   }
 
+  hiddenFlag.value[type][index] = 1
   navigator.clipboard.writeText(copy)
   selected[index] = 'Copy!'
   setTimeout(() => {
     selected[index] = temp
+    hiddenFlag.value[type][index] = 0
   }, 2000)
 }
 </script>
@@ -73,7 +84,7 @@ const handleClick = (type, index) => {
     :style="{backgroundColor: color}"
     :onClick="() => handleClick('blue', index)"
   >
-    <div>{{ color }}</div>
+    <div v-if="!hiddenFlag['blue'][index]">{{ color }}</div>
     <div>{{ blueColorName[index] }}</div>
   </div>
 </div>
@@ -87,7 +98,7 @@ const handleClick = (type, index) => {
     :style="{backgroundColor: color}"
     :onClick="() => handleClick('green', index)"
   >
-    <div>{{ color }}</div>
+    <div v-if="!hiddenFlag['green'][index]">{{ color }}</div>
     <div>{{ greenColorName[index] }}</div>
   </div>
 </div>
@@ -101,7 +112,7 @@ const handleClick = (type, index) => {
     :style="{backgroundColor: color}"
     :onClick="() => handleClick('red', index)"
   >
-    <div>{{ color }}</div>
+    <div  v-if="!hiddenFlag['red'][index]">{{ color }}</div>
     <div>{{ redColorName[index] }}</div>
   </div>
 </div>
@@ -115,7 +126,7 @@ const handleClick = (type, index) => {
     :style="{backgroundColor: color}"
     :onClick="() => handleClick('yellow', index)"
   >
-    <div>{{ color }}</div>
+    <div  v-if="!hiddenFlag['yellow'][index]">{{ color }}</div>
     <div>{{ yellowColorName[index] }}</div>
   </div>
 </div>
@@ -129,7 +140,7 @@ const handleClick = (type, index) => {
     :style="{backgroundColor: color}"
     :onClick="() => handleClick('purple', index)"
   >
-    <div>{{ color }}</div>
+    <div v-if="!hiddenFlag['purple'][index]">{{ color }}</div>
     <div>{{ purpleColorName[index] }}</div>
   </div>
 </div>
@@ -143,7 +154,7 @@ const handleClick = (type, index) => {
     :style="{backgroundColor: color}"
     :onClick="() => handleClick('white', index)"
   >
-    <div>{{ color }}</div>
+    <div  v-if="!hiddenFlag['white'][index]">{{ color }}</div>
     <div>{{ whiteColorName[index] }}</div>
   </div>
 </div>
