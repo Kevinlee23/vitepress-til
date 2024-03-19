@@ -73,11 +73,11 @@ const render = () => {
 
 - `DOM Property`, `HTML Attribute` 直接书写
 - `class`, `style` 与 `vue2` 相同
-- `ref`: 定义好 `ref` 后使用 js 表达式`
+- `ref`: 定义好 `ref` 后使用 `js` 表达式
 
 ### 事件绑定
 
-on + 大写字母
+`on` + 大写字母
 
 `onclick, click` :x:
 
@@ -89,7 +89,7 @@ on + 大写字母
 
 > `onClickCapture`, `onKeyupOnce`
 
-其余的修饰符需要使用 withModifiers 函数
+其余的修饰符需要使用 `withModifiers` 函数
 
 ```jsx
 import { ref, withModifiers } from "vue";
