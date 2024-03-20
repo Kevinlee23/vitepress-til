@@ -16,7 +16,7 @@ export default defineConfig({
         text: "前端基础",
         items: [
           { text: "Javascript", link: "/javascript/event-loop" },
-          { text: "JS Code", link: "/javascript/download" },
+          { text: "JS Code", link: "/javascript/wapper-for-websocket-vue3" },
           { text: "Typescript", link: "/typescript/basic-object-and-function" },
           { text: "CSS", link: "/css/gradient-color" },
           { text: "类型编程", link: "/typescript/internal-tool-type" },
@@ -141,6 +141,10 @@ export default defineConfig({
             { text: "图片设计", link: "/css/picture-design" },
             { text: "纵轴进度条", link: "/css/vertical-progress-bar" },
           ],
+        },
+        {
+          text: "Canvas",
+          items: [{ text: "Canvas 基础", link: "/css/canvas-basic" }],
         },
         { text: "返回上层", link: "/front-end-map" },
       ],

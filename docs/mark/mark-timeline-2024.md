@@ -9,7 +9,7 @@ outline: deep
 标签:
 
 [Javascript](/javascript/event-loop) &nbsp;
-[JS Code](/javascript/download) &nbsp;
+[JS Code](/javascript/wapper-for-websocket-vue3) &nbsp;
 [Typescript](/typescript/basic-object-and-function) &nbsp;
 [CSS](/css/gradient-color) &nbsp;
 [类型编程](/typescript/internal-tool-type) &nbsp;
@@ -30,6 +30,14 @@ outline: deep
 ## 2024
 
 ### 三月
+
+[Canvas 基础](/css/canvas-basic)
+`/` [CSS](/css/gradient-color)
+`/2024-03-20`
+
+[JsCode 更新](/javascript/wapper-for-websocket-vue3)
+`/` [JS Code](/javascript/wapper-for-websocket-vue3)
+`/2024-03-20`
 
 [令人惊讶的颜色](/css/amazing-color)
 `/` [CSS](/css/gradient-color)
