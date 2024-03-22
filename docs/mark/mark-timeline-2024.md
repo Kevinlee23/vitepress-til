@@ -2,11 +2,60 @@
 outline: deep
 ---
 
+<script setup>
+import { ref, computed, onMounted } from 'vue'
+
+const MAR = ref(new Array(31).fill(0))
+const marMax = ref(0)
+const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20]
+
+const monColor = computed(() => {
+  return (firstDay, lastDay, MON, monDate, monMax) => {
+    const fDay = new Date(firstDay).getDay()
+    const prefixLength = fDay === 0 ? 6 : fDay - 1
+    const prefixArr = new Array(prefixLength).fill('#c2c4c3')
+
+    const lDay = new Date(lastDay).getDay()
+    const suffixLength = lDay === 0 ? 0 : 7 - lDay
+    const suffixArr = new Array(suffixLength).fill('#c2c4c3')
+
+    const arr = new Array(31).fill(null)
+    const fillDay = (new Set(monDate)).size
+    MON.map((num, index) => {
+      if (num === 0) {
+        arr[index] = '#ebedf0' // 灰色
+      } else if (num === monMax) {
+        arr[index] = '#407d53' // 深绿
+      } else if (num > monDate.length / fillDay) {
+        arr[index] = '#83cbac' // 次绿
+      } else {
+        arr[index] = '#c6dfc8' // 浅绿
+      }
+    })
+    
+    return [...prefixArr, ...arr, ...suffixArr]
+  }
+})
+
+const monthInit = (MON, monMax) => {
+  marDate.map(day => {
+    MON.value[day-1]++
+  })
+  MON.value.map(num => {
+    monMax.value = Math.max(monMax.value, num)
+  })
+}
+
+onMounted(() => {
+  monthInit(MAR, marMax) // 三月数据
+})
+</script>
+
 # 归档
 
 记录从 2024 年 3 月 12 日建站后的笔记
 
-标签:
+## 标签
 
 [Javascript](/javascript/event-loop) &nbsp;
 [JS Code](/javascript/wapper-for-websocket-vue3) &nbsp;
@@ -30,6 +79,14 @@ outline: deep
 ## 2024
 
 ### 三月
+
+<div :class="$style['block-container']">
+  <div
+    v-for="item in monColor('2024-03-01', '2024-03-31', MAR, marDate, marMax)"
+    :class="$style.block" :style="{backgroundColor: item}"
+  >
+  </div>
+</div>
 
 [Canvas 基础](/css/canvas-basic)
 `/` [CSS](/css/gradient-color)
@@ -74,3 +131,19 @@ outline: deep
 [vitepress-deploy-in-github-page](/config/vitepress-deploy-in-github-page)
 `/` [Config](/config/off-hibernate)
 `/2024-03-12`
+
+<style module>
+.block-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+  width: 108px;
+}
+
+.block {
+  width: 12px;
+  height: 12px;
+}
+</style>
