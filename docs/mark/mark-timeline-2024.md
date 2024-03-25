@@ -5,10 +5,19 @@ outline: deep
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 
+/* 三月数据 */
 const MAR = ref(new Array(31).fill(0))
 const marMax = ref(0)
-const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20]
+const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25]
 
+/**
+ * 月份数据转化成 color: 
+ * 深灰色(不属于这个月的数据)
+ * 浅灰色(文章数为 0 的日期)
+ * 浅绿(小于每日平均文章数且不等于 0 的日期)
+ * 次绿(大于每日平均文章数的日期)
+ * 深绿(最大文章数的日期)
+ */
 const monColor = computed(() => {
   return (firstDay, lastDay, MON, monDate, monMax) => {
     const fDay = new Date(firstDay).getDay()
@@ -23,13 +32,13 @@ const monColor = computed(() => {
     const fillDay = (new Set(monDate)).size
     MON.map((num, index) => {
       if (num === 0) {
-        arr[index] = '#ebedf0' // 灰色
+        arr[index] = '#ebedf0'
       } else if (num === monMax) {
-        arr[index] = '#407d53' // 深绿
+        arr[index] = '#407d53'
       } else if (num > monDate.length / fillDay) {
-        arr[index] = '#83cbac' // 次绿
+        arr[index] = '#83cbac'
       } else {
-        arr[index] = '#c6dfc8' // 浅绿
+        arr[index] = '#c6dfc8'
       }
     })
     
@@ -37,6 +46,7 @@ const monColor = computed(() => {
   }
 })
 
+// 月份初始化
 const monthInit = (MON, monMax) => {
   marDate.map(day => {
     MON.value[day-1]++
@@ -47,7 +57,7 @@ const monthInit = (MON, monMax) => {
 }
 
 onMounted(() => {
-  monthInit(MAR, marMax) // 三月数据
+  monthInit(MAR, marMax) // 初始化三月
 })
 </script>
 
@@ -87,6 +97,10 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[构建 monorepo](/config/create-monorepo)
+`/` [Config](/config/off-hibernate)
+`/2024-03-25`
 
 [Canvas 基础](/css/canvas-basic)
 `/` [CSS](/css/gradient-color)

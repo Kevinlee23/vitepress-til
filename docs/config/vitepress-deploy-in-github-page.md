@@ -2,9 +2,9 @@
 
 ## 前提
 
-- vitepress 站点位于项目的 `docs` 中
+- `vitepress` 站点位于项目的 `docs` 中
 - 使用的是默认生成输出目录 (`.vitepress/dist`)
-- VitePress 作为本地依赖项安装在项目中，并且你已在 package.json 中设置以下脚本：
+- `VitePress` 作为本地依赖项安装在项目中，并且你已在 `package.json` 中设置以下脚本：
 
 ```json
 {
@@ -22,7 +22,7 @@
 
 ## 创建 deploy 文件
 
-在项目的 .github/workfolows 目录中创建 deploy 文件: deploy.yml, 包含以下内容:
+在项目的 `.github/workfolows` 目录中创建 `deploy` 文件: `deploy.yml`, 包含以下内容:
 
 ```yml
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
@@ -97,4 +97,4 @@ jobs:
 
 ## 将修改推送到仓库中
 
-完成以上的配置后，每次提交修改到仓库中，将自动发布内容到 github page
+完成以上的配置后，每次提交修改到仓库中，将自动发布内容到 `github page`

@@ -215,6 +215,7 @@ export default defineConfig({
               text: "修复 Naive UI 中的潜在的样式冲突",
               link: "/config/fix-naive-css-bug",
             },
+            { text: "monorepo 构建", link: "/config/create-monorepo" },
           ],
         },
         { text: "返回上层", link: "/others-map" },
