@@ -8,7 +8,7 @@ import { ref, computed, onMounted } from 'vue'
 /* 三月数据 */
 const MAR = ref(new Array(31).fill(0))
 const marMax = ref(0)
-const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25]
+const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26]
 
 /**
  * 月份数据转化成 color: 
@@ -97,6 +97,10 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[vue3 中的类型标注](/vue3/vue3-and-typescript)
+`/` [Vue3](/vue3/get-component-instance-in-setup)
+`/2024-03-26`
 
 [构建 monorepo](/config/create-monorepo)
 `/` [Config](/config/off-hibernate)

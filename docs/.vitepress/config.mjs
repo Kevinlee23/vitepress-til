@@ -160,6 +160,7 @@ export default defineConfig({
             { text: "v-bind-in-style", link: "/vue3/v-bind-in-style" },
             { text: "v-model", link: "/vue3/v-model" },
             { text: "watchEffect", link: "/vue3/watchEffect" },
+            { text: "vue3-and-typescript", link: "/vue3/vue3-and-typescript" },
           ],
         },
         {
