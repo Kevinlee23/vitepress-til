@@ -38,7 +38,7 @@ export default defineConfig({
         items: [
           { text: "Git", link: "/git/01-git-pull-repository" },
           { text: "webpack", link: "..." },
-          { text: "SQL", link: "..." },
+          { text: "SQL", link: "/sql/my-sql-single-table-operation" },
         ],
       },
       {
@@ -308,6 +308,26 @@ export default defineConfig({
           text: "返回上层",
           link: "/tools-map",
         },
+      ],
+      "/sql/": [
+        {
+          text: "my-sql",
+          items: [
+            {
+              text: "单表查询操作",
+              link: "/sql/my-sql-single-table-operation",
+            },
+            {
+              text: "外键和关联查询",
+              link: "/sql/my-sql-foreign-key-and-join-on",
+            },
+            {
+              text: "多对多表的设计",
+              link: "/sql/my-sql-multi-to-multi-table-design",
+            },
+          ],
+        },
+        { text: "返回上层", link: "/tools-map" },
       ],
       "/3-party-library/": [
         {
