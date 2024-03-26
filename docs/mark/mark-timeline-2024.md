@@ -8,7 +8,7 @@ import { ref, computed, onMounted } from 'vue'
 /* 三月数据 */
 const MAR = ref(new Array(31).fill(0))
 const marMax = ref(0)
-const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26]
+const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26]
 
 /**
  * 月份数据转化成 color: 
@@ -77,7 +77,9 @@ onMounted(() => {
 [Vue3](/vue3/get-component-instance-in-setup) &nbsp;
 [React](/react/avoid-mutation) <Badge type="tip" text="框架" />
 
-[Git](/git/01-git-pull-repository) <Badge type="tip" text="工具" />
+[Git](/git/01-git-pull-repository) &nbsp;
+[SQL](/sql/my-sql-single-table-operation) &nbsp;
+[OSS](/oss/get-sts) <Badge type="tip" text="工具" />
 
 [mockJs](/3-party-library/how-to-use-mockjs) <Badge type="tip" text="第三方库" />
 
@@ -97,6 +99,18 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[生成客户端对象](/oss/create-client)
+`/` [OSS](/oss/get-sts)
+`/2024-03-26`
+
+[获取 STS 临时凭证](/oss/get-sts)
+`/` [OSS](/oss/get-sts)
+`/2024-03-26`
+
+[获取服务器时间](/javascript/get-server-time)
+`/` [JS Code](/javascript/wapper-for-websocket-vue3)
+`/2024-03-26`
 
 [vue3 中的类型标注](/vue3/vue3-and-typescript)
 `/` [Vue3](/vue3/get-component-instance-in-setup)

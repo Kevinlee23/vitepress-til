@@ -39,6 +39,7 @@ export default defineConfig({
           { text: "Git", link: "/git/01-git-pull-repository" },
           { text: "webpack", link: "..." },
           { text: "SQL", link: "/sql/my-sql-single-table-operation" },
+          { text: "OSS", link: "/oss/get-sts" },
         ],
       },
       {
@@ -93,6 +94,7 @@ export default defineConfig({
             { text: "filterSize", link: "/javascript/filterSize" },
             { text: "filterSizeList", link: "/javascript/filterSizeList" },
             { text: "type-validate", link: "/javascript/type-validate" },
+            { text: "get-server-time", link: "/javascript/get-server-time" },
           ],
         },
         { text: "返回上层", link: "/front-end-map" },
@@ -326,6 +328,16 @@ export default defineConfig({
               text: "多对多表的设计",
               link: "/sql/my-sql-multi-to-multi-table-design",
             },
+          ],
+        },
+        { text: "返回上层", link: "/tools-map" },
+      ],
+      "/oss/": [
+        {
+          text: "ali-cloud: oss",
+          items: [
+            { text: "获取 STS 临时凭证", link: "/oss/get-sts" },
+            { text: "创建 oss 对象", link: "/oss/create-client" },
           ],
         },
         { text: "返回上层", link: "/tools-map" },
