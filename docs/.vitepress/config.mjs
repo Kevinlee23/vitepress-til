@@ -338,6 +338,9 @@ export default defineConfig({
           items: [
             { text: "获取 STS 临时凭证", link: "/oss/get-sts" },
             { text: "创建 oss 对象", link: "/oss/create-client" },
+            { text: "客户端直传文件", link: "/oss/client-direct-upload" },
+            { text: "删除文件", link: "/oss/delete-object" },
+            { text: "列举文件", link: "/oss/list-object" },
           ],
         },
         { text: "返回上层", link: "/tools-map" },
