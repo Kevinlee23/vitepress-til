@@ -8,7 +8,7 @@ import { ref, computed, onMounted } from 'vue'
 /* 三月数据 */
 const MAR = ref(new Array(31).fill(0))
 const marMax = ref(0)
-const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26]
+const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27, 27, 27,]
 
 /**
  * 月份数据转化成 color: 
@@ -99,6 +99,26 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[vite 配置代理](/vue3/vite-proxy)
+`/` [Vue3](/vue3/get-component-instance-in-setup)
+`/2024-03-27`
+
+[读取加密文件](/oss/read-encryption-file)
+`/` [OSS](/oss/get-sts)
+`/2024-03-27`
+
+[列举文件](/oss/list-object)
+`/` [OSS](/oss/get-sts)
+`/2024-03-27`
+
+[删除文件](/oss/delete-object)
+`/` [OSS](/oss/get-sts)
+`/2024-03-27`
+
+[客户端直传文件](/oss/client-direct-upload)
+`/` [OSS](/oss/get-sts)
+`/2024-03-27`
 
 [生成客户端对象](/oss/create-client)
 `/` [OSS](/oss/get-sts)
