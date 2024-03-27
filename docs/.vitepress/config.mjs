@@ -344,6 +344,7 @@ export default defineConfig({
             { text: "客户端直传文件", link: "/oss/client-direct-upload" },
             { text: "删除文件", link: "/oss/delete-object" },
             { text: "列举文件", link: "/oss/list-object" },
+            { text: "读取加密文件", link: "/oss/read-encryption-file" },
           ],
         },
         { text: "返回上层", link: "/tools-map" },
