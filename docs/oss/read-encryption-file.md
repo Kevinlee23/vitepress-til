@@ -1,10 +1,11 @@
 # 读取加密文件
 
-Bucket 设置为 `加密读`
+`Bucket` 设置为 `加密读`
 
 给文件的 `url` 加上 `OSSAccessKeyId`、`Expires`、`Signature` 和 `security-token` 参数
 
 ```js
+// OSS.client
 client.signatureUrl(file.name)
 
 // http://shenzhenoss97.oss-cn-shenzhen.aliyuncs.com/wallhaven-7pmgey.jpg

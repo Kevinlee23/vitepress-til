@@ -74,6 +74,7 @@ export default defineConfig({
               link: "/javascript/regular-expression",
             },
             { text: "web-worker ", link: "/javascript/web-worker" },
+            { text: "special-event", link: "/javascript/special-event" },
           ],
         },
         {
@@ -345,6 +346,7 @@ export default defineConfig({
             { text: "删除文件", link: "/oss/delete-object" },
             { text: "列举文件", link: "/oss/list-object" },
             { text: "读取加密文件", link: "/oss/read-encryption-file" },
+            { text: "分片上传", link: "/oss/part-upload" },
           ],
         },
         { text: "返回上层", link: "/tools-map" },
