@@ -100,15 +100,15 @@ onMounted(() => {
   </div>
 </div>
 
-[Vite - config](/vue3/vite-config) `/` [Vue3](/vue3/get-component-instance-in-setup) `/` `2024-03-28`
+[Vite-config](/vue3/vite-config) `/` [Vue3](/vue3/get-component-instance-in-setup) `/` `2024-03-28`
 
 [JSDoc 小记](/javascript/JSDoc) `/` [Javascript](/javascript/event-loop) `/` `2024-03-28`
 
 [页面特殊事件](/javascript/special-event) `/` [Javascript](/javascript/event-loop) `/` `2024-03-28`
 
-[oss - 分片上传](/oss/part-upload) `/` [OSS](/oss/get-sts) `/` `2024-03-28`
+[oss-分片上传](/oss/part-upload) `/` [OSS](/oss/get-sts) `/` `2024-03-28`
 
-[vite 配置代理](/vue3/vite-proxy) <Badge type="danger" text="merged" /> `/` [Vue3](/vue3/get-component-instance-in-setup) `/` `2024-03-27`
+`vite 配置代理` <Badge type="danger" text="merged" /> `/` [Vue3](/vue3/get-component-instance-in-setup) `/` `2024-03-27`
 
 [读取加密文件](/oss/read-encryption-file) `/` [OSS](/oss/get-sts) `/` `2024-03-27`
 

@@ -107,7 +107,7 @@ const worker = new MyWorker();
 .env.[mode].local   # 只在指定模式下加载，但会被 git 忽略
 ```
 
-只有带 `VITE_` 前缀的变量才会暴露给经过 vite 处理的代码: `VITE_SOME_KEY`
+只有带 `VITE_` 前缀的变量才会暴露给经过 `vite` 处理的代码: `VITE_SOME_KEY`
 
 ### 模式
 
