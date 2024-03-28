@@ -34,8 +34,10 @@ features:
 ---
 
 **技术栈:**
-[![My Skills](https://skillicons.dev/icons?i=js,ts,vue,vite,nuxtjs,pinia,git,mongodb,nodejs,npm,pnpm,yarn)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,ts,tailwind,vue,vite,nuxtjs,pinia,git,mongodb,nodejs,npm,pnpm,yarn)](https://skillicons.dev)
 
 **使用工具:**
-[![My Tools](https://skillicons.dev/icons?i=apple,github,gitlab,vscode,gmail)](https://skillicons.dev)
+[![My Tools](https://skillicons.dev/icons?i=apple,github,gitlab,vscode,gmail,md)](https://skillicons.dev)
 
+**正在学习:**
+[![My Learning](https://skillicons.dev/icons?i=react,nestjs,mysql,docker)](https://skillicons.dev)
