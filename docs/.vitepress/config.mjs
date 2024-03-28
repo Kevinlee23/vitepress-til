@@ -170,8 +170,8 @@ export default defineConfig({
         {
           text: "Vite",
           items: [
-            { text: "my-vitesse [beta]", link: "/vue3/my-vitesse" },
-            { text: "proxy", link: "/vue3/vite-proxy" },
+            { text: "my-vitesse", link: "/vue3/my-vitesse" },
+            { text: "vite-config", link: "/vue3/vite-config" },
           ],
         },
         {
