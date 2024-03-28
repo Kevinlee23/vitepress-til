@@ -32,3 +32,10 @@ features:
     details: 解决问题的百宝箱
     link: /tools-map
 ---
+
+**技术栈:**
+[![My Skills](https://skillicons.dev/icons?i=js,ts,vue,vite,nuxtjs,pinia,git,mongodb,nodejs,npm,pnpm,yarn)](https://skillicons.dev)
+
+**使用工具:**
+[![My Tools](https://skillicons.dev/icons?i=apple,github,gitlab,vscode,gmail)](https://skillicons.dev)
+
