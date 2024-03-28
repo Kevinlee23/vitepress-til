@@ -75,6 +75,7 @@ export default defineConfig({
             },
             { text: "web-worker ", link: "/javascript/web-worker" },
             { text: "special-event", link: "/javascript/special-event" },
+            { text: "JSDoc", link: "/javascript/JSDoc" },
           ],
         },
         {
