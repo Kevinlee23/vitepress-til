@@ -6,7 +6,7 @@ $ git config --global --list
 
 # 配置用户名和邮箱
 $ git config --global user.name "your username"
-$ git config --global user.emial "your email"
+$ git config --global user.email "your email"
 
 # 生成秘钥
 $ ssh-keygen -t rsa -C "xxx@xxx.com"
