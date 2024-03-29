@@ -14,8 +14,8 @@
 ```yaml
 packages:
   - common # 公共包
-  - package-1 # 包1
-  - package-2 # 包2
+  - package-A # 包1
+  - package-B # 包2
 ```
 
 ## 安装公共依赖
@@ -24,16 +24,18 @@ packages:
 
 ## 工作区文件共享
 
+通过指令: `pnpm install @monorepoSpace/common -w` 来共享依赖
+
 :::code-group
 ```json [common]
 {
-  "name": "@workspace-name/common"
+  "name": "@monorepoSpace/common"
 }
 ```
 
-```json [package-1]
+```json [package-A]
 {
-  "dependencies": { "common": "workspace:*" }
+  "dependencies": { "@monorepoSpace/common": "workspace:*" }
 }
 ```
 :::

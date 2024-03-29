@@ -38,7 +38,7 @@ outline: deep
 - `setTimeout` / `setInterval`
 - `UI rendering`
 - `postMessage`, `MessageChannel`
-- `setImmediate、``I/O (Node.js)`
+- `setImmediate`、`I/O (Node.js)`
 
 ## 例子
 
