@@ -20,6 +20,18 @@ export default defineConfig({
 });
 ```
 
+## 指定 host
+
+指定服务器应该监听哪个 IP 地址。如果设置为 `0.0.0.0` 或 `true` 将监听所有地址，包括局域网和公网地址
+
+```js
+export default defineConfig({
+  server: {
+    host: "0.0.0.0", // or true
+  },
+});
+```
+
 ## 增加预处理器支持
 
 ```sh

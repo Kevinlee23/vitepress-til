@@ -102,7 +102,7 @@ onMounted(() => {
 
 [tailwind 常用写法](/css/tailwind-basic) <Badge type="warning" text="beta" /> `/` [CSS](/css/gradient-color) `/` `2024-03-30`
 
-[Vite-config](/vue3/vite-config) `/` [Vue3](/vue3/get-component-instance-in-setup) `/` `2024-03-28`
+[Vite-config](/vue3/vite-config) <Badge type="warning" text="beta" /> `/` [Vue3](/vue3/get-component-instance-in-setup) `/` `2024-03-28`
 
 [JSDoc 小记](/javascript/JSDoc) `/` [Javascript](/javascript/event-loop) `/` `2024-03-28`
 
