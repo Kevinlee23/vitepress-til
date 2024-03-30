@@ -139,10 +139,8 @@ export default defineConfig({
           ],
         },
         {
-          text: 'tailwindcss',
-          items: [
-            {text: 'tailwind 常用的写法', link: '/css/tailwind-basic'}
-          ]
+          text: "tailwindcss",
+          items: [{ text: "tailwind 常用的写法", link: "/css/tailwind-basic" }],
         },
         {
           text: "一些很好看的设计",
@@ -386,4 +384,9 @@ export default defineConfig({
   },
   cleanUrls: true,
   lastUpdated: true,
+  vite: {
+    server: {
+      host: "0.0.0.0",
+    },
+  },
 });
