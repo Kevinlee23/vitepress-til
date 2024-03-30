@@ -8,7 +8,7 @@ import { ref, computed, onMounted } from 'vue'
 /* 三月数据 */
 const MAR = ref(new Array(31).fill(0))
 const marMax = ref(0)
-const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27, 27, 27, 28, 28, 28, 28]
+const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27, 27, 27, 28, 28, 28, 28, 30]
 
 /**
  * 月份数据转化成 color: 
@@ -99,6 +99,8 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[tailwind 常用写法](/css/tailwind-basic) <Badge type="warning" text="beta" /> `/` [CSS](/css/gradient-color) `/` `2024-03-30`
 
 [Vite-config](/vue3/vite-config) `/` [Vue3](/vue3/get-component-instance-in-setup) `/` `2024-03-28`
 

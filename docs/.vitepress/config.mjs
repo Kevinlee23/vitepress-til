@@ -18,8 +18,8 @@ export default defineConfig({
           { text: "Javascript", link: "/javascript/event-loop" },
           { text: "JS Code", link: "/javascript/wapper-for-websocket-vue3" },
           { text: "Typescript", link: "/typescript/basic-object-and-function" },
-          { text: "CSS", link: "/css/gradient-color" },
           { text: "类型编程", link: "/typescript/internal-tool-type" },
+          { text: "CSS", link: "/css/gradient-color" },
           { text: "HTTP", link: "/http/HTTP-request-and-response-header" },
         ],
       },
@@ -137,6 +137,12 @@ export default defineConfig({
             { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
             { text: "布局实例一", link: "/css/layout-1" },
           ],
+        },
+        {
+          text: 'tailwindcss',
+          items: [
+            {text: 'tailwind 常用的写法', link: '/css/tailwind-basic'}
+          ]
         },
         {
           text: "一些很好看的设计",
