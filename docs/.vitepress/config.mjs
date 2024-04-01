@@ -76,6 +76,10 @@ export default defineConfig({
             { text: "web-worker ", link: "/javascript/web-worker" },
             { text: "special-event", link: "/javascript/special-event" },
             { text: "JSDoc", link: "/javascript/JSDoc" },
+            {
+              text: "create-object-url",
+              link: "/javascript/create-object-url",
+            },
           ],
         },
         {
@@ -264,6 +268,10 @@ export default defineConfig({
               text: "熊家菜谱",
               link: "/ordinary/cook-menu",
             },
+            {
+              text: "我的精酿地图",
+              link: '/ordinary/my-craft-beer-map'
+            }
           ],
         },
         {
