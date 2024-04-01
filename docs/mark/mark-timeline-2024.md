@@ -95,7 +95,6 @@ onMounted(() => {
 }
 </style>
 
-
 # 归档
 
 记录从 `2024 年 3 月 12 日` 建站后的笔记
@@ -124,6 +123,19 @@ onMounted(() => {
 [Ordinary](/ordinary/What-marriage-brings-to-me) <Badge type="tip" text="杂谈" />
 
 ## 2024
+
+### 四月
+
+[创建文件临时路径](/javascript/create-object-url) `/` [Javascript](/javascript/event-loop) `/` `2024-04-01`
+
+<div :class="$style['block-container']">
+  <div
+    v-for="item in monColor('2024-04-01', '2024-04-30', APRI, apriDate, apriMax)"
+    :class="$style.block" :style="{backgroundColor: item.color}"
+    :title="item.text"
+  >
+  </div>
+</div>
 
 ### 三月
 
@@ -187,16 +199,3 @@ onMounted(() => {
 [熊家菜谱(新增利村牛肉)](/ordinary/cook-menu) `/` [Ordinary](/ordinary/What-marriage-brings-to-me) `/` `2024-03-13`
 
 [vitepress-deploy-in-github-page](/config/vitepress-deploy-in-github-page) `/` [Config](/config/off-hibernate) `/` `2024-03-12`
-
-### 四月
-
-[创建文件临时路径](/javascript/create-object-url) `/` [Javascript](/javascript/event-loop) `/` `2024-04-01`
-
-<div :class="$style['block-container']">
-  <div
-    v-for="item in monColor('2024-04-01', '2024-04-30', APRI, apriDate, apriMax)"
-    :class="$style.block" :style="{backgroundColor: item.color}"
-    :title="item.text"
-  >
-  </div>
-</div>
