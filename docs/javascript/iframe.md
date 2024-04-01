@@ -6,7 +6,7 @@ outline: deep
 
 ## 同源
 
-同源策略 (如果两个 URL 具有相同的协议、域和端口，那么他们是同源的) 会限制窗口和 frame 之间的通信
+同源策略 (如果两个 `URL` 具有相同的协议、域和端口，那么他们是同源的) 会限制窗口和 `frame` 之间的通信
 
 同源策略规定：
 
@@ -15,10 +15,10 @@ outline: deep
 
 ## iframe
 
-`iframe` 标签承载了一个单独的嵌入的窗口，它有自己的 document 和 window:
+`iframe` 标签承载了一个单独的嵌入的窗口，它有自己的 `document` 和 `window`:
 
-- `iframe.contentWindow` 来获取 中的 window
-- `iframe.contentDocument` 来获取 中的 document
+- `iframe.contentWindow` 来获取 `iframe` 中的 `window`
+- `iframe.contentDocument` 来获取 `iframe` 中的 `document`
 
 ::: code-group
 
