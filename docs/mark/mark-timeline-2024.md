@@ -4,6 +4,7 @@ outline: deep
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import useMonthCompute from './use-month-compute'
 
 /* 三月数据 */
 const MAR = ref(new Array(31).fill(0))
@@ -13,63 +14,10 @@ const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26,
 /* 四月数据 */
 const APRI = ref(new Array(30).fill(0))
 const apriMax = ref(0)
-const apriDate = [1]
+const apriDate = [1, 2]
 
-/**
- * 月份数据转化成 color: 
- * 深灰色(不属于这个月的数据)
- * 浅灰色(文章数为 0 的日期)
- * 浅绿(小于每日平均文章数且不等于 0 的日期)
- * 次绿(大于每日平均文章数的日期)
- * 深绿(最大文章数的日期)
- */
-const monColor = computed(() => {
-  return (firstDay, lastDay, MON, monDate, monMax) => {
-    const fDay = new Date(firstDay).getDay()
-    const prefixLength = fDay === 0 ? 6 : fDay - 1
-    const prefixArr = new Array(prefixLength).fill({ text:'last', color:'#c2c4c3' })
 
-    const lDay = new Date(lastDay).getDay()
-    const suffixLength = lDay === 0 ? 0 : 7 - lDay
-    const suffixArr = new Array(suffixLength).fill({ text: 'next', color: '#c2c4c3'})
-
-    const arr = new Array(monDate.length).fill(null)
-    const fillDay = (new Set(monDate)).size
-    MON.map((num, index) => {
-      if (num === 0) {
-        arr[index] = { text: index+1, color: '#ebedf0' }
-      } else if (num === monMax) {
-        arr[index] = { text: index+1, color: '#216e39' }
-      } else if (num > monDate.length / fillDay) {
-        arr[index] = { text: index+1, color: '#30a14e' }
-      } else {
-        arr[index] = { text: index+1, color: '#9be9a8' }
-      }
-    })
-
-    const allDay = [...prefixArr, ...arr, ...suffixArr]
-    const result = []
-    const xLen = 7
-    const yLen = allDay.length / 7
-    for (let x = 1; x < xLen+1; x++) {
-      for (let y = 1; y < yLen+1; y++) {
-        result.push(allDay[x+(y-1)*7 - 1])
-      }
-    }
-
-    return result
-  }
-})
-
-// 月份初始化
-const monthInit = (MON, monDate, monMax) => {
-  monDate.map(day => {
-    MON.value[day-1]++
-  })
-  MON.value.map(num => {
-    monMax.value = Math.max(monMax.value, num)
-  })
-}
+const { monColor, monthInit } = useMonthCompute()
 
 onMounted(() => {
   monthInit(MAR, marDate, marMax) // 初始化三月
@@ -113,7 +61,8 @@ onMounted(() => {
 
 [Git](/git/01-git-pull-repository) &nbsp;
 [SQL](/sql/my-sql-single-table-operation) &nbsp;
-[OSS](/oss/get-sts) <Badge type="tip" text="工具" />
+[OSS](/oss/get-sts) &nbsp;
+[Docker](/docker/docker-and-compose) <Badge type="tip" text="工具" />
 
 [mockJs](/3-party-library/how-to-use-mockjs) <Badge type="tip" text="第三方库" />
 
@@ -134,6 +83,8 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[docker 和 compose 的区别](/docker/docker-and-compose) `/` [Docker](/docker/docker-and-compose) `/` `2024-04-02`
 
 [创建文件临时路径](/javascript/create-object-url) `/` [Javascript](/javascript/event-loop) `/` `2024-04-01`
 
