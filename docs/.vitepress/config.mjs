@@ -39,6 +39,7 @@ export default defineConfig({
           { text: "webpack", link: "..." },
           { text: "SQL", link: "/sql/my-sql-single-table-operation" },
           { text: "OSS", link: "/oss/get-sts" },
+          { text: "Docker", link: "/docker/docker-and-compose", },
         ],
       },
       {
@@ -269,8 +270,8 @@ export default defineConfig({
             },
             {
               text: "我的精酿地图",
-              link: '/ordinary/my-craft-beer-map'
-            }
+              link: "/ordinary/my-craft-beer-map",
+            },
           ],
         },
         {
@@ -362,6 +363,17 @@ export default defineConfig({
           ],
         },
         { text: "返回上层", link: "/tools-map" },
+      ],
+      "/docker/": [
+        {
+          text: "docker",
+          items: [
+            {
+              text: "docker 和 compose 的区别",
+              link: "/docker/docker-and-compose",
+            },
+          ],
+        },
       ],
       "/3-party-library/": [
         {
