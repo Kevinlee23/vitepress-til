@@ -23,14 +23,14 @@ features:
     icon: 🔪
     details: 锋利如刀
     link: /framework-map
-  - title: 第三方类库
-    icon: ⚙️
-    details: 项目开发中关键的齿轮
-    link: /3-party-map
   - title: 工具
     icon: 🧰
     details: 解决问题的百宝箱
     link: /tools-map
+  - title: 第三方类库
+    icon: ⚙️
+    details: 项目开发中关键的齿轮
+    link: /3-party-map
 ---
 
 **技术栈:**
