@@ -245,6 +245,10 @@ export default defineConfig({
               text: "修复 Naive UI 中的潜在的样式冲突",
               link: "/fix/fix-naive-css-bug",
             },
+            {
+              text: "解决 vue3-ts 环境下引入组件报错的问题",
+              link: "/fix/fix-vue3-ts-error"
+            }
           ],
         },
         { text: "返回上层", link: "/others-map" },

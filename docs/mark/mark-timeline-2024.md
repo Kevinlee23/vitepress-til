@@ -14,7 +14,7 @@ const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26,
 /* 四月数据 */
 const APRI = ref(new Array(30).fill(0))
 const apriMax = ref(0)
-const apriDate = [1, 2]
+const apriDate = [1, 2, 3]
 
 
 const { monColor, monthInit } = useMonthCompute()
@@ -83,6 +83,8 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[解决 vue3-ts 环境下引入组件报错的问题](/fix/fix-vue3-ts-error) `/` [Error Fix](/fix/nvm-president-problem-for-mac) `/` `2024-04-03`
 
 [docker 和 compose 的区别](/docker/docker-and-compose) `/` [Docker](/docker/docker-and-compose) `/` `2024-04-02`
 
