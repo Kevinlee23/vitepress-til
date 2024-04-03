@@ -15,9 +15,7 @@ outline: deep
 yarn create vite --template vue
 ```
 
-## 周边生态
-
-### UI 库
+## UI 库
 
 推荐的 `UI` 库如下：
 
@@ -28,16 +26,17 @@ yarn create vite --template vue
 - `Nut UI (Mobile)`
 - `Tailwind CSS ***`
 
-#### Tailwind CSS \*\*\*
+### Tailwind CSS :heart:
 
 :::code-group
 
-```sh [install]
+```sh [安装]
 yarn add -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-```js [tailwindcss.config.js]
+```js [配置一]
+// tailwindcss.config.js
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{vue, js,ts,jsx,tsx}"],
@@ -48,7 +47,8 @@ export default {
 };
 ```
 
-```css [@/plugins/tailwind/index.css]
+```css [配置二]
+// @/plugins/tailwind/index.css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,9 +56,9 @@ export default {
 
 :::
 
-### 状态管理
+## 状态管理
 
-#### pinia \*\*\*
+### pinia :heart:
 
 ```sh
 # or npm install pinia
@@ -69,17 +69,17 @@ yarn add pinia
 
 [基本使用见 pinia 章节](/vue3/pinia-basic)
 
-### 路由管理
+## 路由管理
 
-#### vue-router@4 \*\*\*
+### vue-router@4 :heart:
 
 ```sh
 yarn add vue-rotuer@4
 ```
 
-### 工具库
+## 工具库
 
-#### lodash \*\*\*
+### lodash :heart:
 
 无需多言，每个前端应该都接触过的工具类库
 
@@ -87,7 +87,7 @@ yarn add vue-rotuer@4
 yarn add lodash
 ```
 
-#### radash
+### radash
 
 `Readable`
 
@@ -107,15 +107,15 @@ yarn add radash
 
 [官方文档](https://radash-docs.vercel.app/docs/getting-started#love-and-hate)
 
-### 插件
+## 插件
 
-#### vue-use \*\*\*
+### vue-use :heart:
 
 ```sh
 yarn add @vueuse/core
 ```
 
-#### Vue-i18n \*\*\*
+### Vue-i18n :heart:
 
 国际化插件
 
@@ -139,17 +139,17 @@ app.use(i18n);
 app.mount("#app");
 ```
 
-#### unplugin-vue-components
+### unplugin-vue-components
 
 自动引入组件（不需要显示地 `import` 引入）
 
-```sh
+:::code-group
+
+```sh [安装]
 yarn install unplugin-vue-components -D
 ```
 
-`配置`
-
-```ts
+```ts [配置]
 // vite.config.ts
 
 import components from "unplugin-vue-components/vite";
@@ -177,15 +177,22 @@ export default defineConfig({
 });
 ```
 
-[Configuration](https://github.com/unplugin/unplugin-vue-components?tab=readme-ov-file#configuration)
+:::
 
-#### unplugin-auto-import
+> [!TIP]
+> [Configuration](https://github.com/unplugin/unplugin-vue-components?tab=readme-ov-file#configuration)
+
+### unplugin-auto-import
 
 自动引入核心库文件
 
-`配置`
+:::code-group
 
-```ts
+```sh [安装]
+yarn unplugin-auto-import -D
+```
+
+```ts [配置一]
 // vite.config.ts
 import AutoImport from "unplugin-auto-import/vite";
 
@@ -198,12 +205,33 @@ export default defineConfig({
 });
 ```
 
-```json
+```json [配置二]
 // tsconfig.json
 {
   "include": ["./auto-imports.d.ts"]
 }
 ```
 
-[Configuration](https://github.com/unplugin/unplugin-auto-import?tab=readme-ov-file#configuration)
+:::
 
+> [!TIP]
+> [Configuration](https://github.com/unplugin/unplugin-auto-import?tab=readme-ov-file#configuration)
+
+### @antfu/eslint-config
+
+`eslint` 配置插件
+
+```sh
+yarn add @antfu/eslint-config -D
+```
+
+创建文件 `eslint.config.js`, 写入:
+
+```js
+import antfu from "@antfu/eslint-config";
+
+export default antfu();
+```
+
+> [!TIP]
+> [Configuration](https://github.com/antfu/eslint-config)
