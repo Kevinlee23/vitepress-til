@@ -39,7 +39,7 @@ export default defineConfig({
           { text: "webpack", link: "..." },
           { text: "SQL", link: "/sql/my-sql-single-table-operation" },
           { text: "OSS", link: "/oss/get-sts" },
-          { text: "Docker", link: "/docker/docker-and-compose", },
+          { text: "Docker", link: "/docker/docker-and-compose" },
         ],
       },
       {
@@ -227,10 +227,6 @@ export default defineConfig({
               text: "将 js 文件 当做 shell 脚本执行",
               link: "/config/using-js-as-shell-script",
             },
-            {
-              text: "修复 Naive UI 中的潜在的样式冲突",
-              link: "/config/fix-naive-css-bug",
-            },
             { text: "monorepo 构建", link: "/config/create-monorepo" },
           ],
         },
@@ -245,6 +241,10 @@ export default defineConfig({
               link: "/fix/nvm-president-problem-for-mac",
             },
             { text: "MacOs 中 svn 的证书问题", link: "/fix/svn-ssh-problem" },
+            {
+              text: "修复 Naive UI 中的潜在的样式冲突",
+              link: "/fix/fix-naive-css-bug",
+            },
           ],
         },
         { text: "返回上层", link: "/others-map" },
@@ -406,6 +406,7 @@ export default defineConfig({
   vite: {
     server: {
       host: "0.0.0.0",
+      port: 8080,
     },
   },
 });
