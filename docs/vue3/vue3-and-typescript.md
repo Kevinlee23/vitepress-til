@@ -118,7 +118,7 @@ onMounted(() => {
 
 ## 组件模板引用
 
-对于已知的 custom 组件，可以通过 `typeof` 得到其类型，再使用 `InstanceType` 工具类型来获取其实例类型
+对于已知的 `custom` 组件，可以通过 `typeof` 得到其类型，再使用 `InstanceType` 工具类型来获取其实例类型
 
 ```vue
 <!-- App.vue -->
@@ -133,7 +133,7 @@ const openModal = () => {
 </script>
 ```
 
-对于具体类型无法获得的情况，使用 ComponentPublicInstance
+对于具体类型无法获得的情况，使用 `ComponentPublicInstance`
 
 ```ts
 import { ref } from "vue";

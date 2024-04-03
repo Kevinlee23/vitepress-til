@@ -246,7 +246,7 @@ export default defineConfig({
               link: "/fix/fix-naive-css-bug",
             },
             {
-              text: "解决 vue3-ts 环境下引入组件报错的问题",
+              text: "vue3-vite-ts 报错汇总",
               link: "/fix/fix-vue3-ts-error"
             }
           ],

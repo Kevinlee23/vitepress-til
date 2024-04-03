@@ -84,7 +84,7 @@ onMounted(() => {
   </div>
 </div>
 
-[解决 vue3-ts 环境下引入组件报错的问题](/fix/fix-vue3-ts-error) `/` [Error Fix](/fix/nvm-president-problem-for-mac) `/` `2024-04-03`
+[vue3-vite-ts 报错汇总](/fix/fix-vue3-ts-error) `/` [Error Fix](/fix/nvm-president-problem-for-mac) `/` `2024-04-03`
 
 [docker 和 compose 的区别](/docker/docker-and-compose) `/` [Docker](/docker/docker-and-compose) `/` `2024-04-02`
 
