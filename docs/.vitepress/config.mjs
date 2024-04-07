@@ -140,6 +140,7 @@ export default defineConfig({
             { text: "style 初始化", link: "/css/style-init" },
             { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
             { text: "布局实例一", link: "/css/layout-1" },
+            { text: "移动端适配", link: "/css/mobile-adaptation" },
           ],
         },
         {
