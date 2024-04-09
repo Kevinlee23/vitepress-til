@@ -141,12 +141,18 @@ export default defineConfig({
             { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
             { text: "布局实例一", link: "/css/layout-1" },
             { text: "移动端适配", link: "/css/mobile-adaptation" },
-            { text: '获取元素的 style', link: '/css/get-computed-style'}
+            { text: "获取元素的 style", link: "/css/get-computed-style" },
           ],
         },
         {
           text: "tailwindcss",
-          items: [{ text: "tailwind 常用的写法", link: "/css/tailwind-basic" }],
+          items: [
+            { text: "tailwind 常用的写法", link: "/css/tailwind-basic" },
+            {
+              text: "tailwind 自定义颜色",
+              link: "/css/tailwind-customizing-colors",
+            },
+          ],
         },
         {
           text: "一些很好看的设计",
@@ -249,8 +255,8 @@ export default defineConfig({
             },
             {
               text: "vue3-vite-ts 报错汇总",
-              link: "/fix/fix-vue3-ts-error"
-            }
+              link: "/fix/fix-vue3-ts-error",
+            },
           ],
         },
         { text: "返回上层", link: "/others-map" },

@@ -14,7 +14,7 @@ const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26,
 /* 四月数据 */
 const APRI = ref(new Array(30).fill(0))
 const apriMax = ref(0)
-const apriDate = [1, 2, 3, 7, 8]
+const apriDate = [1, 2, 3, 7, 8, 9]
 
 
 const { monColor, monthInit } = useMonthCompute()
@@ -90,6 +90,8 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[tailwind 自定义颜色](/css/tailwind-customizing-colors) `/` [CSS](/css/gradient-color) `/` `2024-04-09`
 
 [获取 element 的 style 对象](/css/get-computed-style) `/` [CSS](/css/gradient-color) `/` `2024-04-08`
 
