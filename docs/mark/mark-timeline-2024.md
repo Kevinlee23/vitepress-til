@@ -40,6 +40,12 @@ onMounted(() => {
   height: 12px;
   border-radius: 2.5px;
   cursor: pointer;
+
+  &:hover {
+    border-width: 1px;
+    border-color: #000;
+    border-style: solid;
+  }
 }
 </style>
 
@@ -77,9 +83,10 @@ onMounted(() => {
 
 <div :class="$style['block-container']">
   <div
-    v-for="item in monColor('2024-04-01', '2024-04-30', APRI, apriDate, apriMax)"
+    v-for="(item, index) in monColor('2024-04-01', '2024-04-30', APRI, apriDate, apriMax)"
+    :key="index"
     :class="$style.block" :style="{backgroundColor: item.color}"
-    :title="item.text"
+    :title="`日期: ${item.text}; 笔记数: ${item.num}`"
   >
   </div>
 </div>
@@ -98,7 +105,8 @@ onMounted(() => {
 
 <div :class="$style['block-container']">
   <div
-    v-for="item in monColor('2024-03-01', '2024-03-31', MAR, marDate, marMax)"
+    v-for="(item, index) in monColor('2024-03-01', '2024-03-31', MAR, marDate, marMax)"
+    :key="index"
     :class="$style.block" :style="{backgroundColor: item.color}"
     :title="item.text"
   >

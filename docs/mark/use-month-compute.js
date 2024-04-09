@@ -29,16 +29,17 @@ export default function useMonthCompute() {
       });
 
       const arr = new Array(monDate.length).fill(null);
+      const addDay = monDate.length
       const fillDay = new Set(monDate).size;
       MON.map((num, index) => {
         if (num === 0) {
-          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[0] };
-        } else if (num === monMax) {
-          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[3] };
-        } else if (num > monDate.length / fillDay) {
-          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[2] };
+          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[0], num };
+        } else if (num === monMax && num >= 3) {
+          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[3], num };
+        } else if (num > addDay / fillDay) {
+          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[2], num };
         } else {
-          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[1] };
+          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[1], num };
         }
       });
 
