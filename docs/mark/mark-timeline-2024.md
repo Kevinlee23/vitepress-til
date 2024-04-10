@@ -14,7 +14,7 @@ const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26,
 /* 四月数据 */
 const APRI = ref(new Array(30).fill(0))
 const apriMax = ref(0)
-const apriDate = [1, 2, 3, 7, 8, 9]
+const apriDate = [1, 2, 3, 7, 8, 9, 10]
 
 
 const { monColor, monthInit } = useMonthCompute()
@@ -90,6 +90,8 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[git 别名](/git/git-alias) `/` [Git](/git/01-git-pull-repository) `/` `2024-04-10`
 
 [tailwind 自定义颜色](/css/tailwind-customizing-colors) `/` [CSS](/css/gradient-color) `/` `2024-04-09`
 

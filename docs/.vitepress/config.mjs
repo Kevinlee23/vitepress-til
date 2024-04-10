@@ -326,6 +326,7 @@ export default defineConfig({
               text: "git-stash-and-clean",
               link: "/git/[git-tools]-git-stash-and-clean",
             },
+            { text: "git-alias", link: "/git/git-alias" },
           ],
         },
         {
