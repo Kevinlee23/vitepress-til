@@ -19,6 +19,7 @@ export default function useMonthCompute() {
       const prefixArr = new Array(prefixLength).fill({
         text: "last",
         color: NOT_THIS_MON_COLOR,
+        num: "null",
       });
 
       const lDay = new Date(lastDay).getDay();
@@ -26,10 +27,11 @@ export default function useMonthCompute() {
       const suffixArr = new Array(suffixLength).fill({
         text: "next",
         color: NOT_THIS_MON_COLOR,
+        num: "null",
       });
 
       const arr = new Array(monDate.length).fill(null);
-      const addDay = monDate.length
+      const addDay = monDate.length;
       const fillDay = new Set(monDate).size;
       MON.map((num, index) => {
         if (num === 0) {
@@ -59,13 +61,13 @@ export default function useMonthCompute() {
 
   // 月份初始化
   const monthInit = (MON, monDate, monMax) => {
-    monDate.map(day => {
-      MON.value[day-1]++
-    })
-    MON.value.map(num => {
-      monMax.value = Math.max(monMax.value, num)
-    })
-  }
+    monDate.map((day) => {
+      MON.value[day - 1]++;
+    });
+    MON.value.map((num) => {
+      monMax.value = Math.max(monMax.value, num);
+    });
+  };
 
   return { monColor, monthInit };
 }

@@ -14,14 +14,14 @@ git config --global alias.br branch
 
 ## 带参数的 git alias
 
-(1). 通过 `shell` 运行
+通过 `shell` 运行
 
 ```txt
 [alias]
     example = !sh -c 'ls $2 $1' -
 ```
 
-(2). 封装为 `bash` 函数 f:
+封装为 `bash` 函数 `f`:
 
 ```txt
 [alias]

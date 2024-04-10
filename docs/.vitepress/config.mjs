@@ -152,6 +152,10 @@ export default defineConfig({
               text: "tailwind 自定义颜色",
               link: "/css/tailwind-customizing-colors",
             },
+            {
+              text: "windicss to tailwindcss",
+              link: "/css/windicss-to-tailwindcss",
+            },
           ],
         },
         {
@@ -326,7 +330,6 @@ export default defineConfig({
               text: "git-stash-and-clean",
               link: "/git/[git-tools]-git-stash-and-clean",
             },
-            { text: "git-alias", link: "/git/git-alias" },
           ],
         },
         {
@@ -335,6 +338,7 @@ export default defineConfig({
             { text: "github 连接超时问题", link: "/git/connect-timeout" },
             { text: "推送时 message 规范", link: "/git/git-push-standard" },
             { text: "ssh 公钥生成", link: "/git/ssh-pubKey-generate" },
+            { text: "git-alias", link: "/git/git-alias" },
           ],
         },
         {

@@ -14,7 +14,7 @@ const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26,
 /* 四月数据 */
 const APRI = ref(new Array(30).fill(0))
 const apriMax = ref(0)
-const apriDate = [1, 2, 3, 7, 8, 9, 10]
+const apriDate = [1, 2, 3, 7, 8, 9, 10, 10]
 
 
 const { monColor, monthInit } = useMonthCompute()
@@ -91,6 +91,8 @@ onMounted(() => {
   </div>
 </div>
 
+[windicss to tailwindcss](/css/windicss-to-tailwindcss) `/` [CSS](/css/gradient-color) `/` `2024-04-10`
+
 [git 别名](/git/git-alias) `/` [Git](/git/01-git-pull-repository) `/` `2024-04-10`
 
 [tailwind 自定义颜色](/css/tailwind-customizing-colors) `/` [CSS](/css/gradient-color) `/` `2024-04-09`
@@ -112,7 +114,7 @@ onMounted(() => {
     v-for="(item, index) in monColor('2024-03-01', '2024-03-31', MAR, marDate, marMax)"
     :key="index"
     :class="$style.block" :style="{backgroundColor: item.color}"
-    :title="item.text"
+    :title="`日期: ${item.text}; 笔记数: ${item.num}`"
   >
   </div>
 </div>
