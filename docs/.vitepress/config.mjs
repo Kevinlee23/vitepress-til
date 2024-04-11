@@ -27,6 +27,7 @@ export default defineConfig({
         items: [
           { text: "Vue3", link: "/vue3/get-component-instance-in-setup" },
           { text: "React", link: "/react/avoid-mutation" },
+          { text: "React Native", link: "/react-native/styleSheet" },
           { text: "Nuxt", link: "..." },
           { text: "NestJs", link: "..." },
           { text: "qiankun", link: "..." },
@@ -222,6 +223,15 @@ export default defineConfig({
         },
         { text: "返回上层", link: "/framework-map" },
       ],
+      "/react-native/": [
+        {
+          text: "RN (React Mative)",
+          items: [
+            { text: "RN 中样式的写法", link: "/react-native/styleSheet" },
+          ],
+        },
+        { text: "返回上层", link: "/framework-map" },
+      ],
       "/config/": [
         {
           text: "配置",
@@ -391,6 +401,7 @@ export default defineConfig({
             },
           ],
         },
+        { text: "返回上层", link: "/tools-map" },
       ],
       "/3-party-library/": [
         {

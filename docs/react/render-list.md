@@ -54,7 +54,7 @@ export default function List() {
 
 ## 为每个列表显示多个 DOM 节点
 
-简写 `<></>` 无法接受 key 值，所以要么使用 `<div>标签` 包裹，要么使用明确的 `<Fragment>标签`
+简写 `<></>` 无法接受 `key` 值，所以要么使用 `<div>标签` 包裹，要么使用明确的 `<Fragment>标签`
 
 ```jsx
 import { Fragment } from "react";

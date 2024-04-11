@@ -30,7 +30,7 @@ outline: deep
 
 :::code-group
 
-```jsx [error]
+```jsx [wrong]
 export default function Clock({ time }) {
   let hours = time.getHours();
   if (hours >= 0 && hours <= 6) {
@@ -42,7 +42,7 @@ export default function Clock({ time }) {
 }
 ```
 
-```jsx [right]
+```jsx [correct]
 export default function Clock({ time }) {
   let hours = time.getHours();
   let className;
@@ -67,7 +67,7 @@ export default function Clock({ time }) {
 
 :::code-group
 
-```jsx [error]
+```jsx [wrong]
 import Panel from "./Panel.js";
 import { getImageUrl } from "./utils.js";
 
@@ -100,7 +100,7 @@ function Avatar() {
 }
 ```
 
-```jsx [right]
+```jsx [correct]
 import Panel from "./Panel.js";
 import { getImageUrl } from "./utils.js";
 

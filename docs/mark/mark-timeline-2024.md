@@ -14,7 +14,7 @@ const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26,
 /* 四月数据 */
 const APRI = ref(new Array(30).fill(0))
 const apriMax = ref(0)
-const apriDate = [1, 2, 3, 7, 8, 9, 10, 10]
+const apriDate = [1, 2, 3, 7, 8, 9, 10, 10, 11]
 
 
 const { monColor, monthInit } = useMonthCompute()
@@ -63,7 +63,8 @@ onMounted(() => {
 [HTTP](/http/HTTP-request-and-response-header) <Badge type="tip" text="前端基础" />
 
 [Vue3](/vue3/get-component-instance-in-setup) &nbsp;
-[React](/react/avoid-mutation) <Badge type="tip" text="框架" />
+[React](/react/avoid-mutation) &nbsp;
+[React Native](/react-native/styleSheet) <Badge type="tip" text="框架" />
 
 [Git](/git/01-git-pull-repository) &nbsp;
 [SQL](/sql/my-sql-single-table-operation) &nbsp;
@@ -90,6 +91,8 @@ onMounted(() => {
   >
   </div>
 </div>
+
+[StyleSheet](/react-native/styleSheet) `/` [React Native](/react-native/styleSheet) `/` `2024-04-11`
 
 [windicss to tailwindcss](/css/windicss-to-tailwindcss) `/` [CSS](/css/gradient-color) `/` `2024-04-10`
 

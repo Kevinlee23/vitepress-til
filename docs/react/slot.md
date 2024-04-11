@@ -34,7 +34,7 @@ export default function Child({ children }) {
 
 默认插槽会通过 `props` 对象中的 `children` 属性传递
 
-## 2. 具名插槽
+## 2. 具名插槽 (named)
 
 具名插槽的用法是：将插槽内容通过 `props` 传递
 
