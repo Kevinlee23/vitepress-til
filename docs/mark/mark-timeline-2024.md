@@ -3,51 +3,13 @@ outline: deep
 ---
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import useMonthCompute from './use-month-compute'
+import MonthDisplay from '../.vitepress/theme/views/monthDisplay.vue'
 
 /* 三月数据 */
-const MAR = ref(new Array(31).fill(0))
-const marMax = ref(0)
 const marDate = [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27, 27, 27, 28, 28, 28, 28, 30]
-
 /* 四月数据 */
-const APRI = ref(new Array(30).fill(0))
-const apriMax = ref(0)
 const apriDate = [1, 2, 3, 7, 8, 9, 10, 10, 11]
-
-
-const { monColor, monthInit } = useMonthCompute()
-
-onMounted(() => {
-  monthInit(MAR, marDate, marMax) // 初始化三月
-  monthInit(APRI, apriDate, apriMax) // 初始化三月
-})
 </script>
-
-<style module lang="scss">
-.block-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
-  max-width: 92px;
-}
-
-.block {
-  width: 12px;
-  height: 12px;
-  border-radius: 2.5px;
-  cursor: pointer;
-
-  &:hover {
-    border-width: 1px;
-    border-color: #000;
-    border-style: solid;
-  }
-}
-</style>
 
 # 归档
 
@@ -82,15 +44,7 @@ onMounted(() => {
 
 ### 四月
 
-<div :class="$style['block-container']">
-  <div
-    v-for="(item, index) in monColor('2024-04-01', '2024-04-30', APRI, apriDate, apriMax)"
-    :key="index"
-    :class="$style.block" :style="{backgroundColor: item.color}"
-    :title="`日期: ${item.text}; 笔记数: ${item.num}`"
-  >
-  </div>
-</div>
+<MonthDisplay :markedDate="apriDate" :year="2024" :month="4" :length="30" />
 
 [StyleSheet](/react-native/styleSheet) `/` [React Native](/react-native/styleSheet) `/` `2024-04-11`
 
@@ -112,15 +66,7 @@ onMounted(() => {
 
 ### 三月
 
-<div :class="$style['block-container']">
-  <div
-    v-for="(item, index) in monColor('2024-03-01', '2024-03-31', MAR, marDate, marMax)"
-    :key="index"
-    :class="$style.block" :style="{backgroundColor: item.color}"
-    :title="`日期: ${item.text}; 笔记数: ${item.num}`"
-  >
-  </div>
-</div>
+<MonthDisplay :markedDate="marDate" :year="2024" :month="3" :length="31" />
 
 [tailwind 常用写法](/css/tailwind-basic) <Badge type="warning" text="beta" /> `/` [CSS](/css/gradient-color) `/` `2024-03-30`
 

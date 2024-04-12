@@ -1,9 +1,12 @@
-import { computed } from "vue";
+import { ref, computed } from "vue";
 
 const NOT_THIS_MON_COLOR = "#c2c4c3";
 const FREQUENCY_COLOR = ["#ebedf0", "#9be9a8", "#30a14e", "#216e39"];
 
-export default function useMonthCompute() {
+export default function useMonthCompute(year: number, month: number, length: number) {
+  const monthDate = ref<number[]>(new Array(length).fill(0))
+  const monthMax = ref<number>(0)
+
   /**
    * 月份数据转化成 color:
    * 深灰色(不属于这个月的数据)
@@ -13,8 +16,8 @@ export default function useMonthCompute() {
    * 深绿(最大文章数的日期)
    */
   const monColor = computed(() => {
-    return (firstDay, lastDay, MON, monDate, monMax) => {
-      const fDay = new Date(firstDay).getDay();
+    return (markedDate: number[]) => {
+      const fDay = new Date(`${year}-${month}-01`).getDay();
       const prefixLength = fDay === 0 ? 6 : fDay - 1;
       const prefixArr = new Array(prefixLength).fill({
         text: "last",
@@ -22,7 +25,7 @@ export default function useMonthCompute() {
         num: "null",
       });
 
-      const lDay = new Date(lastDay).getDay();
+      const lDay = new Date(`${year}-${month}-${length}`).getDay();
       const suffixLength = lDay === 0 ? 0 : 7 - lDay;
       const suffixArr = new Array(suffixLength).fill({
         text: "next",
@@ -30,13 +33,14 @@ export default function useMonthCompute() {
         num: "null",
       });
 
-      const arr = new Array(monDate.length).fill(null);
-      const addDay = monDate.length;
-      const fillDay = new Set(monDate).size;
-      MON.map((num, index) => {
+      const _length = markedDate.length
+      const arr = new Array(_length).fill(null);
+      const addDay = _length;
+      const fillDay = new Set(markedDate).size;
+      monthDate.value.map((num, index) => {
         if (num === 0) {
           arr[index] = { text: index + 1, color: FREQUENCY_COLOR[0], num };
-        } else if (num === monMax && num >= 3) {
+        } else if (num === monthMax.value && num >= 3) {
           arr[index] = { text: index + 1, color: FREQUENCY_COLOR[3], num };
         } else if (num > addDay / fillDay) {
           arr[index] = { text: index + 1, color: FREQUENCY_COLOR[2], num };
@@ -60,12 +64,12 @@ export default function useMonthCompute() {
   });
 
   // 月份初始化
-  const monthInit = (MON, monDate, monMax) => {
-    monDate.map((day) => {
-      MON.value[day - 1]++;
+  const monthInit = (markedDate: number[]) => {
+    markedDate.map((day) => {
+      monthDate.value[day - 1]++;
     });
-    MON.value.map((num) => {
-      monMax.value = Math.max(monMax.value, num);
+    monthDate.value.map((num) => {
+      monthMax.value = Math.max(monthMax.value, num);
     });
   };
 
