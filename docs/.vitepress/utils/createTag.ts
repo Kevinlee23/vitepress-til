@@ -1,22 +1,37 @@
+// 归档标签
 export interface TagItem {
   title: string,
   link: string
 }
 
+// 归档标签组
 export interface TagGroup {
   groupName: string,
   items: TagItem[]
 }
-
+  
+// 特殊归档标签
 export interface TagStatus {
   type: string,
   text: string
 }
 
+export type StautsItem = "BETA" | "MERGED" | "UPDATED" | "";
+
+// 归档链接
+export interface Link {
+  title: string;
+  link: string;
+  tagName: string;
+  createDate: string;
+  tagStatus?: StautsItem
+}
+
+// 链接特殊标记
 export const tagStatusMap = {
-  'BETA': { type: 'warning', text: 'beta' },
-  'MERGED': { type: 'danger', text: 'merged' },
-  'UPDATED': { type: 'info', text: 'updated' }
+  'BETA': { type: 'warning', text: 'Beta' },
+  'MERGED': { type: 'danger', text: 'Merged' },
+  'UPDATED': { type: 'tip', text: 'Updated' }
 }
 
 export function createTag(): TagGroup[] {

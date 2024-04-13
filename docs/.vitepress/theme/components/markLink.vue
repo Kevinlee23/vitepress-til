@@ -1,20 +1,14 @@
 <script lang="ts" setup>
 import { type PropType, computed } from "vue";
-import { type TagItem, tagStatusMap as statusMap } from "../../utils/createTag";
-
-interface Link {
-  title: string;
-  link: string;
-  tagName: string;
-  createDate: string;
-}
-
-type StautsItem = "BETA" | "MERGED" | "UPDATED" | "";
+import {
+  type TagItem,
+  type Link,
+  tagStatusMap as statusMap,
+} from "../../utils/createTag";
 
 const props = defineProps({
   model: { type: Object as PropType<Link>, required: true },
   tagsMap: { type: Object as PropType<Array<TagItem>>, required: true },
-  tagStatus: { type: String as PropType<StautsItem>, default: "" },
 });
 
 const hostpath = "/vitepress-til";
@@ -30,9 +24,9 @@ const tagLink = computed(() =>
       <span class="link-icon">↗</span>
     </a>
     <Badge
-      v-if="tagStatus"
-      :type="statusMap[tagStatus].type"
-      :text="statusMap[tagStatus].text"
+      v-if="model.tagStatus"
+      :type="statusMap[model.tagStatus].type"
+      :text="statusMap[model.tagStatus].text"
     />
     /
     <a :href="`${hostpath}${tagLink?.link}`" target="_blank">

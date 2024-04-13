@@ -24,7 +24,7 @@ const handleCopy = () => {
 <template>
   <div class="btn" @click="handleCopy">{{ text }}</div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .btn {
   width: fit-content;
   margin-left: 8px;

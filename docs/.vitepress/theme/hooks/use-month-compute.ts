@@ -1,7 +1,13 @@
 import { ref, computed } from "vue";
 
-const NOT_THIS_MON_COLOR = "#c2c4c3";
-const FREQUENCY_COLOR = ["#ebedf0", "#9be9a8", "#30a14e", "#216e39"];
+interface DayItem {
+  text: string | number,
+  color: string,
+  num: string | number
+}
+
+const NOT_THIS_MON_COLOR: string = "#c2c4c3";
+const FREQUENCY_COLOR: string[] = ["#ebedf0", "#9be9a8", "#30a14e", "#216e39"];
 
 export default function useMonthCompute(year: number, month: number, length: number) {
   const monthDate = ref<number[]>(new Array(length).fill(0))
@@ -50,7 +56,7 @@ export default function useMonthCompute(year: number, month: number, length: num
       });
 
       const allDay = [...prefixArr, ...arr, ...suffixArr];
-      const result = [];
+      const result: DayItem[] = [];
       const xLen = 7;
       const yLen = allDay.length / 7;
       for (let x = 1; x < xLen + 1; x++) {
