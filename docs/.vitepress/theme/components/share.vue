@@ -24,17 +24,21 @@ const handleCopy = () => {
 <template>
   <div class="btn" @click="handleCopy">{{ text }}</div>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 .btn {
   width: fit-content;
-  margin-left: 10px;
-  padding: 8px 16px;
+  margin-left: 8px;
+  padding: 8px;
 
   font-size: 14px;
+  font-weight: 600;
   line-height: 18px;
-  color: white;
-  background-color: #407d53;
   border-radius: 4px;
   cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: #407d53;
+  }
 }
 </style>

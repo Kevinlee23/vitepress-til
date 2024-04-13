@@ -40,6 +40,7 @@ onMounted(() => {
   gap: 8px;
   margin-top: 10px;
   max-width: 92px;
+  margin-bottom: 16px;
 }
 
 .block {

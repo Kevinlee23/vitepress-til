@@ -6,7 +6,7 @@
 <script setup lang="ts">
 import share from "./share.vue";
 </script>
-<style scoped>
+<style>
 /* 仅在侧边栏不显示时显示这部分 */
 .aside-top-container {
   padding-top: 9px;
