@@ -9,10 +9,12 @@ interface Link {
   createDate: string;
 }
 
+type StautsItem = "BETA" | "MERGED" | "UPDATED" | "";
+
 const props = defineProps({
   model: { type: Object as PropType<Link>, required: true },
   tagsMap: { type: Object as PropType<Array<TagItem>>, required: true },
-  tagStatus: { type: String, default: "" },
+  tagStatus: { type: String as PropType<StautsItem>, default: "" },
 });
 
 const hostpath = "/vitepress-til";
@@ -23,14 +25,20 @@ const tagLink = computed(() =>
 
 <template>
   <div class="link-card">
-    <a :href="`${hostpath}${model.link}`">{{ model.title }}</a>
+    <a :href="`${hostpath}${model.link}`" target="_blank">
+      {{ model.title }}
+      <span class="link-icon">↗</span>
+    </a>
     <Badge
       v-if="tagStatus"
       :type="statusMap[tagStatus].type"
       :text="statusMap[tagStatus].text"
     />
     /
-    <a :href="`${hostpath}${tagLink?.link}`">{{ model.tagName }}</a>
+    <a :href="`${hostpath}${tagLink?.link}`" target="_blank">
+      {{ model.tagName }}
+      <span class="link-icon">↗</span>
+    </a>
     /
     <span class="link-create">{{ model.createDate }}</span>
   </div>
@@ -39,14 +47,28 @@ const tagLink = computed(() =>
 .link-card {
   padding: 8px 0px;
 
+  .link-icon {
+    position: absolute;
+    top: -4px;
+    right: 0px;
+    display: none;
+    font-size: 12px;
+  }
+
   a {
+    position: relative;
     padding: 4px;
     font-size: 14px;
     border-radius: 8px;
     text-decoration: none;
     &:hover {
+      padding-right: 8px;
       color: #2c9678;
       background-color: rgba(142, 150, 170, 0.14);
+
+      .link-icon {
+        display: inline;
+      }
     }
   }
 }

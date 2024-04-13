@@ -51,8 +51,17 @@ onMounted(() => {
 
   &:hover {
     border-width: 1px;
-    border-color: #000;
+    border-color: black;
     border-style: solid;
+  }
+}
+
+// 深色模式
+.dark {
+  .block {
+    &:hover {
+      border-color: white;
+    }
   }
 }
 </style>

@@ -30,5 +30,11 @@ const hostpath = "/vitepress-til";
   .tag-item {
     padding-right: 12px;
   }
+
+  a {
+    &:hover {
+      color: #2c9678;
+    }
+  }
 }
 </style>

@@ -7,7 +7,7 @@ export default {
   ...DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      "aside-top": () => h(asideTop)
+      "aside-top": () => h(asideTop),
     })
   }
 }
