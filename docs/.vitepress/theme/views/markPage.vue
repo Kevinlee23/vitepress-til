@@ -9,7 +9,6 @@ defineProps({
   month: { type: Number, required: true },
   length: { type: Number, required: true },
   monthLink: { type: Object as PropType<Array<Link>>, required: true },
-  monthDate: { type: Array<number>, required: true },
   markedDate: { type: Array<number>, required: true },
   tagsMap: { type: Object as PropType<Array<TagItem>>, required: true },
 });
@@ -18,7 +17,7 @@ defineProps({
 <template>
   <!-- 月份笔记监视视图 -->
   <MonthDisplay
-    :markedDate="monthDate"
+    :markedDate="markedDate"
     :year="year"
     :month="month"
     :length="length"

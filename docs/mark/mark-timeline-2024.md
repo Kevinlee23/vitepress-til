@@ -36,8 +36,8 @@ tagGroups.map(group => {
 
 ### 四月
 
-<MarkPage :monthLink="apriLink" :monthDate="apriDate" :markedDate="apriDate" :tagsMap="tagsMap" :year="2024" :month="4" :length="30" />
+<MarkPage :monthLink="apriLink" :markedDate="apriDate" :tagsMap="tagsMap" :year="2024" :month="4" :length="30" />
 
 ### 三月
 
-<MarkPage :monthLink="marLink" :monthDate="marDate" :markedDate="marDate" :tagsMap="tagsMap" :year="2024" :month="3" :length="31" />
+<MarkPage :monthLink="marLink" :markedDate="marDate" :tagsMap="tagsMap" :year="2024" :month="3" :length="31" />

@@ -3,11 +3,11 @@ import type { Link } from '../utils/createTag'
 type Month = 'MAR' | 'APRI'
 
 type MarkDate = {
-  [K in Month]: number[]
+  [K in Month]?: number[]
 }
 
 type MarkData = {
-  [K in Month]: Link[]
+  [K in Month]?: Link[]
 }
 
 
