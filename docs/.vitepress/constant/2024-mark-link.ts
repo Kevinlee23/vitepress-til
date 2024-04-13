@@ -1,6 +1,6 @@
 import type { Link } from '../utils/createTag'
 
-type Month = 'MAR' | 'APRI'
+type Month = 'DEC' | 'NOV' | 'OCT' | 'SEPT' | 'AUG' | 'JUL' | 'JUN' | 'MAY' | 'APRI' | 'MAR' | 'FEB' | 'JAN'
 
 type MarkDate = {
   [K in Month]?: number[]
@@ -17,6 +17,16 @@ export const markDate: MarkDate = {
 }
 
 export const markData: MarkData = {
+  'APRI': [
+    { title: 'StyleSheet', link: '/react-native/styleSheet', tagName: 'React Native', createDate: '2024-04-11' },
+    { title: 'windicss to tailwindcss', link: '/css/windicss-to-tailwindcss', tagName: 'CSS', createDate: '2024-04-10' },
+    { title: 'tailwind 自定义颜色', link: '/css/tailwind-customizing-colors', tagName: 'CSS', createDate: '2024-04-09' },
+    { title: '获取 element 的 style 对象', link: '/css/get-computed-style', tagName: 'CSS', createDate: '2024-04-08' },
+    { title: '移动端适配', link: '/css/mobile-adaptation', tagName: 'CSS', createDate: '2024-04-07' },
+    { title: 'vue3-vite-ts 报错汇总', link: '/fix/fix-vue3-ts-error', tagName: 'Error Fix', createDate: '2024-04-03' },
+    { title: 'docker 和 compose 的区别', link: '/docker/docker-and-compose', tagName: 'Docker', createDate: '2024-04-02' },
+    { title: '创建文件临时路径', link: '/javascript/create-object-url', tagName: 'Javascript', createDate: '2024-04-01' },
+  ],
   'MAR': [
     { title: 'tailwind 常用写法', link: '/css/tailwind-basic', tagName: 'CSS', createDate: '2024-03-30', tagStatus: 'BETA' },
     { title: 'Vite-config', link: '/vue3/vite-config', tagName: 'Vue3', createDate: '2024-03-28', tagStatus: 'BETA' },
@@ -45,14 +55,25 @@ export const markData: MarkData = {
     { title: '熊家菜谱(新增利村牛肉)', link: '/ordinary/cook-menu', tagName: 'Ordinary', createDate: '2024-03-13', tagStatus: 'UPDATED' },
     { title: 'vitepress-deploy-in-github-page', link: '/config/vitepress-deploy-in-github-page', tagName: 'Config', createDate: '2024-03-12' },
   ],
-  'APRI': [
-    { title: 'StyleSheet', link: '/react-native/styleSheet', tagName: 'React Native', createDate: '2024-04-11' },
-    { title: 'windicss to tailwindcss', link: '/css/windicss-to-tailwindcss', tagName: 'CSS', createDate: '2024-04-10' },
-    { title: 'tailwind 自定义颜色', link: '/css/tailwind-customizing-colors', tagName: 'CSS', createDate: '2024-04-09' },
-    { title: '获取 element 的 style 对象', link: '/css/get-computed-style', tagName: 'CSS', createDate: '2024-04-08' },
-    { title: '移动端适配', link: '/css/mobile-adaptation', tagName: 'CSS', createDate: '2024-04-07' },
-    { title: 'vue3-vite-ts 报错汇总', link: '/fix/fix-vue3-ts-error', tagName: 'Error Fix', createDate: '2024-04-03' },
-    { title: 'docker 和 compose 的区别', link: '/docker/docker-and-compose', tagName: 'Docker', createDate: '2024-04-02' },
-    { title: '创建文件临时路径', link: '/javascript/create-object-url', tagName: 'Javascript', createDate: '2024-04-01' },
-  ]
 }
+
+export const allMonthShort: Month[] = ['DEC', 'NOV', 'OCT', 'SEPT', 'AUG', 'JUL', 'JUN', 'MAY', 'APRI', 'MAR', 'FEB', 'JAN']
+
+const showNum: number = 10
+
+let res: number = showNum
+let list: Link[] = []
+allMonthShort.map(mon => {
+  let data: Link[] = markData[mon] || []
+  if (res !== 0) {
+    if (data.length > res) {
+      list.push(...data.slice(0, res))
+      res = 0
+    } else {
+      list.push(...data)
+      res -= data.length
+    }
+  }
+})
+
+console.log(list)
