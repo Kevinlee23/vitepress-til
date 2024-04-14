@@ -74,4 +74,14 @@ const tagLink = computed(() =>
   color: rgb(52, 81, 178);
   background-color: rgba(142, 150, 170, 0.14);
 }
+
+.dark {
+  .link-card {
+    a {
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
 </style>
