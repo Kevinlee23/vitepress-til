@@ -5,5 +5,5 @@
 
 [OSS](/oss/get-sts)
 
-[Docker](/docker/docker-and-compose)
+[Docker](/docker/docker-basic)
 :::

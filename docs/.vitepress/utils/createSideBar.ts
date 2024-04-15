@@ -392,6 +392,30 @@ export function createSidebar() {
         text: "docker",
         items: [
           {
+            text: "Docker 基础",
+            link: "/docker/docker-basic",
+          },
+          {
+            text: "Docker 使用镜像",
+            link: "/docker/docker-image",
+          },
+          {
+            text: "Docker 操作容器",
+            link: "/docker/docker-container",
+          },
+          {
+            text: "Docker 数据管理",
+            link: "/docker/docker-data-manage",
+          },
+          {
+            text: "Docker 使用网络",
+            link: "/docker/docker-network",
+          },
+          {
+            text: "Dockerfile",
+            link: "/docker/docker-dockerfile",
+          },
+          {
             text: "docker 和 compose 的区别",
             link: "/docker/docker-and-compose",
           },

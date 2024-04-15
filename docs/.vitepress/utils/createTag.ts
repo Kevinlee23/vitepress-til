@@ -58,7 +58,7 @@ export function createTag(): TagGroup[] {
         { title: 'Git', link: '/git/01-git-pull-repository' },
         { title: 'SQL', link: '/sql/my-sql-single-table-operation' },
         { title: 'OSS', link: '/oss/get-sts' },
-        { title: 'Docker', link: '/docker/docker-and-compose' },
+        { title: 'Docker', link: '/docker/docker-basic' },
       ]
     },
     {

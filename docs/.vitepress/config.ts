@@ -41,7 +41,7 @@ export default defineConfig({
           { text: "webpack", link: "..." },
           { text: "SQL", link: "/sql/my-sql-single-table-operation" },
           { text: "OSS", link: "/oss/get-sts" },
-          { text: "Docker", link: "/docker/docker-and-compose" },
+          { text: "Docker", link: "/docker/docker-basic" },
         ],
       },
       {

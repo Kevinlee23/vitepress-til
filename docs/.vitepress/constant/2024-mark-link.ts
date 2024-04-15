@@ -13,11 +13,12 @@ type MarkData = {
 
 export const markDate: MarkDate = {
   'MAR': [12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27, 27, 27, 28, 28, 28, 28, 30],
-  'APRI': [1, 2, 3, 7, 8, 9, 10, 10, 11]
+  'APRI': [1, 2, 3, 7, 8, 9, 10, 10, 11, 15]
 }
 
 export const markData: MarkData = {
   'APRI': [
+    { title: 'Docker 系列 6篇基础笔记', link: '/docker/docker-basic', tagName: 'Docker', createDate: '2024-04-11' },
     { title: 'StyleSheet', link: '/react-native/styleSheet', tagName: 'React Native', createDate: '2024-04-11' },
     { title: 'windicss to tailwindcss', link: '/css/windicss-to-tailwindcss', tagName: 'CSS', createDate: '2024-04-10' },
     { title: 'tailwind 自定义颜色', link: '/css/tailwind-customizing-colors', tagName: 'CSS', createDate: '2024-04-09' },
@@ -75,5 +76,3 @@ allMonthShort.map(mon => {
     }
   }
 })
-
-console.log(list)
