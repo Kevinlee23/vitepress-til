@@ -60,19 +60,24 @@ export const markData: MarkData = {
 
 export const allMonthShort: Month[] = ['DEC', 'NOV', 'OCT', 'SEPT', 'AUG', 'JUL', 'JUN', 'MAY', 'APRI', 'MAR', 'FEB', 'JAN']
 
-const showNum: number = 10
+const showNum: number = 5
 
-let res: number = showNum
-let list: Link[] = []
-allMonthShort.map(mon => {
-  let data: Link[] = markData[mon] || []
-  if (res !== 0) {
-    if (data.length > res) {
-      list.push(...data.slice(0, res))
-      res = 0
-    } else {
-      list.push(...data)
-      res -= data.length
+export const getNewNBlogs = (n: number = showNum): Link[] => {
+  let res: number = showNum
+  let list: Link[] = []
+
+  allMonthShort.map(mon => {
+    let data: Link[] = markData[mon] || []
+    if (res !== 0) {
+      if (data.length > res) {
+        list.push(...data.slice(0, res))
+        res = 0
+      } else {
+        list.push(...data)
+        res -= data.length
+      }
     }
-  }
-})
+  })
+
+  return list
+}

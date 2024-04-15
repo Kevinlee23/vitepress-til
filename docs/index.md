@@ -33,6 +33,12 @@ features:
     link: /3-party-map
 ---
 
+<script setup>
+import NewBlogs from './.vitepress/theme/views/newBlogs.vue'
+</script>
+
+<new-blogs />
+
 **技术栈:**
 [![My Skills](https://skillicons.dev/icons?i=js,ts,tailwind,vue,vite,nuxtjs,pinia,git,mongodb,nodejs,npm,pnpm,yarn)](https://skillicons.dev)
 
