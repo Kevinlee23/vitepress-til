@@ -83,5 +83,10 @@ const tagLink = computed(() =>
       }
     }
   }
+
+  .link-create {
+    color: white;
+    background-color: #2c9678;
+  }
 }
 </style>

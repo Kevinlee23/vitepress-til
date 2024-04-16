@@ -52,31 +52,49 @@ const handleTo = (link: string) => {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
     min-height: 100px;
     padding: 10px;
 
     border-radius: 8px;
     background-color: #f6f6f7;
 
+    font-weight: 500;
+    color: black;
+
     cursor: pointer;
-
-    &:hover {
-      color: white;
-      background-color: #2c9678;
-
-      transform: translateX(-10px) translateY(-10px);
-
-      .blog-tag {
-        color: white;
-      }
-    }
 
     .blog-tag {
       font-size: 12px;
       font-weight: 500;
       text-align: right;
       color: #2c9678;
+    }
+
+    &:hover {
+      color: white;
+      background-color: #2c9678 !important;
+
+      transform: translateX(-10px) translateY(-10px);
+
+      .blog-tag {
+        color: white !important;
+      }
+    }
+
+
+  }
+}
+
+.dark {
+  .new-blogs-box {
+    .new-blog-item {
+      background-color: #202127;
+      color: white;
+
+      .blog-tag {
+        color: #ebebf599;
+      }
     }
   }
 }
