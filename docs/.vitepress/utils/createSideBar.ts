@@ -309,6 +309,10 @@ export function createSidebar() {
             text: "请求头和响应头",
             link: "/http/HTTP-request-and-response-header",
           },
+          {
+            text: "CORS",
+            link: "/http/CORS"
+          }
         ],
       },
       { text: "返回上层", link: "/front-end-map" },
