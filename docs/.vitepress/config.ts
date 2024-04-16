@@ -56,7 +56,7 @@ export default defineConfig({
 
     // https://vitepress.dev/zh/reference/default-theme-config#sociallinks
     socialLinks: [
-      { icon: "github", link: "https://github.com/Kevinlee23/TIL" },
+      { icon: "github", link: "https://github.com/Kevinlee23/vitepress-til" },
     ],
 
     // https://github.com/lucaong/minisearch/

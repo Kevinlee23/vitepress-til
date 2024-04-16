@@ -2,7 +2,8 @@
 import { getNewNBlogs } from "../../constant/2024-mark-link";
 import type { Link } from "../../utils/createTag";
 
-const newBlogs: Link[] = getNewNBlogs();
+const newNum = 10
+const newBlogs: Link[] = getNewNBlogs(newNum);
 
 const handleTo = (link: string) => {
   window.location.href = "/vitepress-til" + link;
@@ -11,7 +12,7 @@ const handleTo = (link: string) => {
 
 <template>
   <div class="new-blog-container">
-    <div class="new-blog-title">最新笔记</div>
+    <div class="new-blog-title">最新笔记 (Top {{ newNum }})</div>
     <div class="new-blog-grid">
       <div
         v-for="(blog, index) in newBlogs"
@@ -21,7 +22,10 @@ const handleTo = (link: string) => {
       >
         <div class="new-blog-item">
           {{ blog.title }}
-          <div class="blog-tag">{{ blog.tagName }}</div>
+          <div class="blog-item-sub">
+            <div>{{ blog.createDate }}</div>
+            <div class="blog-tag">{{ blog.tagName }}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -46,7 +50,13 @@ const handleTo = (link: string) => {
 }
 
 .new-blogs-box {
-  position: relative;
+  background-color: #f6f6f7;
+  border-radius: 8px;
+
+  font-weight: 500;
+  color: black;
+
+  cursor: pointer;
 
   .new-blog-item {
     display: flex;
@@ -57,45 +67,41 @@ const handleTo = (link: string) => {
     padding: 10px;
 
     border-radius: 8px;
-    background-color: #f6f6f7;
 
-    font-weight: 500;
-    color: black;
+    .blog-item-sub {
+      display: flex;
+      justify-content: space-between;
 
-    cursor: pointer;
-
-    .blog-tag {
       font-size: 12px;
-      font-weight: 500;
-      text-align: right;
-      color: #2c9678;
+      .blog-tag {
+        text-align: right;
+        color: #2c9678;
+      }
     }
+  }
 
-    &:hover {
-      color: white;
+  &:hover {
+    background-color: #83cbac !important;
+
+    .new-blog-item {
+      color: white !important;
       background-color: #2c9678 !important;
 
       transform: translateX(-10px) translateY(-10px);
-
-      .blog-tag {
-        color: white !important;
+      .blog-item-sub {
+        .blog-tag {
+          color: white !important;
+        }
       }
     }
-
-
   }
 }
 
 .dark {
   .new-blogs-box {
-    .new-blog-item {
-      background-color: #202127;
-      color: white;
+    background-color: #202127;
 
-      .blog-tag {
-        color: #ebebf599;
-      }
-    }
+    color: white;
   }
 }
 </style>

@@ -64,7 +64,7 @@ export const allMonthShort: Month[] = ['DEC', 'NOV', 'OCT', 'SEPT', 'AUG', 'JUL'
 const showNum: number = 5
 
 export const getNewNBlogs = (n: number = showNum): Link[] => {
-  let res: number = showNum
+  let res: number = n
   let list: Link[] = []
 
   allMonthShort.map(mon => {
