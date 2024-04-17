@@ -294,6 +294,10 @@ export function createSidebar() {
             text: "我的精酿地图",
             link: "/ordinary/my-craft-beer-map",
           },
+          {
+            text: '2024 目标',
+            link: '/ordinary/2024-goals.md'
+          }
         ],
       },
       {
