@@ -13,6 +13,7 @@ export interface ISideBar {
   [MY_TAB.VUE3]: IItems[];
   [MY_TAB.REACT]: IItems[];
   [MY_TAB.REACT_NATIVE]: IItems[];
+  [MY_TAB.NEST]: IItems[];
   [MY_TAB.CONFIG]: IItems[];
   [MY_TAB.FIX]: IItems[];
   [MY_TAB.MARK]: IItems[];
@@ -33,6 +34,7 @@ export enum MY_TAB {
   VUE3 = "/vue3/",
   REACT = "/react/",
   REACT_NATIVE = "/react-native/",
+  NEST = "/nest/",
   CONFIG = "/config/",
   FIX = "/fix/",
   MARK = "/mark/",
@@ -42,7 +44,7 @@ export enum MY_TAB {
   SQL = "/sql/",
   OSS = "/oss/",
   DOCKER = "/docker/",
-  THREE_PARTY_LIBRARY = "/3-party-library/"
+  THREE_PARTY_LIBRARY = "/3-party-library/",
 }
 
 export function createSidebar() {
@@ -222,11 +224,12 @@ export function createSidebar() {
     "/react-native/": [
       {
         text: "RN (React Mative)",
-        items: [
-          { text: "RN 中样式的写法", link: "/react-native/styleSheet" },
-        ],
+        items: [{ text: "RN 中样式的写法", link: "/react-native/styleSheet" }],
       },
       { text: "返回上层", link: "/framework-map" },
+    ],
+    "/nest/": [
+      { text: "NestJs", items: [{ text: "dto", link: "/nest/dto-map" }] },
     ],
     "/config/": [
       {
@@ -295,9 +298,9 @@ export function createSidebar() {
             link: "/ordinary/my-craft-beer-map",
           },
           {
-            text: '2024 目标',
-            link: '/ordinary/2024-goals.md'
-          }
+            text: "2024 目标",
+            link: "/ordinary/2024-goals.md",
+          },
         ],
       },
       {
@@ -315,8 +318,8 @@ export function createSidebar() {
           },
           {
             text: "CORS",
-            link: "/http/CORS"
-          }
+            link: "/http/CORS",
+          },
         ],
       },
       { text: "返回上层", link: "/front-end-map" },
@@ -445,7 +448,7 @@ export function createSidebar() {
       },
       { text: "返回上层", link: "/3-party-map" },
     ],
-  }
+  };
 
-  return res
+  return res;
 }

@@ -30,7 +30,7 @@ export default defineConfig({
           { text: "React", link: "/react/avoid-mutation" },
           { text: "React Native", link: "/react-native/styleSheet" },
           { text: "Nuxt", link: "..." },
-          { text: "NestJs", link: "..." },
+          { text: "NestJs", link: "/nest/dto-map" },
           { text: "qiankun", link: "..." },
         ],
       },
