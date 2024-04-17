@@ -229,7 +229,16 @@ export function createSidebar() {
       { text: "返回上层", link: "/framework-map" },
     ],
     "/nest/": [
-      { text: "NestJs", items: [{ text: "dto", link: "/nest/dto-map" }] },
+      {
+        text: "NestJs",
+        items: [
+          { text: "dto映射类型", link: "/nest/dto-map" },
+          {
+            text: "4种常用的http数据传输方式",
+            link: "/nest/data-send-by-http",
+          },
+        ],
+      },
     ],
     "/config/": [
       {
