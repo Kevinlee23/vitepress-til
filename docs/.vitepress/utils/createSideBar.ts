@@ -238,6 +238,7 @@ export function createSidebar() {
             text: "4种常用的http数据传输方式",
             link: "/nest/data-send-by-http",
           },
+          { text: "使用 setMeta 自定义 / 使用元数据", link: "/nest/set-meta" },
         ],
       },
       { text: "返回上层", link: "/framework-map" },

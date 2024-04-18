@@ -27,17 +27,23 @@ export const markDate: MarkDate = {
     12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27,
     27, 27, 28, 28, 28, 28, 30,
   ],
-  APRI: [1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18],
+  APRI: [1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18],
 };
 
 export const markData: MarkData = {
   APRI: [
     {
-      title: 'Nestjs - 基础概念',
-      link: '/nest/nest-basic',
-      tagName: 'NestJs',
-      createDate: '2024-04-18',
-      tagStatus: 'BETA'
+      title: "使用 setMeta 自定义 / 使用元数据",
+      link: "/nest/set-meta",
+      tagName: "NestJs",
+      createDate: "2024-04-18",
+    },
+    {
+      title: "Nestjs - 基础概念",
+      link: "/nest/nest-basic",
+      tagName: "NestJs",
+      createDate: "2024-04-18",
+      tagStatus: "BETA",
     },
     {
       title: "NestJs - 4种常用的http数据传输方式",
