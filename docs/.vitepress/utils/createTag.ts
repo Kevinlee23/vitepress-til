@@ -53,7 +53,7 @@ export function createTag(): TagGroup[] {
         { title: "Vue3", link: "/vue3/get-component-instance-in-setup" },
         { title: "React", link: "/react/avoid-mutation" },
         { title: "React Native", link: "/react-native/styleSheet" },
-        { title: "NestJs", link: "/nest/dto-map" },
+        { title: "NestJs", link: "/nest/nest-basic" },
       ],
     },
     {

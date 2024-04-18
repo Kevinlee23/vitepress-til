@@ -5,5 +5,5 @@
 
 [React Native](/react-native/styleSheet)
 
-[NestJs](/nest/dto-map)
+[NestJs](/nest/nest-basic)
 :::

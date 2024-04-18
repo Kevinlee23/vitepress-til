@@ -29,7 +29,7 @@ export default defineConfig({
           { text: "Vue3", link: "/vue3/get-component-instance-in-setup" },
           { text: "React", link: "/react/avoid-mutation" },
           { text: "React Native", link: "/react-native/styleSheet" },
-          { text: "NestJs", link: "/nest/dto-map" },
+          { text: "NestJs", link: "/nest/nest-basic" },
           { text: "Nuxt", link: "..." },
           { text: "qiankun", link: "..." },
         ],

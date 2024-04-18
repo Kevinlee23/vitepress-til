@@ -232,6 +232,7 @@ export function createSidebar() {
       {
         text: "NestJs",
         items: [
+          { text: "nest 基本概念", link: "/nest/nest-basic" },
           { text: "dto映射类型", link: "/nest/dto-map" },
           {
             text: "4种常用的http数据传输方式",
@@ -239,6 +240,7 @@ export function createSidebar() {
           },
         ],
       },
+      { text: "返回上层", link: "/framework-map" },
     ],
     "/config/": [
       {
