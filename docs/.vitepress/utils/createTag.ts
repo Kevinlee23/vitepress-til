@@ -16,13 +16,35 @@ export interface TagStatus {
   text: string;
 }
 
+// 特殊状态: 未完成, 合并到其他文件, 持续更新
 export type StautsItem = "BETA" | "MERGED" | "UPDATED" | "";
+// 具体分类
+export enum TagName {
+  Javascript = "Javascript",
+  JSCode = "JS Code",
+  Typescript = "TypeScript",
+  CSS = "CSS",
+  TypeCode = "类型编程",
+  HTTP = "HTTP",
+  Vue3 = "Vue3",
+  React = "React",
+  ReactNative = "React Native",
+  NestJs = "NestJs",
+  Git = "Git",
+  SQL = "SQL",
+  OSS = "OSS",
+  Docker = "Docker",
+  mockJs = "mockJs",
+  Config = "Config",
+  ErrorFix = "Error Fix",
+  Ordinary = "Ordinary",
+}
 
 // 归档链接
 export interface Link {
   title: string;
   link: string;
-  tagName: string;
+  tagName: TagName;
   createDate: string;
   tagStatus?: StautsItem;
 }
