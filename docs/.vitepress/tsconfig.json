@@ -1,22 +1,25 @@
 {
-	"compilerOptions": {
-		"types": ["node"],
-		"module": "esnext",
-		"target": "esnext",
-		"moduleResolution": "node",
-		"esModuleInterop": true,
-		"strict": true,
-		"skipLibCheck": true,
-		"noUnusedLocals": true,
-		"resolveJsonModule": true,
-		"verbatimModuleSyntax": true,
-		"jsx": "preserve",
-		"lib": ["esnext", "dom", "dom.iterable"]
-	},
-	"exclude": ["**/node_modules/**", "**/dist/**", "template"],
-	// other settings...
-	"ts-node": {
-		"esm": true,
-		"experimentalSpecifierResolution": "node"
-	}
+  // 编译器设置
+  "compilerOptions": {
+    "types": ["node"],
+    "module": "esnext", // 模块系统
+    "target": "esnext", // 指定输出 javascript 的 ECMAScript 目标版本
+    "moduleResolution": "node",
+    "esModuleInterop": true, // ESM, CJS, true (兼容)
+    "strict": true, // 启用严格类型检查选项
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "jsx": "preserve", // 决定 jsx 文件应如何被处理 (preserve, react, react-native)
+    "lib": ["esnext", "dom", "dom.iterable"] // 类型检查时要包含的库
+    // "outDir": "dist" // 指定编译 JavaScript 文件的输出目录
+    // "removeComments": true // 编译的代码中去除注释
+  },
+  "exclude": ["**/node_modules/**", "**/dist/**", "template"], // 忽略不想要编译的文件或目录
+  // other settings...
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
 }
