@@ -232,7 +232,8 @@ export function createSidebar() {
       {
         text: "NestJs",
         items: [
-          { text: "nest 基本概念", link: "/nest/nest-basic" },
+          { text: "基本概念", link: "/nest/nest-basic" },
+          { text: "项目结构", link: "/nest/structure" },
           {
             text: "4种常用的http数据传输方式",
             link: "/nest/data-send-by-http",
@@ -240,6 +241,7 @@ export function createSidebar() {
           { text: "dto映射类型", link: "/nest/dto-map" },
           { text: "使用 setMeta 自定义 / 使用元数据", link: "/nest/set-meta" },
           { text: "执行上下文", link: "/nest/context" },
+          { text: "pipe 管道", link: "/nest/pipe" },
         ],
       },
       { text: "返回上层", link: "/framework-map" },
@@ -413,7 +415,7 @@ export function createSidebar() {
     ],
     "/docker/": [
       {
-        text: "docker",
+        text: "docker 入门",
         items: [
           {
             text: "Docker 基础",

@@ -27,13 +27,25 @@ export const markDate: MarkDate = {
     12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27,
     27, 27, 28, 28, 28, 28, 30,
   ],
-  APRI: [1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19],
+  APRI: [1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20],
 };
 
 export const markData: MarkData = {
   APRI: [
     {
-      title: "执行上下文",
+      title: "NestJs - pipe 管道",
+      link: "/nest/pipe",
+      tagName: TagName.NestJs,
+      createDate: "2024-04-20",
+    },
+    {
+      title: "NestJs - 项目结构",
+      link: "/nest/structure",
+      tagName: TagName.NestJs,
+      createDate: "2024-04-20",
+    },
+    {
+      title: "NestJs - 执行上下文",
       link: "/nest/context",
       tagName: TagName.NestJs,
       createDate: "2024-04-19",
