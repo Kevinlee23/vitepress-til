@@ -48,6 +48,7 @@ import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 
 export interface Response<T> {
+  code: number;
   data: T;
 }
 
