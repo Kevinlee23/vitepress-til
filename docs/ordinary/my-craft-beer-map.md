@@ -2,7 +2,17 @@
 outline: deep
 ---
 
-# 我的精酿地图 <Badge type="danger" text="正在更新中" />
+# 我的精酿地图 <Badge type="danger" text="持续更新中" />
+
+## 记录总览
+
+已记录酒款: `14`
+
+今年目标:
+
+- `4` 款三泉 `1/4`
+- `2` 款康帝龙 `0/2`
+- `2` 款凯西 `1/2`
 
 ## 国内
 
@@ -21,6 +31,8 @@ outline: deep
 ![layout](/images/tucheng.jpeg)
 
 ### 大九 - 内蒙古
+
+#### 西柚世界
 
 #### 劝酒果子
 
