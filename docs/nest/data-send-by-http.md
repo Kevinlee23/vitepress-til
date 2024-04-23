@@ -16,7 +16,7 @@ export class PersonController {
 }
 ```
 
-## paramas
+## params
 
 `url`: `/api/person/findById/10`
 

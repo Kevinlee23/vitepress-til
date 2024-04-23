@@ -34,7 +34,7 @@ Request --> Middleware --> Guard --> pipe -> handler --> Exception Filter --> Re
 - 转型：将输入数据转换为所需的形式
 - 验证：评估输入数据，如果有效，只需将其原样传递；否则抛出异常
 
-pipe 中抛出异常后，由异常层处理，不会执行任何控制器方法
+`pipe` 中抛出异常后，由异常层处理，不会执行任何控制器方法
 
 ### Handler 执行逻辑
 
