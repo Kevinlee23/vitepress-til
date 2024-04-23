@@ -1,8 +1,8 @@
 # 移动端适配
 
-使用 `pxtorem` 插件
+使用 `pxtorem` 插件，媒体查询以及自己定制的函数
 
-## 安装
+## 安装 pxtorem 插件
 
 ```sh
 yarn add postcss-pxtorem -D
@@ -81,3 +81,32 @@ window.onresize = function () {
 ```
 
 在 `main.js(ts)` 中引入这个文件
+
+## 媒体查询
+
+进行多端开发的时候，需要利用 `css` - 媒体查询的能力来在移动端和桌面端之间切换样式，例如:
+
+```css
+@media (min-width: 991px) {
+  /* desktop style */
+}
+
+@media (max-width: 991ox) {
+  /* mobile style */
+}
+```
+
+## function of px to rem
+
+有些地方的尺寸不受 `pxtorem` 插件的影响，需要我们自己根据情况计算 `rem`
+
+```js
+function px2rem(px) {
+  if (/%/gi.test(px)) {
+    // 有百分号%，特殊处理，表述pc是一个有百分号的数，比如：90%
+    return px;
+  } else {
+    return parseFloat(px) / 37.5 + "rem"; // 这里的37.5，和rootValue值对应
+  }
+}
+```
