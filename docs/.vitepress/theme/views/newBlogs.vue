@@ -2,11 +2,11 @@
 import { getNewNBlogs } from "../../constant/2024-mark-link";
 import type { Link } from "../../utils/createTag";
 
-const newNum = 10
+const newNum = 10;
 const newBlogs: Link[] = getNewNBlogs(newNum);
 
 const handleTo = (link: string) => {
-  window.location.href = "/vitepress-til" + link;
+  window.open("/vitepress-til" + link);
 };
 </script>
 

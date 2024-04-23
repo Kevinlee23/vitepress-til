@@ -64,8 +64,8 @@ export const markData: MarkData = {
       createDate: "2024-04-19",
     },
     {
-      title: "使用 setMeta 自定义 / 使用元数据",
-      link: "/nest/set-meta",
+      title: "基于 RBAC 的授权",
+      link: "/nest/RBAC-role",
       tagName: TagName.NestJs,
       createDate: "2024-04-18",
     },

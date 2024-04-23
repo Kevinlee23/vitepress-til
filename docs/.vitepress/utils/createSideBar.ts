@@ -239,7 +239,7 @@ export function createSidebar() {
             link: "/nest/data-send-by-http",
           },
           { text: "dto映射类型", link: "/nest/dto-map" },
-          { text: "使用 setMeta 自定义 / 使用元数据", link: "/nest/set-meta" },
+          { text: "基于 RBAC 的授权", link: "/nest/RBAC-role" },
           { text: "context 执行上下文", link: "/nest/context" },
           { text: "pipe 管道", link: "/nest/pipe" },
           { text: "intercept 拦截器", link: "/nest/intercept" },
