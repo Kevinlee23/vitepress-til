@@ -88,6 +88,10 @@ const handleTo = (link: string) => {
       background-color: #2c9678 !important;
 
       transform: translateX(-10px) translateY(-10px);
+
+      /* right-bottom border  */
+      border-bottom: inset white 4px;
+      border-right: inset white 4px;
       .blog-item-sub {
         .blog-tag {
           color: white !important;
