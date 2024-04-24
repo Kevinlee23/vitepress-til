@@ -25,7 +25,7 @@ type MarkData = {
 export const markDate: MarkDate = {
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
-    24, 24,
+    24, 24, 24,
   ],
   MAR: [
     12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27,
@@ -35,6 +35,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   APRI: [
+    {
+      title: "NestJs - Swagger 接入",
+      link: "/nest/swagger",
+      tagName: TagName.NestJs,
+      createDate: "2024-04-24"
+    },
     {
       title: "NestJs - 数据传输校验",
       link: "/nest/validation-pipe",

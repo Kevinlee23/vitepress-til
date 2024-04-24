@@ -248,6 +248,10 @@ export function createSidebar() {
             text: "使用 validationPipe 进行数据传输校验",
             link: "/nest/validation-pipe",
           },
+          {
+            text: "OpenAPI - swagger 接入",
+            link: "/nest/swagger",
+          },
         ],
       },
       { text: "返回上层", link: "/framework-map" },
