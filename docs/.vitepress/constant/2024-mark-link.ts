@@ -23,7 +23,10 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  APRI: [1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23],
+  APRI: [
+    1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
+    24,
+  ],
   MAR: [
     12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27,
     27, 27, 28, 28, 28, 28, 30,
@@ -32,6 +35,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   APRI: [
+    {
+      title: "NestJs - 使用 jwt 进行身份验证",
+      link: "/nest/jwt-for-auth",
+      tagName: TagName.NestJs,
+      createDate: "2024-04-24",
+    },
     {
       title: "移动端适配",
       link: "/css/mobile-adaptation",

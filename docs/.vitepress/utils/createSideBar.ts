@@ -243,6 +243,7 @@ export function createSidebar() {
           { text: "context 执行上下文", link: "/nest/context" },
           { text: "pipe 管道", link: "/nest/pipe" },
           { text: "intercept 拦截器", link: "/nest/intercept" },
+          { text: "使用 jwt 进行身份验证", link: "/nest/jwt-for-auth" },
         ],
       },
       { text: "返回上层", link: "/framework-map" },
