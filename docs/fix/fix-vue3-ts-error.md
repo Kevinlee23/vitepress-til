@@ -24,3 +24,11 @@ declare module "*.vue" {
   }
 }
 ```
+
+## 解决 `<script lang="ts" setup>` 中引入 `js` 文件的问题
+
+```json
+{
+  "allowJs": true,
+}
+```
