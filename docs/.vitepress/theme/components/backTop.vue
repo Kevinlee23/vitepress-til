@@ -4,17 +4,17 @@
       v-if="y !== 0"
       class="go-top-button"
       style="position: fixed; right: 40px; bottom: 40px"
-      @click="handleToTop"
-    >
-      Go Top 👆
-    </div>
+      @click.stop="handleToTop"
+      v-html="content"
+    ></div>
   </Transition>
 </template>
 
 <script lang="ts" setup>
 import { useWindowScroll } from "@vueuse/core";
 
-const { y } = useWindowScroll();
+const content = "Go Top 👆";
+const { y } = useWindowScroll({ behavior: "smooth" });
 
 const handleToTop = () => {
   y.value = 0;

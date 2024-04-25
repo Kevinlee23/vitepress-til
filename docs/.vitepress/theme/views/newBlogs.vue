@@ -68,6 +68,12 @@ const handleTo = (link: string) => {
 
     border-radius: 8px;
 
+    // transition
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 400ms;
+    transition-delay: 200ms;
+
     .blog-item-sub {
       display: flex;
       justify-content: space-between;
