@@ -25,7 +25,7 @@ type MarkData = {
 export const markDate: MarkDate = {
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
-    24, 24, 24, 25
+    24, 24, 24, 25, 25,
   ],
   MAR: [
     12, 13, 13, 14, 15, 15, 16, 18, 19, 20, 20, 25, 26, 26, 26, 26, 27, 27, 27,
@@ -35,6 +35,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   APRI: [
+    {
+      title: "vu3 中引入静态文件",
+      link: "/vue3/import-static-file",
+      tagName: TagName.Vue3,
+      createDate: "2024-04-25",
+    },
     {
       title: "vue3-vite-ts 报错汇总",
       link: "/fix/fix-vue3-ts-error",
@@ -46,7 +52,7 @@ export const markData: MarkData = {
       title: "NestJs - Swagger 接入",
       link: "/nest/swagger",
       tagName: TagName.NestJs,
-      createDate: "2024-04-24"
+      createDate: "2024-04-24",
     },
     {
       title: "NestJs - 数据传输校验",

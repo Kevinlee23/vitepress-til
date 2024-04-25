@@ -184,6 +184,7 @@ export function createSidebar() {
           { text: "v-model", link: "/vue3/v-model" },
           { text: "watchEffect", link: "/vue3/watchEffect" },
           { text: "vue3-and-typescript", link: "/vue3/vue3-and-typescript" },
+          { text: "import-static-file", link: "/vue3/import-static-file" },
         ],
       },
       {
