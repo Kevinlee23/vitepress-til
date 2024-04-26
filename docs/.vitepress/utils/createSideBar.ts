@@ -141,6 +141,7 @@ export function createSidebar() {
           { text: "布局实例一", link: "/css/layout-1" },
           { text: "移动端适配", link: "/css/mobile-adaptation" },
           { text: "获取元素的 style", link: "/css/get-computed-style" },
+          { text: "使用 HSL 表示颜色", link: '/css/use-hsl-to-represent-color'}
         ],
       },
       {
