@@ -100,6 +100,7 @@ export function createSidebar() {
           { text: "filterSizeList", link: "/javascript/filterSizeList" },
           { text: "type-validate", link: "/javascript/type-validate" },
           { text: "get-server-time", link: "/javascript/get-server-time" },
+          { text: "matrix-function", link: "javascript/matrix-function" },
         ],
       },
       { text: "返回上层", link: "/front-end-map" },
@@ -141,7 +142,10 @@ export function createSidebar() {
           { text: "布局实例一", link: "/css/layout-1" },
           { text: "移动端适配", link: "/css/mobile-adaptation" },
           { text: "获取元素的 style", link: "/css/get-computed-style" },
-          { text: "使用 HSL 表示颜色", link: '/css/use-hsl-to-represent-color'}
+          {
+            text: "使用 HSL 表示颜色",
+            link: "/css/use-hsl-to-represent-color",
+          },
         ],
       },
       {
