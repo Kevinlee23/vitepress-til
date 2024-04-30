@@ -91,7 +91,7 @@ window.onresize = function () {
   /* desktop style */
 }
 
-@media (max-width: 991ox) {
+@media (max-width: 991px) {
   /* mobile style */
 }
 ```
