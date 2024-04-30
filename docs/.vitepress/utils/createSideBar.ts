@@ -168,7 +168,7 @@ export function createSidebar() {
           { text: "纵轴进度条", link: "/css/vertical-progress-bar" },
           { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
           { text: "布局实例<一>", link: "/css/layout-1" },
-          { text: "品牌宫格图", link: "/css/brand-grid" }
+          { text: "品牌宫格图", link: "/css/brand-grid" },
         ],
       },
       {
@@ -309,7 +309,10 @@ export function createSidebar() {
     "/mark/": [
       {
         text: "时间线",
-        items: [{ text: "2024", link: "/mark/mark-timeline-2024" }],
+        items: [
+          { text: "2024-04 代码统计", link: "/mark/2024-04" },
+          { text: "2024", link: "/mark/mark-timeline-2024" },
+        ],
       },
       { text: "返回上层", link: "/" },
     ],
