@@ -26,6 +26,20 @@ export const BLUE_COLOR_NAME = [
   "Star Blue",
   "Yunshuilan",
 ];
+export const BLUE_COLOR_NAME_CN = [
+  "普鲁士蓝",
+  "卡布里蓝",
+  "飞燕草蓝",
+  "铁锈蓝",
+  "钴蓝",
+  "安安蓝",
+  "鸢尾蓝",
+  "邦迪蓝",
+  "蒂芙尼蓝",
+  "秋波蓝",
+  "星蓝",
+  "云水蓝",
+]
 
 export const GREEN_COLOR = [
   "#248067",
@@ -45,6 +59,15 @@ export const GREEN_COLOR_NAME = [
   "Pink Green",
   "Emerald Green",
 ];
+export const GREEN_COLOR_NAME_CN = [
+  "森意绿",
+  "薄荷绿",
+  "青矾绿",
+  "竹绿",
+  "橄榄石绿",
+  "粉绿",
+  "淡翠绿",
+]
 
 export const RED_COLOR = [
   "#4c0009",
@@ -66,6 +89,16 @@ export const RED_COLOR_NAME = [
   "Yuhong",
   "Litmus Red",
 ];
+export const RED_COLOR_NAME_CN =[
+  "波尔多红",
+  "勃艮第红",
+  "覆盆子红",
+  "提香红",
+  "淡寂红",
+  "高粱红",
+  "玉红",
+  "石蕊红",
+]
 
 export const BROWNISH_YELLOW = [
   "#8f4b28",
@@ -89,6 +122,17 @@ export const BROWNISH_YELLOW_NAME = [
   "Maltose Yellow",
   "Almond Yellow",
 ];
+export const BROWNISH_YELLOW_NAME_CN = [
+  "木乃伊棕",
+  "筍皮棕",
+  "岩石棕",
+  "虎皮黄",
+  "草黄",
+  "佛手黄",
+  "藤黄",
+  "麦芽糖黄",
+  "杏仁黄",
+]
 
 export const PURPLE_COLOR = [
   "#8e2961",
@@ -104,6 +148,14 @@ export const PURPLE_COLOR_NAME = [
   "Wisteria Purple",
   "Distant Mountain",
 ];
+export const PURPLE_COLOR_NAME_CN = [
+  "苋菜紫",
+  "桔梗紫",
+  "蕈紫",
+  "藤萝紫",
+  "远山紫",
+]
 
 export const WHITE_COLOR = ["#dae3e6", "#c2c4c3"];
 export const WHITE_COLOR_NAME = ['Yunfengbai', 'Moon Shadow White']
+export const WHITE_COLOR_NAME_CN = ['远峰白', '月影白']

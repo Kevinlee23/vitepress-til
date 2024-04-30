@@ -1,21 +1,26 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import {
-  BLUE_COLOR, BLUE_COLOR_NAME, GREEN_COLOR, GREEN_COLOR_NAME, RED_COLOR, RED_COLOR_NAME, BROWNISH_YELLOW, BROWNISH_YELLOW_NAME, PURPLE_COLOR, PURPLE_COLOR_NAME, WHITE_COLOR, WHITE_COLOR_NAME
+  BLUE_COLOR, BLUE_COLOR_NAME, GREEN_COLOR, GREEN_COLOR_NAME, RED_COLOR, RED_COLOR_NAME, BROWNISH_YELLOW, BROWNISH_YELLOW_NAME, PURPLE_COLOR, PURPLE_COLOR_NAME, WHITE_COLOR, WHITE_COLOR_NAME, BLUE_COLOR_NAME_CN, GREEN_COLOR_NAME_CN, RED_COLOR_NAME_CN, BROWNISH_YELLOW_NAME_CN, PURPLE_COLOR_NAME_CN, WHITE_COLOR_NAME_CN,
 } from './color.constant.js'
 
+const isCNNow = ref(false)
+const handleLan = () => {
+  isCNNow.value = !isCNNow.value
+}
+
 const blueColor = ref(BLUE_COLOR)
-const blueColorName = ref(BLUE_COLOR_NAME)
+const blueColorName = computed(() => isCNNow.value ? BLUE_COLOR_NAME_CN : BLUE_COLOR_NAME)
 const greenColor = ref(GREEN_COLOR)
-const greenColorName = ref(GREEN_COLOR_NAME)
+const greenColorName = computed(() => isCNNow.value ? GREEN_COLOR_NAME_CN : GREEN_COLOR_NAME)
 const redColor = ref(RED_COLOR)
-const redColorName = ref(RED_COLOR_NAME)
+const redColorName = computed(() => isCNNow.value ? RED_COLOR_NAME_CN : RED_COLOR_NAME)
 const yellowColor = ref(BROWNISH_YELLOW)
-const yellowColorName = ref(BROWNISH_YELLOW_NAME)
+const yellowColorName = computed(() => isCNNow.value ? BROWNISH_YELLOW_NAME_CN : BROWNISH_YELLOW_NAME)
 const purpleColor = ref(PURPLE_COLOR)
-const purpleColorName = ref(PURPLE_COLOR_NAME)
+const purpleColorName = computed(() => isCNNow.value ? PURPLE_COLOR_NAME_CN : PURPLE_COLOR_NAME)
 const whiteColor = ref(WHITE_COLOR)
-const whiteColorName = ref(WHITE_COLOR_NAME)
+const whiteColorName = computed(() => isCNNow.value ? WHITE_COLOR_NAME_CN : WHITE_COLOR_NAME)
 
 const hiddenFlag = ref({
   blue: {},
@@ -74,6 +79,12 @@ const handleClick = (type, index) => {
 </script>
 
 # 令人惊讶的颜色
+
+<div :class=$style.card :style="{backgroundColor: blueColor[0], width: '150px', marginTop: '20px'}">
+  点击卡片可直接复制颜色~
+</div>
+
+<button @click=handleLan>切换语言</button>
 
 ## Blue
 
