@@ -138,8 +138,6 @@ export function createSidebar() {
         items: [
           { text: "gradient-color", link: "/css/gradient-color" },
           { text: "style 初始化", link: "/css/style-init" },
-          { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
-          { text: "布局实例一", link: "/css/layout-1" },
           { text: "移动端适配", link: "/css/mobile-adaptation" },
           { text: "获取元素的 style", link: "/css/get-computed-style" },
           {
@@ -168,6 +166,9 @@ export function createSidebar() {
           { text: "Amazing Color", link: "/css/amazing-color" },
           { text: "图片设计", link: "/css/picture-design" },
           { text: "纵轴进度条", link: "/css/vertical-progress-bar" },
+          { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
+          { text: "布局实例<一>", link: "/css/layout-1" },
+          { text: "品牌宫格图", link: "/css/brand-grid" }
         ],
       },
       {
