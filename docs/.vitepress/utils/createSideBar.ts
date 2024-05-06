@@ -281,6 +281,10 @@ export function createSidebar() {
             link: "/config/using-js-as-shell-script",
           },
           { text: "monorepo 构建", link: "/config/create-monorepo" },
+          {
+            text: "好用的 vscode 插件",
+            link: "/config/usefull-vscode-plugins",
+          },
         ],
       },
       { text: "返回上层", link: "/others-map" },
