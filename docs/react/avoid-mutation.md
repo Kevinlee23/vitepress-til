@@ -40,21 +40,21 @@ setPerson({
 
 ## 数组更新时避免 mutation
 
-避免使用：
-增加元素 `push`, `unshift`
-删除元素 `pop`, `shift`, `splice`
-替换元素 `splice`, `arr[i] = ...`
-排序 `reverse`, `sort`
+避免使用:
+- 增加元素 `push`, `unshift`
+- 删除元素 `pop`, `shift`, `splice`
+- 替换元素 `splice`, `arr[i] = ...`
+- 排序 `reverse`, `sort`
 
 这些方法会在原数组上进行修改
 
 替换为：
-增加元素 `concat`, `[...arr, element]`
-删除元素 `filter`, `slice`
-替换元素 `map`
-排序 `先复制一份数组`
+- 增加元素 `concat`, `[...arr, element]`
+- 删除元素 `filter`, `slice`
+- 替换元素 `map`
+- 排序 `先复制一份数组`
 
-`react` 中大多数情况下会使用 `slice`
+`react` 中大多数情况下会使用 `slice` 来进行增，删，改
 
 例子:
 
