@@ -12,7 +12,7 @@
 
 ## 学习小目标
 
-- 熟练掌握 `React`, 完成一个 `Todo Demo`
+- 熟练掌握 `React` 和 `Next.js`, 完成一个 `Todo Demo`
 - 学会 `Github Action` 部署流程
 - 学会 `Docker` 工作流程 `/` 目前进度（完成基础知识部分学习；）
 - 看完 `NestJS` 课程，完成 `fake-wechat-boke` 的后端
