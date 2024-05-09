@@ -28,6 +28,7 @@ const state = reative({
 ```js
 const mockData = require("...");
 
+const loading = ref(false);
 const request = (page, pageSize) => {
   loading.value = true;
   return new Promise((resolve) => {
@@ -106,7 +107,7 @@ const computedCardPos = (list) => {
       ) + props.textContent;
 
     // 第一行
-    if (index < props.col && state.cardList.length < 3) {
+    if (index < props.col && state.cardList.length < state.pageSize) {
       state.cardPos.push({
         width: state.cardWidth,
         height: cardHeight,
@@ -160,7 +161,7 @@ onMounted(() => {
     (containerWidth - props.gap * (props.col - 1)) / props.col
   );
 
-  getCardList(1, 3);
+  getCardList(1, state.pageSize);
 });
 ```
 
