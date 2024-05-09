@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  MAY: [6],
+  MAY: [6, 9],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
     24, 24, 24, 25, 25, 26, 29, 30,
@@ -36,6 +36,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   MAY: [
+    {
+      title: "简单的瀑布流实现",
+      link: "/css/fall-style",
+      tagName: TagName.CSS,
+      createDate: "2024-05-09",
+    },
     {
       title: "好用的 vscode 插件",
       link: "/config/usefull-vscode-plugins",

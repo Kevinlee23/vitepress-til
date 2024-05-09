@@ -169,6 +169,7 @@ export function createSidebar() {
           { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
           { text: "布局实例<一>", link: "/css/layout-1" },
           { text: "品牌宫格图", link: "/css/brand-grid" },
+          { text: "简单的瀑布流实现", link: "/css/fall-style" },
         ],
       },
       {
