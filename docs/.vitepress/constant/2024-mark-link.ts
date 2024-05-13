@@ -37,6 +37,12 @@ export const markDate: MarkDate = {
 export const markData: MarkData = {
   MAY: [
     {
+      title: "下划线装饰",
+      link: "/css/under-decoration",
+      tagName: TagName.CSS,
+      createDate: "2024-05-13",
+    },
+    {
       title: "圆形 pulse 动画",
       link: "/css/circle-animation",
       tagName: TagName.CSS,

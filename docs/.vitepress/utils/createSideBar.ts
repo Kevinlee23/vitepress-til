@@ -171,6 +171,7 @@ export function createSidebar() {
           { text: "品牌宫格图", link: "/css/brand-grid" },
           { text: "简单的瀑布流实现", link: "/css/fall-style" },
           { text: "圆形 pulse 动画", link: "/css/circle-animation" },
+          { text: "下划线装饰", link: "/css/under-decoration" },
         ],
       },
       {
