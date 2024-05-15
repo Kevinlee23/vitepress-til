@@ -144,6 +144,10 @@ export function createSidebar() {
             text: "使用 HSL 表示颜色",
             link: "/css/use-hsl-to-represent-color",
           },
+          {
+            text: "文字颜色自动适配背景颜色",
+            link: "/css/text-color-fit-to-bg",
+          },
         ],
       },
       {

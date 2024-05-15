@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  MAY: [6, 9, 10, 11, 13],
+  MAY: [6, 9, 10, 11, 13, 15],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
     24, 24, 24, 25, 25, 26, 29, 30,
@@ -37,13 +37,19 @@ export const markDate: MarkDate = {
 export const markData: MarkData = {
   MAY: [
     {
-      title: "下划线装饰",
+      title: "CSS - 文字颜色自动适配背景颜色",
+      link: "/css/text-color-fit-to-bg",
+      tagName: TagName.CSS,
+      createDate: "2024-05-15",
+    },
+    {
+      title: "CSS - 下划线装饰",
       link: "/css/under-decoration",
       tagName: TagName.CSS,
       createDate: "2024-05-13",
     },
     {
-      title: "圆形 pulse 动画",
+      title: "CSS - 圆形 pulse 动画",
       link: "/css/circle-animation",
       tagName: TagName.CSS,
       createDate: "2024-05-11",
@@ -55,7 +61,7 @@ export const markData: MarkData = {
       createDate: "2024-05-10",
     },
     {
-      title: "简单的瀑布流实现",
+      title: "CSS - 简单的瀑布流实现",
       link: "/css/fall-style",
       tagName: TagName.CSS,
       createDate: "2024-05-09",
@@ -82,7 +88,7 @@ export const markData: MarkData = {
       createDate: "2024-04-29",
     },
     {
-      title: "使用 HSL 表示颜色",
+      title: "CSS - 使用 HSL 表示颜色",
       link: "/css/use-hsl-to-represent-color",
       tagName: TagName.CSS,
       createDate: "2024-04-26",
