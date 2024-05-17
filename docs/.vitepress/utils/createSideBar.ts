@@ -297,6 +297,10 @@ export function createSidebar() {
             text: "好用的 vscode 插件",
             link: "/config/usefull-vscode-plugins",
           },
+          {
+            text: "部署环境配置",
+            link: "/config/env-config",
+          },
         ],
       },
       { text: "返回上层", link: "/others-map" },
