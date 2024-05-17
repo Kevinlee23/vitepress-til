@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  MAY: [6, 9, 10, 11, 13, 15, 16, 17],
+  MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
     24, 24, 24, 25, 25, 26, 29, 30,
@@ -36,6 +36,13 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   MAY: [
+    {
+      title: "nuxt config",
+      link: "/nuxt/nuxt-config",
+      tagName: TagName.Nuxt,
+      tagStatus: "BETA",
+      createDate: "2024-05-17",
+    },
     {
       title: "部署环境配置",
       link: "/config/env-config",

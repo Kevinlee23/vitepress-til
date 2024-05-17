@@ -29,6 +29,7 @@ export enum TagName {
   Vue3 = "Vue3",
   React = "React",
   ReactNative = "React Native",
+  Nuxt = "Nuxt",
   NestJs = "NestJs",
   Git = "Git",
   SQL = "SQL",
@@ -76,6 +77,7 @@ export function createTag(): TagGroup[] {
         { title: "React", link: "/react/avoid-mutation" },
         { title: "React Native", link: "/react-native/styleSheet" },
         { title: "NestJs", link: "/nest/nest-basic" },
+        { title: "Nuxt", link: "/nuxt/nuxt-config" },
       ],
     },
     {

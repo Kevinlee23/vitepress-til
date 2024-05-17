@@ -14,6 +14,7 @@ export interface ISideBar {
   [MY_TAB.REACT]: IItems[];
   [MY_TAB.REACT_NATIVE]: IItems[];
   [MY_TAB.NEST]: IItems[];
+  [MY_TAB.NUXT]: IItems[];
   [MY_TAB.CONFIG]: IItems[];
   [MY_TAB.FIX]: IItems[];
   [MY_TAB.MARK]: IItems[];
@@ -35,6 +36,7 @@ export enum MY_TAB {
   REACT = "/react/",
   REACT_NATIVE = "/react-native/",
   NEST = "/nest/",
+  NUXT = "/nuxt/",
   CONFIG = "/config/",
   FIX = "/fix/",
   MARK = "/mark/",
@@ -274,6 +276,12 @@ export function createSidebar() {
         ],
       },
       { text: "返回上层", link: "/framework-map" },
+    ],
+    "/nuxt/": [
+      {
+        text: "Nuxt",
+        items: [{ text: "nuxt 配置", link: "/nuxt/nuxt-config" }],
+      },
     ],
     "/config/": [
       {
