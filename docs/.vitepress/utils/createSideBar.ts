@@ -205,6 +205,10 @@ export function createSidebar() {
             text: "use-composable-to-cache-data",
             link: "/vue3/use-composable-to-cache-data",
           },
+          {
+            text: "h-function",
+            link: "/vue3/h-function",
+          },
         ],
       },
       {
