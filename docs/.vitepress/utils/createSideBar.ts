@@ -179,6 +179,7 @@ export function createSidebar() {
           { text: "圆形 pulse 动画", link: "/css/circle-animation" },
           { text: "下划线装饰", link: "/css/under-decoration" },
           { text: "一些按钮", link: "/css/some-buttons" },
+          { text: "博客类应用中点击查看更多的设计", link: "/css/see-more" },
         ],
       },
       {

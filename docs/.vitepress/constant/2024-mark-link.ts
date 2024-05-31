@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29],
+  MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
     24, 24, 24, 25, 25, 26, 29, 30,
@@ -36,6 +36,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   MAY: [
+    {
+      title: "博客类应用中点击查看更多的设计",
+      link: "/css/see-more",
+      tagName: TagName.CSS,
+      createDate: "2024-05-31",
+    },
     {
       title: "h-function",
       link: "/vue3/h-function",
