@@ -102,7 +102,12 @@ export function createSidebar() {
           { text: "filterSizeList", link: "/javascript/filterSizeList" },
           { text: "type-validate", link: "/javascript/type-validate" },
           { text: "get-server-time", link: "/javascript/get-server-time" },
-          { text: "matrix-function", link: "javascript/matrix-function" },
+          { text: "matrix-function", link: "/javascript/matrix-function" },
+          {
+            text: "get-text-width(height)",
+            link: "/javascript/get-text-width(height)",
+          },
+          { text: "px-to-other", link: "/javascript/px2other" },
         ],
       },
       { text: "返回上层", link: "/front-end-map" },

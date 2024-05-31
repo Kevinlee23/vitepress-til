@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31],
+  MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
     24, 24, 24, 25, 25, 26, 29, 30,
@@ -36,6 +36,19 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   MAY: [
+    {
+      title: "px-to-other",
+      link: "/javascript/px2other",
+      tagName: TagName.JSCode,
+      tagStatus: "UPDATED",
+      createDate: "2024-05-31",
+    },
+    {
+      title: "get-text-width(height)",
+      link: "/javascript/get-text-width(height)",
+      tagName: TagName.Javascript,
+      createDate: "2024-05-31",
+    },
     {
       title: "博客类应用中点击查看更多的设计",
       link: "/css/see-more",
