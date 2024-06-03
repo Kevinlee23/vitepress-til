@@ -348,10 +348,7 @@ export function createSidebar() {
     "/mark/": [
       {
         text: "时间线",
-        items: [
-          { text: "2024-04 代码统计", link: "/mark/2024-04" },
-          { text: "2024", link: "/mark/mark-timeline-2024" },
-        ],
+        items: [{ text: "2024", link: "/mark/mark-timeline-2024" }],
       },
       { text: "返回上层", link: "/" },
     ],
