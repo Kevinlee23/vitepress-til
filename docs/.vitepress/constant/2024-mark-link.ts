@@ -23,6 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
+  JUN: [3],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
@@ -35,6 +36,14 @@ export const markDate: MarkDate = {
 };
 
 export const markData: MarkData = {
+  JUN: [
+    {
+      title: "给图片加上阴影遮罩",
+      link: "/css/mask-image",
+      tagName: TagName.CSS,
+      createDate: "2024-06-03",
+    },
+  ],
   MAY: [
     {
       title: "px-to-other",

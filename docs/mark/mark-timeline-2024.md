@@ -16,7 +16,10 @@ const apriDate:number[] = markDate.APRI
 const apriLink: Link[] = markData.APRI
 /* 五月数据 */
 const mayDate:number[] = markDate.MAY
-const maylink:Link[] = markData.MAY
+const mayLink:Link[] = markData.MAY
+/* 六月数据 */
+const junDate:number[] = markDate.JUN
+const junLink:Link[] = markData.JUN
 
 // 标签组
 const tagGroups: TagGroup[] = createTag()
@@ -37,9 +40,13 @@ tagGroups.map(group => {
 
 ## 2024
 
+### 六月
+
+<MarkPage :monthLink="junLink" :markedDate="junDate" :tagsMap="tagsMap" :year="2024" :month="6" :length="30" />
+
 ### 五月
 
-<MarkPage :monthLink="maylink" :markedDate="mayDate" :tagsMap="tagsMap" :year="2024" :month="5" :length="31" />
+<MarkPage :monthLink="mayLink" :markedDate="mayDate" :tagsMap="tagsMap" :year="2024" :month="5" :length="31" />
 
 ### 四月
 

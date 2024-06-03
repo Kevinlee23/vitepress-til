@@ -185,6 +185,7 @@ export function createSidebar() {
           { text: "下划线装饰", link: "/css/under-decoration" },
           { text: "一些按钮", link: "/css/some-buttons" },
           { text: "博客类应用中点击查看更多的设计", link: "/css/see-more" },
+          { text: "给图片加上阴影遮罩", link: "/css/mask-image" },
         ],
       },
       {
