@@ -309,6 +309,10 @@ export function createSidebar() {
             link: "/config/vitepress-deploy-in-github-page",
           },
           {
+            text: "vitepress 中集成 tailwind",
+            link: "/config/vitepress-starter-tailwind",
+          },
+          {
             text: "将 js 文件 当做 shell 脚本执行",
             link: "/config/using-js-as-shell-script",
           },
