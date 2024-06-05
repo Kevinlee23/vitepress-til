@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  JUN: [3],
+  JUN: [3, 5],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
@@ -38,7 +38,13 @@ export const markDate: MarkDate = {
 export const markData: MarkData = {
   JUN: [
     {
-      title: "给图片加上阴影遮罩",
+      title: "CSS - 给项目加上禁用遮罩",
+      link: "/css/item-mask",
+      tagName: TagName.CSS,
+      createDate: "2024-06-05",
+    },
+    {
+      title: "CSS - 给图片加上阴影遮罩",
       link: "/css/mask-image",
       tagName: TagName.CSS,
       createDate: "2024-06-03",
@@ -59,7 +65,7 @@ export const markData: MarkData = {
       createDate: "2024-05-31",
     },
     {
-      title: "博客类应用中点击查看更多的设计",
+      title: "CSS - 博客类应用中点击查看更多的设计",
       link: "/css/see-more",
       tagName: TagName.CSS,
       createDate: "2024-05-31",
