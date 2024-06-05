@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import asideTop from "./components/asideTop.vue"
 import backTop from './components/backTop.vue'
 import './fira_code.css'
+import './tailwind.postcss.css'
 
 export default {
   ...DefaultTheme,
