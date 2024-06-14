@@ -178,6 +178,7 @@ export function createSidebar() {
           { text: "图片设计", link: "/css/picture-design" },
           { text: "纵轴进度条", link: "/css/vertical-progress-bar" },
           { text: "带搜索栏的 tabs", link: "/css/search-tab-transform" },
+          { text: "带进度条的 tabs", link: "/css/tabs-with-progress" },
           { text: "布局实例<一>", link: "/css/layout-1" },
           { text: "品牌宫格图", link: "/css/brand-grid" },
           { text: "简单的瀑布流实现", link: "/css/fall-style" },

@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  JUN: [3, 5, 5],
+  JUN: [3, 5, 5, 14],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
@@ -37,6 +37,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   JUN: [
+    {
+      title: "带进度条的 tabs",
+      link: "/css/tabs-with-progress",
+      tagName: TagName.CSS,
+      createDate: "2024-06-14",
+    },
     {
       title: "vitepress 中集成 tailwind",
       link: "/config/vitepress-starter-tailwind",
