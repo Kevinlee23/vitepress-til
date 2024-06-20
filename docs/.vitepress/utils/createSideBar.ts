@@ -22,6 +22,7 @@ export interface ISideBar {
   [MY_TAB.HTTP]: IItems[];
   [MY_TAB.GIT]: IItems[];
   [MY_TAB.SQL]: IItems[];
+  [MY_TAB.MONGODB]: IItems[];
   [MY_TAB.OSS]: IItems[];
   [MY_TAB.DOCKER]: IItems[];
   [MY_TAB.THREE_PARTY_LIBRARY]: IItems[];
@@ -44,6 +45,7 @@ export enum MY_TAB {
   HTTP = "/http/",
   GIT = "/git/",
   SQL = "/sql/",
+  MONGODB = "/mongodb/",
   OSS = "/oss/",
   DOCKER = "/docker/",
   THREE_PARTY_LIBRARY = "/3-party-library/",
@@ -459,6 +461,14 @@ export function createSidebar() {
         ],
       },
       { text: "返回上层", link: "/tools-map" },
+    ],
+    "/mongodb/": [
+      {
+        text: "MongoDB",
+        items: [
+          { text: "Mongo 中的多表联查", link: "/mongodb/muti-document-query" },
+        ],
+      },
     ],
     "/oss/": [
       {

@@ -33,6 +33,7 @@ export enum TagName {
   NestJs = "NestJs",
   Git = "Git",
   SQL = "SQL",
+  MongoDB = "MongoDB",
   OSS = "OSS",
   Docker = "Docker",
   mockJs = "mockJs",
