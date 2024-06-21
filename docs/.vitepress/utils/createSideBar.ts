@@ -349,6 +349,10 @@ export function createSidebar() {
             text: "vue3-vite-ts 报错汇总",
             link: "/fix/fix-vue3-ts-error",
           },
+          {
+            text: 'Vercel 部署的前端服务与不同源后端服务器的通信',
+            link: '/fix/vercel-server-to-connect-not-same-port'
+          }
         ],
       },
       { text: "返回上层", link: "/others-map" },

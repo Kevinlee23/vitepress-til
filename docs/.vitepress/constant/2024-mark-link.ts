@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  JUN: [3, 5, 5, 14, 20],
+  JUN: [3, 5, 5, 14, 20, 21],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
     1, 2, 3, 7, 8, 9, 10, 10, 11, 15, 16, 17, 17, 18, 18, 19, 20, 20, 20, 23,
@@ -37,6 +37,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   JUN: [
+    {
+      title: "Vercel 部署的前端服务与不同源后端服务器的通信",
+      link: "/fix/vercel-server-to-connect-not-same-port",
+      tagName: TagName.ErrorFix,
+      createDate: "2024-06-21",
+    },
     {
       title: "Mongo 中的多表联查",
       link: "/mongodb/muti-document-query",
