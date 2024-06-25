@@ -9,6 +9,7 @@ import { getCurrentClient } from "#imports";
 
 async function upload(file) {
   const client = getCurrentClient();
-  const result = await client.put(file.name, file);
+  const path = "images/"; // 上传到规定的文件夹下
+  const result = await client.put(path + file.name, file);
 }
 ```

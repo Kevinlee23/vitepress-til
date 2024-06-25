@@ -74,7 +74,7 @@ yarn add pinia
 ### vue-router@4 :heart:
 
 ```sh
-yarn add vue-rotuer@4
+yarn add vue-router@4
 ```
 
 ## 工具库

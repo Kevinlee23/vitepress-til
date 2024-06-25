@@ -16,4 +16,4 @@
 - 学会 `Github Action` 部署流程
 - 学会 `Docker` 工作流程 `/` 目前进度（完成基础知识部分学习；）
 - 看完 `NestJS` 课程，完成 `fake-wechat-boke` 的后端
-- 入门学会 `Typescript`, 进行两个以上的 `TS` 项目 `/` 目前进度: `1 (vitepress-til)`
+- 入门学会 `Typescript`, 进行两个以上的 `TS` 项目 `/` 目前进度: `2 (vitepress-til; nest-project-learn)`
