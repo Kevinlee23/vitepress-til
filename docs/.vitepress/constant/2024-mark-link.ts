@@ -38,6 +38,13 @@ export const markDate: MarkDate = {
 export const markData: MarkData = {
   JUN: [
     {
+      title: 'nuxt 目录结构',
+      link: '/nuxt/nuxt-menu',
+      tagName: TagName.Nuxt,
+      tagStatus: 'BETA',
+      createDate: '2024-06-26'
+    },
+    {
       title: "Vercel 部署的前端服务与不同源后端服务器的通信",
       link: "/fix/vercel-server-to-connect-not-same-port",
       tagName: TagName.ErrorFix,

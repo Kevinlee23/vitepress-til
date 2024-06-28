@@ -295,7 +295,10 @@ export function createSidebar() {
     "/nuxt/": [
       {
         text: "Nuxt",
-        items: [{ text: "nuxt 配置", link: "/nuxt/nuxt-config" }],
+        items: [
+          { text: "nuxt 配置", link: "/nuxt/nuxt-config" },
+          { text: "nuxt 目录结构", link: "/nuxt/nuxt-menu" },
+        ],
       },
     ],
     "/config/": [
@@ -350,9 +353,9 @@ export function createSidebar() {
             link: "/fix/fix-vue3-ts-error",
           },
           {
-            text: 'Vercel 部署的前端服务与不同源后端服务器的通信',
-            link: '/fix/vercel-server-to-connect-not-same-port'
-          }
+            text: "Vercel 部署的前端服务与不同源后端服务器的通信",
+            link: "/fix/vercel-server-to-connect-not-same-port",
+          },
         ],
       },
       { text: "返回上层", link: "/others-map" },
