@@ -22,34 +22,20 @@ const handleCopy = () => {
 };
 </script>
 <template>
-  <div class="copy-button" @click="handleCopy">{{ text }}</div>
+  <div class="copy-button group/item" @click="handleCopy">
+    {{ text }}
+    <span class="copy-icon">🔗</span>
+  </div>
 </template>
 <style lang="scss" scoped>
 .copy-button {
-  width: fit-content;
-  margin-left: 8px;
-  padding: 8px;
-
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-
-  border-radius: 4px;
-
-  cursor: pointer;
-
-  &:hover {
-    color: white;
-
-    background-color: #407d53;
+  @apply w-fit ml-[8px] p-[8px] text-[14px]/[18px] rounded-[4px] cursor-pointer;
+  .copy-icon {
+    @apply hidden;
   }
-}
-
-.dark {
-  .copy-button {
-    color: #a8b1ff;
-    &:hover {
-      color: white;
+  &:hover {
+    .copy-icon {
+      @apply inline-block;
     }
   }
 }
