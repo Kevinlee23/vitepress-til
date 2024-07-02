@@ -43,3 +43,7 @@
 ## WakaTime
 
 代码时间记录工具，配合 `Wakatime.com` 网站使用
+
+## common-intellisense
+
+常见的 `UI` 库代码提示，包含: `element`, `elementPlus`, `vant 4`, `antd` 等

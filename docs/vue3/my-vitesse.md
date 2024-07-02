@@ -222,7 +222,7 @@ export default defineConfig({
 `eslint` 配置插件
 
 ```sh
-yarn add @antfu/eslint-config -D
+yarn add eslint @antfu/eslint-config -D
 ```
 
 创建文件 `eslint.config.js`, 写入:
