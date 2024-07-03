@@ -23,6 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
+  JUL: [3],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
@@ -36,13 +37,21 @@ export const markDate: MarkDate = {
 };
 
 export const markData: MarkData = {
+  JUL: [
+    {
+      title: "横向走马灯",
+      link: "/css/horizontal-slider",
+      tagName: TagName.CSS,
+      createDate: "2024-07-03",
+    },
+  ],
   JUN: [
     {
-      title: 'nuxt 目录结构',
-      link: '/nuxt/nuxt-menu',
+      title: "nuxt 目录结构",
+      link: "/nuxt/nuxt-menu",
       tagName: TagName.Nuxt,
-      tagStatus: 'BETA',
-      createDate: '2024-06-26'
+      tagStatus: "BETA",
+      createDate: "2024-06-26",
     },
     {
       title: "Vercel 部署的前端服务与不同源后端服务器的通信",

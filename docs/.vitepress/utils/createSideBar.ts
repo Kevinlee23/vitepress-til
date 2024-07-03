@@ -190,6 +190,7 @@ export function createSidebar() {
           { text: "博客类应用中点击查看更多的设计", link: "/css/see-more" },
           { text: "给图片加上阴影遮罩", link: "/css/mask-image" },
           { text: "给项目加上禁用遮罩", link: "/css/item-mask" },
+          { text: "横向走马灯", link: "/css/horizontal-slider" },
         ],
       },
       {

@@ -20,6 +20,9 @@ const mayLink:Link[] = markData.MAY
 /* 六月数据 */
 const junDate:number[] = markDate.JUN
 const junLink:Link[] = markData.JUN
+/* 七月数据 */
+const julyDate: number[] = markDate.JUL
+const julyLink: number[] = markData.JUL
 
 // 标签组
 const tagGroups: TagGroup[] = createTag()
@@ -39,6 +42,10 @@ tagGroups.map(group => {
 <TagGroupPage :tagGroups="tagGroups" />
 
 ## 2024
+
+### 七月
+
+<MarkPage :monthLink="julyLink" :markedDate="julyDate" :tagsMap="tagsMap" :year="2024" :month="7" :length="31" />
 
 ### 六月
 
