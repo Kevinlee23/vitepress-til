@@ -86,6 +86,12 @@ export function createSidebar() {
         ],
       },
       {
+        text: "JS API",
+        items: [
+          { text: "AbortController", link: "/javascript/AbortController" },
+        ],
+      },
+      {
         text: "JS Code",
         items: [
           {
