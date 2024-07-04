@@ -40,6 +40,7 @@ export enum TagName {
   Config = "Config",
   ErrorFix = "Error Fix",
   Ordinary = "Ordinary",
+  OPs = "OPs",
 }
 
 // 归档链接
@@ -99,6 +100,7 @@ export function createTag(): TagGroup[] {
       items: [
         { title: "Config", link: "/config/off-hibernate" },
         { title: "Error Fix", link: "/fix/nvm-president-problem-for-mac" },
+        { title: "OPs", link: "/ops/pm2" },
       ],
     },
     {

@@ -26,6 +26,7 @@ export interface ISideBar {
   [MY_TAB.OSS]: IItems[];
   [MY_TAB.DOCKER]: IItems[];
   [MY_TAB.THREE_PARTY_LIBRARY]: IItems[];
+  [MY_TAB.OPS]: IItems[];
 }
 
 export enum MY_TAB {
@@ -49,6 +50,7 @@ export enum MY_TAB {
   OSS = "/oss/",
   DOCKER = "/docker/",
   THREE_PARTY_LIBRARY = "/3-party-library/",
+  OPS = "/ops/",
 }
 
 export function createSidebar() {
@@ -548,6 +550,12 @@ export function createSidebar() {
         ],
       },
       { text: "返回上层", link: "/3-party-map" },
+    ],
+    "/ops/": [
+      {
+        text: "运维",
+        items: [{ text: "pm2的基本操作", link: "/ops/pm2" }],
+      },
     ],
   };
 

@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  JUL: [3, 3],
+  JUL: [3, 3, 4],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
@@ -38,6 +38,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   JUL: [
+    {
+      title: "pm2 基本操作",
+      link: "/ops/pm2",
+      tagName: TagName.OPs,
+      createDate: "2024-07-04",
+    },
     {
       title: "api - AbortController",
       link: "/javascript/AbortController",
