@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  JUL: [3, 3, 4],
+  JUL: [3, 3, 4, 4, 8],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
@@ -38,6 +38,13 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   JUL: [
+    {
+      title: "纵轴进度条",
+      link: "/css/vertical-progress-bar",
+      tagName: TagName.CSS,
+      tagStatus: 'UPDATED',
+      createDate: "2024-03-15",
+    },
     {
       title: "pm2 基本操作",
       link: "/ops/pm2",

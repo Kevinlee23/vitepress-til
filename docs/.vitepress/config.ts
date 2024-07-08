@@ -64,7 +64,7 @@ export default defineConfig({
         icon: {
           svg: wechatSvg,
         },
-        link: "https://www.snowinlu.top",
+        link: "https://snowinlu.top",
       },
     ],
 
