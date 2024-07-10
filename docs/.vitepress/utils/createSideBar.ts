@@ -199,6 +199,7 @@ export function createSidebar() {
           { text: "给图片加上阴影遮罩", link: "/css/mask-image" },
           { text: "给项目加上禁用遮罩", link: "/css/item-mask" },
           { text: "横向走马灯", link: "/css/horizontal-slider" },
+          { text: "购物车图片放大效果", link: "/css/enlarge-image" },
         ],
       },
       {
@@ -250,7 +251,11 @@ export function createSidebar() {
       },
       {
         text: "VueUse",
-        items: [{ text: "useSortable", link: "/vue3/useSortable" }],
+        items: [
+          { text: "useSortable", link: "/vue3/useSortable" },
+          { text: "useLocalStorage", link: "/vue3/useLocalStorage" },
+          { text: "useImage", link: "/vue3/useImage" },
+        ],
       },
       { text: "返回上层", link: "/framework-map" },
     ],

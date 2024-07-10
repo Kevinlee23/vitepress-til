@@ -28,6 +28,7 @@
     }
   },
   "dependencies": {
+    "@vueuse/core": "^10.11.0",
     "blueimp-md5": "^2.19.0"
   }
 }
