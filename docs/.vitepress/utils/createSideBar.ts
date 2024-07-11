@@ -370,6 +370,10 @@ export function createSidebar() {
             text: "Vercel 部署的前端服务与不同源后端服务器的通信",
             link: "/fix/vercel-server-to-connect-not-same-port",
           },
+          {
+            text: "页面不能正常识别换行符",
+            link: "/fix/correctly-identify-line-breaks",
+          },
         ],
       },
       { text: "返回上层", link: "/others-map" },
