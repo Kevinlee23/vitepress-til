@@ -72,8 +72,15 @@ doc/**/*.pdf
 - `git commit` 提交命令
 - `git commit -m "commit infomation"` 带信息的提交命令
 - `git commit -a` 跳过使用暂存区域
-- `git commit --amend` 撤销操作 - 本次提交与上次提交合并（第二次提交将代替第一次提交的结果）
+- `git commit --amend` 撤销&提交 - 本次提交与上次提交合并（第二次提交将代替第一次提交的结果）
 - `git rm <filename>` 移除文件
-- `git reset <filename>` 撤销对文件的暂存
 - `git checkout -- <file>` 使用最近提交的版本覆盖它（除非你确实清楚不想要对那个文件的本地修改了，否则请不要使用这个命令）
 - `git mv <file_from> <file_to>` 移动文件（可用于文件改名）
+
+## “反悔”操作
+
+- `git checkout -- .` 一次性撤销所有本地修改
+- `git checkout -- [filename]` 撤销指定文件的修改
+- `git reset <filename>` 撤销对文件的暂存
+- `git reset --hard HEAD~1` 重置上一次提交
+- `git merge --abort` 撤销合并

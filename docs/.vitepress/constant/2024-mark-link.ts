@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  JUL: [3, 3, 4, 4, 8, 10, 11],
+  JUL: [3, 3, 4, 4, 8, 10, 11, 11],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
@@ -38,6 +38,13 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   JUL: [
+    {
+      title: "提交更新并推送到远程仓库",
+      link: "/git/02-git-add-and-push",
+      tagName: TagName.Git,
+      tagStatus: 'UPDATED',
+      createDate: '2024-07-11'
+    },
     {
       title: "页面不能正常识别换行符",
       link: "/fix/correctly-identify-line-breaks",
