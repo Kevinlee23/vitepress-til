@@ -30,7 +30,7 @@ export default defineConfig({
         text: "框架",
         items: [
           { text: "Vue3", link: "/vue3/get-component-instance-in-setup" },
-          { text: "React", link: "/react/avoid-mutation" },
+          { text: "React", link: "/react/create" },
           { text: "React Native", link: "/react-native/styleSheet" },
           { text: "NestJs", link: "/nest/nest-basic" },
           { text: "Nuxt", link: "/nuxt/nuxt-config" },

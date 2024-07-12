@@ -263,8 +263,9 @@ export function createSidebar() {
       {
         text: "react",
         items: [
-          { text: "avoid-mutation", link: "/react/avoid-mutation" },
-          { text: "render-list", link: "/react/render-list" },
+          { text: "vite-create", link: "/react/create" },
+          { text: "mutation", link: "/react/mutation" },
+          { text: "list-render", link: "/react/list-render" },
           { text: "side-effect", link: "/react/side-effect" },
           { text: "slot", link: "/react/slot" },
         ],
