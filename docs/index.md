@@ -34,19 +34,26 @@ features:
 ---
 
 <script setup>
+import { computed } from 'vue'
+import { useData } from 'vitepress'
 import NewBlogs from './.vitepress/theme/views/newBlogs.vue'
+
+const { isDark } = useData()
+const skillLink = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=js,ts,tailwind,vue,vite,nuxtjs,pinia,git,mongodb,nodejs,npm,pnpm,yarn`)
+const toolLink = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=apple,github,gitlab,vscode,gmail,md`)
+const learningLink = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=react,nestjs,mysql,docker`)
 </script>
 
 <new-blogs />
 
 **技术栈:**
 
-[![My Skills](https://skillicons.dev/icons?i=js,ts,tailwind,vue,vite,nuxtjs,pinia,git,mongodb,nodejs,npm,pnpm,yarn)](https://skillicons.dev)
+<img  :src="skillLink" />
 
 **使用工具:**
 
-[![My Tools](https://skillicons.dev/icons?i=apple,github,gitlab,vscode,gmail,md)](https://skillicons.dev)
+<img  :src="toolLink" />
 
 **正在学习:**
 
-[![My Learning](https://skillicons.dev/icons?i=react,nestjs,mysql,docker)](https://skillicons.dev)
+<img  :src="learningLink" />
