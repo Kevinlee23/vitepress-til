@@ -2,9 +2,7 @@
 import type { PropType } from "vue";
 import type { TagGroup } from "../../utils/createTag";
 
-defineProps({
-  tagGroups: { type: Object as PropType<Array<TagGroup>> },
-});
+defineProps({ tagGroups: { type: Object as PropType<Array<TagGroup>> } });
 
 const hostpath = "/vitepress-til";
 </script>

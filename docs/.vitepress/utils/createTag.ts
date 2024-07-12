@@ -76,7 +76,7 @@ export function createTag(): TagGroup[] {
       groupName: "框架",
       items: [
         { title: "Vue3", link: "/vue3/get-component-instance-in-setup" },
-        { title: "React", link: "/react/avoid-mutation" },
+        { title: "React", link: "/react/create" },
         { title: "React Native", link: "/react-native/styleSheet" },
         { title: "NestJs", link: "/nest/nest-basic" },
         { title: "Nuxt", link: "/nuxt/nuxt-config" },
