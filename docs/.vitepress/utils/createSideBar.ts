@@ -267,6 +267,7 @@ export function createSidebar() {
           { text: "mutation", link: "/react/mutation" },
           { text: "list-render", link: "/react/list-render" },
           { text: "side-effect", link: "/react/side-effect" },
+          { text: "state", link: "/react/state" },
           { text: "slot", link: "/react/slot" },
         ],
       },
@@ -343,9 +344,13 @@ export function createSidebar() {
             link: "/config/usefull-vscode-plugins",
           },
           {
-            text: "部署环境配置",
+            text: "vite环境配置",
             link: "/config/env-config",
           },
+          {
+            text: 'vite 项目配合 nginx 简单部署',
+            link: '/config/vite-deploy-with-nginx'
+          }
         ],
       },
       { text: "返回上层", link: "/others-map" },

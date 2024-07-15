@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15],
+  JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
@@ -38,6 +38,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   JUL: [
+    {
+      title: "vite 项目配合 nginx 简单部署",
+      link: "/config/vite-deploy-with-nginx",
+      tagName: TagName.Config,
+      createDate: "2024-07-15",
+    },
     {
       title: "vitepress 在 gibhub page 部署",
       link: "/config/vitepress-deploy-in-github-page",
