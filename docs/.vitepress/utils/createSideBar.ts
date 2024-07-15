@@ -348,9 +348,9 @@ export function createSidebar() {
             link: "/config/env-config",
           },
           {
-            text: 'vite 项目配合 nginx 简单部署',
-            link: '/config/vite-deploy-with-nginx'
-          }
+            text: "vite 项目配合 nginx 简单部署",
+            link: "/config/vite-deploy-with-nginx",
+          },
         ],
       },
       { text: "返回上层", link: "/others-map" },
@@ -548,6 +548,12 @@ export function createSidebar() {
             text: "docker 和 compose 的区别",
             link: "/docker/docker-and-compose",
           },
+        ],
+      },
+      {
+        text: "config",
+        items: [
+          { text: "docker 换源配置", link: "/docker/docker-registry-config" },
         ],
       },
       { text: "返回上层", link: "/tools-map" },
