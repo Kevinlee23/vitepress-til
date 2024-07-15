@@ -91,6 +91,20 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
+## 修改 deploy 文件，监听某一文件修改才进行推送
+
+```yml
+on:
+  # 在针对 `main` 分支的推送上运行。如果你
+  # 使用 `master` 分支作为默认分支，请将其更改为 `master`
+  push:
+    branches: [main]
+    paths: // [!code ++]
+      - "deployment.txt" // [!code ++]
+```
+
+监听根目录下的 deployment.txt 文件，当这个文件修改后才重新推送部署项目
+
 ## 修改 github 项目配置
 
 在 `setting / pages / Build and deployment` 中，将 `Source` 设置为 `github actions`
