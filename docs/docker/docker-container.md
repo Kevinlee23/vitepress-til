@@ -32,7 +32,7 @@ $ docker container start <container-name>
 
 启动容器时，通过增加 `option: -d` 参数来实现让 `Docker` 在后台运行
 
-通过 `docker container ls` 来查询容器唯一 `id`
+通过 `docker container ls` 来查询容器唯一 `id`, 加上 `-a` 参数额外查询停止的容器
 
 通过 `docker container logs [ID or NAMES]` 来获取容器的输出信息
 

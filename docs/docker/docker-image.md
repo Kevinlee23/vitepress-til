@@ -59,4 +59,8 @@ $ docker image ls -f since=...
 ```sh
 # 可以使用 镜像 id / 镜像名 / 镜像摘要来删除
 $ docker image rm <image-id> / <image-name> / <sha-xxx>
+
+# 删除虚悬镜像
+
+$ docker image prune
 ```
