@@ -306,6 +306,10 @@ export function createSidebar() {
           },
         ],
       },
+      {
+        text: "config",
+        items: [{ text: "Nest 环境变量/打包参考", link: "/nest/nest-script" }],
+      },
       { text: "返回上层", link: "/framework-map" },
     ],
     "/nuxt/": [
