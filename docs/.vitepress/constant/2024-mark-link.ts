@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18],
+  JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
   APRI: [
@@ -38,6 +38,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   JUL: [
+    {
+      title: "nuxt 路由",
+      link: "/nuxt/nuxt-route",
+      tagName: TagName.Nuxt,
+      createDate: "2024-07-23",
+    },
     {
       title: "Nest 环境变量/打包参考",
       link: "/nest/nest-script",

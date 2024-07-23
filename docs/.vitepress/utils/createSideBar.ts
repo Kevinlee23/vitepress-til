@@ -318,6 +318,7 @@ export function createSidebar() {
         items: [
           { text: "nuxt 配置", link: "/nuxt/nuxt-config" },
           { text: "nuxt 目录结构", link: "/nuxt/nuxt-menu" },
+          { text: "nuxt 路由", link: "/nuxt/nuxt-route" },
         ],
       },
     ],
