@@ -200,6 +200,7 @@ export function createSidebar() {
           { text: "给项目加上禁用遮罩", link: "/css/item-mask" },
           { text: "横向走马灯", link: "/css/horizontal-slider" },
           { text: "购物车图片放大效果", link: "/css/enlarge-image" },
+          { text: "锚点定位", link: "/css/anchor" },
         ],
       },
       {
