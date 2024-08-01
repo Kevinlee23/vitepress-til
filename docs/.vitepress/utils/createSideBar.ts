@@ -27,6 +27,7 @@ export interface ISideBar {
   [MY_TAB.DOCKER]: IItems[];
   [MY_TAB.THREE_PARTY_LIBRARY]: IItems[];
   [MY_TAB.OPS]: IItems[];
+  [MY_TAB.PMP]: IItems[];
 }
 
 export enum MY_TAB {
@@ -51,6 +52,7 @@ export enum MY_TAB {
   DOCKER = "/docker/",
   THREE_PARTY_LIBRARY = "/3-party-library/",
   OPS = "/ops/",
+  PMP = "/pmp/",
 }
 
 export function createSidebar() {
@@ -583,6 +585,9 @@ export function createSidebar() {
         text: "运维",
         items: [{ text: "pm2的基本操作", link: "/ops/pm2" }],
       },
+    ],
+    "/pmp/": [
+      { text: "敏捷", items: [{ text: "敏捷错题", link: "/pmp/agile-wq" }] },
     ],
   };
 

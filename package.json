@@ -21,14 +21,14 @@
     "tailwindcss": "^3.4.3",
     "vitepress": "^1.0.0-rc.45"
   },
+  "dependencies": {
+    "@vueuse/core": "^10.11.0",
+    "blueimp-md5": "^2.19.0"
+  },
   "postcss": {
     "plugins": {
       "tailwindcss": {},
       "autoprefixer": {}
     }
-  },
-  "dependencies": {
-    "@vueuse/core": "^10.11.0",
-    "blueimp-md5": "^2.19.0"
   }
 }

@@ -41,6 +41,7 @@ export enum TagName {
   ErrorFix = "Error Fix",
   Ordinary = "Ordinary",
   OPs = "OPs",
+  PMP = "PMP",
 }
 
 // 归档链接
@@ -102,6 +103,10 @@ export function createTag(): TagGroup[] {
         { title: "Error Fix", link: "/fix/nvm-president-problem-for-mac" },
         { title: "OPs", link: "/ops/pm2" },
       ],
+    },
+    {
+      groupName: "项目管理",
+      items: [{ title: "PMP", link: "/pmp/agile-wq" }],
     },
     {
       groupName: "杂谈",

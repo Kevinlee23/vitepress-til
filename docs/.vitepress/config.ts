@@ -51,6 +51,7 @@ export default defineConfig({
         text: "第三方类库",
         items: [{ text: "mockJs", link: "/3-party-library/how-to-use-mockjs" }],
       },
+      { text: "项目管理", items: [{ text: "PMP", link: "/pmp/agile-wq" }] },
       { text: "杂项", link: "/others-map" },
     ],
 
