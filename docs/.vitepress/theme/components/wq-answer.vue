@@ -6,6 +6,8 @@ const answerMap = ["A", "B", "C", "D"];
 
 <template>
   <div class="my-[20px]">
+    <div class="mb-[10px] px-[8px] py-[4px] w-fit text-[#2c9678] bg-[#eee] rounded-[4px]">来源: {{ detail.from }}</div>
+    <div class="mb-[10px] font-bold">关键字: 【{{ detail.keywords }}】</div>
     <div class="mb-[10px]">{{ detail.title }}</div>
     <div class="flex flex-col gap-y-[10px] mb-[20px]">
       <div
