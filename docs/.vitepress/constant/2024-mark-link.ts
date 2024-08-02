@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  AUG: [1, 2],
+  AUG: [1, 2, 2],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
@@ -39,6 +39,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   AUG: [
+    {
+      title: "snippets - markdown",
+      link: "/config/markdown-snippets",
+      tagName: TagName.Config,
+      createDate: "2024-08-02",
+    },
     {
       title: "过程组错题",
       link: "/pmp/process-wq",

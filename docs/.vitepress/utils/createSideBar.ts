@@ -359,6 +359,10 @@ export function createSidebar() {
             text: "vite 项目配合 nginx 简单部署",
             link: "/config/vite-deploy-with-nginx",
           },
+          {
+            text: 'snippets - markdown',
+            link: '/config/markdown-snippets'
+          }
         ],
       },
       { text: "返回上层", link: "/others-map" },
