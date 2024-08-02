@@ -587,7 +587,13 @@ export function createSidebar() {
       },
     ],
     "/pmp/": [
-      { text: "敏捷", items: [{ text: "敏捷错题", link: "/pmp/agile-wq" }] },
+      {
+        text: "敏捷",
+        items: [
+          { text: "敏捷错题", link: "/pmp/agile-wq" },
+          { text: "过程组错题", link: "/pmp/process-wq" },
+        ],
+      },
     ],
   };
 
