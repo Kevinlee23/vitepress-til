@@ -360,9 +360,9 @@ export function createSidebar() {
             link: "/config/vite-deploy-with-nginx",
           },
           {
-            text: 'snippets - markdown',
-            link: '/config/markdown-snippets'
-          }
+            text: "snippets - markdown",
+            link: "/config/markdown-snippets",
+          },
         ],
       },
       { text: "返回上层", link: "/others-map" },
@@ -587,7 +587,13 @@ export function createSidebar() {
     "/ops/": [
       {
         text: "运维",
-        items: [{ text: "pm2的基本操作", link: "/ops/pm2" }],
+        items: [
+          { text: "pm2的基本操作", link: "/ops/pm2" },
+          {
+            text: "Github Actions 中的 工作流定时执行",
+            link: "/ops/github-workflow-timeset",
+          },
+        ],
       },
     ],
     "/pmp/": [
