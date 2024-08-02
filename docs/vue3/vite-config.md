@@ -7,6 +7,7 @@ outline: deep
 ## 设置代理
 
 ```js
+// vite.config.js
 export default defineConfig({
   server: {
     proxy: {
@@ -25,9 +26,52 @@ export default defineConfig({
 指定服务器应该监听哪个 IP 地址。如果设置为 `0.0.0.0` 或 `true` 将监听所有地址，包括局域网和公网地址
 
 ```js
+// vite.config.js
 export default defineConfig({
   server: {
     host: "0.0.0.0", // or true
+  },
+});
+```
+
+## 路径别名设置
+
+```js
+// vite.config.js
+import path from "node:path";
+
+export default defineConfig({
+  // ...
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
+});
+```
+
+## 增加 jsx 支持
+
+```js
+// vite.config.js
+import vue from "@vitejs/plugin-vue";
+import vueJsx from "@vitejs/plugin-vue-jsx";
+
+export default defineConfig({
+  plugins: [vue(), vueJsx()],
+});
+```
+
+## 导入时省略扩展名
+
+```js
+// vite.config.js
+import { defineConfig } from "vite";
+import path from "path";
+
+export default defineConfig({
+  resolve: {
+    extensions: [".js", ".ts", ".json"], // 导入时想要省略的扩展名列表
   },
 });
 ```
@@ -52,32 +96,6 @@ npm add -D stylus
 </style>
 ```
 
-## 路径别名设置
-
-```js
-import path from "node:path";
-
-export default defineConfig({
-  // ...
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
-});
-```
-
-## 增加 jsx 支持
-
-```js
-import vue from "@vitejs/plugin-vue";
-import vueJsx from "@vitejs/plugin-vue-jsx";
-
-export default defineConfig({
-  plugins: [vue(), vueJsx()],
-});
-```
-
 ## Web Workers 引入
 
 `通过构造器导入`
@@ -99,8 +117,6 @@ const worker = new MyWorker();
 ```
 
 ## 环境变量
-
-### 环境变量
 
 `Vite` 在一个特殊的 `improt.mate.env` 对象上暴露环境变量:
 
