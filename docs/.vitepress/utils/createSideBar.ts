@@ -602,6 +602,7 @@ export function createSidebar() {
         items: [
           { text: "敏捷错题", link: "/pmp/agile-wq" },
           { text: "过程组错题", link: "/pmp/process-wq" },
+          { text: "多选题错题", link: "/pmp/dual-wq" },
         ],
       },
     ],

@@ -1,12 +1,19 @@
 <script setup>
-defineProps({ detail: { type: Object, required: true } });
+defineProps({
+  detail: { type: Object, required: true },
+  type: { type: String, default: "single" },
+});
 
-const answerMap = ["A", "B", "C", "D"];
+const answerMap = ["A", "B", "C", "D", "E"];
 </script>
 
 <template>
   <div class="my-[20px]">
-    <div class="mb-[10px] px-[8px] py-[4px] w-fit text-[#2c9678] bg-[#eee] rounded-[4px]">来源: {{ detail.from }}</div>
+    <div
+      class="mb-[10px] px-[8px] py-[4px] w-fit text-[#2c9678] bg-[#eee] rounded-[4px]"
+    >
+      来源: {{ detail.from }}
+    </div>
     <div class="mb-[10px] font-bold">关键字: 【{{ detail.keywords }}】</div>
     <div class="mb-[10px]">{{ detail.title }}</div>
     <div class="flex flex-col gap-y-[10px] mb-[20px]">
@@ -14,13 +21,18 @@ const answerMap = ["A", "B", "C", "D"];
         v-for="(option, index) in detail.options"
         :key="index"
         :class="{
-          'font-bold': answerMap[index] === detail.answer,
+          'font-bold':
+            type === 'single'
+              ? answerMap[index] === detail.answer
+              : detail.answer.includes(answerMap[index]),
         }"
       >
         {{ option }}
       </div>
     </div>
-    <div class="p-[10px] bg-[#eee] text-[#333] whitespace-pre-wrap">{{ detail.resolve }}</div>
+    <div class="p-[10px] bg-[#eee] text-[#333] whitespace-pre-wrap">
+      {{ detail.resolve }}
+    </div>
     <div class="py-[10px] border-b-[1px] border-[#666]"></div>
   </div>
 </template>
