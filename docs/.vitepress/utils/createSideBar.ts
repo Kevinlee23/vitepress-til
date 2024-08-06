@@ -600,6 +600,7 @@ export function createSidebar() {
       {
         text: "敏捷",
         items: [
+          { text: "解题技巧", link: "/pmp/answer-trick" },
           { text: "敏捷错题", link: "/pmp/agile-wq" },
           { text: "过程组错题", link: "/pmp/process-wq" },
           { text: "多选题错题", link: "/pmp/dual-wq" },
