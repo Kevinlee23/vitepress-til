@@ -103,7 +103,7 @@ async function getList(url, data): Promise<void> {
 }
 ```
 
-## 对象声明
+## 类声明
 
 ```ts
 interface IUserProp {
