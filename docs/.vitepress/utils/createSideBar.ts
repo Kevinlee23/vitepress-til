@@ -137,6 +137,7 @@ export function createSidebar() {
           },
           { text: "索引类型", link: "/typescript/index-and-mapping" },
           { text: "类型逻辑运算", link: "/typescript/extend-and-infer" },
+          { text: "概念举例", link: "/typescript/example" },
         ],
       },
       {
@@ -269,6 +270,7 @@ export function createSidebar() {
           { text: "vite-create", link: "/react/create" },
           { text: "mutation", link: "/react/mutation" },
           { text: "list-render", link: "/react/list-render" },
+          { text: "useEffect", link: "/react/useEffect" },
           { text: "side-effect", link: "/react/side-effect" },
           { text: "state", link: "/react/state" },
           { text: "slot", link: "/react/slot" },
@@ -598,9 +600,10 @@ export function createSidebar() {
     ],
     "/pmp/": [
       {
-        text: "敏捷",
+        text: "PMP",
         items: [
           { text: "解题技巧", link: "/pmp/answer-trick" },
+          { text: "PMP 中的工具和技术 T&M", link: "/pmp/pmp-t&M" },
           { text: "敏捷错题", link: "/pmp/agile-wq" },
           { text: "过程组错题", link: "/pmp/process-wq" },
           { text: "多选题错题", link: "/pmp/dual-wq" },
