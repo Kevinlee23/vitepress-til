@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # react 状态管理
 
 ## 状态提升 - 组件间共享状态
@@ -29,10 +33,11 @@ export const SomeContext = createContext(1);
 `获取 Context`
 
 ```jsx
-  const level = useContext(SomeContext);
+const level = useContext(SomeContext);
 ```
 
 `传递 Context`
+
 ```jsx
 import { SomeContext } from "./app-context.js";
 
@@ -46,11 +51,12 @@ export default function Father({ level, children }) {
 ```
 
 与 `vue` 中的 `provider/inject` 的区别:
+
 - 语法和使用方式:
   - `Context:`
     React 使用 `createContext()` 创建 `Context` 对象，通过 `Provider` 提供值, `Consumer` 或 `useContext` 消费值
   - `provide/inject:`
-    Vue直接在组件中使用provide提供数据,在子组件中使用 `inject` 注入数据
+    Vue 直接在组件中使用 provide 提供数据,在子组件中使用 `inject` 注入数据
 - 响应性:
   - `Context:`
     `Context` 的值变化会触发使用该 `Context` 的组件重新渲染
@@ -68,11 +74,78 @@ export default function Father({ level, children }) {
     在 `vue 2.5.0+` 版本中, `inject` 可以通过设置默认值使其成为可选项
 - 组件耦合:
   - `Context:`
-    使用Context可能会使组件与特定 `Context` 耦合,影响复用性
+    使用 Context 可能会使组件与特定 `Context` 耦合,影响复用性
   - `provide/inject:`
     相对来说, `provide/inject` 的使用不会严重影响组件的独立性和复用性
 
 使用 `Context` 前，先考虑 直接使用 `props` 或 抽象组件将 `jsx` 作为 `children` 传递是否更适用
+
+### 与 Context 优化相关的: React.memo; Rect.useMemo()
+
+更新 context 时，所有使用该上下文的组件都被重新渲染，为了防止不必要的重新渲染，我们可以：
+
+- 创建多个 context 想相关的数据分开存储 #1
+- 拆分组件并传递所需的值，将子组件包装在 React.memo 中，通过 prop 分发 context 的属性 #2
+- 使用 React.useMemo(), 并将 context 属性作为依赖项，只有当属性修改时才出发回调函数重新渲染 #3
+
+`#2`
+
+```jsx
+const Card = () => {
+  const appContextValue = useContext(AppContext);
+  const theme = appContextValue.theme;
+
+  return (
+    <div>
+      <CardTitle theme={theme} />
+      <CardDescription theme={theme} />
+    </div>
+  );
+};
+
+const CardTitle = React.memo(({ theme }) => {
+  return <h2 style={{ color: theme.text }}>2024年巴黎奥运会 </h2>;
+});
+
+const CardDescription = React.memo(({ theme }) => {
+  return (
+    <p style={{ color: theme.text }}>
+      2024年巴黎奥运会是第33届夏季奥林匹克运动会
+    </p>
+  );
+});
+```
+
+`#3`
+
+```jsx
+const Card = () => {
+  const appContextValue = useContext(AppContext);
+  const theme = appContextValue.theme;
+
+  return useMemo(
+    () => (
+      <div>
+        <CardTitle theme={theme} />
+        <CardDescription theme={theme} />
+      </div>
+    ),
+    [theme]
+  );
+};
+
+const CardTitle = ({ theme }) => {
+  return <h2 style={{ color: theme.text }}>2024年巴黎奥运会 </h2>;
+};
+
+const CardDescription = ({ theme }) => {
+  return (
+    <p style={{ color: theme.text }}>
+      2024年巴黎奥运会是第33届夏季奥林匹克运动会
+    </p>
+  );
+};
+```
 
 ## 全局状态管理
 
