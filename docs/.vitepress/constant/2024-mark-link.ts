@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  AUG: [1, 2, 2, 2, 5, 6, 8],
+  AUG: [1, 2, 2, 2, 5, 6, 8, 12],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
@@ -39,6 +39,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   AUG: [
+    {
+      title: "Ts 概念举例",
+      link: "/typescript/example",
+      tagName: TagName.Typescript,
+      createDate: "2024-08-12",
+    },
     {
       title: "useEffect",
       link: "/react/useEffect",

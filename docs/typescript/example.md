@@ -67,12 +67,12 @@ type StrArrOrNumArr = ToArrayNonDist<string | number>; // => (string | number)[]
 // 修饰符 readonly, ?
 // 映射修饰符行为: + 增加; - 去除
 
-type CreateMutable<Type> = {
-  -readonly [Property in keyof Type]: Type[Property]; // 去掉修饰符 readonly
+type CreateMutable<T> = {
+  -readonly [Property in keyof T]: T[Property]; // 去掉修饰符 readonly
 };
 
-type Concrete<Type> = {
-  [Property in keyof Type]-?: Type[Property]; // 去掉修饰符 ?
+type Concrete<T> = {
+  [Property in keyof T]-?: T[Property]; // 去掉修饰符 ?
 };
 ```
 
@@ -106,8 +106,8 @@ interface Circle {
   radius: number;
 }
 
-type RemoveKindField<Type> = {
-  [Property in keyof Type as Exclude<Property, "kind">]: Type[Property];
+type RemoveKindField<T> = {
+  [Property in keyof T as Exclude<Property, "kind">]: T[Property];
 };
 
 type KindlessCircle = RemoveKindField<Circle>;
@@ -130,4 +130,42 @@ type Config = EventConfig<SquareEvent | CircleEvent>;
 //    square: (event: SquareEvent) => void;
 //    circle: (event: CircleEvent) => void;
 // }
+```
+
+### 搭配 条件类型 extends 使用
+
+```typescript
+type ExtractPII<T> = {
+  [Property in keyof T]: T[Property] extends { pii: true } ? true : false;
+};
+
+type DBFields = {
+  id: { format: "incrementing" };
+  name: { type: string; pii: true };
+};
+
+type ObjectsNeedingGDPRDeletion = ExtractPII<DBFields>;
+// type ObjectsNeedingGDPRDeletion = {
+//    id: false;
+//    name: true;
+// }
+```
+
+## 模板字面量类型
+
+### 定义
+
+```typescript
+type World = "world";
+type Greeting = `Hello, ${World}`; // type Greeting = "Hello, World"
+```
+
+### 内置字符操作类型
+
+```typescript
+// Uppercase, LowerCase, Capitalize, Uncapitalize
+type ShoutyGreeting = Uppercase<Greeting>;
+type QuietGreeting = Lowercase<Greeting>;
+type Greeting = Capitalize<Greeting>;
+type UncomfortableGreeting = Uncapitalize<Greeting>;
 ```
