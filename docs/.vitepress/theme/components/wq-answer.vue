@@ -1,10 +1,14 @@
 <script setup>
+import { ref } from "vue";
+
 defineProps({
   detail: { type: Object, required: true },
   type: { type: String, default: "single" },
 });
 
 const answerMap = ["A", "B", "C", "D", "E"];
+
+const show = ref(false);
 </script>
 
 <template>
@@ -22,16 +26,21 @@ const answerMap = ["A", "B", "C", "D", "E"];
         :key="index"
         :class="{
           'font-bold':
-            type === 'single'
+            (type === 'single'
               ? answerMap[index] === detail.answer
-              : detail.answer.includes(answerMap[index]),
+              : detail.answer.includes(answerMap[index])) && show,
         }"
       >
         {{ option }}
       </div>
     </div>
     <div class="p-[10px] bg-[#eee] text-[#333] whitespace-pre-wrap">
-      {{ detail.resolve }}
+      <div class="cursor-pointer" @click="show = !show">
+        点我查看答案 {{ show ? "⬆︎" : "⬇" }}
+      </div>
+      <div v-if="show">
+        {{ detail.resolve }}
+      </div>
     </div>
     <div class="py-[10px] border-b-[1px] border-[#666]"></div>
   </div>
