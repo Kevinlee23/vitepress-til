@@ -364,6 +364,7 @@ export function createSidebar() {
           },
         ],
       },
+
       { text: "返回上层", link: "/others-map" },
     ],
     "/fix/": [
@@ -592,6 +593,12 @@ export function createSidebar() {
             text: "Github Actions 中的 工作流定时执行",
             link: "/ops/github-workflow-timeset",
           },
+        ],
+      },
+      {
+        text: "知识点",
+        items: [
+          { text: "安全概念 - 2FA and TOTP", link: "/ops/2FA-and-TOTP" },
         ],
       },
     ],
