@@ -599,6 +599,7 @@ export function createSidebar() {
         text: "知识点",
         items: [
           { text: "安全概念 - 2FA and TOTP", link: "/ops/2FA-and-TOTP" },
+          { text: "前端角度的 SEO", link: "/ops/seo-front" },
         ],
       },
     ],
