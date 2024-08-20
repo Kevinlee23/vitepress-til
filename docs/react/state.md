@@ -74,7 +74,7 @@ export default function Father({ level, children }) {
     在 `vue 2.5.0+` 版本中, `inject` 可以通过设置默认值使其成为可选项
 - 组件耦合:
   - `Context:`
-    使用 Context 可能会使组件与特定 `Context` 耦合,影响复用性
+    使用 `Context` 可能会使组件与特定 `Context` 耦合,影响复用性
   - `provide/inject:`
     相对来说, `provide/inject` 的使用不会严重影响组件的独立性和复用性
 
@@ -82,11 +82,11 @@ export default function Father({ level, children }) {
 
 ### 与 Context 优化相关的: React.memo; Rect.useMemo()
 
-更新 context 时，所有使用该上下文的组件都被重新渲染，为了防止不必要的重新渲染，我们可以：
+更新 `context` 时，所有使用该上下文的组件都被重新渲染，为了防止不必要的重新渲染，我们可以：
 
-- 创建多个 context 想相关的数据分开存储 #1
-- 拆分组件并传递所需的值，将子组件包装在 React.memo 中，通过 prop 分发 context 的属性 #2
-- 使用 React.useMemo(), 并将 context 属性作为依赖项，只有当属性修改时才出发回调函数重新渲染 #3
+- `#1` 创建多个 `context` 想相关的数据分开存储 
+- `#2` 拆分组件并传递所需的值，将子组件包装在 `React.memo` 中，通过 `prop` 分发 `context` 的属性 
+- `#3` 使用 `React.useMemo()`, 并将 `context` 属性作为依赖项，只有当属性修改时才出发回调函数重新渲染 
 
 `#2`
 

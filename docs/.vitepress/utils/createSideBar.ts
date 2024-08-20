@@ -271,6 +271,7 @@ export function createSidebar() {
           { text: "side-effect", link: "/react/side-effect" },
           { text: "state", link: "/react/state" },
           { text: "slot", link: "/react/slot" },
+          { text: "state-keep-or-not", link: "/react/staet-keep-or-not" },
         ],
       },
       { text: "返回上层", link: "/framework-map" },
@@ -411,6 +412,7 @@ export function createSidebar() {
             text: "结婚带给我的 🔝",
             link: "/ordinary/What-marriage-brings-to-me",
           },
+          { text: "短评", link: "/ordinary/short-comment" },
           {
             text: "熊家菜谱",
             link: "/ordinary/cook-menu",

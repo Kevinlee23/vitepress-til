@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16],
+  AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 1, 206],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
   JUN: [3, 5, 5, 14, 20, 21, 26],
   MAY: [6, 9, 10, 11, 13, 15, 16, 17, 17, 29, 31, 31, 31],
@@ -39,6 +39,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   AUG: [
+    {
+      title: "state-keep-or-not",
+      link: "/react/staet-keep-or-not",
+      tagName: TagName.React,
+      createDate: "2024-08-20",
+    },
     {
       title: "前端角度的 SEO",
       link: "/ops/seo-front",
@@ -220,13 +226,13 @@ export const markData: MarkData = {
       createDate: "2024-06-05",
     },
     {
-      title: "CSS - 给项目加上禁用遮罩",
+      title: "给项目加上禁用遮罩",
       link: "/css/item-mask",
       tagName: TagName.CSS,
       createDate: "2024-06-05",
     },
     {
-      title: "CSS - 给图片加上阴影遮罩",
+      title: "给图片加上阴影遮罩",
       link: "/css/mask-image",
       tagName: TagName.CSS,
       createDate: "2024-06-03",
@@ -247,7 +253,7 @@ export const markData: MarkData = {
       createDate: "2024-05-31",
     },
     {
-      title: "CSS - 博客类应用中点击查看更多的设计",
+      title: "博客类应用中点击查看更多的设计",
       link: "/css/see-more",
       tagName: TagName.CSS,
       createDate: "2024-05-31",
@@ -272,26 +278,26 @@ export const markData: MarkData = {
       createDate: "2024-05-17",
     },
     {
-      title: "CSS - 一些按钮",
+      title: "一些按钮",
       link: "/css/some-buttons",
       tagName: TagName.CSS,
       tagStatus: "BETA",
       createDate: "2024-05-16",
     },
     {
-      title: "CSS - 文字颜色自动适配背景颜色",
+      title: "文字颜色自动适配背景颜色",
       link: "/css/text-color-fit-to-bg",
       tagName: TagName.CSS,
       createDate: "2024-05-15",
     },
     {
-      title: "CSS - 下划线装饰",
+      title: "下划线装饰",
       link: "/css/under-decoration",
       tagName: TagName.CSS,
       createDate: "2024-05-13",
     },
     {
-      title: "CSS - 圆形 pulse 动画",
+      title: "圆形 pulse 动画",
       link: "/css/circle-animation",
       tagName: TagName.CSS,
       createDate: "2024-05-11",
@@ -303,7 +309,7 @@ export const markData: MarkData = {
       createDate: "2024-05-10",
     },
     {
-      title: "CSS - 简单的瀑布流实现",
+      title: "简单的瀑布流实现",
       link: "/css/fall-style",
       tagName: TagName.CSS,
       createDate: "2024-05-09",
@@ -317,7 +323,7 @@ export const markData: MarkData = {
   ],
   APRI: [
     {
-      title: "CSS - 品牌宫格图",
+      title: "品牌宫格图",
       link: "/css/brand-grid",
       tagName: TagName.CSS,
       createDate: "2024-04-30",
@@ -330,7 +336,7 @@ export const markData: MarkData = {
       createDate: "2024-04-29",
     },
     {
-      title: "CSS - 使用 HSL 表示颜色",
+      title: "使用 HSL 表示颜色",
       link: "/css/use-hsl-to-represent-color",
       tagName: TagName.CSS,
       createDate: "2024-04-26",
