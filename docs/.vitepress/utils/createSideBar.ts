@@ -271,7 +271,7 @@ export function createSidebar() {
           { text: "side-effect", link: "/react/side-effect" },
           { text: "state", link: "/react/state" },
           { text: "slot", link: "/react/slot" },
-          { text: "state-keep-or-not", link: "/react/staet-keep-or-not" },
+          { text: "state-keep-or-not", link: "/react/state-keep-or-not" },
         ],
       },
       { text: "返回上层", link: "/framework-map" },

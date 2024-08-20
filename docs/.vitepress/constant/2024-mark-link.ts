@@ -41,7 +41,7 @@ export const markData: MarkData = {
   AUG: [
     {
       title: "state-keep-or-not",
-      link: "/react/staet-keep-or-not",
+      link: "/react/state-keep-or-not",
       tagName: TagName.React,
       createDate: "2024-08-20",
     },
