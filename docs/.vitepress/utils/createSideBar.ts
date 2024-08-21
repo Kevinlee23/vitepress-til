@@ -272,6 +272,7 @@ export function createSidebar() {
           { text: "state", link: "/react/state" },
           { text: "slot", link: "/react/slot" },
           { text: "state-keep-or-not", link: "/react/state-keep-or-not" },
+          { text: "state-with-zustand", link: "/react/state-with-zustand" },
         ],
       },
       { text: "返回上层", link: "/framework-map" },
