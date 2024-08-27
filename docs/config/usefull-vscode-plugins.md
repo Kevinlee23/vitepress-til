@@ -16,7 +16,7 @@
 
 `Material` 风格的图标
 
-## NPM-Script 
+## NPM-Script
 
 快速执行 `NPM` 脚本，需要进行配置指定项目使用的包管理工具 `(Npm, Pnpm, Yarn)`
 
@@ -47,3 +47,7 @@
 ## common-intellisense
 
 常见的 `UI` 库代码提示，包含: `element`, `elementPlus`, `vant 4`, `antd` 等
+
+## Material Icon Theme
+
+`Material` 风格的 `icon` 主题

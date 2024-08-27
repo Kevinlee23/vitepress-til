@@ -2,6 +2,18 @@
 
 > 摘记，自述，想法
 
+## 2024-08-27
+
+谈配置管理:
+
+- 阅览别人的 `github` 主页时，经常会发现很多人保存了 诸如 `dotfile` 的文件来保存自己的 `vscode` 配置（包括插件，`setting.json` 等）、控制台配置 (`.zshrc`) 和 `gitconfig` 等
+- [参考](https://gist.github.com/hyoban/7943d4c59c43b79d3f8388671437fe11)
+
+谈资产管理:
+
+- 很多人会将自己的设备和使用软件单独开一个网页记录，作为资产管理的一部分
+- [参考](https://paulstamatiou.com/stuff-i-use/)
+
 ## 2024-08-26
 
 谈知识管理:
