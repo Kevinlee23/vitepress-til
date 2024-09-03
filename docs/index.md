@@ -27,7 +27,7 @@ features:
     icon: 🧰
     details: 解决问题的百宝箱
     link: /tools-map
-  - title: 第三方类库
+  - title: 第三方库
     icon: ⚙️
     details: 项目开发中关键的齿轮
     link: /3-party-map

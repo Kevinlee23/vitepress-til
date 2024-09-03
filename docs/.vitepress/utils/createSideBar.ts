@@ -59,12 +59,12 @@ export function createSidebar() {
   const res: ISideBar = {
     "/": [
       {
-        text: "大纲",
+        text: "目录",
         items: [
           { text: "前端基础", link: "/front-end-map" },
           { text: "框架", link: "/framework-map" },
           { text: "工具", link: "/tools-map" },
-          { text: "第三方类库", link: "/3-party-map" },
+          { text: "第三方库", link: "/3-party-map" },
           { text: "杂项", link: "/others-map" },
         ],
       },
@@ -325,6 +325,10 @@ export function createSidebar() {
           { text: "nuxt 路由", link: "/nuxt/nuxt-route" },
         ],
       },
+      {
+        text: "返回上层",
+        link: "/framework-map",
+      },
     ],
     "/config/": [
       {
@@ -575,6 +579,10 @@ export function createSidebar() {
     ],
     "/3-party-library/": [
       {
+        text: "3pt-library",
+        items: [{ text: "第三方库记录", link: "/3-party-library/marked-library" }],
+      },
+      {
         text: "mockJs",
         items: [
           {
@@ -605,6 +613,10 @@ export function createSidebar() {
           { text: "前端角度的 SEO", link: "/ops/seo-front" },
         ],
       },
+      {
+        text: "返回上层",
+        link: "/others-map",
+      },
     ],
     "/pmp/": [
       {
@@ -616,6 +628,10 @@ export function createSidebar() {
           { text: "过程组错题", link: "/pmp/process-wq" },
           { text: "多选题错题", link: "/pmp/dual-wq" },
         ],
+      },
+      {
+        text: "返回上层",
+        link: "/",
       },
     ],
   };
