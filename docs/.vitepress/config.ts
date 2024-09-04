@@ -1,4 +1,8 @@
 import { defineConfig } from "vitepress";
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from "vitepress-plugin-group-icons";
 import { createSidebar } from "./utils/createSideBar";
 
 const wechatSvg =
@@ -79,10 +83,16 @@ export default defineConfig({
   },
   cleanUrls: true,
   lastUpdated: true,
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin);
+    },
+  },
   vite: {
     server: {
       host: "0.0.0.0",
       port: 8080,
     },
+    plugins: [groupIconVitePlugin()],
   },
 });

@@ -1,6 +1,6 @@
 :::code-group
 
-```javascript [辅助函数]
+```javascript [utils.js]
 const DONE = "4";
 const Range_SIZE = 1024 * 1024 * 1;
 
@@ -50,7 +50,7 @@ function concatArrayBuffer(arrayBufferArray) {
 }
 ```
 
-```javascript [constant]
+```javascript [constant.js]
 // 文件类型
 export const imageFiles = [
   ".png",
@@ -78,7 +78,7 @@ export const fileList = [
 ];
 ```
 
-```javascript [download]
+```javascript [download.js]
 function downloadArrayBufferFile(arrayBuffer, fileName) {
   const blob = new Blob([arrayBuffer], { type: "application/octet-stream" });
   const a = document.createElement("a");

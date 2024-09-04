@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",
-    "blueimp-md5": "^2.19.0"
+    "blueimp-md5": "^2.19.0",
+    "vitepress-plugin-group-icons": "^1.1.0"
   },
   "postcss": {
     "plugins": {

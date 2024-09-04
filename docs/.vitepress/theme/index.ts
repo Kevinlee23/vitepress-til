@@ -4,6 +4,7 @@ import asideTop from "./components/asideTop.vue";
 import backTop from "./components/backTop.vue";
 import "./fira_code.css";
 import "./tailwind.postcss.css";
+import 'virtual:group-icons.css'
 
 export default {
   ...DefaultTheme,
