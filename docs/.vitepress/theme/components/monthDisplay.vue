@@ -15,13 +15,14 @@ const { monColor, monthInit } = useMonthCompute(
   props.length
 );
 
+
 onMounted(() => {
   monthInit(props.markedDate);
 });
 </script>
 
 <template>
-  <div class="block-container">
+  <div class="block-container" :class="[monColor(props.markedDate).length === 42 ? 'max-w-[112px]' : 'max-w-[92px]']">
     <div
       v-for="(item, index) in monColor(props.markedDate)"
       :key="index"
@@ -39,7 +40,6 @@ onMounted(() => {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 10px;
-  max-width: 92px;
   margin-bottom: 16px;
 }
 

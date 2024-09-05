@@ -23,6 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
+  SEPT: [5],
   AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16, 20, 21],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
   JUN: [3, 5, 5, 14, 20, 21, 26],
@@ -38,6 +39,14 @@ export const markDate: MarkDate = {
 };
 
 export const markData: MarkData = {
+  SEPT: [
+    {
+      title: "3.5 新特性",
+      link: "/vue3/3.5-new-features",
+      tagName: TagName.Vue3,
+      createDate: "2024-09-05",
+    },
+  ],
   AUG: [
     {
       title: "state-with-zustand",
@@ -90,7 +99,7 @@ export const markData: MarkData = {
       createDate: "2024-08-05",
     },
     {
-      title: "Github Actions 中的 工作流定时执行",
+      title: "Github Actions 中的工作流定时执行",
       link: "/ops/github-workflow-timeset",
       tagName: TagName.OPs,
       createDate: "2024-08-02",

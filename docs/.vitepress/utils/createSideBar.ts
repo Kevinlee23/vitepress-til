@@ -234,6 +234,10 @@ export function createSidebar() {
         ],
       },
       {
+        text: "版本更新",
+        items: [{ text: "3.5 新特性", link: "/vue3/3.5-new-features" }],
+      },
+      {
         text: "Vite",
         items: [
           { text: "my-vitesse", link: "/vue3/my-vitesse" },
@@ -580,7 +584,9 @@ export function createSidebar() {
     "/3-party-library/": [
       {
         text: "3pt-library",
-        items: [{ text: "第三方库记录", link: "/3-party-library/marked-library" }],
+        items: [
+          { text: "第三方库记录", link: "/3-party-library/marked-library" },
+        ],
       },
       {
         text: "mockJs",
@@ -601,7 +607,7 @@ export function createSidebar() {
         items: [
           { text: "pm2的基本操作", link: "/ops/pm2" },
           {
-            text: "Github Actions 中的 工作流定时执行",
+            text: "Github Actions 中的工作流定时执行",
             link: "/ops/github-workflow-timeset",
           },
         ],

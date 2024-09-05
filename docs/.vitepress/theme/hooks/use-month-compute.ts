@@ -1,17 +1,21 @@
 import { ref, computed } from "vue";
 
 interface DayItem {
-  text: string | number,
-  color: string,
-  num: string | number
+  text: string | number;
+  color: string;
+  num: string | number;
 }
 
 const NOT_THIS_MON_COLOR: string = "#c2c4c3";
 const FREQUENCY_COLOR: string[] = ["#ebedf0", "#9be9a8", "#30a14e", "#216e39"];
 
-export default function useMonthCompute(year: number, month: number, length: number) {
-  const monthDate = ref<number[]>(new Array(length).fill(0))
-  const monthMax = ref<number>(0)
+export default function useMonthCompute(
+  year: number,
+  month: number,
+  length: number
+) {
+  const monthDate = ref<number[]>(new Array(length).fill(0));
+  const monthMax = ref<number>(0);
 
   /**
    * 月份数据转化成 color:
@@ -25,6 +29,7 @@ export default function useMonthCompute(year: number, month: number, length: num
     return (markedDate: number[]) => {
       const fDay = new Date(`${year}-${month}-01`).getDay();
       const prefixLength = fDay === 0 ? 6 : fDay - 1;
+
       const prefixArr = new Array(prefixLength).fill({
         text: "last",
         color: NOT_THIS_MON_COLOR,
@@ -39,7 +44,7 @@ export default function useMonthCompute(year: number, month: number, length: num
         num: "null",
       });
 
-      const _length = markedDate.length
+      const _length = markedDate.length;
       const arr = new Array(_length).fill(null);
       const addDay = _length;
       const fillDay = new Set(markedDate).size;
@@ -59,6 +64,7 @@ export default function useMonthCompute(year: number, month: number, length: num
       const result: DayItem[] = [];
       const xLen = 7;
       const yLen = allDay.length / 7;
+
       for (let x = 1; x < xLen + 1; x++) {
         for (let y = 1; y < yLen + 1; y++) {
           result.push(allDay[x + (y - 1) * 7 - 1]);
