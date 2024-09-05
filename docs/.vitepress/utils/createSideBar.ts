@@ -154,6 +154,7 @@ export function createSidebar() {
         text: "CSS",
         items: [
           { text: "gradient-color", link: "/css/gradient-color" },
+          { text: "常用片段", link: "/css/snippets" },
           { text: "style 初始化", link: "/css/style-init" },
           { text: "移动端适配", link: "/css/mobile-adaptation" },
           { text: "获取元素的 style", link: "/css/get-computed-style" },

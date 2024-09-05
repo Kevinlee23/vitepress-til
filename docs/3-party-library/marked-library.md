@@ -10,9 +10,10 @@
 ## React Utils
 
 - [react-dnd](https://github.com/react-dnd/react-dnd): `react DnD` 组件
-- [react-window](https://github.com/bvaughn/react-window): `react` 的虚拟列表组件
+- [react-window](https://github.com/bvaughn/react-window): `react` 虚拟列表组件
 - [cmdk](https://github.com/pacocoursey/cmdk): `cmd + k` 组件
 - [plate](https://github.com/udecode/plate): `react` 富文本组件
+- [jotai](https://github.com/pmndrs/jotai) `react` 状态管理
 
 ## Common
 
@@ -29,3 +30,7 @@
 - [fuse.js](https://github.com/krisk/fuse): 中小型的、`client-side` 的模糊搜索 `(fuzzy search)` 工具
 - [lowdb](https://github.com/typicode/lowdb): 使用 `json` 的本地数据库
 - [dnum](https://github.com/bpierre/dnum): 大精度计算
+- [ofetch](https://github.com/unjs/ofetch): `fetch api`
+- [Path-to-RegExp](https://github.com/pillarjs/path-to-regexp): 将路径字符串转换为正则表达式
+- [nanoid](https://github.com/ai/nanoid): `js` 下的 `ID` 生成器
+- [vfile](https://github.com/vfile/vfile): 虚拟文件系统
