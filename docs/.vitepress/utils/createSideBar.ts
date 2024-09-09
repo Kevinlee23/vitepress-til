@@ -166,6 +166,7 @@ export function createSidebar() {
             text: "文字颜色自动适配背景颜色",
             link: "/css/text-color-fit-to-bg",
           },
+          { text: "css 函数速查", link: "/css/css-function-table" },
         ],
       },
       {
@@ -285,7 +286,11 @@ export function createSidebar() {
     "/react-native/": [
       {
         text: "RN (React Mative)",
-        items: [{ text: "RN 中样式的写法", link: "/react-native/styleSheet" }],
+        items: [
+          { text: "RN 中样式的写法", link: "/react-native/styleSheet" },
+          { text: "RN 中的组件", link: "/react-native/rn-components" },
+          { text: "RN 中图片资源的引用方式", link: "/react-native/images" },
+        ],
       },
       { text: "返回上层", link: "/framework-map" },
     ],

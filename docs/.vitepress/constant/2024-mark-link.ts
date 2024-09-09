@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  SEPT: [5],
+  SEPT: [5, 9, 9],
   AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16, 20, 21],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
   JUN: [3, 5, 5, 14, 20, 21, 26],
@@ -40,6 +40,18 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   SEPT: [
+    {
+      title: "RN 中的组件",
+      link: "/react-native/rn-components",
+      tagName: TagName.ReactNative,
+      createDate: "2024-09-09",
+    },
+    {
+      title: "RN 中图片资源的引用方式",
+      link: "/react-native/images",
+      tagName: TagName.ReactNative,
+      createDate: "2024-09-09",
+    },
     {
       title: "3.5 新特性",
       link: "/vue3/3.5-new-features",
