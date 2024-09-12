@@ -29,7 +29,7 @@
 
 处理滚动行为时，由于滚动事件太频繁，所以都会用 `setTimeout` 来进行优化处理，现在浏览器支持了 `scrollend` 事件
 
-`Can i use`:
+`Can i use?`:
 
 ![can i use](/images/scrollend.png)
 
@@ -46,7 +46,7 @@ element.addEventListener("scrollend", (event) => {
 if ("onscrollend" in window) {
   document.onscrollend = callback;
 } else {
-  document.onscroll = (event) => {
+  document.onscrollend = (event) => {
     clearTimeout(window.scrollEndTimer);
     window.scrollEndTimer = setTimeout(callback, 100);
   };
