@@ -167,6 +167,7 @@ export function createSidebar() {
             link: "/css/text-color-fit-to-bg",
           },
           { text: "css 函数速查", link: "/css/css-function-table" },
+          { text: "滚动相关 api", link: "/css/scroll-relative" },
         ],
       },
       {
