@@ -277,9 +277,22 @@ export function createSidebar() {
           { text: "useEffect", link: "/react/useEffect" },
           { text: "side-effect", link: "/react/side-effect" },
           { text: "state", link: "/react/state" },
-          { text: "slot", link: "/react/slot" },
           { text: "state-keep-or-not", link: "/react/state-keep-or-not" },
           { text: "state-with-zustand", link: "/react/state-with-zustand" },
+          { text: "slot", link: "/react/slot" },
+        ],
+      },
+      {
+        text: "api & hook",
+        items: [
+          {
+            text: "useImperativeHandle",
+            link: "/react/hook-useImperativeHandle",
+          },
+          {
+            text: "useMemo",
+            link: "/react/hook-useMemo",
+          },
         ],
       },
       { text: "返回上层", link: "/framework-map" },
@@ -592,7 +605,7 @@ export function createSidebar() {
       {
         text: "3pt-library",
         items: [
-          { text: "第三方库记录", link: "/3-party-library/marked-library" },
+          { text: "第三方库归档", link: "/3-party-library/marked-library" },
         ],
       },
       {
