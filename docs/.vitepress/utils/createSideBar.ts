@@ -293,6 +293,10 @@ export function createSidebar() {
             text: "useMemo",
             link: "/react/hook-useMemo",
           },
+          {
+            text: "useCallback",
+            link: "/react/hook-useCallback",
+          },
         ],
       },
       { text: "返回上层", link: "/framework-map" },
