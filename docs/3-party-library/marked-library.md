@@ -38,3 +38,4 @@
 - [nanoid](https://github.com/ai/nanoid): `js` 下的 `ID` 生成器
 - [vfile](https://github.com/vfile/vfile): 虚拟文件系统
 - [tailwind-merge](https://github.com/dcastil/tailwind-merge): 解决 `Tailwind Css` 类名合并时候的冲突
+- [timeago](https://github.com/hustcc/timeago.js): 显示 `xx 分钟以前` 的库
