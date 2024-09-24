@@ -15,6 +15,7 @@ export interface ISideBar {
   [MY_TAB.REACT_NATIVE]: IItems[];
   [MY_TAB.NEST]: IItems[];
   [MY_TAB.NUXT]: IItems[];
+  [MY_TAB.NEXT]: IItems[];
   [MY_TAB.CONFIG]: IItems[];
   [MY_TAB.FIX]: IItems[];
   [MY_TAB.MARK]: IItems[];
@@ -40,6 +41,7 @@ export enum MY_TAB {
   REACT_NATIVE = "/react-native/",
   NEST = "/nest/",
   NUXT = "/nuxt/",
+  NEXT = "/next/",
   CONFIG = "/config/",
   FIX = "/fix/",
   MARK = "/mark/",
@@ -352,6 +354,19 @@ export function createSidebar() {
           { text: "nuxt 目录结构", link: "/nuxt/nuxt-menu" },
           { text: "nuxt 路由", link: "/nuxt/nuxt-route" },
           { text: "nuxt 链接预取[3.13]", link: "/nuxt/nuxt-prefetch" },
+        ],
+      },
+      {
+        text: "返回上层",
+        link: "/framework-map",
+      },
+    ],
+    "/next/": [
+      {
+        text: "Next",
+        items: [
+          { text: "Layout", link: "/next/next-layout" },
+          { text: "Route 相关接口", link: "/next/next-route-rel" },
         ],
       },
       {
