@@ -17,6 +17,8 @@
 - [plate](https://github.com/udecode/plate): `React` 富文本组件
 - [jotai](https://github.com/pmndrs/jotai) `React` 状态管理
 - [react-hotkeys-hook](https://github.com/JohannesKlauss/react-hotkeys-hook): `React` 中用于热键管理的第三方 `Hook`
+- [TanStack/query](https://github.com/TanStack/query): 异步状态管理/服务器状态工具/网络数据获取
+- [SWR](https://swr.vercel.app/zh-CN): 用于数据请求的 `React Hooks` 库
 
 ## Common
 
@@ -39,3 +41,5 @@
 - [vfile](https://github.com/vfile/vfile): 虚拟文件系统
 - [tailwind-merge](https://github.com/dcastil/tailwind-merge): 解决 `Tailwind Css` 类名合并时候的冲突
 - [timeago](https://github.com/hustcc/timeago.js): 显示 `xx 分钟以前` 的库
+- [workerpool](https://github.com/josdejong/workerpool): `web worker` 功能的包装类库
+- [ofetch](https://github.com/unjs/ofetch): `A better fetch API, Works on node, browser and workers`

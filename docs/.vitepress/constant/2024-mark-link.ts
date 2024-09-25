@@ -23,7 +23,7 @@ type MarkData = {
 };
 
 export const markDate: MarkDate = {
-  SEPT: [5, 9, 9, 12, 24],
+  SEPT: [5, 9, 9, 12, 24, 25],
   AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16, 20, 21],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
   JUN: [3, 5, 5, 14, 20, 21, 26],
@@ -40,6 +40,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   SEPT: [
+    {
+      title: "Route 相关接口",
+      link: "/next/next-route-rel",
+      tagName: TagName.Next,
+      createDate: "2024-09-25",
+    },
     {
       title: "Next 中的布局组件",
       link: "/next/next-layout",
