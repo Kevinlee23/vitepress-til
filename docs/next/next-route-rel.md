@@ -13,6 +13,7 @@ import Link from "next/link";
 import {
   useRouter,
   redirect,
+  useParams,
   useSearchParams,
   usePathname,
   useSelectedLayoutSegment,
@@ -45,6 +46,8 @@ notice:
 
 ### useSearchParams
 
+> 等同于查询参数: `blog?year=2024&month=09 => params = { year: '2024', month: '09'}`
+
 [参考 1: URLSearchParams](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams)
 
 [参考 2: pushState](https://developer.mozilla.org/zh-CN/docs/Web/API/History/pushState)
@@ -60,6 +63,25 @@ const params = new URLSearchParams(searchParams.toString());
 // get, set, delete, etc...
 
 window.history.pushState(null, "", `?${params.toString()}`);
+```
+
+### useParams
+
+> `/shop/[tag]/[item] => /shop/shoes/nike-air-97 => params = { tag: 'shoes', item: 'nike-air-97' }`
+
+```jsx
+import { useParams } from 'next/navigation'
+
+export default function ExampleClientComponent() {
+  const params = useParams<{ tag: string; item: string }>()
+
+  // Route -> /shop/[tag]/[item]
+  // URL -> /shop/shoes/nike-air-max-97
+  // `params` -> { tag: 'shoes', item: 'nike-air-max-97' }
+  console.log(params)
+
+  return '...'
+}
 ```
 
 ### usePathname
@@ -344,6 +366,7 @@ export async function POST(request: Request) {
 ```
 
 使用第三方请求类库:
+
 - [SWR](https://swr.vercel.app/zh-CN): 用于数据请求的 `React Hooks` 库
 - [ofetch](https://github.com/unjs/ofetch): `A better fetch API, Works on node, browser and workers`
 
