@@ -367,6 +367,10 @@ export function createSidebar() {
         items: [
           { text: "Layout", link: "/next/next-layout" },
           { text: "Route 相关接口", link: "/next/next-route-rel" },
+          {
+            text: "服务端组件和客户端组件",
+            link: "/next/server-and-client-component",
+          },
         ],
       },
       {
