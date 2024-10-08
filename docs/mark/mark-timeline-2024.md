@@ -29,6 +29,9 @@ const augLink: Link[] = markData.AUG
 /* 九月数据 */
 const septDate: number[] = markDate.SEPT
 const septLink: Link[] = markData.SEPT
+/* 十月数据 */
+const octDate: number[] = markDate.OCT
+const octLink: Link[] = markData.OCT
 
 // 标签组
 const tagGroups: TagGroup[] = createTag()
@@ -48,6 +51,10 @@ tagGroups.map(group => {
 <TagGroupPage :tagGroups="tagGroups" />
 
 ## 2024
+
+### 十月
+
+<MarkPage :monthLink="octLink" :markedDate="octDate" :tagsMap="tagsMap" :year="2024" :month="10" :length="31" />
 
 ### 九月
 

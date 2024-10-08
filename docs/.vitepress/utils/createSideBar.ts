@@ -371,6 +371,10 @@ export function createSidebar() {
             text: "服务端组件和客户端组件",
             link: "/next/server-and-client-component",
           },
+          {
+            text: "Server Action",
+            link: "/next/server-action",
+          },
         ],
       },
       {

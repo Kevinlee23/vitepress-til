@@ -22,7 +22,23 @@ type MarkData = {
   [K in Month]?: Link[];
 };
 
+export const allMonthShort: Month[] = [
+  "DEC",
+  "NOV",
+  "OCT",
+  "SEPT",
+  "AUG",
+  "JUL",
+  "JUN",
+  "MAY",
+  "APRI",
+  "MAR",
+  "FEB",
+  "JAN",
+];
+
 export const markDate: MarkDate = {
+  OCT: [8],
   SEPT: [5, 9, 9, 12, 24, 25, 27],
   AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16, 20, 21],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
@@ -39,12 +55,20 @@ export const markDate: MarkDate = {
 };
 
 export const markData: MarkData = {
+  OCT: [
+    {
+      title: "Server Action",
+      link: "/next/server-action",
+      tagName: TagName.Next,
+      createDate: "2024-10-08",
+    },
+  ],
   SEPT: [
     {
       title: "服务端组件和客户端组件",
       link: "/next/server-and-client-component",
       tagName: TagName.Next,
-      createDate: '2024-09-27'
+      createDate: "2024-09-27",
     },
     {
       title: "Route 相关接口",
@@ -704,21 +728,6 @@ export const markData: MarkData = {
     },
   ],
 };
-
-export const allMonthShort: Month[] = [
-  "DEC",
-  "NOV",
-  "OCT",
-  "SEPT",
-  "AUG",
-  "JUL",
-  "JUN",
-  "MAY",
-  "APRI",
-  "MAR",
-  "FEB",
-  "JAN",
-];
 
 const showNum: number = 5;
 
