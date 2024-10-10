@@ -12,9 +12,7 @@ const AUTHOR = {
   email: "snowinlu@gmail.com",
   link: DOMAIN + "/vitepress-til/",
 };
-const OPTIONS: FeedOptions & {
-  follow_challenge: { feedId: String; userId: String };
-} = {
+const OPTIONS: FeedOptions = {
   title: "Snowinlu",
   description: "Snowinlu'blog",
   id: `${DOMAIN}/`,
@@ -26,12 +24,8 @@ const OPTIONS: FeedOptions & {
     rss: `${DOMAIN}/vitepress-til` + "/feed.xml",
   },
   author: AUTHOR,
-  image: `${DOMAIN}/vitepress-til/cola.svg`,
-  favicon: `${DOMAIN}/vitepress-til/cola.svg`,
-  follow_challenge: {
-    feedId: "67106239831281664",
-    userId: "41284129985304576",
-  },
+  image: `${DOMAIN}/vitepress-til/assets/cola.svg`,
+  favicon: `${DOMAIN}/vitepress-til/assets/favion.ico`,
 };
 
 const markdown = MarkdownIt({
@@ -46,6 +40,7 @@ export async function buildBlogRSS() {
 }
 
 async function generateRSS() {
+  // 增加新笔记分类时需要在这里增加文件夹
   const folders = [
     "javascript",
     "typescript",
@@ -72,6 +67,7 @@ async function generateRSS() {
     "echarts",
   ];
 
+  // 读取笔记分类的文件
   const files = await fg(folders.map((item) => "docs/" + item + "/*.md"));
 
   let posts: any[] = (
@@ -87,15 +83,17 @@ async function generateRSS() {
 
           return {
             ...data,
-            date: data.date ? new Date(data.date) : '',
+            date: data.date ? new Date(data.date) : "",
             content: html,
             author: [AUTHOR],
-            link: `${DOMAIN}/vitepress-til/${i.replace(".md", ".html")}`,
+            link: `${DOMAIN}/vitepress-til/${i.replace(".md", "")}`,
           };
         })
     )
   ).filter(Boolean);
 
+  // 只有带日期的笔记归类到 rss 页面（方便排序）
+  // 从 rss 功能上线日期开始计算 (2022-10-10)
   posts = posts.filter((item) => item.date);
   posts.sort((a, b) => +new Date(b.date) - +new Date(a.date));
   return posts;
