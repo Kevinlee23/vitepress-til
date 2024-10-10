@@ -38,7 +38,7 @@ export const allMonthShort: Month[] = [
 ];
 
 export const markDate: MarkDate = {
-  OCT: [8],
+  OCT: [8, 10],
   SEPT: [5, 9, 9, 12, 24, 25, 27],
   AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16, 20, 21],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
@@ -56,6 +56,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   OCT: [
+    {
+      title: "基本配置",
+      link: "/echarts/options",
+      tagName: TagName.Echarts,
+      createDate: "2024-10-10",
+    },
     {
       title: "Server Action",
       link: "/next/server-action",

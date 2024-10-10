@@ -29,6 +29,7 @@ export interface ISideBar {
   [MY_TAB.THREE_PARTY_LIBRARY]: IItems[];
   [MY_TAB.OPS]: IItems[];
   [MY_TAB.PMP]: IItems[];
+  [MY_TAB.ECHARTS]: IItems[];
 }
 
 export enum MY_TAB {
@@ -55,6 +56,7 @@ export enum MY_TAB {
   THREE_PARTY_LIBRARY = "/3-party-library/",
   OPS = "/ops/",
   PMP = "/pmp/",
+  ECHARTS = "/echarts/",
 }
 
 export function createSidebar() {
@@ -686,6 +688,16 @@ export function createSidebar() {
       {
         text: "返回上层",
         link: "/",
+      },
+    ],
+    "/echarts/": [
+      {
+        text: "echarts",
+        items: [{ text: "基本配置", link: "/echarts/options" }],
+      },
+      {
+        text: "返回上层",
+        link: "/tools-map",
       },
     ],
   };

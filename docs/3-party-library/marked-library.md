@@ -43,3 +43,4 @@
 - [timeago](https://github.com/hustcc/timeago.js): 显示 `xx 分钟以前` 的库
 - [workerpool](https://github.com/josdejong/workerpool): `web worker` 功能的包装类库
 - [ofetch](https://github.com/unjs/ofetch): `A better fetch API, Works on node, browser and workers`
+- [tailwindcss-motion](https://github.com/romboHQ/tailwindcss-motion): `tailwindcss` 的动效插件

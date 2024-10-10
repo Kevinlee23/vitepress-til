@@ -50,6 +50,7 @@ export default defineConfig({
           { text: "SQL", link: "/sql/my-sql-single-table-operation" },
           { text: "OSS", link: "/oss/get-sts" },
           { text: "Docker", link: "/docker/docker-basic" },
+          { text: "Echarts", link: "/echarts/options" },
         ],
       },
       {

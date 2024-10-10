@@ -8,4 +8,6 @@
 [Docker](/docker/docker-basic)
 
 [MongoDB](/mongodb/muti-document-query)
+
+[Echarts](/echarts/options)
 :::

@@ -43,6 +43,7 @@ export enum TagName {
   Ordinary = "Ordinary",
   OPs = "OPs",
   PMP = "PMP",
+  Echarts = "Echarts",
 }
 
 // 归档链接
@@ -92,6 +93,7 @@ export function createTag(): TagGroup[] {
         { title: "SQL", link: "/sql/my-sql-single-table-operation" },
         { title: "OSS", link: "/oss/get-sts" },
         { title: "Docker", link: "/docker/docker-basic" },
+        { title: "Echarts", link: "/echarts/options" },
       ],
     },
     {
