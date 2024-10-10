@@ -87,7 +87,7 @@ async function generateRSS() {
 
           return {
             ...data,
-            date: new Date(data.date),
+            date: data.date ? new Date(data.date) : '',
             content: html,
             author: [AUTHOR],
             link: `${DOMAIN}/vitepress-til/${i.replace(".md", ".html")}`,
