@@ -12,7 +12,9 @@ const AUTHOR = {
   email: "snowinlu@gmail.com",
   link: DOMAIN + "/vitepress-til/",
 };
-const OPTIONS: FeedOptions = {
+const OPTIONS: FeedOptions & {
+  follow_challenge: { feedId: String; userId: String };
+} = {
   title: "Snowinlu",
   description: "Snowinlu'blog",
   id: `${DOMAIN}/`,
@@ -26,6 +28,10 @@ const OPTIONS: FeedOptions = {
   author: AUTHOR,
   image: `${DOMAIN}/vitepress-til/cola.svg`,
   favicon: `${DOMAIN}/vitepress-til/cola.svg`,
+  follow_challenge: {
+    feedId: "67106239831281664",
+    userId: "41284129985304576",
+  },
 };
 
 const markdown = MarkdownIt({
@@ -66,7 +72,7 @@ async function generateRSS() {
     "echarts",
   ];
 
-  const files = await fg(folders.map((item) => item + "/*.md"));
+  const files = await fg(folders.map((item) => "docs/" + item + "/*.md"));
 
   const posts: any[] = (
     await Promise.all(
