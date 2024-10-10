@@ -111,14 +111,4 @@ async function writeFeed(name: string, items: Item[]) {
     feed.rss2(),
     "utf-8"
   );
-  await fs.writeFile(
-    `./docs/.vitepress/dist/${name}.atom`,
-    feed.atom1(),
-    "utf-8"
-  );
-  await fs.writeFile(
-    `./docs/.vitepress/dist/${name}.json`,
-    feed.json1(),
-    "utf-8"
-  );
 }
