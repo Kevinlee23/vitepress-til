@@ -74,7 +74,7 @@ async function generateRSS() {
 
   const files = await fg(folders.map((item) => "docs/" + item + "/*.md"));
 
-  const posts: any[] = (
+  let posts: any[] = (
     await Promise.all(
       files
         .filter((i) => !i.includes("index"))
@@ -96,7 +96,7 @@ async function generateRSS() {
     )
   ).filter(Boolean);
 
-  posts.filter((item) => item.date);
+  posts = posts.filter((item) => item.date);
   posts.sort((a, b) => +new Date(b.date) - +new Date(a.date));
   return posts;
 }
