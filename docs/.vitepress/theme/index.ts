@@ -1,10 +1,13 @@
 import { h } from "vue";
-import DefaultTheme from "vitepress/theme";
+import DefaultTheme from "vitepress/theme-without-fonts";
 import asideTop from "./components/asideTop.vue";
 import backTop from "./components/backTop.vue";
+import copyright from "./components/copyright.vue";
+import "./lxgw.font.css";
 import "./fira_code.css";
 import "./tailwind.postcss.css";
-import 'virtual:group-icons.css'
+import "virtual:group-icons.css";
+import "./my-fonts.css";
 
 export default {
   ...DefaultTheme,
@@ -12,6 +15,7 @@ export default {
     return h(DefaultTheme.Layout, null, {
       "aside-top": () => h(asideTop),
       "aside-outline-after": () => h(backTop),
+      "layout-bottom": () => h(copyright),
     });
   },
 };
