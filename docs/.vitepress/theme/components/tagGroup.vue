@@ -26,13 +26,13 @@ const hostpath = "/vitepress-til";
 
 <style lang="scss">
 .tag-group {
-  padding: 8px 0;
+  @apply px-0 py-[8px];
   .tag-item {
     @apply relative mr-[12px];
 
     &:before {
       content: "";
-      @apply w-full absolute left-auto right-0 top-auto bottom-0 border-b-[1px] border-b-[rgba(100,108,255,0.86)];
+      @apply w-full absolute left-auto right-0 top-auto bottom-0 border-b-[1px] border-b-black;
       transition: all 336ms cubic-bezier(0.48, 0.04, 0.52, 0.96);
 
       &:hover {
@@ -62,7 +62,21 @@ const hostpath = "/vitepress-til";
 .dark {
   a {
     &:hover {
-      color: white;
+      color: #2c9678 !important;
+
+      transition: all 336ms cubic-bezier(0.48, 0.04, 0.52, 0.96) 200ms;
+    }
+  }
+
+  .tag-item {
+    @apply relative mr-[12px];
+
+    &:before {
+      @apply border-b-white;
+    }
+
+    &:after {
+      @apply border-b-[#2c9678];
     }
   }
 }

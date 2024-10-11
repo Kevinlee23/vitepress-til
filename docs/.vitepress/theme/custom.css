@@ -1,0 +1,26 @@
+:root {
+  --vp-c-brand-1: #2c9678;
+  --vp-home-hero-name-color: #2c9678;
+  --vp-button-brand-bg: #2c9678;
+  --vp-button-brand-hover-bg: #2c9678cc;
+  --vp-button-brand-active-bg: #248067;
+  --vp-badge-tip-bg: #eeeeee;
+}
+
+a {
+  color: black !important;
+
+  &:hover {
+    color: #2c9678 !important;
+  }
+}
+
+.dark {
+  a {
+    color: white !important;
+  }
+
+  &:hover {
+    color: #2c9678 !important;
+  }
+}

@@ -39,54 +39,39 @@ const tagLink = computed(() =>
 </template>
 <style lang="scss">
 .link-card {
-  padding: 8px 0px;
+  @apply px-0 py-[8px];
 
   .link-icon {
-    position: absolute;
-    top: -4px;
-    right: 0px;
-    display: none;
-    font-size: 12px;
+    @apply absolute top-[-4px] right-0 text-[12px] hidden;
   }
 
   a {
-    position: relative;
-    padding: 4px;
-    font-size: 14px;
-    border-radius: 8px;
-    text-decoration: none;
+    @apply relative p-[4px] text-[14px] rounded-[8px] no-underline;
     &:hover {
-      padding-right: 8px;
-      color: #2c9678;
-      background-color: rgba(142, 150, 170, 0.14);
+      @apply pr-[8px] bg-[#eeeeee];
 
       .link-icon {
-        display: inline;
+        @apply inline;
       }
     }
   }
 }
 
 .link-create {
-  padding: 3px 6px;
-  font-size: 12px;
-  border-radius: 4px;
-  color: rgb(52, 81, 178);
-  background-color: rgba(142, 150, 170, 0.14);
+  @apply px-[6px] py-[3px] text-[12px] rounded-[4px] text-[#2c9678] bg-[#eeeeee];
 }
 
 .dark {
   .link-card {
     a {
       &:hover {
-        color: white;
+        color: #2c9678 !important;
       }
     }
   }
 
   .link-create {
-    color: white;
-    background-color: #2c9678;
+    @apply text-white bg-[#2c9678];
   }
 }
 </style>

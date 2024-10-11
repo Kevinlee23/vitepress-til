@@ -8,6 +8,7 @@ import "./fira_code.css";
 import "./tailwind.postcss.css";
 import "virtual:group-icons.css";
 import "./my-fonts.css";
+import "./custom.css"
 
 export default {
   ...DefaultTheme,
