@@ -426,6 +426,10 @@ export function createSidebar() {
             text: "snippets - markdown",
             link: "/config/markdown-snippets",
           },
+          {
+            text: "概念解释",
+            link: "/config/concept-explain",
+          },
         ],
       },
 

@@ -44,3 +44,5 @@
 - [workerpool](https://github.com/josdejong/workerpool): `web worker` 功能的包装类库
 - [ofetch](https://github.com/unjs/ofetch): `A better fetch API, Works on node, browser and workers`
 - [tailwindcss-motion](https://github.com/romboHQ/tailwindcss-motion): `tailwindcss` 的动效插件
+- [gray-matter](https://github.com/jonschlinkert/gray-matter): `YAML` 前端数据解析 (`md` 文件元数据读取)
+- [globby](): 使用友好的 `glob` (全局模式使用通配符指定文件名集) 库
