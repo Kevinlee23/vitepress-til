@@ -12,7 +12,7 @@ const wechatSvg =
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/vitepress-til/",
-  title: "Vitepress-TIL",
+  title: "麓下雪",
   description: "A VitePress Site",
   head: [["link", { rel: "icon", href: "/vitepress-til/assets/favion.ico" }]],
   themeConfig: {

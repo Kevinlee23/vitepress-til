@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "My-TIL"
-  text: "Today I Learned"
+  name: "Snowinlu"
+  text: "TIL(Today I Learned)"
   tagline: A week is 2% of a year, keep learning
   actions:
     - theme: brand

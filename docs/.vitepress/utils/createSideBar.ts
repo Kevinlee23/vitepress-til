@@ -172,6 +172,10 @@ export function createSidebar() {
           },
           { text: "css 函数速查", link: "/css/css-function-table" },
           { text: "滚动相关 api", link: "/css/scroll-relative" },
+          {
+            text: "将自定义字体作为 css 文件引入",
+            link: "/css/font-file-to-css",
+          },
         ],
       },
       {
