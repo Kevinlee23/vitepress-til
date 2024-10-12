@@ -28,6 +28,7 @@
     "fast-glob": "^3.3.2",
     "feed": "^4.2.2",
     "fs-extra": "^11.2.0",
+    "gitalk": "^1.8.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
     "vitepress-plugin-group-icons": "^1.1.0"
