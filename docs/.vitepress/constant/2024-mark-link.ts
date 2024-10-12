@@ -160,14 +160,12 @@ export const markData: MarkData = {
       title: "解题技巧",
       link: "/pmp/answer-trick",
       tagName: TagName.PMP,
-      tagStatus: "BETA",
       createDate: "2024-08-06",
     },
     {
       title: "多选题错题",
       link: "/pmp/dual-wq",
       tagName: TagName.PMP,
-      tagStatus: "BETA",
       createDate: "2024-08-05",
     },
     {
@@ -186,14 +184,12 @@ export const markData: MarkData = {
       title: "过程组错题",
       link: "/pmp/process-wq",
       tagName: TagName.PMP,
-      tagStatus: "BETA",
       createDate: "2024-08-02",
     },
     {
       title: "敏捷错题",
       link: "/pmp/agile-wq",
       tagName: TagName.PMP,
-      tagStatus: "BETA",
       createDate: "2024-08-01",
     },
   ],
@@ -368,7 +364,6 @@ export const markData: MarkData = {
       title: "一些按钮",
       link: "/css/some-buttons",
       tagName: TagName.CSS,
-      tagStatus: "BETA",
       createDate: "2024-05-16",
     },
     {
@@ -501,7 +496,6 @@ export const markData: MarkData = {
       link: "/nest/nest-basic",
       tagName: TagName.NestJs,
       createDate: "2024-04-18",
-      tagStatus: "BETA",
     },
     {
       title: "NestJs - 4种常用的http数据传输方式",

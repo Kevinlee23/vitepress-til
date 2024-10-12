@@ -69,6 +69,10 @@ export default defineConfig({
       },
     ],
 
+    outline: {
+      label: 'Outline 📂'
+    },
+
     // @ts-ignore
     sidebar: createSidebar(),
 
@@ -84,9 +88,7 @@ export default defineConfig({
     ],
 
     // https://github.com/lucaong/minisearch/
-    search: {
-      provider: "local",
-    },
+    search: { provider: "local" },
   },
   cleanUrls: true,
   lastUpdated: true,

@@ -2,11 +2,19 @@
 
 ## 字体和行高简写
 
-`text-[14px] leading-[14px]`
+``
 
-->
+```css
+.normal {
+  /* 完整写法 */
+  @apply text-[14px] leading-[14px];
+}
 
-`text-[14px]/[14px]`
+.short {
+  /* 简写 */
+  @apply text-[14px]/[14px];
+}
+```
 
 ## 分组
 

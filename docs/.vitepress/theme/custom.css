@@ -8,10 +8,13 @@
 }
 
 a {
-  color: black !important;
+  /* 不包含 VPButton 的样式修改 */
+  &:not(.VPButton) {
+    color: black !important;
 
-  &:hover {
-    color: #2c9678 !important;
+    &:hover {
+      color: #2c9678 !important;
+    }
   }
 }
 
@@ -22,5 +25,13 @@ a {
 
   &:hover {
     color: #2c9678 !important;
+  }
+}
+
+.VPDocAsideOutline {
+  .outline-title {
+    font-size: 16px !important;
+    font-family: "LxgwWenKai" !important;
+    font-weight: 500 !important;
   }
 }
