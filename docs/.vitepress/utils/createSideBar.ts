@@ -176,6 +176,10 @@ export function createSidebar() {
             text: "将自定义字体作为 css 文件引入",
             link: "/css/font-file-to-css",
           },
+          {
+            text: '动画的定义',
+            link: '/css/motion-definition'
+          }
         ],
       },
       {
@@ -701,7 +705,10 @@ export function createSidebar() {
     "/echarts/": [
       {
         text: "echarts",
-        items: [{ text: "基本配置", link: "/echarts/options" }],
+        items: [
+          { text: "基本配置", link: "/echarts/options" },
+          { text: "地图导入", link: "/echarts/map" },
+        ],
       },
       {
         text: "返回上层",

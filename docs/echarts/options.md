@@ -27,6 +27,7 @@ outline: deep
 - `yAxisIndex`: `y` 轴的 `index`, 在单个图标实例存在多个 `y` 轴的时候有用
 - `smooth`: 是否开启平滑处理
 - `emphasis: {}`: 高亮状态
+- `select: {}`: 选中状态
 - `markPoint: {}`: 图标记点
 - `data: []`: 数据
 
@@ -53,6 +54,7 @@ outline: deep
 
 ### radar
 
+- `{ type: 'radar' }`
 - `data: [{ symbol: String, symbolSize: Number }]`: 标记符号
 - `data: [{ lineStyle: {} }]`: 连线样式
 
@@ -65,6 +67,13 @@ outline: deep
   "splitArea": {} // 划分区域
 }
 ```
+
+### map
+
+- `{ type: 'map' }`
+- `roam`: 是否可拖动和放缩
+- `map`: 注册的地图名称
+- `nameMap: {}`: 自定义地图的名称映射
 
 ## visualMap
 
@@ -107,7 +116,7 @@ outline: deep
 }
 ```
 
-[配置查阅](https://echarts.apache.org/zh/option.html#series-line.encode)
+[配置查阅: encode](https://echarts.apache.org/zh/option.html#series-line.encode)
 
 ## 多 Y 轴
 
@@ -132,4 +141,26 @@ outline: deep
     { "name": "label03", "type": "type3" }
   ]
 }
+```
+
+## 变形动画
+
+从两个不同的 `series` 切换时的动画效果:
+
+- `series`:
+  - `.animationDurationUpdate`: 数据更新动画的时长
+  - `.universalTransition: Boolean | {}`: 全局过渡动画开关
+
+```js
+const barOption = {}; // 柱状图配置
+const mapOption = {}; // 地图配置
+
+let currentOption = mapOption;
+myChart.setOption(mapOption);
+
+// 随时间切换配置
+setInterval(function () {
+  currentOption = currentOption === mapOption ? barOption : mapOption;
+  myChart.setOption(currentOption, true);
+}, 4000);
 ```
