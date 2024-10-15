@@ -2,6 +2,11 @@
 
 > 摘记，自述，想法
 
+## 2024-10-15
+
+好看的 `vitepress` 自定义主题一则:
+[无名小栈](https://blog.imsyy.top/pages/archives) / [github](https://github.com/imsyy/vitepress-theme-curve)
+
 ## 2024-10-11
 
 好看的 `vitepress` 自定义主题一则:
