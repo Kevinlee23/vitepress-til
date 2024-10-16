@@ -756,3 +756,21 @@ export const getNewNBlogs = (n: number = showNum): Link[] => {
 
   return list;
 };
+
+export type TagNums = {
+  [K in TagName]?: number;
+};
+export const getTagNums = (): TagNums => {
+  const tagNums: TagNums = {};
+  Object.keys(markData).map((key) => {
+    markData[key as Month]?.map((blog) => {
+      if (tagNums[blog.tagName]) {
+        (tagNums[blog.tagName] as number)++;
+      } else {
+        tagNums[blog.tagName] = 1;
+      }
+    });
+  });
+
+  return tagNums
+};

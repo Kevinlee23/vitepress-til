@@ -22,7 +22,7 @@ export type StautsItem = "BETA" | "MERGED" | "UPDATED" | "";
 export enum TagName {
   Javascript = "Javascript",
   JSCode = "JS Code",
-  Typescript = "TypeScript",
+  Typescript = "Typescript",
   CSS = "CSS",
   TypeCode = "类型编程",
   HTTP = "HTTP",

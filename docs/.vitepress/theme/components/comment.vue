@@ -6,7 +6,6 @@
 import { onMounted, ref, nextTick } from "vue";
 import "gitalk/dist/gitalk.css";
 import Gitalk from "gitalk";
-import md5 from "blueimp-md5";
 
 const showFlag = ref(true);
 const gitDefault = {
@@ -15,7 +14,7 @@ const gitDefault = {
   repo: "vitepress-til",
   owner: "Kevinlee23",
   admin: ["Kevinlee23"],
-  id: md5(location.pathname),
+  id: location.pathname.substring(0, 50),
   language: "zh-CN",
 };
 

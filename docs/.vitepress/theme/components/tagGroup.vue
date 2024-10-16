@@ -1,10 +1,13 @@
 <script lang="ts" setup>
 import type { PropType } from "vue";
 import type { TagGroup } from "../../utils/createTag";
+import { getTagNums, type TagNums } from "../../constant/2024-mark-link";
+import { type TagName } from "../../utils/createTag";
 
 defineProps({ tagGroups: { type: Object as PropType<Array<TagGroup>> } });
 
 const hostpath = "/vitepress-til";
+const tagNums: TagNums = getTagNums();
 </script>
 
 <template>
@@ -14,6 +17,7 @@ const hostpath = "/vitepress-til";
         <a :href="`${hostpath}${item.link}`">
           {{ item.title }}
         </a>
+        <sup>{{ tagNums[item.title as TagName] }}</sup>
       </span>
       <Badge
         v-if="index === group.items.length - 1"
