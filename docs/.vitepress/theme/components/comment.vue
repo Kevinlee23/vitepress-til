@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { watch } from "vue";
+import { watch, nextTick } from "vue";
 import { useData, useRouter } from "vitepress";
 import "gitalk/dist/gitalk.css";
 import Gitalk from "gitalk";
@@ -50,9 +50,13 @@ watch(route, () => {
 
   deleteChild(element);
 
-  renderComment();
+  nextTick(() => {
+    renderComment();
+  });
 });
 onMounted(() => {
-  renderComment();
+  nextTick(() => {
+    renderComment();
+  });
 });
 </script>
