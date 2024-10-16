@@ -37,6 +37,6 @@ onContentUpdated(() => {
   deleteChild(element);
 
   const gitalk = new Gitalk(gitDefault);
-  gitalk.render("#comment-container");
+  gitalk.render("comment-container");
 });
 </script>
