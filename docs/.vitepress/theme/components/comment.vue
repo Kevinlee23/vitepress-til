@@ -1,10 +1,9 @@
 <template>
-  <div v-if="showFlag" id="comment-container"></div>
+  <div id="comment-container"></div>
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import { onContentUpdated } from "vitepress";
+import { onContentUpdated, useData } from "vitepress";
 import "gitalk/dist/gitalk.css";
 import Gitalk from "gitalk";
 
@@ -16,7 +15,7 @@ function deleteChild(element: HTMLDivElement | null) {
   }
 }
 
-const showFlag = ref(true);
+const { frontmatter } = useData();
 onContentUpdated(() => {
   const gitDefault = {
     clientID: "Ov23li60QSciq9KaehKQ",
@@ -36,7 +35,9 @@ onContentUpdated(() => {
 
   deleteChild(element);
 
-  const gitalk = new Gitalk(gitDefault);
-  gitalk.render("comment-container");
+  if (!(frontmatter as unknown as { [key: string]: any }).noComment) {
+    const gitalk = new Gitalk(gitDefault);
+    gitalk.render("comment-container");
+  }
 });
 </script>

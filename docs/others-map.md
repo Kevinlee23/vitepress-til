@@ -1,3 +1,7 @@
+---
+noComment: true
+---
+
 ::: info 杂项 <Badge type="tip" text="latest" />
 [Config](/config/off-hibernate)
 

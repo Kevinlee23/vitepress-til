@@ -1,3 +1,7 @@
+---
+noComment: true
+---
+
 ::: info 前端基础 <Badge type="tip" text="latest" />
 [Javascript](/javascript/event-loop)
 

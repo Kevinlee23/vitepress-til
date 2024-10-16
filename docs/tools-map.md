@@ -1,3 +1,7 @@
+---
+noComment: true
+---
+
 ::: info 工具 <Badge type="tip" text="latest" />
 [Git](/git/01-git-pull-repository)
 
