@@ -177,9 +177,9 @@ export function createSidebar() {
             link: "/css/font-file-to-css",
           },
           {
-            text: '动画的定义',
-            link: '/css/motion-definition'
-          }
+            text: "动画的定义",
+            link: "/css/motion-definition",
+          },
         ],
       },
       {
@@ -695,6 +695,7 @@ export function createSidebar() {
           { text: "敏捷错题", link: "/pmp/agile-wq" },
           { text: "过程组错题", link: "/pmp/process-wq" },
           { text: "多选题错题", link: "/pmp/dual-wq" },
+          { text: "2024-08 考试结果", link: "/pmp/pmp-result" },
         ],
       },
       {
