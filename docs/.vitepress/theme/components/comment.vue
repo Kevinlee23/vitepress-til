@@ -6,6 +6,7 @@
 import { onContentUpdated, useData } from "vitepress";
 import "gitalk/dist/gitalk.css";
 import Gitalk from "gitalk";
+import md5 from "blueimp-md5";
 
 function deleteChild(element: HTMLDivElement | null) {
   let child = element?.lastElementChild;
@@ -23,7 +24,7 @@ onContentUpdated(() => {
     repo: "vitepress-til",
     owner: "Kevinlee23",
     admin: ["Kevinlee23"],
-    id: location.pathname.substring(0, 50),
+    id: md5(location.pathname),
     language: "zh-CN",
   };
 
@@ -35,7 +36,8 @@ onContentUpdated(() => {
 
   deleteChild(element);
 
-  if (!(frontmatter as unknown as { [key: string]: any }).noComment) {
+  if (!(frontmatter as unknown as { [key: string]: any, noComment: string }).value.noComment) {
+    
     const gitalk = new Gitalk(gitDefault);
     gitalk.render("comment-container");
   }
