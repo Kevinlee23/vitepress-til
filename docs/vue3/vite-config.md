@@ -80,13 +80,13 @@ export default defineConfig({
 
 ```sh
 # .scss and .sass
-npm add -D sass
+$ npm add -D sass
 
 # .less
-npm add -D less
+$ npm add -D less
 
 # .styl and .stylus
-npm add -D stylus
+$ npm add -D stylus
 ```
 
 ```vue
@@ -141,9 +141,9 @@ const worker = new MyWorker();
 
 ```sh
 # 测试环境
-vite build --mode test
+$ vite build --mode test
 # 预发布环境
-vite build --mode stage
+$ vite build --mode stage
 # 默认生产模式构建, 可忽略 --mode
-vite build --mode production
+$ vite build --mode production
 ```

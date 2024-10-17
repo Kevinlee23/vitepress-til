@@ -7,7 +7,7 @@ outline: deep
 ## 安装
 
 ```sh
-npm install zustand
+$ npm install zustand
 ```
 
 ## 简单创建

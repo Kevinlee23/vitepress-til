@@ -38,7 +38,7 @@ export const allMonthShort: Month[] = [
 ];
 
 export const markDate: MarkDate = {
-  OCT: [8, 10, 11],
+  OCT: [8, 10, 11, 17],
   SEPT: [5, 9, 9, 12, 24, 25, 27],
   AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16, 20, 21],
   JUL: [3, 3, 4, 4, 8, 10, 11, 11, 12, 15, 15, 15, 18, 23, 31],
@@ -56,6 +56,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   OCT: [
+    {
+      title: "SSE 流式传输",
+      link: "/javascript/sse-trans",
+      tagName: TagName.Javascript,
+      createDate: "2024-10-17",
+    },
     {
       title: "将自定义字体作为 css 文件引入",
       link: "/css/font-file-to-css",
@@ -772,5 +778,5 @@ export const getTagNums = (): TagNums => {
     });
   });
 
-  return tagNums
+  return tagNums;
 };

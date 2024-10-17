@@ -1,3 +1,5 @@
+# Websocket
+
 ```javascript:line-numbers=1
 import modal from "@/plugins/modal";
 const baseURL = import.meta.env.VITE_APP_BASE_WS;

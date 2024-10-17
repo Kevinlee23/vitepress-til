@@ -19,15 +19,15 @@ e.g.: `FROM nginx`
 e.g.:
 
 ```sh
-FROM debian:stretch
+$ FROM debian:stretch
 
-RUN apt-get update
-RUN apt-get install -y gcc libc6-dev make wget
-RUN wget -O redis.tar.gz "http://download.redis.io/releases/redis-5.0.3.tar.gz"
-RUN mkdir -p /usr/src/redis
-RUN tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1
-RUN make -C /usr/src/redis
-RUN make -C /usr/src/redis install
+$ RUN apt-get update
+$ RUN apt-get install -y gcc libc6-dev make wget
+$ RUN wget -O redis.tar.gz "http://download.redis.io/releases/redis-5.0.3.tar.gz"
+$ RUN mkdir -p /usr/src/redis
+$ RUN tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1
+$ RUN make -C /usr/src/redis
+$ RUN make -C /usr/src/redis install
 ```
 
 每 `RUN` 一次，就会建立一层，上面的例子创建了 7 层镜像, `docker` 的层数是有限制的，上面的例子可以改写为:

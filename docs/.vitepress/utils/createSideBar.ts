@@ -84,19 +84,20 @@ export function createSidebar() {
             text: "regular-expression ",
             link: "/javascript/regular-expression",
           },
-          { text: "web-worker ", link: "/javascript/web-worker" },
           { text: "special-event", link: "/javascript/special-event" },
           { text: "JSDoc", link: "/javascript/JSDoc" },
-          {
-            text: "create-object-url",
-            link: "/javascript/create-object-url",
-          },
+          { text: "web-worker ", link: "/javascript/web-worker" },
+          { text: "SSE", link: "/javascript/sse-trans" },
         ],
       },
       {
         text: "JS API",
         items: [
           { text: "AbortController", link: "/javascript/AbortController" },
+          {
+            text: "create-object-url",
+            link: "/javascript/create-object-url",
+          },
         ],
       },
       {

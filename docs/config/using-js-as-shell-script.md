@@ -13,10 +13,10 @@
 
 ```sh [shell]
 # 赋予脚本文件执行权限
-chmod +x /home/usr/bin/scriptName.js
+$ chmod +x /home/usr/bin/scriptName.js
 
 # 创建一个软链文件, 将脚本与终端命令连接
-sudo ln -s /home/user/bin/scriptName.js /usr/local/bin/cmdName
+$ sudo ln -s /home/user/bin/scriptName.js /usr/local/bin/cmdName
 ```
 
 :::

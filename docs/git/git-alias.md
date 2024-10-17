@@ -5,9 +5,9 @@
 ## 常规设置
 
 ```sh
-git config --global alias.last 'log -1'
-git config --global alias.ci commit
-git config --global alias.br branch
+$ git config --global alias.last 'log -1'
+$ git config --global alias.ci commit
+$ git config --global alias.br branch
 
 # ...
 ```

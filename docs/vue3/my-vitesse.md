@@ -12,7 +12,7 @@ outline: deep
 # or npm create vite@latest --template vue
 # or pnpm create vite --template vue
 # or --template vue-ts
-yarn create vite --template vue
+$ yarn create vite --template vue
 ```
 
 ## UI 库
@@ -31,8 +31,8 @@ yarn create vite --template vue
 :::code-group
 
 ```sh [安装]
-yarn add -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+$ yarn add -D tailwindcss postcss autoprefixer
+$ npx tailwindcss init -p
 ```
 
 ```js [配置一]
@@ -64,7 +64,7 @@ export default {
 # or npm install pinia
 # or pnpm install pinia
 # 下同
-yarn add pinia
+$ yarn add pinia
 ```
 
 [基本使用见 pinia 章节](/vue3/pinia-basic)
@@ -74,7 +74,7 @@ yarn add pinia
 ### vue-router@4 :heart:
 
 ```sh
-yarn add vue-router@4
+$ yarn add vue-router@4
 ```
 
 ## 工具库
@@ -83,8 +83,8 @@ yarn add vue-router@4
 
 无需多言，每个前端应该都接触过的工具类库
 
-```sh
-yarn add lodash
+
+$ arn add lodash
 ```
 
 ### radash
@@ -102,7 +102,7 @@ yarn add lodash
 `Radash` 使用 `Typescript` 编写
 
 ```sh
-yarn add radash
+$ yarn add radash
 ```
 
 [官方文档](https://radash-docs.vercel.app/docs/getting-started#love-and-hate)
@@ -112,7 +112,7 @@ yarn add radash
 ### vue-use :heart:
 
 ```sh
-yarn add @vueuse/core
+$ yarn add @vueuse/core
 ```
 
 ### Vue-i18n :heart:
@@ -120,7 +120,7 @@ yarn add @vueuse/core
 国际化插件
 
 ```sh
-yarn add vue-i18n@9
+$ yarn add vue-i18n@9
 ```
 
 ```ts
@@ -146,7 +146,7 @@ app.mount("#app");
 :::code-group
 
 ```sh [安装]
-yarn install unplugin-vue-components -D
+$ yarn install unplugin-vue-components -D
 ```
 
 ```ts [配置]
@@ -189,7 +189,7 @@ export default defineConfig({
 :::code-group
 
 ```sh [安装]
-yarn unplugin-auto-import -D
+$ yarn unplugin-auto-import -D
 ```
 
 ```ts [配置一]
@@ -222,7 +222,7 @@ export default defineConfig({
 `eslint` 配置插件
 
 ```sh
-yarn add eslint @antfu/eslint-config -D
+$ yarn add eslint @antfu/eslint-config -D
 ```
 
 创建文件 `eslint.config.js`, 写入:

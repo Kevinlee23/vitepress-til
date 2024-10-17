@@ -7,15 +7,15 @@
 :::code-group
 
 ```sh [pnpm]
-pnpm i pinia-plugin-persistedstate
+$ pnpm i pinia-plugin-persistedstate
 ```
 
 ```sh [npm]
-npm i pinia-plugin-persistedstate
+$ npm i pinia-plugin-persistedstate
 ```
 
 ```sh [yarn]
-yarn add pinia-plugin-persistedstate
+$ yarn add pinia-plugin-persistedstate
 ```
 
 :::

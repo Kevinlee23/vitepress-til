@@ -3,7 +3,7 @@
 ## 安装
 
 ```sh
-npm install mockjs
+$ npm install mockjs
 ```
 
 ## 简单使用
