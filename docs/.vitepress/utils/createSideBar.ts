@@ -708,7 +708,7 @@ export function createSidebar() {
       {
         text: "echarts",
         items: [
-          { text: "基本配置", link: "/echarts/options" },
+          { text: "常用配置速查", link: "/echarts/options" },
           { text: "地图导入", link: "/echarts/map" },
         ],
       },

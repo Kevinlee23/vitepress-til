@@ -294,3 +294,14 @@ setInterval(function () {
 
 - `{ type: continuous, min: 0, max: 400 }` <=> `y` 的数据最小为 `0`, 最大为 `400`
 - `{ type: dimension: 0, min: 0, max: dataList.length-1 }` <=> 覆盖 `x` 轴所有数据点
+
+## dataZoom
+
+> 数据区域缩放
+
+- `type: 'inside' | 'slider'`: 内置型 | 滑动条形
+- `start(end)`: 起止（百分比）
+- `startValue(endValue)`: 起止（数值）
+- `axAxisIndex(yAxisIndex): [] | number`: 区域缩放组件控制的 `x,y` 轴 `index`
+- `minSpan(maxSpan)`: 限制窗口最小(最大)百分比
+- `minValueSpan(maxValueSpan)`: 限制窗口最小（最大）值
