@@ -27,6 +27,7 @@ const renderComment = () => {
     admin: ["Kevinlee23"],
     id: md5(location.pathname),
     language: "zh-CN",
+    createIssueManually: true // 手动创建issue
   };
 
   if (
