@@ -98,6 +98,10 @@ export function createSidebar() {
             text: "create-object-url",
             link: "/javascript/create-object-url",
           },
+          {
+            text: 'Element.getBoundingClientRect',
+            link: '/javascript/getBoundingClientRect'
+          }
         ],
       },
       {

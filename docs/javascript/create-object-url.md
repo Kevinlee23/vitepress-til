@@ -1,3 +1,7 @@
+---
+noComment: true
+---
+
 # 创建文件临时路径 - createObjectURL
 
 `URL.createObjectURL()` 接口用来创建一个 `DOMString`, 其表示参数中给出的对象的 URL

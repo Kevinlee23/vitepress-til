@@ -12,7 +12,7 @@ const handleTo = (link: string) => {
 
 <template>
   <div class="new-blog-container">
-    <div class="new-blog-title">最新笔记 (Top {{ newNum }})</div>
+    <div class="new-blog-title">最新笔记 (Newest {{ newNum }})</div>
     <div class="new-blog-grid">
       <div
         v-for="(blog, index) in newBlogs"

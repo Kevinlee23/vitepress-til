@@ -15,6 +15,21 @@ outline: deep
 - `boundaryGap: [0, 1] | Boolean`: 坐标轴两边留白策略
 - `data: []`: 类目数据，在类目轴 `(type: 'catagory')` 中有效
 
+## legend
+
+> 图例
+
+- `left, right, top, bottom`: 离四个方向的距离
+- `width, height`: 宽度和高度
+- `orient: 'horizontal' | 'vertical'`: 布局朝向：水平 | 垂直
+- `align: 'left' | 'right'`: 图例和文本对齐方式
+- `itemGap`: 图例每一项之间的间隔
+- `itemWidth, itemHeight`: 图形宽度，高度
+- `itemStyle`: 图形样式
+- `ineStyle`: 图形中线的样式
+- `textStyle`: 公用文本样式
+- `data`: 图例的数据数组
+
 ## series
 
 数据形状配置
