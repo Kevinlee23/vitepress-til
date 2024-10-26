@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Enlarge from '../.vitepress/theme/views/enlarge.vue'
+import Enlarge from '../.vitepress/theme/components/enlarge.vue'
 </script>
 
 # 购物车图片放大效果

@@ -4,17 +4,19 @@ import asideTop from "./components/asideTop.vue";
 import backTop from "./components/backTop.vue";
 import copyright from "./components/copyright.vue";
 import comment from "./components/comment.vue";
-import "./lxgw.font.css";
-import "./fira_code.css";
-import "./tailwind.postcss.css";
+import Wallpage from "./components/wallpage.vue";
+import "./styles/lxgw.font.css";
+import "./styles/fira_code.css";
+import "./styles/tailwind.postcss.css";
+import "./styles/my-fonts.css";
+import "./styles/custom.css";
 import "virtual:group-icons.css";
-import "./my-fonts.css";
-import "./custom.css";
 
 export default {
   ...DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
+      "home-hero-before": () => h(Wallpage),
       "aside-top": () => h(asideTop),
       "aside-outline-after": () => h(backTop),
       "layout-bottom": () => h(copyright),

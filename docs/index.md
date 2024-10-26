@@ -3,9 +3,6 @@
 layout: home
 
 hero:
-  name: "Snowinlu"
-  text: "TIL(Today I Learned)"
-  tagline: A week is 2% of a year, keep learning
   actions:
     - theme: brand
       text: 归档 Mark

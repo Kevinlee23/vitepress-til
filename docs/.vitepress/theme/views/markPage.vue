@@ -42,7 +42,5 @@ const filterLink = computed<Array<Link>>(() => {
     :tagsMap="tagsMap"
   ></MarkLink>
 
-  <div
-    class="w-full py-[10px] border-b-[1px] border-[#666] border-dashed"
-  ></div>
+  <div class="w-full py-[10px] border-b-[1px] border-[#666] border-dashed" />
 </template>

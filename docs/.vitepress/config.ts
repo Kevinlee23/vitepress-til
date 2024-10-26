@@ -79,12 +79,6 @@ export default defineConfig({
     // https://vitepress.dev/zh/reference/default-theme-config#sociallinks
     socialLinks: [
       { icon: "github", link: "https://github.com/Kevinlee23/vitepress-til" },
-      {
-        icon: {
-          svg: wechatSvg,
-        },
-        link: "https://snowinlu.top",
-      },
     ],
 
     // https://github.com/lucaong/minisearch/
