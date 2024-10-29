@@ -101,7 +101,11 @@ export function createSidebar() {
           {
             text: 'Element.getBoundingClientRect',
             link: '/javascript/getBoundingClientRect'
-          }
+          },
+          {
+            text: 'IntersectionObserver',
+            link: '/javascript/IntersectionObserver'
+          }          
         ],
       },
       {
