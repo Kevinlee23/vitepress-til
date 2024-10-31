@@ -6,17 +6,17 @@ import MarkdownIt from "markdown-it";
 import type { FeedOptions, Item } from "feed";
 import { Feed } from "feed";
 
-const DOMAIN = "https://kevinlee23.github.io";
+const DOMAIN = "https://tech.snowinlu.top";
 const AUTHOR = {
   name: "Snowinlu",
   email: "snowinlu@gmail.com",
-  link: DOMAIN + "/vitepress-til/",
+  link: DOMAIN,
 };
 const OPTIONS: FeedOptions = {
   title: "Snowinlu",
   description: "Snowinlu'blog",
   id: `${DOMAIN}/`,
-  link: `${DOMAIN}/vitepress-til/`,
+  link: `${DOMAIN}/`,
   copyright: "MIT License",
   feedLinks: {
     json: `${DOMAIN}/vitepress-til` + "/feed.json",
@@ -24,8 +24,8 @@ const OPTIONS: FeedOptions = {
     rss: `${DOMAIN}/vitepress-til` + "/feed.xml",
   },
   author: AUTHOR,
-  image: `${DOMAIN}/vitepress-til/assets/cola.svg`,
-  favicon: `${DOMAIN}/vitepress-til/assets/favion.ico`,
+  image: `${DOMAIN}/assets/cola.svg`,
+  favicon: `${DOMAIN}/assets/favion.ico`,
 };
 
 const markdown = MarkdownIt({
@@ -79,14 +79,14 @@ async function generateRSS() {
           const { data, content } = matter(raw);
           const html = markdown
             .render(content)
-            .replace('src="/', `src="${DOMAIN}/vitepress-til/`);
+            .replace('src="/', `src="${DOMAIN}/`);
 
           return {
             ...data,
             date: data.date ? new Date(data.date) : "",
             content: html,
             author: [AUTHOR],
-            link: `${DOMAIN}/vitepress-til/${i.replace(".md", "").replace('docs/', '')}`,
+            link: `${DOMAIN}/${i.replace(".md", "").replace('docs/', '')}`,
           };
         })
     )

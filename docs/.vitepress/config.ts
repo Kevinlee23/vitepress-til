@@ -11,10 +11,9 @@ const wechatSvg =
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/vitepress-til/",
   title: "麓下雪",
   description: "A VitePress Site",
-  head: [["link", { rel: "icon", href: "/vitepress-til/assets/favion.ico" }]],
+  head: [["link", { rel: "icon", href: "/assets/favion.ico" }]],
   themeConfig: {
     logo: "/assets/cola.svg",
 
@@ -65,7 +64,7 @@ export default defineConfig({
       { text: "杂项", link: "/others-map" },
       {
         text: "🔥RSS",
-        link: "https://kevinlee23.github.io/vitepress-til/feed.xml",
+        link: "https://tech.snowinlu.top/feed.xml",
       },
     ],
 

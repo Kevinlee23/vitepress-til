@@ -13,7 +13,7 @@ const handleCopy = () => {
   const shortUrl = long2short[key];
 
   navigator.clipboard.writeText(
-    `${window.location.host}/vitepress-til/s?u=${shortUrl}`
+    `${window.location.host}/s?u=${shortUrl}`
   );
   text.value = "复制成功";
   timer = setTimeout(() => {
