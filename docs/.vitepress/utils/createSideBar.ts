@@ -99,13 +99,13 @@ export function createSidebar() {
             link: "/javascript/create-object-url",
           },
           {
-            text: 'Element.getBoundingClientRect',
-            link: '/javascript/getBoundingClientRect'
+            text: "Element.getBoundingClientRect",
+            link: "/javascript/getBoundingClientRect",
           },
           {
-            text: 'IntersectionObserver',
-            link: '/javascript/IntersectionObserver'
-          }          
+            text: "IntersectionObserver",
+            link: "/javascript/IntersectionObserver",
+          },
         ],
       },
       {
@@ -139,12 +139,13 @@ export function createSidebar() {
         text: "Typescript Basic",
         items: [
           { text: "类型标注", link: "/typescript/basic-object-and-function" },
-          { text: "类型声明文件", link: "/typescript/declare-and-[.d.ts]" },
-          { text: "类型断言", link: "/typescript/type-declare" },
           {
             text: "TopType-to-BottomType",
             link: "/typescript/top-type-to-bottom-type",
           },
+          { text: "类型声明文件", link: "/typescript/declare-and-[.d.ts]" },
+          { text: "类型断言", link: "/typescript/type-declare" },
+          { text: "类型保护", link: "/typescript/type-protect" },
           { text: "索引类型", link: "/typescript/index-and-mapping" },
           { text: "类型逻辑运算", link: "/typescript/extend-and-infer" },
           { text: "概念举例", link: "/typescript/example" },

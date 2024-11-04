@@ -34,6 +34,9 @@ const septLink: Link[] = markData.SEPT
 /* 十月数据 */
 const octDate: number[] = markDate.OCT
 const octLink: Link[] = markData.OCT
+/* 十一月数据 */
+const novDate: number[] = markDate.NOV
+const novLink: Link[] = markData.NOV
 
 // 标签组
 const tagGroups: TagGroup[] = createTag()
@@ -57,6 +60,9 @@ const filterTag = ref<string>('')
 ## 2024
 
 <TagFilter :filterTag="filterTag" @update="(value) => filterTag = value" />
+
+### 十一月
+<MarkPage :filterValue="filterTag" :monthLink="novLink" :markedDate="novDate" :tagsMap="tagsMap" :year="2024" :month="11" :length="30" />
 
 ### 十月
 

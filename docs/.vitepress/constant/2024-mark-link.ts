@@ -38,6 +38,7 @@ export const allMonthShort: Month[] = [
 ];
 
 export const markDate: MarkDate = {
+  NOV: [4],
   OCT: [8, 10, 11, 17],
   SEPT: [5, 9, 9, 12, 24, 25, 27],
   AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16, 20, 21],
@@ -55,6 +56,14 @@ export const markDate: MarkDate = {
 };
 
 export const markData: MarkData = {
+  NOV: [
+    {
+      title: "ts 类型保护",
+      link: "/typescript/type-protect",
+      tagName: TagName.Typescript,
+      createDate: "2024-11-04",
+    },
+  ],
   OCT: [
     {
       title: "SSE 流式传输",
