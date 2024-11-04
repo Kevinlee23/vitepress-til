@@ -34,7 +34,7 @@ export default function useMonthCompute(
       const prefixArr = new Array(prefixLength).fill({
         text: "last",
         color: NOT_THIS_MON_COLOR,
-        num: "null",
+        num: 0,
       });
 
       const lDay = new Date(`${year}-${month}-${length}`).getDay();
@@ -42,7 +42,7 @@ export default function useMonthCompute(
       const suffixArr = new Array(suffixLength).fill({
         text: "next",
         color: NOT_THIS_MON_COLOR,
-        num: "null",
+        num: 0,
       });
 
       const _length = markedDate.length; // 当月的长度

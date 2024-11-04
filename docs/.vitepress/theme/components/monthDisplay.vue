@@ -36,7 +36,10 @@ onMounted(() => {
       :key="index"
       class="block"
       :style="{ backgroundColor: item.color }"
-      :title="`日期: ${item.text}; 星期${weekMap[item.week]}; 笔记数: ${item.num}`"
+      :title="`
+      日期: ${item.text};${
+        item.week ? '星期' + weekMap[item.week] + ';' : ''
+      } ${item.num ? '笔记数:' + item.num : ''}`"
     ></div>
   </div>
 </template>
