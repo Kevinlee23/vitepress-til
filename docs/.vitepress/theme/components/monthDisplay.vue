@@ -15,6 +15,7 @@ const { monColor, monthInit } = useMonthCompute(
   props.length
 );
 
+const weekMap: string[] = ["天", "一", "二", "三", "四", "五", "六"];
 
 onMounted(() => {
   monthInit(props.markedDate);
@@ -22,13 +23,20 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="block-container" :class="[monColor(props.markedDate).length === 42 ? 'max-w-[112px]' : 'max-w-[92px]']">
+  <div
+    class="block-container"
+    :class="[
+      monColor(props.markedDate).length === 42
+        ? 'max-w-[112px]'
+        : 'max-w-[92px]',
+    ]"
+  >
     <div
       v-for="(item, index) in monColor(props.markedDate)"
       :key="index"
       class="block"
       :style="{ backgroundColor: item.color }"
-      :title="`日期: ${item.text}; 笔记数: ${item.num}`"
+      :title="`日期: ${item.text}; 星期${weekMap[item.week]}; 笔记数: ${item.num}`"
     ></div>
   </div>
 </template>

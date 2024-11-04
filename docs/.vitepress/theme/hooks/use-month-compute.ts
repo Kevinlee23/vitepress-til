@@ -4,6 +4,7 @@ interface DayItem {
   text: string | number;
   color: string;
   num: string | number;
+  week: number;
 }
 
 const NOT_THIS_MON_COLOR: string = "#c2c4c3";
@@ -44,19 +45,28 @@ export default function useMonthCompute(
         num: "null",
       });
 
-      const _length = markedDate.length;
+      const _length = markedDate.length; // 当月的长度
       const arr = new Array(_length).fill(null);
       const addDay = _length;
-      const fillDay = new Set(markedDate).size;
+      const fillDay = new Set(markedDate).size; // 写笔记的日期
+
+      let weekSum: number = prefixLength;
       monthDate.value.map((num, index) => {
+        arr[index] = {
+          text: index + 1,
+          color: "",
+          week: (weekSum++ + 1) % 7,
+          num,
+        };
+
         if (num === 0) {
-          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[0], num };
+          arr[index].color = FREQUENCY_COLOR[0];
         } else if (num === monthMax.value && num >= 3) {
-          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[3], num };
+          arr[index].color = FREQUENCY_COLOR[3];
         } else if (num > addDay / fillDay) {
-          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[2], num };
+          arr[index].color = FREQUENCY_COLOR[2];
         } else {
-          arr[index] = { text: index + 1, color: FREQUENCY_COLOR[1], num };
+          arr[index].color = FREQUENCY_COLOR[1];
         }
       });
 

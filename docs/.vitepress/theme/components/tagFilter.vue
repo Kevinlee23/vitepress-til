@@ -13,7 +13,7 @@ const handleFilter = (value: string) => {
 </script>
 
 <template>
-  <div class="bg-[#eee] p-[20px]">
+  <div class="bg-[#eee] p-[20px] filter-container">
     <div class="mb-[8px]">Filter</div>
     <div class="flex flex-row items-center gap-x-[10px]">
       <div
@@ -37,4 +37,10 @@ const handleFilter = (value: string) => {
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.dark {
+  .filter-container {
+    @apply text-black;
+  }
+}
+</style>

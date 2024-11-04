@@ -13,11 +13,13 @@ const tagNums: TagNums = getTagNums();
 <template>
   <div v-for="group in tagGroups" class="tag-group">
     <template v-for="(item, index) in group.items">
-      <span class="tag-item">
+      <span class="tag-item group/item">
         <a :href="`${hostpath}${item.link}`">
           {{ item.title }}
         </a>
-        <sup>{{ tagNums[item.title as TagName] }}</sup>
+        <sup class="group-hover/item:text-[#2c9678]">{{
+          tagNums[item.title as TagName]
+        }}</sup>
       </span>
       <Badge
         v-if="index === group.items.length - 1"
