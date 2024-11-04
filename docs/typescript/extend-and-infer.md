@@ -9,10 +9,15 @@ type StringOrNumber<T> = T extends string ? "string" : "number";
 ## infer: 提取操作
 
 ```ts
+// 提取函数参数类型
+type GetParamsType<T> = T extends (...args: infer P) => any ? P : never;
+
+// 提取返回类型
+type GetReturnType<T> = T extends (...args: any) => infer R ? R : never;
+
 // 提取数组内任意位置的值
 type ExtractStartAndEnd<T extend any[]> = T extends [infer A, ...any[], infer B] ? [A, B] : T;
 type Swap<T extends any[]> = T extends [infer A, infer B] ? [B, A] : [T]
-
 type ArrayItemType<T> = T extends Array<infer ElementType> ? ElementType : never;
 
 // 作用于对象
