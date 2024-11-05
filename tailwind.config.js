@@ -3,4 +3,8 @@ module.exports = {
 		'./docs/.vitepress/**/*.{js,ts,vue}',
 		'./docs/**/*.md',
 	],
+	theme: {
+    extend: {},
+  },
+  plugins: [],
 }

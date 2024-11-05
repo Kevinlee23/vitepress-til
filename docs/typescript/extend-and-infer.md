@@ -32,9 +32,9 @@ type PromiseValue2<T> = T extends Promise<infer V> ? promiseValue2<V> : T;
 
 条件类型分布式起作用的条件:
 
-- 类型参数是`联合类型`
-- 类型参数通过`泛型参数`传入，不能直接进行条件判断
-- `泛型参数`不能被包裹
+- 类型参数是联合类型
+- 类型参数通过泛型参数传入，不能直接进行条件判断
+- 泛型参数不能被包裹
 
 ```typescript
 type Condition<T> = T extends 1 | 2 | 3 ? T : never;
@@ -48,6 +48,7 @@ type Res2 = Naked<number | boolean>; // 'N' | 'Y'
 ```
 
 对于是否包裹的条件，使用数组包裹是其中一种，还可以用以下方式:
+
 `export type NoDistribute<T> = T & {}`
 
 ## 判断 never 和 any 的方法

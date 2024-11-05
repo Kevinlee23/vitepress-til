@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 类型编程进阶
 
 ## 递归
@@ -10,7 +14,7 @@ type PromiseValue<T> = T extends Promise<infer V> ? PromiseValue<V> : T;
 
 ### 递归修饰
 
-`extends 判断` + `递归`
+extends 判断 + 递归
 
 ```typescript
 type DeepPartial<T extends object> = {
@@ -22,11 +26,11 @@ export type DeepRequired<T extends object> = {
 };
 ```
 
-同理可实现: `DeepReadonly`, `DeepMutable`, `DeepNonNullable`...
+同理可实现: DeepReadonly, DeepMutable, DeepNonNullable...
 
 ### 已知属性的部分修饰
 
-`拆分对象结构【拆分】` => `递归属性修饰【操作】` => `交叉类型【组合】`
+拆分对象结构【拆分】`=>` 递归属性修饰【操作】`=>` 交叉类型【组合】
 
 ```typescript
 /**
@@ -40,11 +44,11 @@ export type MarkPropsAsOptional<
 > = Partial<Pick<T, K>> & Omit<T, K>;
 ```
 
-同理可实现: `MarkPropsAsRequired`, `MarkPropsAsReadonly`, `MarkPropsAsMutable` 等
+同理可实现: MarkPropsAsRequired, MarkPropsAsReadonly, MarkPropsAsMutable 等
 
 ## 结构工具类型进阶
 
-基于键值类型的 `Pick` 和 `Omit`:
+基于键值类型的 Pick 和 Omit:
 
 ```typescript
 type FuncStruct = (...args: any[]) => any;
@@ -82,7 +86,7 @@ type OmitByValueType<T extends object, ValueType> = Pick<
 >;
 ```
 
-## 基于结构的互斥工具类型:
+## 基于结构的互斥工具类型
 
 ```typescript:line-numbers=1
 // 取差集然后用 never 标记属性

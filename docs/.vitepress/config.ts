@@ -63,6 +63,7 @@ export default defineConfig({
       },
       { text: "项目管理", items: [{ text: "PMP", link: "/pmp/answer-trick" }] },
       { text: "杂项", link: "/others-map" },
+      { text: "更新记录", link: "/update" },
       {
         text: "🔥RSS",
         link: "https://kevinlee23.github.io/vitepress-til/feed.xml",
@@ -70,7 +71,7 @@ export default defineConfig({
     ],
 
     outline: {
-      label: 'Outline 📂'
+      label: "Outline 📂",
     },
 
     // @ts-ignore
