@@ -438,8 +438,12 @@ export function createSidebar() {
             link: "/config/vite-deploy-with-nginx",
           },
           {
-            text: "snippets - markdown",
+            text: "markdown 片段",
             link: "/config/markdown-snippets",
+          },
+          {
+            text: "nginx 配置",
+            link: "/config/nginx-config",
           },
           {
             text: "概念解释",

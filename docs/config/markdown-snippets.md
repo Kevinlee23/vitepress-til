@@ -1,4 +1,6 @@
-# markdown - snippets
+# markdown 片段
+
+> vscode 中实用的 markdown 片段
 
 - `ctrl + shfit + p`
 - 输入: 配置用户代码片段
