@@ -6,6 +6,7 @@ noComment: true
 
 <update />
 
+[查看更多](https://github.com/Kevinlee23/vitepress-til/commits/master/)
 
 <script setup>
 import Update from './.vitepress/theme/views/update.vue'

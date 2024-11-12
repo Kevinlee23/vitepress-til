@@ -475,6 +475,10 @@ export function createSidebar() {
             text: "页面不能正常识别换行符",
             link: "/fix/correctly-identify-line-breaks",
           },
+          {
+            text: "解决 typescript 中 image 的导入报错",
+            link: "/fix/image-import-fix",
+          },
         ],
       },
       { text: "返回上层", link: "/others-map" },
