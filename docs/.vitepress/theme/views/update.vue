@@ -46,11 +46,11 @@ fetch("https://api.github.com/repos/Kevinlee23/vitepress-til/commits")
         }"
       ></div>
       <div class="flex flex-col gap-y-[4px]">
-        <div>{{ item.author.login }}</div>
+        <div>- {{ item.author.login }}</div>
         <a class="w-fit cursor-pointer" :href="item.html_url">
-          {{ item.commit.message }}
+          - {{ item.commit.message }}
         </a>
-        <div class="text-[14px]">{{ new Date(item.commit.author.date) }}</div>
+        <div class="text-[14px]">- {{ new Date(item.commit.author.date) }}</div>
       </div>
     </div>
   </div>

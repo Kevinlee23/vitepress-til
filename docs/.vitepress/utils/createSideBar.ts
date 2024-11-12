@@ -70,6 +70,7 @@ export function createSidebar() {
           { text: "工具", link: "/tools-map" },
           { text: "第三方库", link: "/3-party-map" },
           { text: "杂项", link: "/others-map" },
+          { text: "更新记录", link: "/update" },
         ],
       },
     ],
