@@ -33,3 +33,7 @@ export default { ...DefaultTheme };
 :::
 
 `then enjoy tailwind`
+
+## 使用预设模板
+
+[template](https://github.com/ky-is/vitepress-starter-tailwind)

@@ -442,10 +442,6 @@ export function createSidebar() {
             link: "/config/markdown-snippets",
           },
           {
-            text: "nginx 配置",
-            link: "/config/nginx-config",
-          },
-          {
             text: "概念解释",
             link: "/config/concept-explain",
           },
@@ -690,6 +686,10 @@ export function createSidebar() {
           {
             text: "Github Actions 中的工作流定时执行",
             link: "/ops/github-workflow-timeset",
+          },
+          {
+            text: "nginx 配置",
+            link: "/ops/nginx-config",
           },
         ],
       },
