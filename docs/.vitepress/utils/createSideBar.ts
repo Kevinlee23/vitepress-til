@@ -22,6 +22,7 @@ export interface ISideBar {
   [MY_TAB.ORIDINARY]: IItems[];
   [MY_TAB.HTTP]: IItems[];
   [MY_TAB.GIT]: IItems[];
+  [MY_TAB.VIM]: IItems[];
   [MY_TAB.SQL]: IItems[];
   [MY_TAB.MONGODB]: IItems[];
   [MY_TAB.OSS]: IItems[];
@@ -49,6 +50,7 @@ export enum MY_TAB {
   ORIDINARY = "/ordinary/",
   HTTP = "/http/",
   GIT = "/git/",
+  VIM = "/vim/",
   SQL = "/sql/",
   MONGODB = "/mongodb/",
   OSS = "/oss/",
@@ -572,6 +574,10 @@ export function createSidebar() {
         text: "返回上层",
         link: "/tools-map",
       },
+    ],
+    "/vim/": [
+      { text: "vim 基础", items: [{ text: "基本指令", link: "/vim/direct" }] },
+      { text: "返回上层", link: "/tools-map" },
     ],
     "/sql/": [
       {

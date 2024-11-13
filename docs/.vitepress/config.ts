@@ -47,6 +47,7 @@ export default defineConfig({
         text: "工具",
         items: [
           { text: "Git", link: "/git/01-git-pull-repository" },
+          { text: "vim", link: "/vim/direct" },
           { text: "webpack", link: "..." },
           { text: "SQL", link: "/sql/my-sql-single-table-operation" },
           { text: "OSS", link: "/oss/get-sts" },
