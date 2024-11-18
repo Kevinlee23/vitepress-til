@@ -1,8 +1,10 @@
+---
+outline: deep
+---
+
 # tailwind 常用写法
 
 ## 字体和行高简写
-
-``
 
 ```css
 .normal {
@@ -53,3 +55,40 @@ linear-gradient(180deg, #E60000 15%, #1B0909 100%)
 
 - via-purple-500
 - via-30% via-sky-500
+
+## 动画
+
+### transition
+
+transition / transition-all / transition-[property]
+
+duration-[xx s(ms)]
+
+delay-[xx s(ms)]
+
+### timing function
+
+- ease-linear
+- ease-in
+- ease-out
+- ease-in-out
+- arbirary: ease-[cubic-bezier(x,x,x,x)]
+
+### motion
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      }
+    }
+  }
+}
+```
+
+using: `animation-[wiggle_1s_ease-in-out_infinite]`
