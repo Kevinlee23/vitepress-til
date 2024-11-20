@@ -2,6 +2,8 @@
 
 > 摘记，自述，想法
 
+新内容移至 [memos](https://memos.snowinlu.top)
+
 ## 2024-10-15
 
 好看的 `vitepress` 自定义主题一则:
