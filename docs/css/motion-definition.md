@@ -31,7 +31,7 @@ animation, 包括:
 
 - animation-name 指定动画
 - animation-duration 动画持续时间
-- aniamtion-timing-function 动画执行函数
+- animation-timing-function 动画执行函数
   - (linear, ease-in, ease-out, ease-in-out, steps(x,end), cubic-bezier)
 - animation-delay 动画开始时延
 - animation-iteration-count 动画播放次数
