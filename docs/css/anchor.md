@@ -1,6 +1,12 @@
+---
+outline: deep
+---
+
 # 两种锚点定位
 
 ## 一、 hook + scrollIntoView
+
+> scrollIntoView, store
 
 :::code-group
 
@@ -156,7 +162,7 @@ export const useAnchorStore = defineStore("anchor", {
 
 ![image-01](/images/anchor-01.gif)
 
-## 二、 纯 CSS - view-timeline
+## 二、 纯 CSS - (view-timeline, animation-timeline)
 
 ```vue
 <script setup>
@@ -248,4 +254,15 @@ function handleNav(index) {
 ```
 
 效果：
+
 ![iamge-02](/images/anchor-02.gif)
+
+### 适用性
+
+animation-timeline:
+
+![animation-timeline](/images/caniuse(animation-timeline).png)
+
+view-timeline:
+
+![view-timeline](/images/caniuse(view-timeline).png)

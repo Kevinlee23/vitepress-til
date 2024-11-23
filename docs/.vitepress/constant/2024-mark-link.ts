@@ -58,6 +58,12 @@ export const markDate: MarkDate = {
 export const markData: MarkData = {
   NOV: [
     {
+      title: "图层显隐效果",
+      link: "/css/filter-mask",
+      tagName: TagName.CSS,
+      createDate: "2024-11-23",
+    },
+    {
       title: "ts 类型保护",
       link: "/typescript/type-protect",
       tagName: TagName.Typescript,
