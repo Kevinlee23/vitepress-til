@@ -482,6 +482,10 @@ export function createSidebar() {
             text: "解决 typescript 中 image 的导入报错",
             link: "/fix/image-import-fix",
           },
+          {
+            text: '解决 windows 系统下部分 css 动画失效的问题',
+            link: '/fix/windows-motion-disable'
+          }
         ],
       },
       { text: "返回上层", link: "/others-map" },

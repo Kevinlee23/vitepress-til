@@ -6,9 +6,9 @@
     <div
       class="absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] text-white"
     >
-      <div class="text-[40px] text-[#2c9678]">Snowinlu</div>
-      <div class="text-[28px]">TIL(Today I Learned)</div>
-      <div class="text-[28px] mb-[10px]">
+      <div class="text-[40px] text-[#2c9678] motion-preset-slide-down motion-duration-500">Snowinlu</div>
+      <div class="text-[28px] motion-preset-slide-down motion-duration-1000">TIL(Today I Learned)</div>
+      <div class="text-[28px] mb-[10px] motion-preset-slide-down motion-duration-2000">
         A week is 2% of a year, keep learning
       </div>
       <div

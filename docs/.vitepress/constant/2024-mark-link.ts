@@ -58,6 +58,12 @@ export const markDate: MarkDate = {
 export const markData: MarkData = {
   NOV: [
     {
+      title: '解决 windows 系统下部分 css 动画失效的问题',
+      link: '/fix/windows-motion-disable',
+      tagName: TagName.ErrorFix,
+      createDate: '2024-11-25'
+    },
+    {
       title: "图层显隐效果",
       link: "/css/filter-mask",
       tagName: TagName.CSS,
