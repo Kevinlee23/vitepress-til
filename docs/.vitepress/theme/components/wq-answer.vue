@@ -25,7 +25,7 @@ const show = ref(false);
         v-for="(option, index) in detail.options"
         :key="index"
         :class="{
-          'font-bold':
+          'font-bold text-[#2c9678] transition-[color] duration-500':
             (type === 'single'
               ? answerMap[index] === detail.answer
               : detail.answer.includes(answerMap[index])) && show,

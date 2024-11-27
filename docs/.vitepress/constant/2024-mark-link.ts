@@ -38,7 +38,7 @@ export const allMonthShort: Month[] = [
 ];
 
 export const markDate: MarkDate = {
-  NOV: [4],
+  NOV: [4, 23, 25, 27],
   OCT: [8, 10, 11, 17],
   SEPT: [5, 9, 9, 12, 24, 25, 27],
   AUG: [1, 2, 2, 2, 5, 6, 8, 12, 15, 16, 20, 21],
@@ -57,6 +57,12 @@ export const markDate: MarkDate = {
 
 export const markData: MarkData = {
   NOV: [
+    {
+      title: "动画库: tailwindcss-motion 的使用",
+      link: '/css/motion-library',
+      tagName: TagName.CSS,
+      createDate: '2024-11-27'
+    },
     {
       title: '解决 windows 系统下部分 css 动画失效的问题',
       link: '/fix/windows-motion-disable',

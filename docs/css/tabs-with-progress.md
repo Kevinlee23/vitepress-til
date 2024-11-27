@@ -8,7 +8,7 @@
 
 :::code-group
 
-```html [html]
+```html [index.html]
 <div class="flex gap-x-[20px]">
   <div class="w-[384px]">
     <div
@@ -30,7 +30,7 @@
 </div>
 ```
 
-```css [css]
+```css [index.css]
 .process-top {
   background: linear-gradient(90deg, #407cff, #da8bff, #fb7185);
   content: "";
@@ -43,7 +43,7 @@
 }
 ```
 
-```vue [js]
+```vue [utils.js]
 <script setup>
 import { ref, watch, onUnmounted } from "#imports";
 import image1 from "@/assets/image/image-1.jpg";

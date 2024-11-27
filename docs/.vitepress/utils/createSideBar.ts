@@ -193,6 +193,10 @@ export function createSidebar() {
             text: "动画的定义",
             link: "/css/motion-definition",
           },
+          {
+            text: "动画库: tailwindcss-motion",
+            link: '/css/motion-library'
+          }
         ],
       },
       {

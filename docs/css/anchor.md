@@ -10,7 +10,7 @@ outline: deep
 
 :::code-group
 
-```vue [index]
+```vue [index.vue]
 <script setup>
 import ItemContent from "./item-content.vue";
 import { useAnchorStore } from "@/store/useAnchor";
@@ -74,7 +74,7 @@ function handleClick(index) {
 </style>
 ```
 
-```vue [item-content]
+```vue [item-content.vue]
 <script setup>
 import { useAnchorStore } from "@/store/useAnchor";
 
@@ -141,7 +141,7 @@ watch(currentId, () => {
 </style>
 ```
 
-```js [useAnchor]
+```js [useAnchor.js]
 import { defineStore } from "pinia";
 
 export const useAnchorStore = defineStore("anchor", {
