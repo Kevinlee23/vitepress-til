@@ -93,4 +93,14 @@ ellipse; circle
 
 conic-gradient
 
+![css1-5](/images/conic-gradient.png)
+
+[例子:](https://juejin.cn/post/7420814883576414259)
+
+![css1-6](/images/conic-gradient.gif)
+
+使用 conic-gradient + animation 设置 5s 动画，从 0° - 360° 白色背景覆盖,
+
+并使用一个遮罩覆盖 border 外的多余部分，完成如图效果
+
 [参考](https://developer.mozilla.org/zh-CN/docs/Web/CSS/gradient/conic-gradient)

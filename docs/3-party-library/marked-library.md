@@ -50,3 +50,4 @@
 - [blueimp-md5](https://www.npmjs.com/package/blueimp-md5): 生成 `md5` 哈希
 - [tailwind-motion](https://github.com/romboHQ/tailwindcss-motion): tailwind 的动画类库
 - [霞鹜文楷](https://github.com/lxgw/LxgwWenKai): 优美的汉字字体
+- [tailwindcss-motion](https://github.com/romboHQ/tailwindcss-motion): 使用 tailwindcss 预设类的动画库
