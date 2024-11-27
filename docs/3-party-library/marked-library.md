@@ -2,14 +2,14 @@
 
 > 积累、学习和提供解决方案
 
-## Vue Utils
+## Vue Based
 
 - [vue-grid-layout](https://github.com/jbaysolutions/vue-grid-layout): 可拖拽的 `grid` 布局组件
 - [vue3-dnd](https://github.com/hcg1023/vue3-dnd): Vue3 `DnD` 组件
 - [element-tiptap](https://github.com/Leecason/element-tiptap): 使用了 Elementplus 风格 和 tiptap 的富文本编辑器
 - [vitepress-starter-tailwind](https://github.com/ky-is/vitepress-starter-tailwind): vitepress 启动模板 with tailwind
 
-## React Utils
+## React Based
 
 - [react-dnd](https://github.com/react-dnd/react-dnd): React `DnD` 组件
 - [react-window](https://github.com/bvaughn/react-window): React 虚拟列表组件
@@ -19,7 +19,7 @@
 - [zustand](https://github.com/pmndrs/zustand) React 状态管理
 - [react-hotkeys-hook](https://github.com/JohannesKlauss/react-hotkeys-hook): React 中用于热键管理的第三方 Hook
 - [TanStack/query](https://github.com/TanStack/query): 异步状态管理/服务器状态工具/网络数据获取
-- [SWR](https://swr.vercel.app/zh-CN): 用于数据请求的 React Hooks 库
+- [SWR](https://swr.vercel.app/zh-CN): 用于数据请求的 React Hook 库
 
 ## Common
 
@@ -50,4 +50,4 @@
 - [blueimp-md5](https://www.npmjs.com/package/blueimp-md5): 生成 `md5` 哈希
 - [tailwind-motion](https://github.com/romboHQ/tailwindcss-motion): tailwind 的动画类库
 - [霞鹜文楷](https://github.com/lxgw/LxgwWenKai): 优美的汉字字体
-- [tailwindcss-motion](https://github.com/romboHQ/tailwindcss-motion): 使用 tailwindcss 预设类的动画库
+- [tailwindcss-motion](https://github.com/romboHQ/tailwindcss-motion): 基于 tailwindcss 的预设类动画库
