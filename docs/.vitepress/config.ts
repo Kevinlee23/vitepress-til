@@ -69,6 +69,10 @@ export default defineConfig({
         text: "🔥RSS",
         link: "https://kevinlee23.github.io/vitepress-til/feed.xml",
       },
+      {
+        text: "❄关于生活",
+        link: "https://snowinlu.top"
+      }
     ],
 
     outline: {

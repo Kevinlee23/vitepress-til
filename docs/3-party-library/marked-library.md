@@ -51,3 +51,4 @@
 - [tailwind-motion](https://github.com/romboHQ/tailwindcss-motion): tailwind 的动画类库
 - [霞鹜文楷](https://github.com/lxgw/LxgwWenKai): 优美的汉字字体
 - [tailwindcss-motion](https://github.com/romboHQ/tailwindcss-motion): 基于 tailwindcss 的预设类动画库
+- [css-doodle](https://github.com/css-doodle/css-doodle): 通过 css 生成随机图像
