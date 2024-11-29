@@ -196,6 +196,10 @@ export function createSidebar() {
           {
             text: "动画库: tailwindcss-motion",
             link: '/css/motion-library'
+          },
+          {
+            text: '较少使用的css属性',
+            link: '/css/less-used-property'
           }
         ],
       },
