@@ -6,6 +6,8 @@ noComment: true
 
 > 检测一个元素是否可见或者两个元素是否相交
 
+## 使用
+
 ```js
 const callback = (entries, observer) => {
   // 追踪目标元素观测点的交叉变化
@@ -37,6 +39,31 @@ let target = document.querySelector("#listItem");
 observer.observe(target);
 ```
 
-[例子1](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API#%E7%BB%93%E6%9E%9C)
+## 实例
 
+> 配合 `tailwindcss-motion` 来实现: 当元素第一次进入视口时执行动效
+
+```js
+// 第一次进入视口增加 motion class
+function handleVision(element, motion) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // 在这里可以执行相应的操作
+        motion.map((item) => {
+          entry.target.classList.add(item)
+          return item
+        })
+        observer.unobserve(entry.target) // 取消观察
+      }
+    })
+  })
+
+  observer.observe(element)
+}
+
+handleVision('#motion-element', ['motion-preset-slide-up', 'motion-duration-2000'])
+```
+[例子1](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API#%E7%BB%93%E6%9E%9C)
+          
 [例子2](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API/Timing_element_visibility#result)
