@@ -4,7 +4,7 @@ import Enlarge from '../.vitepress/theme/components/enlarge.vue'
 
 # 购物车图片放大效果
 
-## 效果
+## 预览
 
 <Enlarge />
 

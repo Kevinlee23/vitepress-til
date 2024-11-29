@@ -7,10 +7,13 @@ outline: deep
 ## 带链接跳转的图片元素
 
 ### 预览
-`normal`
+
+normal
+
 ![picture-1](/images/picture-design-1.png)
 
-`hover`
+hover
+
 ![picture-2](/images/picture-design-2.png)
 
 ### 实现

@@ -4,7 +4,7 @@
 
 ## 实现一：滚动距离计算
 
-`UI` 框架使用的是 `NavieUI`
+UI 框架使用的是 NavieUI
 
 :::code-group
 
@@ -95,7 +95,7 @@ export default function useVertialScroll(scrollEl, wrapEl) {
 
 ## 实现二：纯 css 实现方法
 
-> 采用滚动驱动动画 (`Scroll-driven Animations`): `animation-timeline`
+> 采用滚动驱动动画 (Scroll-driven Animations): animation-timeline
 
 :::code-group
 

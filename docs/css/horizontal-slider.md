@@ -1,6 +1,6 @@
 # 横向走马灯
 
-## 效果
+## 预览
 
 ![slider](/images/slider.gif)
 

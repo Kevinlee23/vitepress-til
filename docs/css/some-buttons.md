@@ -1,6 +1,6 @@
 # 一些按钮
 
-## one
+## 壹
 
 <div class="one-hover-animation">
   Try it free

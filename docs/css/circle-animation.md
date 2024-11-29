@@ -1,6 +1,6 @@
 # 圆形 pulse 动画
 
-## 效果
+## 预览
 
 ![animation](/images/circle-animation.gif)
 

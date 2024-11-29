@@ -1,6 +1,6 @@
 # 博客类应用中点击查看更多的设计
 
-## 效果预览
+## 预览
 
 ![see-more](/images/see-more.gif)
 

@@ -1,6 +1,6 @@
 # 下划线装饰
 
-## 效果
+## 预览
 
 ![under decoration](/images/under-decoration.gif)
 

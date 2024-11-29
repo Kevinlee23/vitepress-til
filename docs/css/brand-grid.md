@@ -1,5 +1,19 @@
 # 品牌宫格图
 
+## 预览
+
+
+![brand-grid-1](/images/brand-grid-1.png)
+
+before hover
+
+
+![brand-grid-2](/images/brand-grid-2.png)
+
+hover
+
+## 实现
+
 ```vue{8,22,26}
 <script setup>
 import image from '@/assets/image/ptnr-14.png'
@@ -46,14 +60,7 @@ import image from '@/assets/image/ptnr-14.png'
 
 关键点
 
-- 外层容器的 `overflow-hidden`
-- `image` 的 `hover` 样式中加入 `translate` 和 `duration`
-- 两张图片在外层容器 `hover` 与否时的来回切换
+- 外层容器的 overflow-hidden
+- image 的 hover 样式中加入 translate 和 duration
+- 两张图片在外层容器 hover 与否时的来回切换
 
-效果:
-
-`before hover`
-![brand-grid-1](/images/brand-grid-1.png)
-
-`hover`
-![brand-grid-2](/images/brand-grid-2.png)

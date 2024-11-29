@@ -1,5 +1,9 @@
 # 简单的瀑布流布局实现
 
+## 预览
+
+![layout](/images/fall-style.gif)
+
 ## 参数设置
 
 ```vue
@@ -186,7 +190,3 @@ onMounted(() => {
   </div>
 </div>
 ```
-
-## 效果
-
-![layout](/images/fall-style.gif)

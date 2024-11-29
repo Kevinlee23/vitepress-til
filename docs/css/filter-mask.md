@@ -1,5 +1,11 @@
 # 图层显隐效果
 
+## 预览
+
+![filter-mask](/images/filter-mask.gif)
+
+## 实现
+
 > filter + mask
 
 ```vue
@@ -56,8 +62,4 @@ const { x, y } = useMouseInElement(wrapEl.value)
 </style>
 ```
 
-展示效果:
-
-![filter-mask](/images/filter-mask.gif)
-
-摘抄自 [payloadcms.com](https://payloadcms.com/)
+源码来自 [payloadcms.com](https://payloadcms.com/)

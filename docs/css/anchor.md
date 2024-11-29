@@ -6,6 +6,12 @@ outline: deep
 
 ## 一、 hook + scrollIntoView
 
+### 预览
+
+![image-01](/images/anchor-01.gif)
+
+### 实现
+
 > scrollIntoView, store
 
 :::code-group
@@ -158,11 +164,13 @@ export const useAnchorStore = defineStore("anchor", {
 
 :::
 
-效果:
-
-![image-01](/images/anchor-01.gif)
-
 ## 二、 纯 CSS - (view-timeline, animation-timeline)
+
+### 预览
+
+![iamge-02](/images/anchor-02.gif)
+
+### 实现
 
 ```vue
 <script setup>
@@ -253,11 +261,7 @@ function handleNav(index) {
 </style>
 ```
 
-效果：
-
-![iamge-02](/images/anchor-02.gif)
-
-### 适用性
+## 适用性
 
 animation-timeline:
 
