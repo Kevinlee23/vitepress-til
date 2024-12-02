@@ -38,6 +38,7 @@ export const allMonthShort: Month[] = [
 ];
 
 export const markDate: MarkDate = {
+  DEC: [2],
   NOV: [4, 23, 25, 27],
   OCT: [8, 10, 11, 17],
   SEPT: [5, 9, 9, 12, 24, 25, 27],
@@ -56,6 +57,14 @@ export const markDate: MarkDate = {
 };
 
 export const markData: MarkData = {
+  DEC: [
+    {
+      title: '现代css特性: @property',
+      link: '/css/@property',
+      tagName: TagName.CSS,
+      createDate: '2024-12-02'
+    }
+  ],
   NOV: [
     {
       title: "动画库: tailwindcss-motion 的使用",

@@ -1,5 +1,6 @@
 ---
 outline: deep
+noComment: true
 ---
 
 <script lang="ts" setup>
@@ -37,6 +38,9 @@ const octLink: Link[] = markData.OCT
 /* 十一月数据 */
 const novDate: number[] = markDate.NOV
 const novLink: Link[] = markData.NOV
+/* 十二月数据 */
+const decDate: number[] = markDate.DEC
+const decLink: Link[] = markData.DEC
 
 // 标签组
 const tagGroups: TagGroup[] = createTag()
@@ -61,7 +65,12 @@ const filterTag = ref<string>('')
 
 <TagFilter :filterTag="filterTag" @update="(value) => filterTag = value" />
 
+### 十二月
+
+<MarkPage :filterValue="filterTag" :monthLink="decLink" :markedDate="decDate" :tagsMap="tagsMap" :year="2024" :month="12" :length="31" />
+
 ### 十一月
+
 <MarkPage :filterValue="filterTag" :monthLink="novLink" :markedDate="novDate" :tagsMap="tagsMap" :year="2024" :month="11" :length="30" />
 
 ### 十月

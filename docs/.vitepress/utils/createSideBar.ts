@@ -200,6 +200,10 @@ export function createSidebar() {
           {
             text: '较少使用的css属性',
             link: '/css/less-used-property'
+          },
+          {
+            text: '现代css特性: @property',
+            link: '/css/@property'
           }
         ],
       },
