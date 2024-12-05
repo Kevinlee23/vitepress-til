@@ -59,24 +59,30 @@ export const markDate: MarkDate = {
 export const markData: MarkData = {
   DEC: [
     {
-      title: '现代css特性: @property',
-      link: '/css/@property',
+      title: "sticky 滑动效果",
+      link: "/css/sticky-over",
       tagName: TagName.CSS,
-      createDate: '2024-12-02'
-    }
+      createDate: "2024-12-05",
+    },
+    {
+      title: "现代css特性: @property",
+      link: "/css/@property",
+      tagName: TagName.CSS,
+      createDate: "2024-12-02",
+    },
   ],
   NOV: [
     {
       title: "动画库: tailwindcss-motion 的使用",
-      link: '/css/motion-library',
+      link: "/css/motion-library",
       tagName: TagName.CSS,
-      createDate: '2024-11-27'
+      createDate: "2024-11-27",
     },
     {
-      title: '解决 windows 系统下部分 css 动画失效的问题',
-      link: '/fix/windows-motion-disable',
+      title: "解决 windows 系统下部分 css 动画失效的问题",
+      link: "/fix/windows-motion-disable",
       tagName: TagName.ErrorFix,
-      createDate: '2024-11-25'
+      createDate: "2024-11-25",
     },
     {
       title: "图层显隐效果",
@@ -419,6 +425,7 @@ export const markData: MarkData = {
       link: "/css/under-decoration",
       tagName: TagName.CSS,
       createDate: "2024-05-13",
+      tagStatus: "MERGED",
     },
     {
       title: "圆形 pulse 动画",

@@ -195,16 +195,16 @@ export function createSidebar() {
           },
           {
             text: "动画库: tailwindcss-motion",
-            link: '/css/motion-library'
+            link: "/css/motion-library",
           },
           {
-            text: '较少使用的css属性',
-            link: '/css/less-used-property'
+            text: "较少使用的css属性",
+            link: "/css/less-used-property",
           },
           {
-            text: '现代css特性: @property',
-            link: '/css/@property'
-          }
+            text: "现代css特性: @property",
+            link: "/css/@property",
+          },
         ],
       },
       {
@@ -222,7 +222,7 @@ export function createSidebar() {
         ],
       },
       {
-        text: "一些很好看的设计",
+        text: "一些css设计",
         items: [
           { text: "Amazing Color", link: "/css/amazing-color" },
           { text: "图片设计", link: "/css/picture-design" },
@@ -233,7 +233,6 @@ export function createSidebar() {
           { text: "品牌宫格图", link: "/css/brand-grid" },
           { text: "简单的瀑布流实现", link: "/css/fall-style" },
           { text: "圆形 pulse 动画", link: "/css/circle-animation" },
-          { text: "下划线装饰", link: "/css/under-decoration" },
           { text: "一些按钮", link: "/css/some-buttons" },
           { text: "博客类应用中点击查看更多的设计", link: "/css/see-more" },
           { text: "给图片加上阴影遮罩", link: "/css/mask-image" },
@@ -242,6 +241,7 @@ export function createSidebar() {
           { text: "购物车图片放大效果", link: "/css/enlarge-image" },
           { text: "锚点定位", link: "/css/anchor" },
           { text: "图层显隐效果", link: "/css/filter-mask" },
+          { text: "sticky 滑动效果", link: "/css/sticky-over" },
         ],
       },
       {
@@ -495,9 +495,9 @@ export function createSidebar() {
             link: "/fix/image-import-fix",
           },
           {
-            text: '解决 windows 系统下部分 css 动画失效的问题',
-            link: '/fix/windows-motion-disable'
-          }
+            text: "解决 windows 系统下部分 css 动画失效的问题",
+            link: "/fix/windows-motion-disable",
+          },
         ],
       },
       { text: "返回上层", link: "/others-map" },
