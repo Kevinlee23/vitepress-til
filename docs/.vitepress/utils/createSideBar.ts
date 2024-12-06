@@ -242,6 +242,8 @@ export function createSidebar() {
           { text: "锚点定位", link: "/css/anchor" },
           { text: "图层显隐效果", link: "/css/filter-mask" },
           { text: "sticky 滑动效果", link: "/css/sticky-over" },
+          { text: "example: mask", link: "/css/mask-ex" },
+          { text: "example: mix-blend-mode", link: "/css/mix-blend-mode-ex" },
         ],
       },
       {
