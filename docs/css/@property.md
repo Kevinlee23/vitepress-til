@@ -89,7 +89,7 @@ initial-value表示该属性的初始值
 
 :::code-group
 
-```css [disable.style]
+```css [❌disable.style]
 .ex-1-normal {
   --colorA: #fff;
   --colorB: #000;
@@ -104,7 +104,7 @@ initial-value表示该属性的初始值
 }
 ```
 
-```css [enable.style]
+```css [✅enable.style]
 @property --houni-colorA {
   syntax: '<color>';
   inherits: false;
