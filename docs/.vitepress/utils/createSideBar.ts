@@ -242,6 +242,10 @@ export function createSidebar() {
           { text: "锚点定位", link: "/css/anchor" },
           { text: "图层显隐效果", link: "/css/filter-mask" },
           { text: "sticky 滑动效果", link: "/css/sticky-over" },
+          {
+            text: "作为图像（img）使用的SVG 黑色路径变成白色",
+            link: "/css/svg-color-black-to-white",
+          },
           { text: "example: mask", link: "/css/mask-ex" },
           { text: "example: mix-blend-mode", link: "/css/mix-blend-mode-ex" },
         ],
