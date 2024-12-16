@@ -15,9 +15,21 @@ noComment: true
 
 实例: 配合 transform: rotateX(Y) 做翻转的时候使用
 
+## text-shadow
+
+> 为文字添加阴影
+
+text-shadow: x-axis, y-axis, radius, color
+
 ## text-underline-offset
 
 控制文本基线和下划线之间的距离
+
+## aspect-ratio
+
+> 长宽比
+
+aspect-ratio: 1 / 1;
 
 ## overscroll-behavior: contain
 
