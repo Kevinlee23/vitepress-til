@@ -4,7 +4,7 @@ import QrCode from "../../../../public/images/qr-code.png";
 
 <template>
   <div class="img-wrap mt-[20px] w-[200px] h-[200px]">
-    <img :src="QrCode" />
+    <img class="w-full h-full" :src="QrCode" />
   </div>
 </template>
 
