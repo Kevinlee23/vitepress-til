@@ -63,7 +63,7 @@ onMounted(() => {
   <footer>
     <div class="flex items-center justify-center gap-x-[10px] mb-[4px]">
       <div class="flex items-center">
-        2024( <img class="w-[24px] h-[24px]" :src="currentIcon" />)
+        {{ year }}( <img class="w-[24px] h-[24px]" :src="currentIcon" />)
       </div>
       <div class="w-[100px] group/today">
         <div class="group-hover/today:hidden">
