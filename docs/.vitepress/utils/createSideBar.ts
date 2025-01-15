@@ -307,6 +307,7 @@ export function createSidebar() {
           { text: "useSortable", link: "/vue3/useSortable" },
           { text: "useLocalStorage", link: "/vue3/useLocalStorage" },
           { text: "useImage", link: "/vue3/useImage" },
+          { text: "useEventListener", link: "/vue3/useEventListener" },
         ],
       },
       { text: "返回上层", link: "/framework-map" },
