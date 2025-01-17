@@ -278,6 +278,10 @@ export function createSidebar() {
             text: "h-function",
             link: "/vue3/h-function",
           },
+          {
+            text: "list-ref",
+            link: "/vue3/list-ref",
+          },
         ],
       },
       {
