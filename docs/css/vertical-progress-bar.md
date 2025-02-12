@@ -149,6 +149,19 @@ export default function useVertialScroll(scrollEl, wrapEl) {
 </style>
 ```
 
+另一种写法:
+
+```css
+.scrollElement {
+  animation-timeline: scroll-box
+}
+
+@scroll-timeline scroll-box {
+  source: selector("#scroll-container");
+  orientation: "vertical";
+}
+```
+
 :::
 
 ## 实现效果
