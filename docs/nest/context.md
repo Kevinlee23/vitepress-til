@@ -76,7 +76,8 @@ export interface RpcArgumentsHost {
 
 ## ExecutionContext
 
-`ExecutionContext` 提供了当前执行过程的信息:
+`ExecutionContext` 提供了当前执行过程的信息：
+
 - `getClass`: 控制器上下文
 - `getHandler`: 处理函数上下文
 

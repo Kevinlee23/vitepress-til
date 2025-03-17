@@ -124,7 +124,8 @@ connectSSE();
 
 ## 第三方库扩展
 
-默认的浏览器 `EventSource API` 具有限制:
+默认的浏览器 `EventSource API` 具有限制：
+
 - 只能传递 `url` 和 `withCredentials`
 - 不能传递请求正文：必须在 `URL` 中对执行请求所需的所有信息进行编码
 - 不能输入自定义请求标头

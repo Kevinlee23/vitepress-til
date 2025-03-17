@@ -2,7 +2,8 @@
 
 ## 动态路由
 
-`/products/[id].vue` 匹配:
+`/products/[id].vue` 匹配：
+
 - `/products/1`
 - `/products/2`
 - `/products/3`
@@ -21,7 +22,8 @@ or
 
 `/search/[type]/[[key]].vue`
 
-可以匹配:
+可以匹配：
+
 - `/search/product/123`
 - `/search/product`
 - ...

@@ -40,7 +40,8 @@ setPerson({
 
 ## 数组更新时避免 mutation
 
-避免使用:
+避免使用：
+
 - 增加元素 `push`, `unshift`
 - 删除元素 `pop`, `shift`, `splice`
 - 替换元素 `splice`, `arr[i] = ...`
@@ -49,6 +50,7 @@ setPerson({
 这些方法会在原数组上进行修改
 
 替换为：
+
 - 增加元素 `concat`, `[...arr, element]`
 - 删除元素 `filter`, `slice`
 - 替换元素 `map`
