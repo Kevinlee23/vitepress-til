@@ -61,6 +61,12 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
+      - name: Check source code
+        uses: actions/checkout@v4
+
+      - name: AutoCorrect
+        uses: huacnlee/autocorrect-action@main
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
