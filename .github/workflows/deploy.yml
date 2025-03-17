@@ -65,7 +65,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: AutoCorrect
-        uses: huacnlee/autocorrect-action@main
+        uses: huacnlee/autocorrect-action@v2
 
       - name: Deploy to GitHub Pages
         id: deployment
