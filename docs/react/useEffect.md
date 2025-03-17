@@ -1,6 +1,6 @@
 # useEffect
 
-React 的两种逻辑:
+React 的两种逻辑：
 
 - 渲染逻辑代码
 - 事件处理程序
@@ -11,7 +11,7 @@ React 的两种逻辑:
 
 ## 什么时候需要 Effect
 
-> 不要随意在你的组件中使用 `Effect`. 记住, `Effect` 通常用于暂时“跳出” `React` 代码并与一些 外部 系统进行同步。这包括浏览器 API、第三方小部件，以及网络等等。如果你想用 `Effect` 仅根据其他状态调整某些状态，那么 你可能不需要 `Effect`
+> 不要随意在你的组件中使用 `Effect`. 记住，`Effect` 通常用于暂时“跳出” `React` 代码并与一些 外部 系统进行同步。这包括浏览器 API、第三方小部件，以及网络等等。如果你想用 `Effect` 仅根据其他状态调整某些状态，那么 你可能不需要 `Effect`
 
 ## 声明 Effect
 
@@ -31,7 +31,7 @@ function MyComponent {
 function MyComponent {
   useEffect(() => {
     // 每次渲染后都会执行此处的代码
-  }, []) // 不能为空, 且不能随意选择依赖项 (依赖项要和 Effect 代码匹配)
+  }, []) // 不能为空，且不能随意选择依赖项 (依赖项要和 Effect 代码匹配)
 
   return <div />
 }

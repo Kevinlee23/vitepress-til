@@ -85,7 +85,7 @@ const render = () => {
 
 事件修饰符
 
-`.passive`, `.capture`, `.once` 使用驼峰写法拼接在事件后面:
+`.passive`, `.capture`, `.once` 使用驼峰写法拼接在事件后面：
 
 > `onClickCapture`, `onKeyupOnce`
 

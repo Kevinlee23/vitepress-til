@@ -14,7 +14,7 @@ const ossGlobal = reactive({
 export const getCurrentClient = async () => {
   const time = await getServerTime();
 
-  // 判断ali的sts是否有 ||  检查 oss 实例以及过期时间
+  // 判断 ali 的 sts 是否有 ||  检查 oss 实例以及过期时间
   if (
     !ossGlobal.credentials ||
     new Date(ossGlobal.credentials.Expiration).getTime() < time.getTime()
@@ -29,8 +29,8 @@ export const getCurrentClient = async () => {
       accessKeyId, // 自己账户的accessKeyId或临时秘钥
       accessKeySecret, // 自己账户的accessKeySecret或临时秘钥
       stsToken: securityToken, //  从STS服务获取的安全令牌（SecurityToken）。
-      region: '<YOUR_OSS_REGION>', // 根据那你的Bucket地点来填写
-      bucket: '<YOUR_OSS_BUCKET>', // bucket名字
+      region: '<YOUR_OSS_REGION>', // 根据那你的 Bucket 地点来填写
+      bucket: '<YOUR_OSS_BUCKET>', // bucket 名字
       refreshSTSToken: async () => {
         const { data: newData } = await ossGlobal.onOss();
         ossGlobal.credentials = newData;

@@ -60,7 +60,7 @@ const tabList = [
 const timer = ref(false);
 const timeCalc = () => {
   timer.value = setInterval(() => {
-    // 这里按照具体展示时间来将时间刻度切细, e.g.: 6s
+    // 这里按照具体展示时间来将时间刻度切细，e.g.: 6s
     const temp = percent.value + Number(((1 / 6) * 10).toFixed(2));
     if (temp > 100) {
       percent.value = 100;
@@ -83,7 +83,7 @@ const handleSwitch = (index) => {
   }, 200);
 };
 
-// 进度条100%后自动切换下一个
+// 进度条 100% 后自动切换下一个
 watch(percent, () => {
   if (percent.value === 100) {
     percent.value = 0;

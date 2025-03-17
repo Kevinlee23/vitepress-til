@@ -15,7 +15,7 @@ const props = defineProps<{
 </script>
 ```
 
-也可以从另一个源文件中引入:
+也可以从另一个源文件中引入：
 
 ```vue
 <script setup lang="ts">

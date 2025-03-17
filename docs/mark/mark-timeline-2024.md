@@ -44,7 +44,7 @@ const decLink: Link[] = markData.DEC
 
 // 标签组
 const tagGroups: TagGroup[] = createTag()
-// 一维标签组, 将所有类型的标签组压平
+// 一维标签组，将所有类型的标签组压平
 let tagsMap: TagItem[] = []
 tagGroups.map(group => {
   group.items.map(item => tagsMap.push(item))

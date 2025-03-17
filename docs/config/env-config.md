@@ -4,18 +4,18 @@ outline: deep
 
 # vite 环境配置
 
-一般来说环境分为:
+一般来说环境分为：
 
 - `development` 开发环境
 - `staging` 本地测试环境
 - `test` 远程测试环境
-- `production` 生产环境 （正式环境）
+- `production` 生产环境（正式环境）
 
 ## 不同环境的配置
 
 ### 环境变量
 
-具体见: [链接](/vue3/vite-config#环境变量)
+具体见：[链接](/vue3/vite-config#环境变量)
 
 ### 根据环境变量自动分发 \[部署地址\]
 

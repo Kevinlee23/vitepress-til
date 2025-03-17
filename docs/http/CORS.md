@@ -1,6 +1,6 @@
-# CORS （跨域资源共享）
+# CORS（跨域资源共享）
 
-`CORS` 话题涉及的内容有: 同源策略，简单请求，预检请求
+`CORS` 话题涉及的内容有：同源策略，简单请求，预检请求
 
 ## 什么是 CORS
 
@@ -18,12 +18,12 @@ e.g.:
 
 ## 简单请求
 
-简单请求：不会触发 `CORS` 预检请求的 `请求`，需要满足以下条件:
+简单请求：不会触发 `CORS` 预检请求的 `请求`，需要满足以下条件：
 
 - 使用 `GET`, `HEAD`, `POST` 方法
 - 只能使用允许人为设置的标头字段集合 (`Accept`, `Accept-Language`, `Content-Language`, `Content-Type`, `Range`)
-- `Content-Type` 只被允许为: `text/plain`, `multipart/form-data`, `application/x-www-form-urlencoded`
-- `Range` 只允许简单的范围标头值, e.g.: `bytes=256-`, `bytes=127-255`
+- `Content-Type` 只被允许为：`text/plain`, `multipart/form-data`, `application/x-www-form-urlencoded`
+- `Range` 只允许简单的范围标头值，e.g.: `bytes=256-`, `bytes=127-255`
 - 请求中没有使用 `ReadbleStream` 对象
 
 ## 预检请求
@@ -37,7 +37,7 @@ Access-Control-Request-Headers: origin, x-requested-with
 Origin: https://foo.bar.org
 ```
 
-以上为发送 `DELETE` 请求前的预检请求，如果服务器允许，它就会响应这个预检请求:
+以上为发送 `DELETE` 请求前的预检请求，如果服务器允许，它就会响应这个预检请求：
 
 ```txt
 HTTP/1.1 200 OK
@@ -52,7 +52,7 @@ Access-Control-Max-Age: 86400
 
 ### HTTP 响应标头字段
 
-服务器为访问控制请求返回的 `HTTP` 响应头:
+服务器为访问控制请求返回的 `HTTP` 响应头：
 
 - `Access-Control-Allow-Origin: <origin> | *` 允许访问资源的来源
 - `Access-Control-Max-Age: <delta-seconds>` 指定预检请求的结果被缓存多久

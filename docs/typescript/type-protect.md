@@ -8,14 +8,14 @@ date: 2024-11-04 15:00
 
 ## typeof
 
-适用于: string, number, boolean 和 symbol
+适用于：string, number, boolean 和 symbol
 
 ```typescript
 const str: string = 'hello, wolrd'
 typeof str === 'string' // true
 ```
 
-不能用于判断对象类型(包括数组和函数)，结果都为 object
+不能用于判断对象类型 (包括数组和函数)，结果都为 object
 
 ## instanceof
 

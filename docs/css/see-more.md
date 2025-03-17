@@ -57,7 +57,7 @@ getInfo(id).then(async (res) => {
   let srcWidth = imgLoading?.width;
   let srcHeight = imgLoading?.height;
 
-  // 在第一张图片高度的基础上+100px, 作为可见内容的高度
+  // 在第一张图片高度的基础上 +100px, 作为可见内容的高度
   maxHeight.value =
     Math.floor((srcHeight * (props.isMobile ? 355 : 798)) / srcWidth) + 100;
 });

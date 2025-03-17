@@ -1,4 +1,4 @@
-# 动画库: tailwindcss-motion
+# 动画库：tailwindcss-motion
 
 ## install
 

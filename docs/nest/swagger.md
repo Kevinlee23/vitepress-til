@@ -4,7 +4,7 @@
 
 `yarn add @nest/swagger`
 
-项目启动后, `api` 文档默认会在: `localhost:port/api` 页面
+项目启动后，`api` 文档默认会在：`localhost:port/api` 页面
 
 ## 引入
 
@@ -62,7 +62,7 @@ export enum UserRole {
   User = "User",
 }
 
-// 增加了 ApiProperty 装饰器的属性将会在 api文档中体现
+// 增加了 ApiProperty 装饰器的属性将会在 api 文档中体现
 export class CreateUserDto {
   @ApiProperty()
   username: string;
@@ -86,7 +86,7 @@ export class CreateUserDto {
 
 ## 启用 cli 插件
 
-`cli` 插件将:
+`cli` 插件将：
 
 - 自动注释 `DTO` 属性
 - 根据问号设置 `required` 属性
@@ -96,7 +96,7 @@ export class CreateUserDto {
 - 根据注释为属性生成示例值
 - ...
 
-开启:
+开启：
 
 ```json
 // nest-cli.json
@@ -110,7 +110,7 @@ export class CreateUserDto {
 }
 ```
 
-自定义插件行为:
+自定义插件行为：
 
 ```json
 {
@@ -131,4 +131,4 @@ export class CreateUserDto {
 }
 ```
 
-具体内容见: [链接](https://nest.nodejs.cn/openapi/cli-plugin)
+具体内容见：[链接](https://nest.nodejs.cn/openapi/cli-plugin)

@@ -17,7 +17,7 @@ const color = ref("#f00"); // 红色
 </style>
 ```
 
-需要进行`cacl`计算: 找一个中间值
+需要进行`cacl`计算：找一个中间值
 
 ```vue
 <template>

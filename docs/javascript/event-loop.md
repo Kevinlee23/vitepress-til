@@ -6,24 +6,24 @@ outline: deep
 
 ## 简述
 
-事件循环的执行流程如下:
+事件循环的执行流程如下：
 
 ```txt:line-numbers=1
 宏任务
 宏任务执行结束
-有可执行的微任务吗, 没有的话回到 1, 有则执行 4
+有可执行的微任务吗，没有的话回到 1, 有则执行 4
 执行所有微任务
-队列里面所有微任务执行完毕, 回到 1
+队列里面所有微任务执行完毕，回到 1
 ```
 
-按照这个流程，它的执行机制就是:
+按照这个流程，它的执行机制就是：
 
 - 执行一个宏任务，如果遇到微任务就将它放到微任务的事件队列中
 - 当宏任务执行完成后，会查看微任务的事件队列，然后将里面的所有微任务依次执行完
 
 ## 微任务
 
-属于微任务的有:
+属于微任务的有：
 
 - `Promise.then`
 - `MutationObserver`
@@ -32,7 +32,7 @@ outline: deep
 
 ## 宏任务
 
-属于宏任务的有:
+属于宏任务的有：
 
 - `script`
 - `setTimeout` / `setInterval`
@@ -71,7 +71,7 @@ new Promise(function (resolve) {
 console.log("script end");
 ```
 
-执行分析:
+执行分析：
 
 - 执行同步任务打印 `script start`
 - 遇到定时器，是个宏任务，先放着不执行
@@ -83,6 +83,6 @@ console.log("script end");
 - 执行 `then` 回调，打印 `promise2`
 - 微任务列表清空，执行下一个宏任务，打印 `settimeout`
 
-所以打印顺序为: 
+所以打印顺序为：
 
 `script start` -> `async1 start` -> `async2` -> `promise1` -> `script end` -> `async1 end` -> `promise2` -> `settimeout`

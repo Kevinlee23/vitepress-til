@@ -104,7 +104,7 @@ function doSomethingAsynchronously(cb) {
 
 数字或空值 `null`: `{?number}`
 
-一个数字，绝不会为空值: `{!number}`
+一个数字，绝不会为空值：`{!number}`
 
 ### @constant
 
@@ -141,7 +141,7 @@ const SNOW_IN_LU = {
 
 ### @returns
 
-记录函数返回的值: `@return [{type}] [description]`
+记录函数返回的值：`@return [{type}] [description]`
 
 ```js
 /**

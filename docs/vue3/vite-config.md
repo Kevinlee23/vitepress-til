@@ -101,7 +101,7 @@ $ npm add -D stylus
 `通过构造器导入`
 
 ```js
-// 只有在 new Worker() 声明中直接使用 new URL() 构造函数时, work 线程的检测才会生效
+// 只有在 new Worker() 声明中直接使用 new URL() 构造函数时，work 线程的检测才会生效
 // 此外，所有选项参数必须是静态值
 const worker = new Worker(new URL("./worker.js", import.meta.url), {
   type: "module",
@@ -118,7 +118,7 @@ const worker = new MyWorker();
 
 ## 环境变量
 
-`Vite` 在一个特殊的 `improt.mate.env` 对象上暴露环境变量:
+`Vite` 在一个特殊的 `improt.mate.env` 对象上暴露环境变量：
 
 - `import.meta.env.MODE` 应用运行的模式
 - `import.meta.env.BASE_URL` 部署应用时的基本 `URL`
@@ -135,7 +135,7 @@ const worker = new MyWorker();
 .env.[mode].local   # 只在指定模式下加载，但会被 git 忽略
 ```
 
-只有带 `VITE_` 前缀的变量才会暴露给经过 `vite` 处理的代码: `VITE_SOME_KEY`
+只有带 `VITE_` 前缀的变量才会暴露给经过 `vite` 处理的代码：`VITE_SOME_KEY`
 
 ### 模式
 
@@ -144,6 +144,6 @@ const worker = new MyWorker();
 $ vite build --mode test
 # 预发布环境
 $ vite build --mode stage
-# 默认生产模式构建, 可忽略 --mode
+# 默认生产模式构建，可忽略 --mode
 $ vite build --mode production
 ```

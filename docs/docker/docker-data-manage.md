@@ -1,13 +1,13 @@
 # 数据管理
 
-`docker` 内部及容器之间管理数据，有两种方式:
+`docker` 内部及容器之间管理数据，有两种方式：
 
 - 数据卷 `(Vol)`
 - 挂载主机目录 `(Bind mounts)`
 
 ## 数据卷
 
-数据卷是一个可供一个/多个容器使用的特殊目录，特性:
+数据卷是一个可供一个/多个容器使用的特殊目录，特性：
 
 - 数据卷可以在容器之间共享
 - 对数据卷的修改会立马生效
@@ -57,7 +57,7 @@ $ docker run -d -P \
     nginx:alpine
 ```
 
-只读权限: `--mount type=bind,source=/src/webapp,target=/usr/share/nginx/html,readonly`
+只读权限：`--mount type=bind,source=/src/webapp,target=/usr/share/nginx/html,readonly`
 
 ### 挂载一个本地主机文件作为数据卷
 

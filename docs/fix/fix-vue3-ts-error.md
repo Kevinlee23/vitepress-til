@@ -2,7 +2,7 @@
 
 ## 解决 vue3-ts 环境下引入组件报错的问题
 
-在 `vite-env.d.ts` 中加入以下代码:
+在 `vite-env.d.ts` 中加入以下代码：
 
 ```ts
 declare module "*.vue" {
@@ -14,7 +14,7 @@ declare module "*.vue" {
 
 ## 解决 ts 文件引用报错的问题
 
-在 `tsconfig.json` 中加入以下代码:
+在 `tsconfig.json` 中加入以下代码：
 
 ```json
 {

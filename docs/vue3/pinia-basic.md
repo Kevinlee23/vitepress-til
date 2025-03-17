@@ -1,6 +1,6 @@
 # pinia 基本示例
 
-pinia 定义 store 的三个重要部分:
+pinia 定义 store 的三个重要部分：
 
 - `state` 状态
 - `getters` 计算状态
@@ -38,9 +38,9 @@ export const useTodosStore = defineStore("todos", {
     },
   },
   actions: {
-    // 任何数量的参数, 返回一个 Promise 或者不返回
+    // 任何数量的参数，返回一个 Promise 或者不返回
     addTodo(text) {
-      // 和 vuex 不同的是, 可以直接改变状态
+      // 和 vuex 不同的是，可以直接改变状态
       this.todos.push({ text, id: this.nextId++, isFinished: false });
     },
   },

@@ -50,7 +50,7 @@ import MixBlendModeFour from '../.vitepress/theme/components/example/mix-blend-m
 
 ## 壹 · 层叠优先级重叠
 
-> 子元素底部有 border, 当想要让父元素的底部带通用的一条其他颜色的底边, 让父元素的底边和子元素的底边 border 同时显示
+> 子元素底部有 border, 当想要让父元素的底部带通用的一条其他颜色的底边，让父元素的底边和子元素的底边 border 同时显示
 
 ### 预览
 
@@ -206,7 +206,7 @@ import QrCode from "../../assets/images/qr-code.png";
 
 ## 肆 · 故障效果
 
-> 使用: 混合模式，滤镜，位移和遮罩完成
+> 使用：混合模式，滤镜，位移和遮罩完成
 
 ### 预览
 

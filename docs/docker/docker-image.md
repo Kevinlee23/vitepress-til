@@ -8,7 +8,7 @@ $ docker pull [options] [Docker registry-address[:port/]repositoryName[:tag]]
 
 `registry-address: ip:port` 默认地址是 `Docker Hub(docker.io)`
 
-`repositoryName: username/softwareName` 如果不给出 `username`, 则默认是 library （官方镜像）
+`repositoryName: username/softwareName` 如果不给出 `username`, 则默认是 library（官方镜像）
 
 e. g.
 
@@ -26,7 +26,7 @@ $ docker run [options] image [opstions]
 $ docker run -it --rm ubuntu:18.04 bash
 ```
 
-- `-it`: `-i` 是交互式操作, `-t` 是终端操作
+- `-it`: `-i` 是交互式操作，`-t` 是终端操作
 - `--rm`: 设置容器退出后自动删除
 - `bash`: 放在镜像名后面的是命令，交互式 `shell` 使用 `bash`
 
@@ -47,7 +47,7 @@ ubuntu               bionic              329ed837d508        3 days ago         
 # 虚悬镜像：官方维护后版本升级了，旧版本名称被取消
 <none>               <none>              00285df0df87        5 days ago          342 MB
 
-# 列出部分镜像, e.g.:
+# 列出部分镜像，e.g.:
 $ docker image ls ubuntu
 $ docker image ls ubuntu:18.04
 # --filter / -f

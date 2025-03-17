@@ -8,11 +8,11 @@
 ---- composables 组合式函数
 ---- layouts 页面框架结构
 ---- locales 本地化文件
----- middleware 导航守卫, 导航到特定路由之前运行的代码
+---- middleware 导航守卫，导航到特定路由之前运行的代码
 ---- pages 页面
      ---- products
      ---- [id].vue // localhost:3000/products/10 -- route.params.id = 10
----- plugins 插件系统, 会被nuxt自动读取
+---- plugins 插件系统，会被 nuxt 自动读取
 ---- utils 公共方法
 ```
 

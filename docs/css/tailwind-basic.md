@@ -58,7 +58,7 @@ linear-gradient(180deg, #E60000 15%, #1B0909 100%)
 
 ## 多值简写
 
-有一些 css 有多个属性，比如: border-radius, boxShadow 等，可以采用简写法 `(a_b_c_d)` 来进行自定义:
+有一些 css 有多个属性，比如：border-radius, boxShadow 等，可以采用简写法 `(a_b_c_d)` 来进行自定义：
 
 - rounded-[43%_47%_44%_48%]
 - shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]

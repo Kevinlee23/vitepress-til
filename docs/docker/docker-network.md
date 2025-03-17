@@ -2,7 +2,7 @@
 
 ## 外部访问容器 - 端口映射
 
-`-p/P` 标记，支持格式: `ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort`
+`-p/P` 标记，支持格式：`ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort`
 
 可以多次使用绑定多个端口
 

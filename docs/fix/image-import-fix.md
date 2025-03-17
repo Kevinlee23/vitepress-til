@@ -1,6 +1,6 @@
 # 解决 typescript 中 image 的导入报错
 
-新增 image.d.ts 文件:
+新增 image.d.ts 文件：
 
 ```typescript
 declare module '*.svg';

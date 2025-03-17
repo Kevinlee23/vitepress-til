@@ -3,7 +3,7 @@
 实现一个 repeat 方法，要求如下：
 
 ```js
-// 实现 repat 方法, 使 func 方法重复执行 times 次, 每次间隔 wait 秒
+// 实现 repat 方法，使 func 方法重复执行 times 次，每次间隔 wait 秒
 function repeat(func, times, wait) {
   // empty
 }

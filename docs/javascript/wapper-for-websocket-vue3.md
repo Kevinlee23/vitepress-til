@@ -3,11 +3,11 @@
 ```javascript:line-numbers=1
 import modal from "@/plugins/modal";
 const baseURL = import.meta.env.VITE_APP_BASE_WS;
-const EventTypes = ["open", "close", "message", "error", "reconnect"]; // WebSocket响应事件
+const EventTypes = ["open", "close", "message", "error", "reconnect"]; // WebSocket 响应事件
 const DEFAULT_CHECK_TIME = 55 * 1000; // 心跳检测的默认时间
 const DEFAULT_CHECK_COUNT = 3; // 心跳检测默认失败重连次数
 const DEFAULT_CHECK_DATA = { Type: 1, Parameters: ["alive"] }; // 心跳检测的默认参数 - 【跟后端协商的】
-const CLOSE_ABNORMAL = 1006; // WebSocket非正常关闭code码
+const CLOSE_ABNORMAL = 1006; // WebSocket 非正常关闭 code 码
 
 class EventMap {
   deps = new Map();
@@ -31,9 +31,9 @@ class Socket extends WebSocket {
     /**
      * url 要连接的 WebSocket URL
      * protocols 一个协议字符串或者一个包含协议字符串的数组
-     * query 可以通过URL传递给后端的查询参数
+     * query 可以通过 URL 传递给后端的查询参数
      * greet 心跳检测的打招呼信息
-     * customBase 自定义的baseURL 否则使用环境变量 env.VITE_APP_BASE_WS
+     * customBase 自定义的 baseURL 否则使用环境变量 env.VITE_APP_BASE_WS
      */
     const {
       url,
@@ -64,16 +64,16 @@ class Socket extends WebSocket {
     this.initSocket();
   }
 
-  // 初始化WebSocket
+  // 初始化 WebSocket
   initSocket() {
-    // 监听webSocket的事件
+    // 监听 webSocket 的事件
     this.onopen = function (e) {
       this._dep.notify("open", e);
       this.heartCheckStart();
     };
     this.onclose = function (e) {
       this._dep.notify("close", e);
-      // 如果WebSocket是非正常关闭 则进行重连
+      // 如果 WebSocket 是非正常关闭 则进行重连
       if (e.code === CLOSE_ABNORMAL) {
         if (this._reconnectCount this.heartCheckCount) {
           this._reconnectCount++;
@@ -84,7 +84,7 @@ class Socket extends WebSocket {
           );
           this._dep.notify("reconnect", _socket);
         } else {
-          return modal.msgError("WebSocket重连失败, 请联系技术客服!");
+          return modal.msgError("WebSocket 重连失败，请联系技术客服！");
         }
       }
     };
@@ -132,7 +132,7 @@ class Socket extends WebSocket {
     this.send(result);
   }
 
-  // 关闭WebSocket
+  // 关闭 WebSocket
   closeSocket(code, reason) {
     this.close(code, reason);
   }
@@ -169,7 +169,7 @@ const defaultOptions = {
 
 export const useSocket = (options = defaultOptions) => {
   if (!window.WebSocket)
-    return modal.msgWarning("您的浏览器不支持WebSocket, 请更换浏览器!");
+    return modal.msgWarning("您的浏览器不支持 WebSocket, 请更换浏览器！");
   const dep = new EventMap();
   const reconnectCount = 0; // 记录 WebSocket 重连的次数
   return new Socket(options, dep, reconnectCount);

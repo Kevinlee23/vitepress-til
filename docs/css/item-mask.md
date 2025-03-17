@@ -17,11 +17,11 @@
 .item-mask {
   background-color: rgba(125, 125, 125, 0.5);
 
-  /* 设置 inset-0 将mask撑开到父容器 */
+  /* 设置 inset-0 将 mask 撑开到父容器 */
   @apply absolute inset-0 text-center z-[1] rounded cursor-not-allowed;
 
   .mask-content {
-    /* top-[50%] translate-y-[-50%] 将mask内文字垂直居中 */
+    /* top-[50%] translate-y-[-50%] 将 mask 内文字垂直居中 */
     @apply absolute left-0 top-[50%] translate-y-[-50%] w-full px-[10px] text-[20px] text-white;
   }
 }
@@ -46,11 +46,11 @@
 .item-mask {
   background-color: rgba(125, 125, 125, 0.5);
 
-  /* 设置 inset-0 将mask撑开到父容器 */
+  /* 设置 inset-0 将 mask 撑开到父容器 */
   @apply absolute inset-0 text-center z-[1] rounded cursor-not-allowed;
 
   .mask-content {
-    /* top-[50%] translate-y-[-50%] 将mask内文字垂直居中 */
+    /* top-[50%] translate-y-[-50%] 将 mask 内文字垂直居中 */
     @apply absolute left-0 top-[50%] translate-y-[-50%] w-full px-[10px] text-[20px] text-white;
   }
 }

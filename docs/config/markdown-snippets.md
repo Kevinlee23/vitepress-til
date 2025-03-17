@@ -3,8 +3,8 @@
 > vscode 中实用的 markdown 片段
 
 - `ctrl + shfit + p`
-- 输入: 配置用户代码片段
-- 选中: `markdown.json`
+- 输入：配置用户代码片段
+- 选中：`markdown.json`
 
 ```json
 {
@@ -68,23 +68,23 @@
     "prefix": "/c",
     "body": ["```$1", "$0", "```"]
   },
-  "ul有序列表": {
+  "ul 有序列表": {
     "prefix": "/ul",
     "body": ["- $0"]
   },
-  "ol无序列表": {
+  "ol 无序列表": {
     "prefix": "/ol",
     "body": ["1. $0"]
   },
-  "task任务列表": {
+  "task 任务列表": {
     "prefix": "/task",
     "body": ["- [ ] $0"]
   },
-  "quote引用": {
+  "quote 引用": {
     "prefix": "/q",
     "body": ["> $1", "$2"]
   },
-  "table表格": {
+  "table 表格": {
     "prefix": "/t",
     "body": [
       "|  $1  |  $2  |  $3  |  $4  |",
@@ -94,23 +94,23 @@
       "|  $13 |  $14 |  $15 |  $16 |"
     ]
   },
-  "bash代码片段": {
+  "bash 代码片段": {
     "prefix": "/bash",
     "body": ["```bash", "$0", "```"]
   },
-  "html代码片段": {
+  "html 代码片段": {
     "prefix": "/html",
     "body": ["```html", "$0", "```"]
   },
-  "js代码片段": {
+  "js 代码片段": {
     "prefix": "/js",
     "body": ["```js", "$0", "```"]
   },
-  "css代码片段": {
+  "css 代码片段": {
     "prefix": "/css",
     "body": ["```css", "$0", "```"]
   },
-  "vue代码片段": {
+  "vue 代码片段": {
     "prefix": "/vue",
     "body": ["```vue", "$0", "```"]
   }

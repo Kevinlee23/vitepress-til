@@ -21,7 +21,7 @@ const { setElement } = useScrollStore();
 
 watch(scrollEl, (val) => {
   if (val)
-    // 当 NScrollbar 组件的引用生成时, 使用 pinia 将 scroll 的节点存储
+    // 当 NScrollbar 组件的引用生成时，使用 pinia 将 scroll 的节点存储
     setElement(scrollEl.value.scrollbarInstRef.containerRef);
 });
 </script>
@@ -74,13 +74,13 @@ import { ref, watch } from "vue";
 import { useElementSize, useScroll, useWindowSize } from "@vueuse/core";
 
 export default function useVertialScroll(scrollEl, wrapEl) {
-  const { y: scrollY } = useScroll(scrollEl); // 滚动对象的y距
+  const { y: scrollY } = useScroll(scrollEl); // 滚动对象的 y 距
   const { height: windowH } = useWindowSize(); // 浏览器窗口的高度
   const { height: wrapH } = useElementSize(wrapEl); // 滚动内容的高度
 
   const barHeight = ref(0); // 计算得出的滚动块高度
 
-  // 当滚动对象触发滚动事件, 或者滚动内容的高度变化时, 计算滚动块的高度
+  // 当滚动对象触发滚动事件，或者滚动内容的高度变化时，计算滚动块的高度
   watch([scrollY, wrapH], () => {
     const rat = scrollY.value / (wrapH.value - windowH.value);
 
@@ -112,7 +112,7 @@ export default function useVertialScroll(scrollEl, wrapEl) {
 
 <style lang="scss">
 // 由于 animation-timeline 默认情况下只能使用 nearest | root | self ...
-// 所以要自定义元素, 需要配合 scroll-timeline-name
+// 所以要自定义元素，需要配合 scroll-timeline-name
 .c-scroll {
   .n-scrollbar-container {
     scroll-timeline-name: --my-custom-timeline;
@@ -149,7 +149,7 @@ export default function useVertialScroll(scrollEl, wrapEl) {
 </style>
 ```
 
-另一种写法:
+另一种写法：
 
 ```css
 .scrollElement {

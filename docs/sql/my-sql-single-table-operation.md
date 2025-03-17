@@ -2,7 +2,7 @@
 
 ## 前提
 
-表结构:
+表结构：
 
 - 学生表 `student (id, name, gender, age, class, score)`
 

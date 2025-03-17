@@ -3,7 +3,7 @@ outline: deep
 date: 2024-12-02
 ---
 
-# 现代 css 特性: @property
+# 现代 css 特性：@property
 
 > 截止 2024/12/02 止，该特性的浏览器覆盖率为 92% (不要在 fifrefox 浏览器中使用)
 
@@ -21,7 +21,7 @@ date: 2024-12-02
 
 ### syntax(required)
 
-syntax 描述了自定义属性所允许的语法结构:
+syntax 描述了自定义属性所允许的语法结构：
 
 - `<length>`: 10px, 1em, 1rem...
 - `<number>`: 12, 3.14, -3.14, 0...
@@ -35,7 +35,7 @@ syntax 描述了自定义属性所允许的语法结构:
 - `<time>`
 - ...
 
-syntax 支持类似于 ts 中的元组和联合类型:
+syntax 支持类似于 ts 中的元组和联合类型：
 
 ```css
 @property --color-blue {
@@ -51,7 +51,7 @@ syntax 支持类似于 ts 中的元组和联合类型:
 }
 ```
 
-syntax 可以定义空格隔开(+)和逗号隔开(#)的属性:
+syntax 可以定义空格隔开 (+) 和逗号隔开 (#) 的属性：
 
 ```css
 // box-shadow
@@ -79,13 +79,13 @@ inherits 描述该属性是否能够被继承
 
 ### initial-value 
 
-initial-value表示该属性的初始值
+initial-value 表示该属性的初始值
 
 ## 实际应用
 
-通过 transition, 开发者可以针对一些属性的设置过渡动画，但是有部分的属性切换无法通过 transition 来设置过渡动画，例如: background (gradient)
+通过 transition, 开发者可以针对一些属性的设置过渡动画，但是有部分的属性切换无法通过 transition 来设置过渡动画，例如：background (gradient)
 
-这个时候可以通过设置 { transition-name: 自定义属性 }的方式来达成:
+这个时候可以通过设置 { transition-name: 自定义属性 }的方式来达成：
 
 :::code-group
 

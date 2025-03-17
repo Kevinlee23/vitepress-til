@@ -46,7 +46,7 @@ type Result16 = object extends Object ? 1 : 2; // 1
 
 引申出结构化系统的内容，假设我们把 String 看做一个普通的对象，上面存在一些方法，那么这个普通对象就是对空对象 ({}) 的继承，方法实现...
 
-> 特殊的结论, {} extends object 和 object extends {}
+> 特殊的结论，{} extends object 和 object extends {}
 
 ```typescript
 type Result15 = {} extends object ? 1 : 2; // 1
@@ -87,4 +87,4 @@ type Result26 = null extends 'luxiaxue' ? 1 : 2 // 2
 type Result27 = void extends 'luxiaxue' ? 1 : 2 //2
 ```
 
-后面三个例子中, void, undefined, null 都是有实际意义的类型
+后面三个例子中，void, undefined, null 都是有实际意义的类型

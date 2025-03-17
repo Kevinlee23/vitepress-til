@@ -27,7 +27,7 @@
 
 ## Css 动画属性
 
-animation, 包括:
+animation, 包括：
 
 - animation-name 指定动画
 - animation-duration 动画持续时间

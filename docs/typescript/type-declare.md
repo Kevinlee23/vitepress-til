@@ -22,7 +22,7 @@ foo.bar
 
 ## 双重断言
 
-当使用类型断言时，原类型与断言类型之间差异过大, ts 会给出一个报错
+当使用类型断言时，原类型与断言类型之间差异过大，ts 会给出一个报错
 
 ```ts
 const str: string = "luxiaxue";
@@ -41,7 +41,7 @@ declare const foo: {
   };
 };
 
-// prop 在 func 调用结果中不一定存在, 且可能为 null, 会有类型报错
+// prop 在 func 调用结果中不一定存在，且可能为 null, 会有类型报错
 foo.func().prop.toFixed();
 
 // 非空断言的运行时仍然会保持调用链，因此在运行时可能会报错

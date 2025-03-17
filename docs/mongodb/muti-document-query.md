@@ -79,7 +79,7 @@ export class Comment {
 
 ## 关联表操作
 
-查找 `blog` 列表时，通常操作的结果如下:
+查找 `blog` 列表时，通常操作的结果如下：
 
 ```json
 {
@@ -99,7 +99,7 @@ export class Comment {
 }
 ```
 
-查找到的 `comments` 是 `id` 形式，如果需要将具体的映射到字段上，需要使用 `populate` 操作:
+查找到的 `comments` 是 `id` 形式，如果需要将具体的映射到字段上，需要使用 `populate` 操作：
 
 ```ts
 this.blogModel
@@ -114,7 +114,7 @@ this.blogModel
 // populate({ path: "commentIds", select "authorName, content", options: { strictPopulate: false } })
 ```
 
-同理，查找某个 `blog` 的评论的操作如下:
+同理，查找某个 `blog` 的评论的操作如下：
 
 ```ts
 this.blogModel.findOne({ _id: blogId }).populate({

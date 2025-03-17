@@ -64,8 +64,8 @@ export const imageFiles = [
   ".tif",
   ".blob",
 ];
-export const docFiles = [".doc", ".docx"]; // word文档
-export const xlsFiles = [".xls", ".xlsx"]; // excel表格
+export const docFiles = [".doc", ".docx"]; // word 文档
+export const xlsFiles = [".xls", ".xlsx"]; // excel 表格
 export const pptFiles = [".ppt", ".pptx"]; // ppt
 export const pdfFiles = [".pdf"]; // pdf
 export const jsonFiles = [".json"];
@@ -98,7 +98,7 @@ function downloadFileUrl(url, name, size) {
       let contentLength = size;
 
       if (!contentLength) {
-        // 没有显式传入文件长度, 向服务器请求长度值
+        // 没有显式传入文件长度，向服务器请求长度值
         contentLength = await getContentLength(url);
       }
 
@@ -132,7 +132,7 @@ function downloadFileUrl(url, name, size) {
   });
 }
 
-// 将后端返回的数据通过blob形式整合下载
+// 将后端返回的数据通过 blob 形式整合下载
 function saveWithData(data, name) {
   const blob = new Blob([JSON.stringify(JSON.parse(data))]);
   if (blob instanceof Blob) {

@@ -6,7 +6,7 @@ import { getCurrentClient } from "#imports";
 async function list(prefix, pageSize, continuationToken) {
   const client = getCurrentClient();
 
-  // 不带任何参数, 默认最多返回100个文件。
+  // 不带任何参数，默认最多返回 100 个文件。
   const result = await client.listV2({
     "max-keys": pageSize, // 指定个数
     prefix, // 指定前缀

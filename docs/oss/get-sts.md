@@ -12,9 +12,9 @@ const app = express();
 const path = require("path");
 
 app.use(express.static(path.join(__dirname, "templates")));
-// 配置环境变量ALIBABA_CLOUD_ACCESS_KEY_ID。
+// 配置环境变量 ALIBABA_CLOUD_ACCESS_KEY_ID。
 const accessKeyId = process.env.ALIBABA_CLOUD_ACCESS_KEY_ID;
-// 配置环境变量ALIBABA_CLOUD_ACCESS_SECRET。
+// 配置环境变量 ALIBABA_CLOUD_ACCESS_SECRET。
 const accessKeySecret = process.env.ALIBABA_CLOUD_ACCESS_SECRET;
 
 app.get("/get_sts_token_for_oss_upload", (req, res) => {
@@ -22,10 +22,10 @@ app.get("/get_sts_token_for_oss_upload", (req, res) => {
     accessKeyId: accessKeyId,
     accessKeySecret: accessKeySecret,
   });
-  // roleArn填写步骤2获取的角色ARN，例如acs:ram::175708322470****:role/ramtest。
-  // policy填写自定义权限策略，用于进一步限制STS临时访问凭证的权限。如果不指定Policy，则返回的STS临时访问凭证默认拥有指定角色的所有权限。
-  // 3000为过期时间，单位为秒。
-  // sessionName用于自定义角色会话名称，用来区分不同的令牌，例如填写为sessiontest。
+  // roleArn 填写步骤 2 获取的角色 ARN，例如 acs:ram::175708322470****:role/ramtest。
+  // policy 填写自定义权限策略，用于进一步限制 STS 临时访问凭证的权限。如果不指定 Policy，则返回的 STS 临时访问凭证默认拥有指定角色的所有权限。
+  // 3000 为过期时间，单位为秒。
+  // sessionName 用于自定义角色会话名称，用来区分不同的令牌，例如填写为 sessiontest。
   sts
     .assumeRole("<YOUR_ROLE_ARN>", ``, "3000", "sessiontest")
     .then((result) => {

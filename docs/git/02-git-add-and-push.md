@@ -27,7 +27,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-状态简览：`git status -s` (新添加的未追踪文件: `??`, 新添加到暂存区: `A`, 修改过的文件: `M`)
+状态简览：`git status -s` (新添加的未追踪文件：`??`, 新添加到暂存区：`A`, 修改过的文件：`M`)
 
 ```text
 M "git/a.md"
@@ -48,17 +48,17 @@ M "git/a.md"
 # 只忽略当前目录下的 TODO 文件
 /TODO
 
-# 忽略任何目录下名为bulid的文件夹
+# 忽略任何目录下名为 bulid 的文件夹
 build/
 
-# 忽略 doc/notes.txt 而不忽略doc/server/arch.txt
+# 忽略 doc/notes.txt 而不忽略 doc/server/arch.txt
 doc/*.txt
 
 # 忽略 doc/ 目录及其子目录下的 .pdf 文件
 doc/**/*.pdf
 ```
 
-[.gitignore文件列表参考](https://github.com/github/gitignore){target="_blank"}
+[.gitignore 文件列表参考](https://github.com/github/gitignore){target="_blank"}
 
 ## 查看已暂存和为暂存的修改
 

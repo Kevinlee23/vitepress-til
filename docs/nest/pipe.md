@@ -6,7 +6,7 @@ outline: deep
 
 ## 内置管道
 
-以下为 `nest` 中内置的管道:
+以下为 `nest` 中内置的管道：
 
 - `ValidationPipe`
 - `ParseIntPipe`
@@ -23,7 +23,7 @@ outline: deep
 :::code-group
 
 ```ts [DI]
-// 不需要想管道内传递选项时, 使用依赖注入
+// 不需要想管道内传递选项时，使用依赖注入
 @Get(':id')
 async findOne(@Param('id', ParseIntPipe) id: number) {
   return this.catsService.findOne(id);
@@ -31,7 +31,7 @@ async findOne(@Param('id', ParseIntPipe) id: number) {
 ```
 
 ```ts [options]
-// 当需要向管道内传递选项来自定义内置管道行为时, 需要使用实例
+// 当需要向管道内传递选项来自定义内置管道行为时，需要使用实例
 @Get(':id')
 async findOne(
   @Param('id', new ParseIntPipe({ errorHttpStatusCode: HttpStatus.NOT_ACCEPTABLE }))
@@ -66,7 +66,7 @@ export class ValidationPipe implements PipeTransform {
 
 ### 安装依赖
 
-需要先安装依赖: `yarn add class-validator class-transformer`
+需要先安装依赖：`yarn add class-validator class-transformer`
 
 ### 全局启用
 
@@ -106,7 +106,7 @@ app.useGlobalPipes(
 ### 自动转换负载对象
 
 - 将传入的纯 `js` 对象转换成 `dto` 类型
-- 执行基本类型转换, 例如：将路由参数的 `string` 类型转化为规定的 `number` 类型
+- 执行基本类型转换，例如：将路由参数的 `string` 类型转化为规定的 `number` 类型
 
 ```ts
 app.useGlobalPipes(

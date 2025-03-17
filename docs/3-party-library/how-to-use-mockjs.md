@@ -12,10 +12,10 @@ $ npm install mockjs
 
 ```js [template]
 Mock.mock({
-  // 生成一个长度 1-10的数组,
+  // 生成一个长度 1-10 的数组，
   "list|1-10": [
     {
-      // 属性 id 是一个自增数, 起始值为 1, 每次增加 1
+      // 属性 id 是一个自增数，起始值为 1, 每次增加 1
       "id|+1": 1,
     },
   ],
@@ -91,7 +91,7 @@ Mock.mock({
 import Mock from "mockjs";
 Mock.mock(rurl, template);
 /**
- * 拦截匹配 rurl 的请求, 将回调函数的执行结果作为相应数据返回
+ * 拦截匹配 rurl 的请求，将回调函数的执行结果作为相应数据返回
  * rtype: get, post, put, delete...
  * options: url, type, body
  */
@@ -100,7 +100,7 @@ Mock.mock(rurl, rtype, template);
 Mock.mock(rurl, rtype, function(options));
 ```
 
-配合拦截 Ajax 请求的行为, 设置模拟接口的响应时间
+配合拦截 Ajax 请求的行为，设置模拟接口的响应时间
 
 `Mock.setup({ timeout: 400 })`
 

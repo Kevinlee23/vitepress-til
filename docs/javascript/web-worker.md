@@ -13,13 +13,13 @@ outline: deep
 `const work = new Worker(path, options)`
 
 - `path`: 有效的脚本地址，必须遵守同源策略
-- `option.type` 可以指定 `worker` 类型, 可以是 `classic` (默认) 和 `module`
+- `option.type` 可以指定 `worker` 类型，可以是 `classic` (默认) 和 `module`
 - `option.credentials` 可以指定 `worker` 的凭证
 - `option.name` 表示 `worker` 的 `scope` 的一个 `DOMString` 值
 
 ### js 主线程与 worker 线程数据传递
 
-主线程和 `worker` 线程都是通过 `postMessage` 方法来发送消息，以及通过监听 `message` 事件来接受消息:
+主线程和 `worker` 线程都是通过 `postMessage` 方法来发送消息，以及通过监听 `message` 事件来接受消息：
 
 ```javascript
 // main.js
@@ -80,7 +80,7 @@ myWorker.terminate();
 self.close();
 ```
 
-无论是主线程关闭，还是 `woker` 线程内部关闭, `worker` 线程当前的事件循环 (`Event Loop`) 中的任务会继续执行。下一个事件循环的任务会直接被忽略
+无论是主线程关闭，还是 `woker` 线程内部关闭，`worker` 线程当前的事件循环 (`Event Loop`) 中的任务会继续执行。下一个事件循环的任务会直接被忽略
 
 区别在于：
 
@@ -115,7 +115,7 @@ self.addEvenListener("message", (e) => {
 
 add(1, 2);
 
-export default self; // 把顶级对象self暴露出去
+export default self; // 把顶级对象 self 暴露出去
 ```
 
 ## 主线程和 worker 线程可以传递哪些数据

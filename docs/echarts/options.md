@@ -93,7 +93,7 @@ outline: deep
 - `map`: 注册的地图名称
 - `nameMap: {}`: 自定义地图的名称映射
 
-## 数据集: dataset
+## 数据集：dataset
 
 ### 常用形式
 
@@ -127,7 +127,7 @@ const option = {
 
 > 维度
 
-在二维数组中，每一列就是一个维度:
+在二维数组中，每一列就是一个维度：
 
 ```js
 const option = {
@@ -142,7 +142,7 @@ const option = {
 };
 ```
 
-`type` 可以是:
+`type` 可以是：
 
 - `number`
 - `ordinal`: 对于类目，文本这些 `string` 类型的数据，如果需要能子啊数轴上使用，必须是 `ordinal`
@@ -156,7 +156,7 @@ const option = {
 
 `encode`: `{ x: 0, y: 1, tooltip: [0, 1] }`
 
-当使用 `dimensions` 给维度定义名称后，可以直接引用名称:
+当使用 `dimensions` 给维度定义名称后，可以直接引用名称：
 
 ```json
 {
@@ -167,12 +167,12 @@ const option = {
       "x": "date",
       "y": ["open", "close", "highest", "lowest"]
     }
-    // encode 还支持: tooltip, seriesName, itemId, itemName
+    // encode 还支持：tooltip, seriesName, itemId, itemName
   }
 }
 ```
 
-[配置查阅: encode](https://echarts.apache.org/zh/option.html#series-line.encode)
+[配置查阅：encode](https://echarts.apache.org/zh/option.html#series-line.encode)
 
 ### 多个 dataset 引用
 
@@ -211,7 +211,7 @@ var option = {
 
 `transform: outData = f(inputData)`
 
-其中, `f` 可以是:
+其中，`f` 可以是：
 
 - `filter`
 - `sort`
@@ -220,7 +220,7 @@ var option = {
 - `cluster`
 - `aggregate(todo)`
 
-`transform` 是依托 `dataset` 实现的，用于生成一个新的 `dataset`, 常用于筛选，过滤或者排序等, 比如:
+`transform` 是依托 `dataset` 实现的，用于生成一个新的 `dataset`, 常用于筛选，过滤或者排序等，比如：
 
 ```js
 const option = {
@@ -268,7 +268,7 @@ const option = {
 
 ## 变形动画
 
-从两个不同的 `series` 切换时的动画效果:
+从两个不同的 `series` 切换时的动画效果：
 
 - `series`:
   - `.animationDurationUpdate`: 数据更新动画的时长
@@ -288,7 +288,7 @@ setInterval(function () {
 }, 4000);
 ```
 
-初始动画时长: `animationDuration`
+初始动画时长：`animationDuration`
 
 ## visualMap
 
@@ -296,16 +296,16 @@ setInterval(function () {
 
 分为连续型 `(continuous)` 和离散型 `(piecewise)`
 
-是否显示 `visualMap-piecewise` 组件: `show`
-维度选择: `dimension`, 二维数据下 `(xy)`, 默认选取最后一个维度 `(y)`, `0 => x, 1 => y`
-系列数据: `seriesIndex`, 默认选取所有系列
+是否显示 `visualMap-piecewise` 组件：`show`
+维度选择：`dimension`, 二维数据下 `(xy)`, 默认选取最后一个维度 `(y)`, `0 => x, 1 => y`
+系列数据：`seriesIndex`, 默认选取所有系列
 
-`piecewise` 型:
+`piecewise` 型：
 
-- `pieces: []`: 分片, `dimension: 0, { lte: 6, color: '#000'}` <=> `x` 轴点数小于等于 `6` 时, `color: #000`
-- 比较符号: `lt, gt, lte, gte, "="`
+- `pieces: []`: 分片，`dimension: 0, { lte: 6, color: '#000'}` <=> `x` 轴点数小于等于 `6` 时，`color: #000`
+- 比较符号：`lt, gt, lte, gte, "="`
 
-`continuous` 型:
+`continuous` 型：
 
 - `{ type: continuous, min: 0, max: 400 }` <=> `y` 的数据最小为 `0`, 最大为 `400`
 - `{ type: dimension: 0, min: 0, max: dataList.length-1 }` <=> 覆盖 `x` 轴所有数据点
@@ -318,5 +318,5 @@ setInterval(function () {
 - `start(end)`: 起止（百分比）
 - `startValue(endValue)`: 起止（数值）
 - `axAxisIndex(yAxisIndex): [] | number`: 区域缩放组件控制的 `x,y` 轴 `index`
-- `minSpan(maxSpan)`: 限制窗口最小(最大)百分比
+- `minSpan(maxSpan)`: 限制窗口最小 (最大) 百分比
 - `minValueSpan(maxValueSpan)`: 限制窗口最小（最大）值

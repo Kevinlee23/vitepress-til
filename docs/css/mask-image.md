@@ -57,7 +57,7 @@ img {
   box-sizing: border-box;
   object-fit: cover;
 
-  /* 阴影mask */
+  /* 阴影 mask */
   background-blend-mode: luminosity;
 
   transition: 0.5s;
@@ -69,7 +69,7 @@ img.left {
   object-position: right;
   padding-left: var(--s);
 
-  /* 阴影mask */
+  /* 阴影 mask */
   background: url("/images/56-250x250.jpg") 50% / cover #000;
 }
 
@@ -77,7 +77,7 @@ img.top {
   object-position: bottom;
   padding-top: var(--s);
 
-  /* 阴影mask */
+  /* 阴影 mask */
   background: url("/images/287-250x250.jpg") 50% / cover #000;
 }
 

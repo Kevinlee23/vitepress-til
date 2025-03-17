@@ -12,7 +12,7 @@ const props = defineProp({
   col: { type: number, default: 3 },
   gap: { type: number, default: 30 }, // 项目之间的间距
   innerPadding: { type: number, defalut: 20 }, // 项目的内边距
-  textContent: { type: number, default: 0 }, // 如果项目还有固定的文字行, 填写高度
+  textContent: { type: number, default: 0 }, // 如果项目还有固定的文字行，填写高度
 });
 
 const state = reative({
@@ -56,8 +56,8 @@ const getCardList = async (page, pageSize) => {
   }
 
   // 这里使用了 @vue/use 中的方法来获取图片原始尺寸
-  // 将图片原始尺寸记录下来, 后面计算图片缩略后高度用到
-  // 定宽, 缩略后高度 = 原始高度 / 原始宽度 * 定宽
+  // 将图片原始尺寸记录下来，后面计算图片缩略后高度用到
+  // 定宽，缩略后高度 = 原始高度 / 原始宽度 * 定宽
   for (let i = 0; i < list.length; i++) {
     let item = list[i];
     let { execute } = useImage({ src: item.picSrc });
@@ -75,7 +75,7 @@ const getCardList = async (page, pageSize) => {
 };
 ```
 
-## 核心: 计算项目的位置
+## 核心：计算项目的位置
 
 ```js
 // 最小列、最大列计算
@@ -121,7 +121,7 @@ const computedCardPos = (list) => {
       state.colHeight[index] = cardHeight + props.gap;
     } else {
       // 后续增补进来的项目
-      // 获取最短的那一列, 向那一列增加项目
+      // 获取最短的那一列，向那一列增加项目
       const { minIndex, minHeight } = minCol.value;
       state.cardPos.push({
         width: state.cardWidth,
@@ -142,7 +142,7 @@ const computedCardPos = (list) => {
 
 ```js
 const { scrollEl } = usePageScroll();
-// 如果页面有页脚, 加上页脚的 offset
+// 如果页面有页脚，加上页脚的 offset
 const { arrivedState } = useScroll(scrollEl, {
   offset: { bottom: bottomOffset },
 });

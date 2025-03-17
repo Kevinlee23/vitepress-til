@@ -6,11 +6,11 @@
 
 关联表 `id_card`, 新增一个属性 `user_id`, 将其设置为外键映射到 `user` 表的 `id` 属性
 
-## 基本语法:
+## 基本语法：
 
 `select * from user join id_card on user.id = id_card.user_id // user_id 为 id_card 表上关联 user 表的外键`
 
-格式:
+格式：
 
 - `join...on...` 默认为内关联，只返回两个表中能关联上的数据
 - `left join...on...` 左关联，额外返回左表中没有关联上的数据

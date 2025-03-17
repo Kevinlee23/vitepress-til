@@ -2,18 +2,18 @@
 noComment: true
 ---
 
-# 较少使用的css属性
+# 较少使用的 css 属性
 
 > 平时使用的地方较少，或者新特性（有实用价值的）的属性
 
 ## backface-visibility
 
-指定当元素背面朝向观察者时是否可见:
+指定当元素背面朝向观察者时是否可见：
 
 - hidden
 - visible (default)
 
-实例: 配合 transform: rotateX(Y) 做翻转的时候使用
+实例：配合 transform: rotateX(Y) 做翻转的时候使用
 
 ## text-shadow
 
@@ -37,14 +37,14 @@ aspect-ratio: 1 / 1;
 
 ## color-mix
 
-混合颜色的函数:
+混合颜色的函数：
 
 color-mix(in function, color1, color2, ...,)
 
 in-xxx (颜色命名空间):
 
-- in 极性颜色空间: hsl, hwb, lch, oklch
-- in 矩形颜色空间: srgb, srgb-linear, ...
+- in 极性颜色空间：hsl, hwb, lch, oklch
+- in 矩形颜色空间：srgb, srgb-linear, ...
 - in 自定义颜色空间
 
 实例 (css 颜色关键字的透明度表示):

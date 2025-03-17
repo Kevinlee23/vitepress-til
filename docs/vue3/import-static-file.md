@@ -5,7 +5,7 @@
 ## new URL
 
 ```js
-// 必须是静态的, 不能够是变量, vite 不会进行转换
+// 必须是静态的，不能够是变量，vite 不会进行转换
 const imageUrl = new URL("../assets/images/pic-name.jpg", import.meta.url).href;
 ```
 

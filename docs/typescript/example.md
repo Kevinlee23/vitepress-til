@@ -26,7 +26,7 @@ type NameOrId<T extends number | string> = T extends number
   : nameLabel;
 ```
 
-对泛型进行约束, true 分支返回泛型某一索引的类型, false 分支返回 never:
+对泛型进行约束，true 分支返回泛型某一索引的类型，false 分支返回 never:
 
 `type MessageOf<T> = T extends { message: unknown } ? T["message"] : never;`
 
@@ -65,7 +65,7 @@ type StrArrOrNumArr = ToArrayNonDist<string | number>; // => (string | number)[]
 
 ```typescript
 // 修饰符 readonly, ?
-// 映射修饰符行为: + 增加; - 去除
+// 映射修饰符行为：+ 增加; - 去除
 
 type CreateMutable<T> = {
   -readonly [Property in keyof T]: T[Property]; // 去掉修饰符 readonly

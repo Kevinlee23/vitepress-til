@@ -101,7 +101,7 @@ type FirstArrayItemType<T extends any[]> = T extends [infer P, ...any[]]
   ? P
   : never;
 
-// 判断数组第一个是不是特定类型, 是则提取
+// 判断数组第一个是不是特定类型，是则提取
 type FirstArrayItemType<T extends any[]> = T extends [infer P extends string, ...any[]]
   ? P
   : never;

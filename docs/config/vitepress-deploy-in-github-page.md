@@ -17,12 +17,12 @@
 
 ## 设定 public 根目录
 
-`.config `文件中，将 `base` 一项设置为页面路由, 例如部署到: `user.github.io/repo/` 上，
+`.config `文件中，将 `base` 一项设置为页面路由，例如部署到：`user.github.io/repo/` 上，
 将 `base` 设置为 `/repo/`
 
 ## 创建 deploy 文件
 
-在项目的 `.github/workfolows` 目录中创建 `deploy` 文件: `deploy.yml`, 包含以下内容:
+在项目的 `.github/workfolows` 目录中创建 `deploy` 文件：`deploy.yml`, 包含以下内容：
 
 ```yml
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程

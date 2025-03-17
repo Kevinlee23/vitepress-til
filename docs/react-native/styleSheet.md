@@ -1,12 +1,12 @@
 # RN(React Mative) 中样式的写法
 
-`RN` 中仍遵循 `web` 上的 `css` 命名, 不过需要使用驼峰写法:
+`RN` 中仍遵循 `web` 上的 `css` 命名，不过需要使用驼峰写法：
 
 `background-color -> backgroundColor`
 
 ## 建议写法
 
-`RN` 中建议使用 `StyleSheet.create` 来集中定义组件的样式:
+`RN` 中建议使用 `StyleSheet.create` 来集中定义组件的样式：
 
 ```jsx
 import React from "react";

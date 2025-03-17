@@ -26,7 +26,7 @@ export type DeepRequired<T extends object> = {
 };
 ```
 
-同理可实现: DeepReadonly, DeepMutable, DeepNonNullable...
+同理可实现：DeepReadonly, DeepMutable, DeepNonNullable...
 
 ### 已知属性的部分修饰
 
@@ -44,7 +44,7 @@ export type MarkPropsAsOptional<
 > = Partial<Pick<T, K>> & Omit<T, K>;
 ```
 
-同理可实现: MarkPropsAsRequired, MarkPropsAsReadonly, MarkPropsAsMutable 等
+同理可实现：MarkPropsAsRequired, MarkPropsAsReadonly, MarkPropsAsMutable 等
 
 ## 结构工具类型进阶
 
@@ -91,7 +91,7 @@ type OmitByValueType<T extends object, ValueType> = Pick<
 ```typescript:line-numbers=1
 // 取差集然后用 never 标记属性
 type Without<T, U> = { [P in Exclude<keyof T, keyof U>]?: never };
-// 约束不能同时拥有这个条件: 两个类型的差异属性不能同时共存
+// 约束不能同时拥有这个条件：两个类型的差异属性不能同时共存
 type XOR<T, U> = (Without<T, U> & U) | (Without<U, T> & T);
 
 // example
@@ -124,7 +124,7 @@ const user3: XORUser = { name: 'user3' } // [!code error]
 // error: vipExpires 和 promotionUsed 不能同时拥有
 const user4: XORUser = { name: 'user3', vipExpires: 0, promotionUsed: false } // [!code error]
 
-// more: 实现绑定, 要么同时拥有, 要么都没有
+// more: 实现绑定，要么同时拥有，要么都没有
 type XORStruct = XOR<
   {},
   {

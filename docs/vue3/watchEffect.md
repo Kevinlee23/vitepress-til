@@ -5,8 +5,8 @@
 ```vue
 <script setup>
 watchEffect(() => {
-  // 会自动收集函数内使用到的属性作为依赖, 进行监听
-  // 监听的是 userInfo.name 属性， 不会监听 userInfo
+  // 会自动收集函数内使用到的属性作为依赖，进行监听
+  // 监听的是 userInfo.name 属性，不会监听 userInfo
   console.log(userInfo.name);
 });
 
@@ -15,7 +15,7 @@ watchEffect(
     console.log("empty");
   },
   {
-    flush: "pre", // 'pre' | 'post' | 'sync' 默认: 'pre'
+    flush: "pre", // 'pre' | 'post' | 'sync' 默认：'pre'
     onTrack: (e) => {
       debugger;
     },
@@ -45,7 +45,7 @@ watch(
 </script>
 ```
 
-可以替换为:
+可以替换为：
 
 ```vue
 <script setup>

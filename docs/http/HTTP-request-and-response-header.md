@@ -33,7 +33,7 @@ outline: deep
 ### Content-Type
 
 当客户端向服务端发起 HTTP 的 POST 请求时，客户端告诉服务端，我们发送的数据类型
-常见的有:
+常见的有：
 
 - `application/x-www-form-urlencoded` 原生 `Form 表单`
 - `multipart/form-data` 将表单的数据处理为一条消息，以标签为单元，用分隔符分开。它既可以上传键值对，也可以上传文件，甚至多个文件
@@ -108,7 +108,7 @@ outline: deep
 
 ### Etag
 
-一个资源对象的标识值，如果资源对象被修改了, `Etag `也会修改，用于判断服务器资源是否发生了修改
+一个资源对象的标识值，如果资源对象被修改了，`Etag `也会修改，用于判断服务器资源是否发生了修改
 
 ### Access-Control-Allow-Origin
 

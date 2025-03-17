@@ -14,7 +14,7 @@ outline: deep
 
 ### 第二步 配置 host 文件
 
-文件位置:
+文件位置：
 
 - `windows`: `C:\windows\system32\drivers\etc`
 - `linux`: `/etc/hosts`

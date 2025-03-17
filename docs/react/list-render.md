@@ -39,8 +39,8 @@ const people = [
 export default function List() {
   const chemists = people.filter((person) => person.profession === "化学家");
   const listItems = chemists.map((person) => (
-    // 在 jsx 中使用 map 渲染列表, key 值是必须的.
-    // 用作 key 的值应该在数据中提前就准备好，而不是在运行时才随手生成:
+    // 在 jsx 中使用 map 渲染列表，key 值是必须的。
+    // 用作 key 的值应该在数据中提前就准备好，而不是在运行时才随手生成：
     <li key={person.id}>
       <img src={getImageUrl(person)} alt={person.name} />
       <p>

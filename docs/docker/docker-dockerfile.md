@@ -3,15 +3,15 @@
 ## FROM 指定基础镜像
 
 一般我们定制镜像是从官方镜像中找到一些高质量的服务类/语言类/操作系统镜像定制我们自己想要的功能
-如: `nginx`, `redis`, `mongo`, `mysql`, `php`, `tomcat`; `node`, `python`, `ruby`, `golang`; `ubuntu`, `centos`, `alpine` 等
+如：`nginx`, `redis`, `mongo`, `mysql`, `php`, `tomcat`; `node`, `python`, `ruby`, `golang`; `ubuntu`, `centos`, `alpine` 等
 
 e.g.: `FROM nginx`
 
-如果想从第一层开始自己建立, 使用空白镜像: `FROM scratch`
+如果想从第一层开始自己建立，使用空白镜像：`FROM scratch`
 
 ## RUN 执行命令
 
-`RUN` 指令时用来执行命令的，有两种格式:
+`RUN` 指令时用来执行命令的，有两种格式：
 
 - shell 格式 `RUN <命令>`
 - exec 格式 `RUN ["可执行文件", "options"]`
@@ -30,7 +30,7 @@ $ RUN make -C /usr/src/redis
 $ RUN make -C /usr/src/redis install
 ```
 
-每 `RUN` 一次，就会建立一层，上面的例子创建了 7 层镜像, `docker` 的层数是有限制的，上面的例子可以改写为:
+每 `RUN` 一次，就会建立一层，上面的例子创建了 7 层镜像，`docker` 的层数是有限制的，上面的例子可以改写为：
 
 ```sh
 FROM debian:stretch
@@ -51,11 +51,11 @@ RUN set -x; buildDeps='gcc libc6-dev make wget' \
 
 ## build | 构建镜像
 
-在 `Dockerfile` 所在的文件目录执行: `docker build [options] <上下文路径/URL/->`
+在 `Dockerfile` 所在的文件目录执行：`docker build [options] <上下文路径/URL/->`
 
 ### 镜像构建上下文
 
-上下文路径：在将本地文件复制进镜像时，告诉 `docker` 服务端用到的内容路径, e.g.:
+上下文路径：在将本地文件复制进镜像时，告诉 `docker` 服务端用到的内容路径，e.g.:
 
 ```docker
 COPY ./package.json /app/

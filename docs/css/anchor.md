@@ -4,7 +4,7 @@ outline: deep
 
 # 两种锚点定位
 
-## 一、 hook + scrollIntoView
+## 一、hook + scrollIntoView
 
 ### 预览
 
@@ -164,7 +164,7 @@ export const useAnchorStore = defineStore("anchor", {
 
 :::
 
-## 二、 纯 CSS - (view-timeline, animation-timeline)
+## 二、纯 CSS - (view-timeline, animation-timeline)
 
 ### 预览
 

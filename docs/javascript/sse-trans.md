@@ -11,7 +11,7 @@ date: 2024-10-17
 
 ## 服务端 / 客户端示例
 
-响应头格式:
+响应头格式：
 
 ```json {2}
 {
@@ -21,7 +21,7 @@ date: 2024-10-17
 }
 ```
 
-`express` 响应示例:
+`express` 响应示例：
 
 ```js
 app.get("/events", function (req, res) {
@@ -32,7 +32,7 @@ app.get("/events", function (req, res) {
   let startTime = Date.now();
 
   const sendEvent = () => {
-    // 检查是否已经发送了10秒
+    // 检查是否已经发送了 10 秒
     if (Date.now() - startTime >= 10000) {
       res.write("event: close\ndata: {}\n\n"); // 发送一个特殊事件通知客户端关闭
       res.end(); // 关闭连接
@@ -40,7 +40,7 @@ app.get("/events", function (req, res) {
     }
 
     const data = { message: "Hello World", timestamp: new Date() };
-    res.write(`data: ${JSON.stringify(data)}\n\n`); // 每隔2秒发送一次消息
+    res.write(`data: ${JSON.stringify(data)}\n\n`); // 每隔 2 秒发送一次消息
 
     setTimeout(sendEvent, 2000);
   };
@@ -49,7 +49,7 @@ app.get("/events", function (req, res) {
 });
 ```
 
-客户端代码:
+客户端代码：
 
 ```js
 const sse = new EventSource("/events");
@@ -61,7 +61,7 @@ sse.onmessage = function (event) {
 };
 ```
 
-`EventSource` 实例的属性/方法/事件:
+`EventSource` 实例的属性/方法/事件：
 
 - `.readyState`: 表示连接状态的数字 `(connecting 0; open: 1; closed: 2)`
 - `.url`: 事件源的 `url`
@@ -94,17 +94,17 @@ function connectSSE() {
   };
 
   sse.addEventListener("message", (e) => {
-    console.log("接收到消息:", e.data);
+    console.log("接收到消息：", e.data);
   });
 
   sse.addEventListener("error", (err) => {
     if (sse.readyState === EventSource.CLOSED) {
       console.log("连接已关闭");
     } else {
-      console.error("发生错误:", err);
+      console.error("发生错误：", err);
       // 可以在这里实现重连逻辑
       // 服务端返回的数据中带有 id 字段和 retry 字段会自动进行重连尝试
-      setTimeout(connectSSE, 5000); // 5秒后重连
+      setTimeout(connectSSE, 5000); // 5 秒后重连
     }
   });
 

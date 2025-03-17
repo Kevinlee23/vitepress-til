@@ -23,7 +23,7 @@
 }
 ```
 
-具体实现，见[链接:实现二](/css/vertical-progress-bar#实现二-纯-css-实现方法)
+具体实现，见[链接：实现二](/css/vertical-progress-bar#实现二-纯-css-实现方法)
 
 ## scrollend 事件
 
@@ -69,7 +69,7 @@ scrollIntoView(scrollIntoViewOptions);
 
 ## scrollbar-(color, width), 标准滚动条控制规范
 
-标准规范:
+标准规范：
 
 ```css
 .scroll-box {
@@ -78,7 +78,7 @@ scrollIntoView(scrollIntoViewOptions);
 }
 ```
 
-非标准规范:
+非标准规范：
 
 - `::-webkit-scrollbar`
 - `::-webkit-scrollbar-button`
@@ -88,6 +88,6 @@ scrollIntoView(scrollIntoViewOptions);
 - `::-webkit-scrollbar-corner`
 - `::-webkit-resizer`
 
-如图:
+如图：
 
 ![rt](/images/-webkit-scrollbar.png)

@@ -2,7 +2,7 @@
 
 > 用来缓存未发生改变的函数
 
-使用场景:
+使用场景：
 
 - 很多情况下，我们会将函数作为 `props` 传递给子组件
 - 当我们对子组件使用 `memo` 进行缓存时，我们可能期待入参时子组件跳过渲染
@@ -42,7 +42,7 @@ function ProductPage({ productId, referrer, theme }) {
 
 ## 与 useMemo 关系
 
-优化子组件时, `useCallback` 与 `useMemo` 经常一同出现:
+优化子组件时，`useCallback` 与 `useMemo` 经常一同出现：
 
 - `useMemo` 缓存函数调用的结果
 - `useCallback` 缓存函数本身

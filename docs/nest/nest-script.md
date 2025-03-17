@@ -40,7 +40,7 @@ ConfigModule.forRoot({
 
 ## 使用配置文件
 
-或者可以使用配置文件:
+或者可以使用配置文件：
 
 ```ts
 ConfigModule.forRoot({
@@ -50,20 +50,20 @@ ConfigModule.forRoot({
 
 ## 使用环境变量
 
-在 `main.ts` 中使用:
+在 `main.ts` 中使用：
 
 ```ts
 const configService = app.get(ConfigService);
 const port = configService.get<number>('PORT');
 ```
 
-在需要使用配置的地方，注入 `ConfigService` 并使用:
+在需要使用配置的地方，注入 `ConfigService` 并使用：
 
 ```ts
 constructor(private configService: ConfigService) {}
 
 someMethod() {
   const apiKey = this.configService.get<string>('API_KEY');
-  // 使用apiKey...
+  // 使用 apiKey...
 }
 ```

@@ -10,7 +10,7 @@ useEventListener(document, 'visibilitychange', (evt) => {
 })
 ```
 
-如果在 ssr 中使用可能会遇到类似于: `document is not defined` 的问题，在 onMounted 中使用:
+如果在 ssr 中使用可能会遇到类似于：`document is not defined` 的问题，在 onMounted 中使用：
 
 ```js
 // onMounted will only be called in the client side, so it guarantees the DOM APIs are available.

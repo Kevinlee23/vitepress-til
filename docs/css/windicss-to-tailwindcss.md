@@ -1,6 +1,6 @@
 # windicss to tailwindcss
 
-例子: 利用正则表达式分组的功能来迁移 `windicss` 至 `tailwindcss`
+例子：利用正则表达式分组的功能来迁移 `windicss` 至 `tailwindcss`
 
 (w|h|min-w|max-w|min-h|max-h|top|right|left|bottom){1}-(\d+)px
 ->

@@ -25,7 +25,7 @@ export const getTextWidth = (text, fontSize) => {
 
 // 计算字长高度
 export const getTextHeight = (text, config) => {
-  // 元素宽度, 文字字体、大小和行高
+  // 元素宽度，文字字体、大小和行高
   const { width, fontFamily, fontSize, lineHeight } = config;
   var span = document.createElement("span");
   span.style.visibility = "hidden";

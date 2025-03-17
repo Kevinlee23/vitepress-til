@@ -85,7 +85,7 @@ http {
 ```
 
 负载均衡策略：
-- 轮询 （all weight default 1）
+- 轮询（all weight default 1）
 - 加权轮询 (set weight, other default 1)
 - 最少连接 (least_conn;)
 - 加权最少连接 (least_conn; set weight)
@@ -94,7 +94,7 @@ http {
 
 ## 网址有多个 webapp
 
-> 例如: 
+> 例如：
 > 
 > snowinlu.top/blog
 > 
@@ -102,7 +102,7 @@ http {
 > 
 > snowinlu.top/memo
 
-配置:
+配置：
 
 ```nginx
 http {
@@ -175,7 +175,7 @@ if ($request_method = 'POST') {
 }
 ```
 
-在服务器中引用:
+在服务器中引用：
 
 ```nginx
 upstream front_server{

@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",
+    "autocorrect-node": "^2.13.0",
     "blueimp-md5": "^2.19.0",
     "fast-glob": "^3.3.2",
     "feed": "^4.2.2",

@@ -35,7 +35,7 @@ interface NumberRecord {
 
 type PropType = NumberRecord[string]; // number
 
-// 在未声明索引签名类型的情况下, 不能使用 User[string] 这种原始类型的访问方式
+// 在未声明索引签名类型的情况下，不能使用 User[string] 这种原始类型的访问方式
 type PropType2 = User[string]; // [!code error]
 
 // 只能通过键名的字面量类型访问
@@ -67,7 +67,7 @@ interface StringifiedFoo {
   prop4: string;
 }
 
-// 遍历类型T的索引K，进行类型复制
+// 遍历类型 T 的索引 K，进行类型复制
 type Clone<T> = {
   [K in keyof T]: T[K];
 };

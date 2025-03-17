@@ -1,6 +1,6 @@
 # Nest - 执行上下文
 
-主要有两个重要的执行上下文的类:
+主要有两个重要的执行上下文的类：
 
 `{ host: ArgumentsHost, context: ExecutionContext }`
 
@@ -8,7 +8,7 @@
 
 `ArgumentsHost` 类提供了用于检索传递给处理程序的参数的方法
 
-它允许选择适当的上下文:
+它允许选择适当的上下文：
 
 - `host.switchToHttp`: `http` 环境
 - `host.switchToRpc`: `RPC` 微服务环境

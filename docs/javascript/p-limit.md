@@ -4,7 +4,7 @@ outline: deep
 
 # p-limit
 
-`p-limit` 是用来处理并发控制的库，常见的并行操作如下:
+`p-limit` 是用来处理并发控制的库，常见的并行操作如下：
 
 - `await Promise.all([promise1, promise2])`;
 - `await Promise.race([promise1, promise2])`
@@ -137,7 +137,7 @@ const enqueue = (fn, resolve, ...args) => {
 };
 ```
 
-### 将函数内私有变量暴露出去, 并提供额外方法
+### 将函数内私有变量暴露出去，并提供额外方法
 
 ```js
 const pLimit = (concurrency) => {
@@ -150,7 +150,7 @@ const pLimit = (concurrency) => {
   };
 
   Obejct.defineProperties(generator, {
-    // activeCount, pendingCount 只定义 get 函数, 这样就是只读的
+    // activeCount, pendingCount 只定义 get 函数，这样就是只读的
     activeCount: {
       get: () => activeCount,
     },

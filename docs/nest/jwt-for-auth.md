@@ -142,7 +142,7 @@ export class AuthController {
 @Injectable()
 export class AuthService {
   constructor(
-    private usersService: UsersService, // 注入账号密码-身份验证服务
+    private usersService: UsersService, // 注入账号密码 - 身份验证服务
     private jwtService: JwtService // 注入 jwt 服务
   ) {}
 
@@ -150,7 +150,7 @@ export class AuthService {
     username: string,
     pass: string
   ): Promise<{ access_token: string }> {
-    // 模拟数据库查找用户, 校验密码
+    // 模拟数据库查找用户，校验密码
     const user = await this.usersService.findOne(username);
     if (user?.password !== pass) {
       throw new UnauthorizedException();

@@ -1,6 +1,6 @@
 # useLocalStorage
 
-将 `localStorage` 作为 `ref` 对象使用，随着对象的修改, `localStorage` 修改
+将 `localStorage` 作为 `ref` 对象使用，随着对象的修改，`localStorage` 修改
 
 ```vue
 <script setup>

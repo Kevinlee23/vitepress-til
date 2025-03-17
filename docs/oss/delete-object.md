@@ -5,7 +5,7 @@
 ```js
 import { getCurrentClient } from "#imports";
 
-// filePath包含文件完整路径，不能包含bucket名称
+// filePath 包含文件完整路径，不能包含 bucket 名称
 async function deleteObject(filePath) {
   const client = getCurrentClient();
 
@@ -38,7 +38,7 @@ async function deleteMulti(list) {
 ```js
 import { getCurrentClient } from "#imports";
 
-// 处理请求失败的情况, 防止promise.all中断, 并返回失败原因和失败文件名
+// 处理请求失败的情况，防止 promise.all 中断，并返回失败原因和失败文件名
 async function handleDel(name) {
   const client = getCurrentClient();
 
@@ -62,7 +62,7 @@ async function deletePrefix(prefix) {
   console.log(result);
 }
 
-// 如果您需要删除所有前缀为src的文件, 则prefix设置为src
-// 设置为src后，所有前缀为src的非目录文件、src目录以及目录下的所有文件均会被删除
+// 如果您需要删除所有前缀为 src 的文件，则 prefix 设置为 src
+// 设置为 src 后，所有前缀为 src 的非目录文件、src 目录以及目录下的所有文件均会被删除
 deletePrefix("src");
 ```

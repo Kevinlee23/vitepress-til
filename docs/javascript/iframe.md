@@ -35,14 +35,14 @@ outline: deep
     const iframe = document.getElementsByTagName("iframe")[0];
 
     iframe.onload = function () {
-      // 输出: this is iframe html
+      // 输出：this is iframe html
       console.log(iframe.contentWindow.hello());
 
       // 输出 iframe 的 location 对象
       console.log("contentWindow.location", iframe.contentWindow.location);
     };
 
-    // 可以直接修改 iframe 地址, 不受同源策略的限制。 有的网站不支持被iframe引用, 所以会报错。 注意区分错误信息。
+    // 可以直接修改 iframe 地址，不受同源策略的限制。有的网站不支持被 iframe 引用，所以会报错。注意区分错误信息。
     iframe.contentWindow.location = "http://www.360doc.com";
   </script>
 </body>
@@ -50,7 +50,7 @@ outline: deep
 
 ```html [iframe.html]
 <body>
-  <div>这里是iframe</div>
+  <div>这里是 iframe</div>
   <script>
     function hello() {
       console.log("this is iframe html");
@@ -63,21 +63,21 @@ outline: deep
 
 ## window.frames
 
-获取 `<iframe>` 的方式:
+获取 `<iframe>` 的方式：
 
 - `window.frames[0]` 通过索引获取
 - `window.frames.iframeName` 通过名称获取
 
 ## iframe 通信
 
-`postMessage` 主页面:
+`postMessage` 主页面：
 
 ```javascript
 const iwin = windows.frames.iframeName;
 iwin.postMessage("message", "http://127.0.0.1:8080");
 ```
 
-`onmessage` 目标窗口:
+`onmessage` 目标窗口：
 
 ```javascript
 window.addEventListener("message", (event) => {
@@ -86,7 +86,7 @@ window.addEventListener("message", (event) => {
    *
    * data: postMessage 传递的数据
    * origin: 发送方的源
-   * source 对发送方窗口的引用, 可以通过 source.postMessage(...) 立即回传数据
+   * source 对发送方窗口的引用，可以通过 source.postMessage(...) 立即回传数据
    */
   console.log(event);
 });

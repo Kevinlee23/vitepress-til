@@ -15,13 +15,13 @@ function h(
 ## 用法
 
 ```js
-// 一般用法, class 和 style 可以像在模板中一样使用
+// 一般用法，class 和 style 可以像在模板中一样使用
 h("div", { class: "bar", style: { color: "red" } }, "hello, js");
 
 // 事件监听器应以 onXxx 的形式书写
 h("div", { onClick: () => {} });
 
-// 传入多个子节点, 没有 prop 的时候可以省略不写
+// 传入多个子节点，没有 prop 的时候可以省略不写
 h("div", [h("span", null, "hello,"), h("span", null, "js")]);
 
 // 传递单个默认插槽

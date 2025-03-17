@@ -46,7 +46,7 @@
 
 ## common-intellisense
 
-常见的 `UI` 库代码提示，包含: `element`, `elementPlus`, `vant 4`, `antd` 等
+常见的 `UI` 库代码提示，包含：`element`, `elementPlus`, `vant 4`, `antd` 等
 
 ## Material Icon Theme
 

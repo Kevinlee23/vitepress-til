@@ -4,7 +4,7 @@ outline: deep
 
 # Nest 基本概念
 
-## `AOP` 切面:
+## `AOP` 切面：
 
 ```txt
 Request --> Middleware --> Guard --> pipe -> handler --> Exception Filter --> Response

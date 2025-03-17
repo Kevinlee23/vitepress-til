@@ -30,7 +30,7 @@ outline: deep
 </html>
 ```
 
-如上代码, `ctx` 就是 `canvas` 绘画上下文
+如上代码，`ctx` 就是 `canvas` 绘画上下文
 
 ![canvas grid](/images/canvas-basic-01.png)
 `Canvas grid`
@@ -116,8 +116,8 @@ api:
 ### 线型
 
 - `lineWidth` 线条宽度
-- `lineCap` 线条末端样式, {`butt` 齐平, `round` 高度半线宽半圆, `square` 高度半线宽方块}
-- `lineJoin` 线条连接处样式 {`round` 磨圆, `bevel`, `miter`}
+- `lineCap` 线条末端样式，{`butt` 齐平，`round` 高度半线宽半圆，`square` 高度半线宽方块}
+- `lineJoin` 线条连接处样式 {`round` 磨圆，`bevel`, `miter`}
 - `miterLimit *` 限制当两条线相交时交接处最大长度
 - `getLineDash *` 当前虚线样式
 - `setLineDash *` 设置当前虚线样式

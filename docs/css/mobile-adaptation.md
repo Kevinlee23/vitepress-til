@@ -24,30 +24,30 @@ export default {
 };
 ```
 
-插件配置:
+插件配置：
 
 ```js
 export default {
   plugins: {
     "postcss-pxtorem": {
-      // 750设计标准
+      // 750 设计标准
       rootValue: 75,
-      // 转换成的rem后，保留小数点后几位
+      // 转换成的 rem 后，保留小数点后几位
       unitPrecision: 5,
       /**
-       * 将会被转换的css属性列表，
+       * 将会被转换的 css 属性列表，
        * 设置为*表示全部，['*','*position*','!letter-spacing','!font*']
        * *position* 表示所有包含 position 的属性
        * !letter-spacing 表示非 letter-spacing 属性
-       * !font* 表示非font-size font-weight ... 等的属性
+       * !font* 表示非 font-size font-weight ... 等的属性
        * */
       propList: ["*", "!letter-spacing"],
-      // 不会被转换的class选择器名，支持正则
+      // 不会被转换的 class 选择器名，支持正则
       selectorBlackList: [".rem-"],
       replace: true,
-      // 允许在媒体查询中转换`px`
+      // 允许在媒体查询中转换 `px`
       mediaQuery: false,
-      // 小于1px的将不会被转换
+      // 小于 1px 的将不会被转换
       minPixelValue: 1,
     },
   },
@@ -115,7 +115,7 @@ window.onresize = function () {
 
 ## 媒体查询
 
-进行多端开发的时候，需要利用 `css` - 媒体查询的能力来在移动端和桌面端之间切换样式，例如:
+进行多端开发的时候，需要利用 `css` - 媒体查询的能力来在移动端和桌面端之间切换样式，例如：
 
 ```css
 @media (min-width: 991px) {
@@ -134,7 +134,7 @@ window.onresize = function () {
 ```js
 function px2rem(px) {
   if (/%/gi.test(px)) {
-    // 有百分号%，特殊处理，表述pc是一个有百分号的数，比如：90%
+    // 有百分号%，特殊处理，表述 pc 是一个有百分号的数，比如：90%
     return px;
   } else {
     return parseFloat(px) / 37.5 + "rem"; // 这里的37.5，和rootValue值对应

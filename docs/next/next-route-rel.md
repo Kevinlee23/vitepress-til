@@ -46,7 +46,7 @@ notice:
 
 ### useSearchParams
 
-> 等同于查询参数: `blog?year=2024&month=09 => params = { year: '2024', month: '09'}`
+> 等同于查询参数：`blog?year=2024&month=09 => params = { year: '2024', month: '09'}`
 
 [参考 1: URLSearchParams](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams)
 
@@ -111,7 +111,7 @@ export function Page() {
 
 `parallelRoutesKey` 参数是在 `layout` 中使用查看平行路由的活动段，在 `page` 中使用时不需要带参数
 
-[参考链接: Example](https://nextjs.org/docs/app/api-reference/functions/use-selected-layout-segment)
+[参考链接：Example](https://nextjs.org/docs/app/api-reference/functions/use-selected-layout-segment)
 
 ## 概念
 
@@ -124,7 +124,7 @@ export function Page() {
 
 ### 路由组 Route Groups
 
-> 用括号封装文件夹名称，即可创建路由组: `(folderName)`, 在不影响 URL 的情况下组织路由，将相关路由放到一起
+> 用括号封装文件夹名称，即可创建路由组：`(folderName)`, 在不影响 URL 的情况下组织路由，将相关路由放到一起
 
 ```plain
 - app
@@ -143,7 +143,7 @@ export function Page() {
 
 ### 动态路由 Dynamic Routes
 
-使用方括号包裹文件夹路径，表示动态路由:
+使用方括号包裹文件夹路径，表示动态路由：
 
 ```jsx
 // /blog/[slug]/page.jsx
@@ -154,7 +154,7 @@ export default function Page({ params }) {
 }
 ```
 
-在方括号内添加省略号，可以动态分段扩展包含所有后续分段:
+在方括号内添加省略号，可以动态分段扩展包含所有后续分段：
 
 ```jsx
 // /shop/[...slugs]/page.jsx
@@ -175,7 +175,7 @@ export default function Page({ params }) {
 }
 ```
 
-用双层方括号，表示可选的动态路由:
+用双层方括号，表示可选的动态路由：
 
 ```jsx
 // /blog/[[...slugs]]/page.jsx
@@ -229,7 +229,7 @@ export default function Layout({ children, team, analytics }) {
 }
 ```
 
-以上，插槽不是路由段，不会影响 `url` 结构, 文件结构 `@team/setting` 对应的路由为: `/setting`
+以上，插槽不是路由段，不会影响 `url` 结构，文件结构 `@team/setting` 对应的路由为：`/setting`
 
 定义一个 `default.js` 文件，在初始加载或重新加载时，将作为未匹配插槽的备用文件（提供隐式的回退）:
 
@@ -242,11 +242,11 @@ export default function Layout({ children, team, analytics }) {
 -- layout.jsx
 ```
 
-搭配 `Hook: useSelectedLayoutSegment` 使用:
+搭配 `Hook: useSelectedLayoutSegment` 使用：
 
 ```jsx {3}
 export default function Layout({ children, team, analytics }) {
-  // 导航到 app/@analytics/subFolder 时, segment = subFolder
+  // 导航到 app/@analytics/subFolder 时，segment = subFolder
   const segment = useSelectedLayoutSegment(analytics);
   return (
     <>
@@ -262,13 +262,13 @@ export default function Layout({ children, team, analytics }) {
 
 > 示例：推特的图片模态框，`xlog/inne博客` 的文章详情，这项技术可以让你在当前布局从应用程序切换到其他部分加载一个路由，通常以模态框的形式展现
 
-`before`以前的做法:
+`before`以前的做法：
 
 点击 `<Link href='/photo/123' />` => 当页跳转到图片展示链接
 
-`now`当前做法:
+`now`当前做法：
 
-点击链接:
+点击链接：
 
 - 打开一个模态框展示内容
 - 并且当前页面的链接切换到目标路由
@@ -298,7 +298,7 @@ export default function Layout({ children, team, analytics }) {
 
 ### 路由处理器 Route Handlers
 
-路径: `./api/route.js(ts)`
+路径：`./api/route.js(ts)`
 
 ```js
 // support: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
@@ -365,14 +365,14 @@ export async function POST(request: Request) {
 }
 ```
 
-使用第三方请求类库:
+使用第三方请求类库：
 
 - [SWR](https://swr.vercel.app/zh-CN): 用于数据请求的 `React Hooks` 库
 - [ofetch](https://github.com/unjs/ofetch): `A better fetch API, Works on node, browser and workers`
 
 ### 中间件 Middleware
 
-中间件的作用包含:
+中间件的作用包含：
 
 - 进入页面前进行认证和授权
 - 服务侧重定向

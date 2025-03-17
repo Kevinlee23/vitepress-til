@@ -2,12 +2,12 @@
 
 ## 对象更新时避免 mutation
 
-改变对象或者数组自身内容时, 就制造了一个 mutation
+改变对象或者数组自身内容时，就制造了一个 mutation
 
 ```jsx
 const [position, setPosition] = useState({ x: 0, y: 0 });
 
-position.x = 5; // [!code error] // React state 中存放的对象视为不可变的, 应该替换它的值而不是修改
+position.x = 5; // [!code error] // React state 中存放的对象视为不可变的，应该替换它的值而不是修改
 
 setPosition({ ...position, x: 5 }); // [!code highlight] // right
 ```
@@ -56,7 +56,7 @@ setPerson({
 
 `react` 中大多数情况下会使用 `slice` 来进行增，删，改
 
-例子:
+例子：
 
 ```jsx
 import { useState } from "react";
@@ -77,11 +77,11 @@ newArr.reverse();
 setUsers(newArr);
 ```
 
-注意点： 即使你拷贝了数组，你还是不能直接修改其内部的元素
+注意点：即使你拷贝了数组，你还是不能直接修改其内部的元素
 
 ## 使用 Immer 库
 
-`Immer` 库在 `update` 函数中提供 `state` 的 `proxy` 对象, 你可以直接直接在它上面进行修改
+`Immer` 库在 `update` 函数中提供 `state` 的 `proxy` 对象，你可以直接直接在它上面进行修改
 
 ```jsx:line-numbers=1 {13-15}
 import { useImmer } from "use-immer";

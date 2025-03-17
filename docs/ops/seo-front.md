@@ -14,7 +14,7 @@
 
 ## 使用 meta 标签
 
-使用如下:
+使用如下：
 
 - keywords: 逗号分隔的关键词列表
 - description: 搜索结果的描述（重要）
@@ -24,16 +24,16 @@
 
 ## 使用语义化标签
 
-- 标题: h1, h2, h3, h4, h5, h6 （一个页面最好只有一个 h1）
-- 强调标签: strong, em
-- 图片标签: 使用时带上 alt 属性，对图片进行描述
-- 段落标签: p
-- 列表标签: ul, ol, li
-- 布局标签: header, nav, article, aside, footer
+- 标题：h1, h2, h3, h4, h5, h6（一个页面最好只有一个 h1）
+- 强调标签：strong, em
+- 图片标签：使用时带上 alt 属性，对图片进行描述
+- 段落标签：p
+- 列表标签：ul, ol, li
+- 布局标签：header, nav, article, aside, footer
 
 ## Open Graph 协议
 
-在 head 中加入一些元数据，当你向其他网站 (facebook 等) 分享链接时，会按照你定义的内容来展示，示例:
+在 head 中加入一些元数据，当你向其他网站 (facebook 等) 分享链接时，会按照你定义的内容来展示，示例：
 
 ```html
 <head>
@@ -59,7 +59,7 @@
 
 ## robots.txt 文件
 
-文件用于指定爬虫蜘蛛在网站上的抓取范围:
+文件用于指定爬虫蜘蛛在网站上的抓取范围：
 
 ```txt
 # 网站目录下所有文件均能被所有搜索引擎蜘蛛访问*
@@ -95,7 +95,7 @@ Disallow:
 
 ## 结构化数据
 
-丰富网站在搜索引擎的展现形式，示例:
+丰富网站在搜索引擎的展现形式，示例：
 
 ```html
 <script type="application/ld+json">
@@ -126,7 +126,7 @@ Disallow:
 </script>
 ```
 
-[参考: google 搜索支持的结构化数据](https://developers.google.com/search/docs/appearance/structured-data/search-gallery?hl=zh-cn)
+[参考：google 搜索支持的结构化数据](https://developers.google.com/search/docs/appearance/structured-data/search-gallery?hl=zh-cn)
 
 ## 使用 https
 

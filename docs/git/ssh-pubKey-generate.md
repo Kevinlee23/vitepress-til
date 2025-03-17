@@ -12,6 +12,6 @@ $ git config --global user.email "your email"
 $ ssh-keygen -t rsa -C "xxx@xxx.com"
 ```
 
-生成秘钥后, `cd ~/.ssh` 进入 ssh 目录下
+生成秘钥后，`cd ~/.ssh` 进入 ssh 目录下
 
 使用 `cat ~/.ssh/id_rsa.pub` 复制公钥内容到 `github` 或者 `gitlab` 等代码托管网站配置你的 `ssh key`

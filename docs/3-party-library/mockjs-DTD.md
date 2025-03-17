@@ -10,7 +10,7 @@ outline: deep
 
 `'name|rule': value`
 
-生成规则是可选的，有 7 种格式:
+生成规则是可选的，有 7 种格式：
 
 - `'name|min-max': value`
 - `'name|count': value`

@@ -30,7 +30,7 @@ type PromiseValue2<T> = T extends Promise<infer V> ? promiseValue2<V> : T;
 
 ## 分布式条件类型
 
-条件类型分布式起作用的条件:
+条件类型分布式起作用的条件：
 
 - 类型参数是联合类型
 - 类型参数通过泛型参数传入，不能直接进行条件判断
@@ -47,7 +47,7 @@ type Wrapped<T> = [T] extends [boolean] ? "Y" : "N";
 type Res2 = Naked<number | boolean>; // 'N' | 'Y'
 ```
 
-对于是否包裹的条件，使用数组包裹是其中一种，还可以用以下方式:
+对于是否包裹的条件，使用数组包裹是其中一种，还可以用以下方式：
 
 `export type NoDistribute<T> = T & {}`
 

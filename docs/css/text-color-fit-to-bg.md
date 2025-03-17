@@ -2,9 +2,9 @@
 
 ## 关键点
 
-`from` 关键字: `rgb(from color r g b / alpha)`
+`from` 关键字：`rgb(from color r g b / alpha)`
 
-例如:
+例如：
 
 - `calc: red -> green` : `color: rgba(from rgb(255,0,0)) calc(r - 255) calc(g + 255) b); `
 - `from hex` : `color: rgba(from #ff0000) r g b);`

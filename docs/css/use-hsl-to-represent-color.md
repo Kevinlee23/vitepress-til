@@ -4,7 +4,7 @@ outline: deep
 
 # HSL Color
 
-一般我们使用颜色的方法有:
+一般我们使用颜色的方法有：
 
 - `Static` - `white`
 - `hex` - `#000000`
@@ -21,7 +21,7 @@ outline: deep
 
 ![color](/images/2-hsl-colors-css.avif)
 
-`S` 指的是 `Saturation` （饱和度）, `0%` 是空的, `unsaturation`, `100%` 是 `fully saturated`
+`S` 指的是 `Saturation` （饱和度）, `0%` 是空的，`unsaturation`, `100%` 是 `fully saturated`
 
 ![color](/images/5-hsl-colors-css.avif)
 
@@ -29,7 +29,7 @@ outline: deep
 
 ![color](/images/6-hsl-colors-css.avif)
 
-使用 `HSL` 表示颜色的好处在于: 同一饱和度和亮度的不同颜色，能实际感受到它们的相关性，也就是说，通过改变 `颜色角度`，我们就能创建一组相关的颜色，这在定制页面的主题颜色的时候是非常易于理解和操作的
+使用 `HSL` 表示颜色的好处在于：同一饱和度和亮度的不同颜色，能实际感受到它们的相关性，也就是说，通过改变 `颜色角度`，我们就能创建一组相关的颜色，这在定制页面的主题颜色的时候是非常易于理解和操作的
 
 `hsl(221, 73%, 62%)`, `hsl(126, 73%, 62%)`, `hsl(12, 73%, 62%)`:
 
