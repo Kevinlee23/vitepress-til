@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { getNewNBlogs } from "../../constant/2024-mark-link";
+import { getNewNBlogs } from "../../constant/2025-mark-link";
 import type { Link } from "../../utils/createTag";
 
 const newNum = 10;

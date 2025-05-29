@@ -168,7 +168,7 @@ export function createSidebar() {
     ],
     "/css/": [
       {
-        text: "CSS",
+        text: "杂项",
         items: [
           { text: "gradient-color", link: "/css/gradient-color" },
           { text: "常用片段", link: "/css/snippets" },
@@ -194,16 +194,12 @@ export function createSidebar() {
             link: "/css/motion-definition",
           },
           {
-            text: "动画库: tailwindcss-motion",
+            text: "动画库：tailwindcss-motion",
             link: "/css/motion-library",
           },
           {
-            text: "较少使用的css属性",
+            text: "较少使用的 css 属性",
             link: "/css/less-used-property",
-          },
-          {
-            text: "现代css特性: @property",
-            link: "/css/@property",
           },
         ],
       },
@@ -222,7 +218,7 @@ export function createSidebar() {
         ],
       },
       {
-        text: "一些css设计",
+        text: "一些 css 设计",
         items: [
           { text: "Amazing Color", link: "/css/amazing-color" },
           { text: "图片设计", link: "/css/picture-design" },
@@ -243,11 +239,21 @@ export function createSidebar() {
           { text: "图层显隐效果", link: "/css/filter-mask" },
           { text: "sticky 滑动效果", link: "/css/sticky-over" },
           {
-            text: "作为图像（img）使用的SVG 黑色路径变成白色",
+            text: "作为图像（img）使用的 SVG 黑色路径变成白色",
             link: "/css/svg-color-black-to-white",
           },
           { text: "example: mask", link: "/css/mask-ex" },
           { text: "example: mix-blend-mode", link: "/css/mix-blend-mode-ex" },
+        ],
+      },
+      {
+        text: "未来有用的新特性",
+        items: [
+          { text: "全属性 attr", link: "/css/all-property-attr" },
+          {
+            text: "现代 css 特性：@property",
+            link: "/css/@property",
+          },
         ],
       },
       {
@@ -368,10 +374,10 @@ export function createSidebar() {
           { text: "基本概念", link: "/nest/nest-basic" },
           { text: "项目结构", link: "/nest/structure" },
           {
-            text: "4种常用的http数据传输方式",
+            text: "4 种常用的 http 数据传输方式",
             link: "/nest/data-send-by-http",
           },
-          { text: "dto映射类型", link: "/nest/dto-map" },
+          { text: "dto 映射类型", link: "/nest/dto-map" },
           { text: "基于 RBAC 的授权", link: "/nest/RBAC-role" },
           { text: "context 执行上下文", link: "/nest/context" },
           { text: "pipe 管道", link: "/nest/pipe" },
@@ -400,7 +406,7 @@ export function createSidebar() {
           { text: "nuxt 配置", link: "/nuxt/nuxt-config" },
           { text: "nuxt 目录结构", link: "/nuxt/nuxt-menu" },
           { text: "nuxt 路由", link: "/nuxt/nuxt-route" },
-          { text: "nuxt 链接预取[3.13]", link: "/nuxt/nuxt-prefetch" },
+          { text: "nuxt 链接预取 [3.13]", link: "/nuxt/nuxt-prefetch" },
         ],
       },
       {
@@ -456,7 +462,7 @@ export function createSidebar() {
             link: "/config/usefull-vscode-plugins",
           },
           {
-            text: "vite环境配置",
+            text: "vite 环境配置",
             link: "/config/env-config",
           },
           {
@@ -516,7 +522,10 @@ export function createSidebar() {
     "/mark/": [
       {
         text: "时间线",
-        items: [{ text: "2024", link: "/mark/mark-timeline-2024" }],
+        items: [
+          { text: "2025", link: "/mark/mark-timeline-2025" },
+          { text: "2024", link: "/mark/mark-timeline-2024" },
+        ],
       },
       { text: "返回上层", link: "/" },
     ],
@@ -575,7 +584,7 @@ export function createSidebar() {
           },
           { text: "查看提交历史", link: "/git/03-git-log-history" },
           { text: "分支操作", link: "/git/04-git-merge" },
-          { text: "git标签", link: "/git/05-git-tag" },
+          { text: "git 标签", link: "/git/05-git-tag" },
         ],
       },
       {
@@ -716,7 +725,7 @@ export function createSidebar() {
       {
         text: "运维",
         items: [
-          { text: "pm2的基本操作", link: "/ops/pm2" },
+          { text: "pm2 的基本操作", link: "/ops/pm2" },
           {
             text: "Github Actions 中的工作流定时执行",
             link: "/ops/github-workflow-timeset",

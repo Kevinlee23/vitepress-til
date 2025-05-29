@@ -1,41 +1,12 @@
 import { type Link, TagName } from "../utils/createTag";
-
-type Month =
-  | "DEC"
-  | "NOV"
-  | "OCT"
-  | "SEPT"
-  | "AUG"
-  | "JUL"
-  | "JUN"
-  | "MAY"
-  | "APRI"
-  | "MAR"
-  | "FEB"
-  | "JAN";
-
-type MarkDate = {
-  [K in Month]?: number[];
-};
-
-type MarkData = {
-  [K in Month]?: Link[];
-};
-
-export const allMonthShort: Month[] = [
-  "DEC",
-  "NOV",
-  "OCT",
-  "SEPT",
-  "AUG",
-  "JUL",
-  "JUN",
-  "MAY",
-  "APRI",
-  "MAR",
-  "FEB",
-  "JAN",
-];
+import {
+  type Month,
+  type MarkDate,
+  type MarkData,
+  type TagNums,
+  allMonthShort,
+  showNum,
+} from "../utils/mark-util";
 
 export const markDate: MarkDate = {
   DEC: [2],
@@ -65,7 +36,7 @@ export const markData: MarkData = {
       createDate: "2024-12-05",
     },
     {
-      title: "现代css特性: @property",
+      title: "现代 css 特性：@property",
       link: "/css/@property",
       tagName: TagName.CSS,
       createDate: "2024-12-02",
@@ -73,7 +44,7 @@ export const markData: MarkData = {
   ],
   NOV: [
     {
-      title: "动画库: tailwindcss-motion 的使用",
+      title: "动画库：tailwindcss-motion 的使用",
       link: "/css/motion-library",
       tagName: TagName.CSS,
       createDate: "2024-11-27",
@@ -547,7 +518,7 @@ export const markData: MarkData = {
       createDate: "2024-04-18",
     },
     {
-      title: "NestJs - 4种常用的http数据传输方式",
+      title: "NestJs - 4 种常用的 http 数据传输方式",
       link: "/nest/data-send-by-http",
       tagName: TagName.NestJs,
       createDate: "2024-04-17",
@@ -559,13 +530,13 @@ export const markData: MarkData = {
       createDate: "2024-04-17",
     },
     {
-      title: "CORS （跨域资源共享）",
+      title: "CORS（跨域资源共享）",
       link: "/http/CORS",
       tagName: TagName.HTTP,
       createDate: "2024-04-16",
     },
     {
-      title: "Docker 系列 6篇基础笔记",
+      title: "Docker 系列 6 篇基础笔记",
       link: "/docker/docker-basic",
       tagName: TagName.Docker,
       createDate: "2024-04-15",
@@ -763,13 +734,13 @@ export const markData: MarkData = {
       createDate: "2024-03-14",
     },
     {
-      title: "插件: pinia-plugin-persistedstate",
+      title: "插件：pinia-plugin-persistedstate",
       link: "/vue3/pinia-plugin-persistedstate",
       tagName: TagName.Vue3,
       createDate: "2024-03-13",
     },
     {
-      title: "熊家菜谱(新增利村牛肉)",
+      title: "熊家菜谱 (新增利村牛肉)",
       link: "/ordinary/cook-menu",
       tagName: TagName.Ordinary,
       createDate: "2024-03-13",
@@ -783,8 +754,6 @@ export const markData: MarkData = {
     },
   ],
 };
-
-const showNum: number = 5;
 
 export const getNewNBlogs = (n: number = showNum): Link[] => {
   let res: number = n;
@@ -806,9 +775,6 @@ export const getNewNBlogs = (n: number = showNum): Link[] => {
   return list;
 };
 
-export type TagNums = {
-  [K in TagName]?: number;
-};
 export const getTagNums = (): TagNums => {
   const tagNums: TagNums = {};
   Object.keys(markData).map((key) => {

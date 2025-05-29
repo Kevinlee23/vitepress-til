@@ -16,7 +16,7 @@ export interface TagStatus {
   text: string;
 }
 
-// 特殊状态: 未完成, 合并到其他文件, 持续更新
+// 特殊状态：未完成，合并到其他文件，持续更新
 export type StautsItem = "BETA" | "MERGED" | "UPDATED" | "";
 // 具体分类
 export enum TagName {

@@ -6,7 +6,7 @@ hero:
   actions:
     - theme: brand
       text: 归档 Mark
-      link: /mark/mark-timeline-2024
+      link: /mark/mark-timeline-2025
     - theme: alt
       text: 杂谈 Ordinary
       link: /ordinary/What-marriage-brings-to-me
