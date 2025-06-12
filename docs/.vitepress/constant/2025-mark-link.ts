@@ -9,10 +9,20 @@ import {
 } from "../utils/mark-util";
 
 export const markDate: MarkDate = {
+  JUN: [12],
   MAY: [29],
 };
 
 export const markData: MarkData = {
+  JUN: [
+    {
+      title: "monorepo 构建",
+      link: "/config/create-monorepo",
+      tagName: TagName.Config,
+      createDate: "2025-6-12",
+      tagStatus: "UPDATED",
+    },
+  ],
   MAY: [
     {
       title: "全属性 attr",

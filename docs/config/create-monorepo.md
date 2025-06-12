@@ -40,3 +40,42 @@ packages:
 ```
 :::
 
+## monorepo 分包示例
+
+> 示例为前端监测库：web-see
+
+![monorepo](/images/monorepo.png)
+
+如图所示仓库分了几个包:
+- @websee/common
+- @websee/core
+- @websee/performance
+- @websee/recordscreen
+- @websee/types
+- @websee/utils
+
+在最顶层的 `pnpm-workspace.yaml` 中设置：
+
+```yaml
+packages:
+  - 'packages/*'
+```
+
+由于 core 这个分包是核心，引用了三个子包，所以在它的目录下的 package 设置：
+
+```json
+{
+  "dependencies": {
+    "@websee/common": "workspace:*",
+    "@websee/types": "workspace:*",
+    "@websee/utils": "workspace:*"
+  }
+}
+```
+
+如此，就可以在 core 包的代码下使用其他包的内容：
+
+```js
+import { SDK_VERSION, SDK_NAME, EVENTTYPES } from '@websee/common';
+import { InitOptions, VueInstance, ViewModel } from '@websee/types';
+```

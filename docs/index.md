@@ -46,7 +46,8 @@ const learningLink = computed(() => `https://skillicons.dev/icons?theme=${isDark
 快速入口：
 
 - [颜色选择](/css/amazing-color)
-- [第三方库归档](3-party-library/marked-library)
+- [第三方库归档](/3-party-library/marked-library)
+- [vscode 配置](/config/setting-vscode)
 
 **技术栈：**
 
