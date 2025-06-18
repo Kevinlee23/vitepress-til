@@ -46,7 +46,7 @@ packages:
 
 ![monorepo](/images/monorepo.png)
 
-如图所示仓库分了几个包:
+如图所示仓库分了几个包：
 - @websee/common
 - @websee/core
 - @websee/performance

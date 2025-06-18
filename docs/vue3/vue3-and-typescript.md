@@ -166,3 +166,72 @@ function handleChange(event: Event) {
   console.log((event.target as HTMLInputElement).value);
 }
 ```
+
+## vue-router
+
+### 基本用法
+
+```ts
+// src/router/routes.ts
+
+// 使用 `import type` 导入类型，这是一种最佳实践
+import type { RouteRecordRaw } from 'vue-router';
+
+const routes: Array<RouteRecordRaw> = [
+  {
+    path: '/',
+    name: 'home',
+    component: () => import('@/views/HomeView.vue'),
+    meta: {
+      title: '首页'
+    }
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('@/views/AboutView.vue'),
+    meta: {
+      title: '关于我们'
+    }
+  }
+];
+
+export default routes;
+```
+
+然后在 `src/router/index.ts` 导入：
+
+```ts
+// src/router/index.ts
+
+import { createRouter, createWebHistory } from 'vue-router';
+import routes from './routes';
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes, // routes 数组在这里被使用
+});
+
+export default router;
+```
+
+### 扩展元信息 meta
+
+自定义 meta：
+
+```ts
+// src/router/typed-router.d.ts
+
+// 必须导入 'vue-router'，以使其正常工作
+import 'vue-router';
+
+declare module 'vue-router' {
+  // 扩展 RouteMeta 接口
+  interface RouteMeta {
+    title: string;          // 页面标题
+    requiresAuth?: boolean; // 是否需要认证
+    icon?: string;          // 菜单图标
+    // ...可以添加更多自定义属性
+  }
+}
+```
