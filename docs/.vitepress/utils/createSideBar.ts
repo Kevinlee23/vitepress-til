@@ -288,6 +288,10 @@ export function createSidebar() {
             text: "list-ref",
             link: "/vue3/list-ref",
           },
+          {
+            text: "vue3-vite-ts 报错汇总",
+            link: "/vue3/fix-vue3-ts-error",
+          },
         ],
       },
       {
@@ -495,10 +499,6 @@ export function createSidebar() {
           {
             text: "修复 Naive UI 中的潜在的样式冲突",
             link: "/fix/fix-naive-css-bug",
-          },
-          {
-            text: "vue3-vite-ts 报错汇总",
-            link: "/fix/fix-vue3-ts-error",
           },
           {
             text: "Vercel 部署的前端服务与不同源后端服务器的通信",
