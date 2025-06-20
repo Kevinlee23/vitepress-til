@@ -57,8 +57,17 @@ export default defineNuxtPlugin((nuxtApp) => {
   if (process.server) {
     // only server
   }
+
+  // 接入 vue3 插件
+  nuxtApp.vueApp.use(vue3Plugin, {
+    // plugin config
+  })
 });
 ```
+tips:
+
+- `plugins/plugin.js` => server 和 client 都会生效
+- `pliguns/plugin.client.js` 仅在 client 端生效
 
 ## composables
 

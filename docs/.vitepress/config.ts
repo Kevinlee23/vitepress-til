@@ -40,7 +40,6 @@ export default defineConfig({
           { text: "NestJs", link: "/nest/nest-basic" },
           { text: "Nuxt", link: "/nuxt/nuxt-config" },
           { text: "Next", link: "/next/next-layout" },
-          { text: "qiankun", link: "..." },
         ],
       },
       {

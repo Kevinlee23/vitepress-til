@@ -24,6 +24,7 @@ $ yarn create vite --template vue
 - `Vuetify`
 - `Vant 4 (Mobile) ***`
 - `Nut UI (Mobile)`
+- `shadcn/vue`
 - `Tailwind CSS ***`
 
 ### Tailwind CSS :heart:

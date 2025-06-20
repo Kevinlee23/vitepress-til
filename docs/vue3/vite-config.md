@@ -37,6 +37,7 @@ export default defineConfig({
 ## 路径别名设置
 
 ```js
+// pmpm add -D @types/node
 // vite.config.js
 import path from "node:path";
 
@@ -48,6 +49,32 @@ export default defineConfig({
     },
   },
 });
+```
+
+```json
+// tsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+
+// tsconfig.app.json
+{
+  "compilerOptions": {
+    // ...
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+    // ...
+  }
+}
 ```
 
 ## 增加 jsx 支持
