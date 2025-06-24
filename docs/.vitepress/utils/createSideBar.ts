@@ -482,6 +482,10 @@ export function createSidebar() {
             text: "概念解释",
             link: "/config/concept-explain",
           },
+          {
+            text: 'vscode 中 json 文件的注释支持',
+            link: '/config/vscode-json'
+          }
         ],
       },
 
