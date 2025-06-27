@@ -9,17 +9,23 @@ import {
 } from "../utils/mark-util";
 
 export const markDate: MarkDate = {
-  JUN: [12],
+  JUN: [12, 27],
   MAY: [29],
 };
 
 export const markData: MarkData = {
   JUN: [
     {
+      title: 'tailwind 中 @layer 的使用',
+      link: '/css/tailwind-layer',
+      tagName: TagName.CSS,
+      createDate: '2025-06-27'
+    },
+    {
       title: "monorepo 构建",
       link: "/config/create-monorepo",
       tagName: TagName.Config,
-      createDate: "2025-6-12",
+      createDate: "2025-06-12",
       tagStatus: "UPDATED",
     },
   ],
@@ -28,7 +34,7 @@ export const markData: MarkData = {
       title: "全属性 attr",
       link: "/css/all-property-attr",
       tagName: TagName.CSS,
-      createDate: "2025-5-29",
+      createDate: "2025-05-29",
     },
   ],
 };

@@ -194,10 +194,6 @@ export function createSidebar() {
             link: "/css/motion-definition",
           },
           {
-            text: "动画库：tailwindcss-motion",
-            link: "/css/motion-library",
-          },
-          {
             text: "较少使用的 css 属性",
             link: "/css/less-used-property",
           },
@@ -212,8 +208,16 @@ export function createSidebar() {
             link: "/css/tailwind-customizing-colors",
           },
           {
+            text: 'tailwind 中 @layer 的使用',
+            link: '/css/tailwind-layer'
+          },
+          {
             text: "windicss to tailwindcss",
             link: "/css/windicss-to-tailwindcss",
+          },
+          {
+            text: "动画库：tailwindcss-motion",
+            link: "/css/motion-library",
           },
         ],
       },
