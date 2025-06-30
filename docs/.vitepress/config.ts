@@ -36,10 +36,10 @@ export default defineConfig({
         items: [
           { text: "Vue3", link: "/vue3/get-component-instance-in-setup" },
           { text: "React", link: "/react/create" },
-          { text: "React Native", link: "/react-native/styleSheet" },
+          // { text: "React Native", link: "/react-native/styleSheet" },
           { text: "NestJs", link: "/nest/nest-basic" },
           { text: "Nuxt", link: "/nuxt/nuxt-config" },
-          { text: "Next", link: "/next/next-layout" },
+          // { text: "Next", link: "/next/next-layout" },
         ],
       },
       {
