@@ -15,7 +15,7 @@ export interface ISideBar {
   [MY_TAB.REACT_NATIVE]: IItems[];
   [MY_TAB.NEST]: IItems[];
   [MY_TAB.NUXT]: IItems[];
-  [MY_TAB.NEXT]: IItems[];
+  [MY_TAB.NEXT]?: IItems[];
   [MY_TAB.CONFIG]: IItems[];
   [MY_TAB.FIX]: IItems[];
   [MY_TAB.MARK]: IItems[];
@@ -208,8 +208,8 @@ export function createSidebar() {
             link: "/css/tailwind-customizing-colors",
           },
           {
-            text: 'tailwind 中 @layer 的使用',
-            link: '/css/tailwind-layer'
+            text: "tailwind 中 @layer 的使用",
+            link: "/css/tailwind-layer",
           },
           {
             text: "windicss to tailwindcss",
@@ -423,27 +423,28 @@ export function createSidebar() {
         link: "/framework-map",
       },
     ],
-    "/next/": [
-      {
-        text: "Next",
-        items: [
-          { text: "Layout", link: "/next/next-layout" },
-          { text: "Route 相关接口", link: "/next/next-route-rel" },
-          {
-            text: "服务端组件和客户端组件",
-            link: "/next/server-and-client-component",
-          },
-          {
-            text: "Server Action",
-            link: "/next/server-action",
-          },
-        ],
-      },
-      {
-        text: "返回上层",
-        link: "/framework-map",
-      },
-    ],
+    // TODO: 暂时隐藏
+    // "/next/": [
+    //   {
+    //     text: "Next",
+    //     items: [
+    //       { text: "Layout", link: "/next/next-layout" },
+    //       { text: "Route 相关接口", link: "/next/next-route-rel" },
+    //       {
+    //         text: "服务端组件和客户端组件",
+    //         link: "/next/server-and-client-component",
+    //       },
+    //       {
+    //         text: "Server Action",
+    //         link: "/next/server-action",
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     text: "返回上层",
+    //     link: "/framework-map",
+    //   },
+    // ],
     "/config/": [
       {
         text: "配置",
@@ -465,7 +466,7 @@ export function createSidebar() {
             text: "将 js 文件 当做 shell 脚本执行",
             link: "/config/using-js-as-shell-script",
           },
-          { text: "monorepo 构建", link: "/config/create-monorepo" },
+
           {
             text: "好用的 vscode 插件",
             link: "/config/usefull-vscode-plugins",
@@ -483,13 +484,9 @@ export function createSidebar() {
             link: "/config/markdown-snippets",
           },
           {
-            text: "概念解释",
-            link: "/config/concept-explain",
+            text: "vscode 中 json 文件的注释支持",
+            link: "/config/vscode-json",
           },
-          {
-            text: 'vscode 中 json 文件的注释支持',
-            link: '/config/vscode-json'
-          }
         ],
       },
 
@@ -734,6 +731,7 @@ export function createSidebar() {
       {
         text: "运维",
         items: [
+          { text: "monorepo 构建", link: "/ops/create-monorepo" },
           { text: "pm2 的基本操作", link: "/ops/pm2" },
           {
             text: "Github Actions 中的工作流定时执行",

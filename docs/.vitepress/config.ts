@@ -47,7 +47,6 @@ export default defineConfig({
         items: [
           { text: "Git", link: "/git/01-git-pull-repository" },
           { text: "vim", link: "/vim/direct" },
-          { text: "webpack", link: "..." },
           { text: "SQL", link: "/sql/my-sql-single-table-operation" },
           { text: "OSS", link: "/oss/get-sts" },
           { text: "Docker", link: "/docker/docker-basic" },
@@ -62,7 +61,14 @@ export default defineConfig({
         ],
       },
       { text: "项目管理", items: [{ text: "PMP", link: "/pmp/answer-trick" }] },
-      { text: "杂项", link: "/others-map" },
+      {
+        text: "杂项",
+        items: [
+          { text: "配置", link: "/config/off-hibernate" },
+          { text: "FIX", link: "/fix/nvm-president-problem-for-mac" },
+          { text: "运维", link: "/ops/create-monorepo" },
+        ],
+      },
       { text: "更新记录", link: "/update" },
       {
         text: "🔥RSS",
@@ -70,8 +76,8 @@ export default defineConfig({
       },
       {
         text: "❄关于生活",
-        link: "https://snowinlu.top"
-      }
+        link: "https://snowinlu.top",
+      },
     ],
 
     outline: {
