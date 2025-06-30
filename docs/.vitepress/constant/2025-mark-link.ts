@@ -23,8 +23,8 @@ export const markData: MarkData = {
     },
     {
       title: "monorepo 构建",
-      link: "/config/create-monorepo",
-      tagName: TagName.Config,
+      link: "/ops/create-monorepo",
+      tagName: TagName.OPs,
       createDate: "2025-06-12",
       tagStatus: "UPDATED",
     },
