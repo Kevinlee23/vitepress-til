@@ -389,8 +389,9 @@ export function createSidebar() {
           },
           { text: "中间件", link: "/nest/middleware" },
           { text: "管道", link: "/nest/pipe" },
-          { text: "执行上下文", link: "/nest/context" },
           { text: "拦截器", link: "/nest/intercept" },
+          { text: "执行上下文", link: "/nest/context" },
+          { text: "装饰器", link: "/nest/decorator" },
         ],
       },
       {

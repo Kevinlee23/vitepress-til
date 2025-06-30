@@ -22,15 +22,15 @@ outline: deep
 
 :::code-group
 
-```ts [DI]
-// 不需要想管道内传递选项时，使用依赖注入
+```typescript [DI]
+// 不需要向管道内传递选项时，使用依赖注入
 @Get(':id')
 async findOne(@Param('id', ParseIntPipe) id: number) {
   return this.catsService.findOne(id);
 }
 ```
 
-```ts [options]
+```typescript [options]
 // 当需要向管道内传递选项来自定义内置管道行为时，需要使用实例
 @Get(':id')
 async findOne(
@@ -40,6 +40,7 @@ async findOne(
   return this.catsService.findOne(id);
 }
 ```
+
 :::
 
 ## 自定义管道
@@ -88,6 +89,23 @@ export class CreateUserDto {
 
   @IsEmail()
   email;
+}
+```
+
+### 与请求对象属性一起使用
+
+```ts
+export class FindOneParams {
+  @IsNumberString()
+  id: number;
+}
+
+@Controller("user")
+class UserControler {
+  @Get(":id")
+  findOne(@Param() params: FindOneParams) {
+    return "...";
+  }
 }
 ```
 

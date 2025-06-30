@@ -24,9 +24,9 @@ src
 |---- dto DTO 类
 |---- entities 实体类
 |----------------|
-|- auth 路由模块
-|- auth.module.ts
-|- auth.controller.ts
+|---- auth 路由模块
+|---- auth.module.ts
+|---- auth.controller.ts
 |- ...
 |----------------|
 |- ...
