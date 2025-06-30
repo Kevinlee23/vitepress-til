@@ -39,7 +39,7 @@
 装饰器可以是个普通的函数：
 
 ```typescript
-export const SetRoles = (...arg: stgring[]) => setMateData("roles", args);
+export const SetRoles = (...arg: stgring[]) => setMetaData("roles", args);
 
 @SetRoles('admin')
 ```
@@ -50,7 +50,7 @@ export const SetRoles = (...arg: stgring[]) => setMateData("roles", args);
 export function PathRoleAndGuard(path, role) {
   return applyDecorators(
     Get(path), // 内置 Get 装饰器
-    SetRoles(role), // 自定义装饰器：设置 matedata(role)
+    SetRoles(role), // 自定义装饰器：设置 metadata(role)
     UseGuards(RoleGuard) // 使用守卫：RoleGuard
   );
 }

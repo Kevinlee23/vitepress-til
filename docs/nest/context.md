@@ -107,7 +107,7 @@ export class AaaGuard implements CanActivate {
 
 tips:
 
-- 我们可以通过拿到控制器上下文和处理函数上下文来获取元数据
-- 结合反射 (reflector), 可以获得控制器或者处理函数的元数据 (matedata)
+- 我们可以通过控制器或处理函数中的上下文拿到其实例
+- 结合反射 (reflector), 可以获得控制器或者处理函数的元数据 (metadata)
 - 从而来构建**守卫 (guard)** 或**拦截器 (interceptors)** （例如上述代码中守卫控制的角色逻辑）
 - 更多样例查阅 [拦截器章节](/nest/intercept)

@@ -387,11 +387,13 @@ export function createSidebar() {
             text: "4 种常用的 http 数据传输方式",
             link: "/nest/data-send-by-http",
           },
-          { text: "中间件", link: "/nest/middleware" },
-          { text: "管道", link: "/nest/pipe" },
-          { text: "拦截器", link: "/nest/intercept" },
           { text: "执行上下文", link: "/nest/context" },
           { text: "装饰器", link: "/nest/decorator" },
+          { text: "元数据和反射", link: "/nest/metadata-and-reflector" },
+          { text: "中间件", link: "/nest/middleware" },
+          { text: "守卫", link: "/nest/guard" },
+          { text: "管道", link: "/nest/pipe" },
+          { text: "拦截器", link: "/nest/intercept" },
         ],
       },
       {
@@ -402,10 +404,6 @@ export function createSidebar() {
           {
             text: "OpenAPI - swagger 接入",
             link: "/nest/swagger",
-          },
-          {
-            text: "validationPipe and class-validator",
-            link: "/nest/validation-pipe",
           },
         ],
       },
