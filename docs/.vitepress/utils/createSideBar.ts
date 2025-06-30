@@ -387,21 +387,30 @@ export function createSidebar() {
             text: "4 种常用的 http 数据传输方式",
             link: "/nest/data-send-by-http",
           },
-          { text: "dto 映射类型", link: "/nest/dto-map" },
+          { text: "中间件", link: "/nest/middleware" },
+          { text: "管道", link: "/nest/pipe" },
+          { text: "执行上下文", link: "/nest/context" },
+          { text: "拦截器", link: "/nest/intercept" },
+        ],
+      },
+      {
+        text: "应用",
+        items: [
           { text: "基于 RBAC 的授权", link: "/nest/RBAC-role" },
-          { text: "context 执行上下文", link: "/nest/context" },
-          { text: "pipe 管道", link: "/nest/pipe" },
-          { text: "intercept 拦截器", link: "/nest/intercept" },
           { text: "使用 jwt 进行身份验证", link: "/nest/jwt-for-auth" },
-          {
-            text: "使用 validationPipe 进行数据传输校验",
-            link: "/nest/validation-pipe",
-          },
           {
             text: "OpenAPI - swagger 接入",
             link: "/nest/swagger",
           },
+          {
+            text: "validationPipe and class-validator",
+            link: "/nest/validation-pipe",
+          },
         ],
+      },
+      {
+        text: "数据处理",
+        items: [{ text: "dto 映射类型", link: "/nest/dto-map" }],
       },
       {
         text: "config",

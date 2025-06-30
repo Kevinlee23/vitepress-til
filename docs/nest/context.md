@@ -1,18 +1,19 @@
-# Nest - 执行上下文
+# 执行上下文 - Context
 
 主要有两个重要的执行上下文的类：
 
-`{ host: ArgumentsHost, context: ExecutionContext }`
+- host: ArgumentsHost
+- context: ExecutionContext
 
 ## ArgumentsHost
 
-`ArgumentsHost` 类提供了用于检索传递给处理程序的参数的方法
+ArgumentsHost 类提供了用于检索传递给处理程序的参数的方法
 
 它允许选择适当的上下文：
 
-- `host.switchToHttp`: `http` 环境
-- `host.switchToRpc`: `RPC` 微服务环境
-- `host.switchToWs`: `Websocket`
+- `host.switchToHttp`: http 环境
+- `host.switchToRpc`: RPC 微服务环境
+- `host.switchToWs`: Websocket
 
 ### 使用
 
@@ -76,14 +77,37 @@ export interface RpcArgumentsHost {
 
 ## ExecutionContext
 
-`ExecutionContext` 提供了当前执行过程的信息：
+ExecutionContext(ctx) 提供了当前执行过程的信息：
 
-- `getClass`: 控制器上下文
-- `getHandler`: 处理函数上下文
+- ctx.getClass: 控制器上下文
+- ctx.getHandler: 处理函数上下文
 
 ```ts
-const methodKey = ctx.getHandler().name; // "create"
-const className = ctx.getClass().name; // "PersonController"
+export class AaaGuard implements CanActivate {
+  constructor(private reflector: Reflector) {}
+
+  canActivate(
+    ctx: ExecutionContext
+  ): boolean | Promise<boolean> | Observable<boolean> {
+    const methodKey = ctx.getHandler().name; // "handler name"
+    const className = ctx.getClass().name; // "controller name"
+
+    // reflector
+    const requiredRoles = this.reflector.get<Role[]>("roles", ctx.getHandler());
+
+    if (!requiredRoles) {
+      return true;
+    }
+
+    const { user } = ctx.switchToHttp().getRequest();
+    return requiredRoles.some((role) => user && user.roles?.includes(role));
+  }
+}
 ```
 
-我们可以通过拿到`控制器上下文`和`处理函数上下文`来获取元数据来构建`守卫 (guard)` 或`拦截器 (interceptors)` 的逻辑
+tips:
+
+- 我们可以通过拿到控制器上下文和处理函数上下文来获取元数据
+- 结合反射 (reflector), 可以获得控制器或者处理函数的元数据 (matedata)
+- 从而来构建**守卫 (guard)** 或**拦截器 (interceptors)** （例如上述代码中守卫控制的角色逻辑）
+- 更多样例查阅 [拦截器章节](/nest/intercept)

@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Nest - 管道
+# 管道 - Pipe
 
 ## 内置管道
 
