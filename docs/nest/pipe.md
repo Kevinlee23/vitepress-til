@@ -4,6 +4,8 @@ outline: deep
 
 # 管道 - Pipe
 
+> 在参数传给 handler 之前对参数做一些验证和转换
+
 ## 内置管道
 
 以下为 `nest` 中内置的管道：
@@ -63,7 +65,7 @@ export class ValidationPipe implements PipeTransform {
 }
 ```
 
-## 使用内置的验证管道
+## 结合第三方库
 
 ### 安装依赖
 
@@ -73,6 +75,16 @@ export class ValidationPipe implements PipeTransform {
 
 ```ts
 app.useGlobalPipes(new ValidationPipe({ options }));
+```
+
+### 方法级别启用
+
+```typescript
+@Post()
+@UsePipes(new ValidationPipe({ transform: true }))
+async create(@Body() createCatDto: CreateCatDto) {
+  this.catsService.create(createCatDto);
+}
 ```
 
 ### 使用装饰器来添加校验规则
@@ -134,6 +146,8 @@ app.useGlobalPipes(
 );
 ```
 
+另外，ValidationPipe 还有其他的配置选项，查看 [文档](https://nest.nodejs.cn/techniques/validation#%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%AE%E7%9A%84-validationpipe)
+
 ### 解析和验证数组
 
 ```ts
@@ -154,3 +168,9 @@ findByIds(
   return 'This action returns users by ids';
 }
 ```
+
+参考：
+
+- [文档：nest 官网](https://nest.nodejs.cn/techniques/validation)
+- [文档：class-validator](https://github.com/typestack/class-validator)
+- [文档：class-transformer](https://github.com/typestack/class-transformer)

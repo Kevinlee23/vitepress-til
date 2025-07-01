@@ -394,6 +394,7 @@ export function createSidebar() {
           { text: "守卫", link: "/nest/guard" },
           { text: "管道", link: "/nest/pipe" },
           { text: "拦截器", link: "/nest/intercept" },
+          { text: "异常过滤器", link: "/nest/filter" },
         ],
       },
       {

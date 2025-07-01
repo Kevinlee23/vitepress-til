@@ -16,21 +16,6 @@ export const ROLES_KEY = "roles";
 export const Roles = (...roles: Role[]) => SetMetadata(ROLES_KEY, roles);
 ```
 
-```ts [controller]
-
-// 在控制器中，给路由处理函数附加元数据
-@Controller('person')
-export class PersonController() {
-  @Roles(Role.Admin) // [!code highlight]
-  @UseGuards(AuthGuard, RolesGuard) // [!code highlight] // 用户登录守卫，角色权限守卫
-  @Post('create')
-  create() {
-    // logic...
-    // 经过路由守卫后，当前用户具有要求的角色，执行路由逻辑
-  }
-}
-```
-
 ```ts [guard]
 @Injectable()
 export class RolesGuard implements CanActivate {
@@ -50,6 +35,21 @@ export class RolesGuard implements CanActivate {
 
     // logic...
     // 检查当前用户是否符合角色，进行拦截或放行
+  }
+}
+```
+
+```ts [controller]
+
+// 在控制器中，给路由处理函数附加元数据
+@Controller('person')
+export class PersonController() {
+  @Roles(Role.Admin) // [!code highlight]
+  @UseGuards(AuthGuard, RolesGuard) // [!code highlight] // 用户登录守卫，角色权限守卫
+  @Post('create')
+  create() {
+    // logic...
+    // 经过路由守卫后，当前用户具有要求的角色，执行路由逻辑
   }
 }
 ```
