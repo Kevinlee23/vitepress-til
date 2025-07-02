@@ -53,3 +53,21 @@ findOne(): UserEntity {
     }
   }
 ```
+
+## 转换
+
+> 可以使用 @Transform() 装饰器执行其他数据转换
+
+例如，以下构造返回 RoleEntity 的名称属性，而不是返回整个对象
+
+```typescript
+export class User {
+  @Transform(({ value }) => value.name)
+  role: RoleEntity;
+}
+
+const serializedUser = plainToInstance(User, _user);
+// or
+// @UseInterceptors(ClassSerializerInterceptor)
+// handler() {}
+```
