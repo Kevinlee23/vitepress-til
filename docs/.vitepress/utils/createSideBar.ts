@@ -410,7 +410,10 @@ export function createSidebar() {
       },
       {
         text: "数据处理",
-        items: [{ text: "dto 映射类型", link: "/nest/dto-map" }],
+        items: [
+          { text: "dto 映射类型", link: "/nest/dto-map" },
+          { text: "序列化", link: "/nest/serializer" },
+        ],
       },
       {
         text: "config",
