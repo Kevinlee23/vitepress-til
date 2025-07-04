@@ -125,7 +125,7 @@ $ npm add -D stylus
 
 ## Web Workers 引入
 
-`通过构造器导入`
+通过构造器导入：
 
 ```js
 // 只有在 new Worker() 声明中直接使用 new URL() 构造函数时，work 线程的检测才会生效
@@ -135,7 +135,7 @@ const worker = new Worker(new URL("./worker.js", import.meta.url), {
 });
 ```
 
-`带有查询后缀的导入`
+带有查询后缀的导入：
 
 ```js
 import MyWorker from "./worker?worker";

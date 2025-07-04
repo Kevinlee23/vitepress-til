@@ -402,6 +402,7 @@ export function createSidebar() {
         items: [
           { text: "基于 RBAC 的授权", link: "/nest/RBAC-role" },
           { text: "使用 jwt 进行身份验证", link: "/nest/jwt-for-auth" },
+          { text: "定时任务", link: "/nest/cron-job" },
           {
             text: "OpenAPI - swagger 接入",
             link: "/nest/swagger",

@@ -1,8 +1,12 @@
+---
+outline: deep
+---
+
 # OpenAPI - Swagger 接入
 
 ## 安装
 
-`yarn add @nest/swagger`
+`pnpm add @nest/swagger`
 
 项目启动后，`api` 文档默认会在：`localhost:port/api` 页面
 
@@ -81,6 +85,91 @@ export class CreateUserDto {
   // 枚举可以与 @ApiQuery, @Query 装饰器结合使用
   // @ApiQuery({ name: "role", enum: UserRole })
   // filterByRole(@Query("role") role: UserRole = UserRole.User) {}
+}
+```
+
+## 针对 token 使用
+
+### 1. 常用的方法
+
+配置：
+
+```typescript {5-15}
+const config = new DocumentBuilder()
+  .setTitle("Your API")
+  .setDescription("API description")
+  .setVersion("1.0")
+  .addBearerAuth(
+    {
+      type: "http",
+      scheme: "bearer",
+      bearerFormat: "JWT",
+      name: "JWT",
+      description: "Enter JWT token",
+      in: "header",
+    },
+    "JWT-auth" // 这个名称要与 @ApiBearerAuth() 中的名称对应
+  )
+  .build();
+```
+
+在需要 token 的接口中注明：
+
+```typescript
+@Controller("user")
+export class UserController {
+  constructor() {}
+
+  @ApiBearerAuth("JWT-auth")
+  @Get("profile")
+  @Roles(RolesEnum.Admin)
+  @UseGuards(AuthGuard, RolesGuard)
+  getUserInfo(@Query("username") username: string) {}
+}
+```
+
+### 2. 非标准的自定义 Bearer token
+
+配置：
+
+```typescript
+const config = new DocumentBuilder()
+  .setTitle("Your API")
+  .setDescription("API description")
+  .setVersion("1.0")
+  .addApiKey(
+    {
+      type: "apiKey",
+      name: "X-API-KEY", // 你的自定义 header 名称
+      in: "header",
+    },
+    "apiKey" // 这个名称要与 @ApiSecurity() 中的名称对应
+  )
+  .build();
+```
+
+受保护的路由：
+
+```typescript
+@ApiTags("Protected")
+@ApiSecurity("apiKey") // 自定义安全方案名称
+@Controller("protected")
+export class ProtectedController {
+  // 你的受保护路由
+}
+```
+
+### 3. 直接附加在 header 上
+
+```typescript
+@ApiTags("Protected")
+@ApiHeader({
+  name: "Authorization",
+  description: "Auth token",
+})
+@Controller("protected")
+export class ProtectedController {
+  // 你的受保护路由
 }
 ```
 
