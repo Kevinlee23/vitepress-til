@@ -9,7 +9,7 @@ outline: deep
 创建正则：
 
 ```js
-const regExp = new RegExp(pattern, flags)
+const regExp = new RegExp(pattern, flags);
 
 // or
 // const regExp = /pattern/flags
@@ -58,6 +58,31 @@ const regExp = new RegExp(pattern, flags)
 ```js
 /(?<!\$)\d+/.test("$100") // false，因为数字前有$
 /\d+(?!%)/.test("100%") // false，数字后有%
+```
+
+## 不匹配内容
+
+`[^\/]+` => 一串不包含斜杠的字符，例如：
+
+```js
+// 提取域名
+const reg = /^(?:https?:\/\/)?(?:[^\/]+)/i;
+
+// "https://juejin.cn"
+"https://juejin.cn/user/123".match(reg)[0];
+```
+
+## 非贪婪匹配
+
+> 匹配到第一个字符就停止
+
+`(.*?)`
+
+```js
+const reg = /<(.*?)>/;
+
+// <div class="flex">
+"<div class="flex">123</div>".match(reg)[0];
 ```
 
 ## 匹配后替换
