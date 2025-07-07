@@ -165,6 +165,15 @@ export function createSidebar() {
           },
         ],
       },
+      {
+        text: "trick",
+        items: [
+          {
+            text: "迭代中正确使用对象键",
+            link: "/typescript/how-to-iterate-over-object-keys",
+          },
+        ],
+      },
       { text: "返回上层", link: "/front-end-map" },
     ],
     "/css/": [

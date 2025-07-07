@@ -9,17 +9,26 @@ import {
 } from "../utils/mark-util";
 
 export const markDate: MarkDate = {
+  JUL: [7],
   JUN: [12, 27],
   MAY: [29],
 };
 
 export const markData: MarkData = {
+  JUL: [
+    {
+      title: "迭代中正确使用对象键",
+      link: "/typescript/how-to-iterate-over-object-keys",
+      tagName: TagName.Typescript,
+      createDate: "2025-07-07",
+    },
+  ],
   JUN: [
     {
-      title: 'tailwind 中 @layer 的使用',
-      link: '/css/tailwind-layer',
+      title: "tailwind 中 @layer 的使用",
+      link: "/css/tailwind-layer",
       tagName: TagName.CSS,
-      createDate: '2025-06-27'
+      createDate: "2025-06-27",
     },
     {
       title: "monorepo 构建",

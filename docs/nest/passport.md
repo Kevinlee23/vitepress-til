@@ -42,7 +42,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 ## 注册 passportModule
 
 ```typescript
-Module({
+@Module({
   imports: [
     ConfigModule,
     // 这里也可以使用默认策略 { defaultStrategy: 'jwt' }
