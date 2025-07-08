@@ -9,13 +9,25 @@ import {
 } from "../utils/mark-util";
 
 export const markDate: MarkDate = {
-  JUL: [7],
+  JUL: [7, 8, 8],
   JUN: [12, 27],
   MAY: [29],
 };
 
 export const markData: MarkData = {
   JUL: [
+    {
+      title: "常见的 Nest 通行证策略",
+      link: "/nest/passport-strategy",
+      tagName: TagName.NestJs,
+      createDate: "2025-07-08",
+    },
+    {
+      title: "Nest 通行证",
+      link: "/nest/passport",
+      tagName: TagName.NestJs,
+      createDate: "2025-07-08",
+    },
     {
       title: "迭代中正确使用对象键",
       link: "/typescript/how-to-iterate-over-object-keys",

@@ -1,6 +1,12 @@
-# 通行证（认证）
+---
+date: 2024-07-08 12:00:00
+---
+
+# 通行证
 
 > passport 结合 jwt 可以为 RESTful API 服务器实现一个完整的端到端身份验证解决方案
+>
+> 为 authGurad 定义 passport 内置的策略或自定义策略，来对请求进行身份验证
 
 ## 安装扩展包
 
@@ -11,7 +17,11 @@ $ pnpm add --save @types/passport-local
 
 ## passport strategy
 
-```typescript
+这里使用了 passport 内置的 jwt 策略
+
+```typescript {1,4}
+import { ExtractJwt, Strategy } from "passport-jwt";
+
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(
