@@ -429,7 +429,10 @@ export function createSidebar() {
       },
       {
         text: "config",
-        items: [{ text: "Nest 环境变量/打包参考", link: "/nest/nest-script" }],
+        items: [
+          { text: "Nest 环境变量/打包参考", link: "/nest/nest-script" },
+          { text: "接入 mongodb", link: "/nest/mongoose-connect" },
+        ],
       },
       { text: "返回上层", link: "/framework-map" },
     ],

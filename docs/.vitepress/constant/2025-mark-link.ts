@@ -17,6 +17,12 @@ export const markDate: MarkDate = {
 export const markData: MarkData = {
   JUL: [
     {
+      title: "使用 mongoose 接入 mongodb",
+      link: "/nest/mongoose-connect",
+      tagName: TagName.NestJs,
+      createDate: "2025-07-10",
+    },
+    {
       title: "常见的 Nest 通行证策略",
       link: "/nest/passport-strategy",
       tagName: TagName.NestJs,
