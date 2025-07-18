@@ -413,6 +413,10 @@ export function createSidebar() {
           { text: "使用 jwt 进行身份验证", link: "/nest/jwt-for-auth" },
           { text: "通行证", link: "/nest/passport" },
           { text: "常见的通行证策略", link: "/nest/passport-strategy" },
+          {
+            text: "前后端鉴权示例",
+            link: "/nest/authentication-from-end-to-front",
+          },
           { text: "定时任务", link: "/nest/cron-job" },
           {
             text: "OpenAPI - swagger 接入",

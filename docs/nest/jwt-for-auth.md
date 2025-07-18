@@ -6,7 +6,7 @@ outline: deep
 
 ## 安装 JWT 相关包
 
-`yarn add @nestjs/jwt`
+`pnpm add @nestjs/jwt`
 
 ## 创建身份验证模块
 

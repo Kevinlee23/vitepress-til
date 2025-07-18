@@ -9,13 +9,19 @@ import {
 } from "../utils/mark-util";
 
 export const markDate: MarkDate = {
-  JUL: [7, 8, 8],
+  JUL: [7, 8, 8, 18],
   JUN: [12, 27],
   MAY: [29],
 };
 
 export const markData: MarkData = {
   JUL: [
+    {
+      title: "前后端鉴权示例",
+      link: "/nest/authentication-from-end-to-front",
+      tagName: TagName.NestJs,
+      createDate: "2025-07-18",
+    },
     {
       title: "使用 mongoose 接入 mongodb",
       link: "/nest/mongoose-connect",
