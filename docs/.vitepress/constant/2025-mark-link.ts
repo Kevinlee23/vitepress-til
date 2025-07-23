@@ -9,13 +9,19 @@ import {
 } from "../utils/mark-util";
 
 export const markDate: MarkDate = {
-  JUL: [7, 8, 8, 18],
+  JUL: [7, 8, 8, 18, 23],
   JUN: [12, 27],
   MAY: [29],
 };
 
 export const markData: MarkData = {
   JUL: [
+    {
+      title: "Nest 动态注入",
+      link: "/nest/active-inject",
+      tagName: TagName.NestJs,
+      createDate: "2025-07-23",
+    },
     {
       title: "前后端鉴权示例",
       link: "/nest/authentication-from-end-to-front",

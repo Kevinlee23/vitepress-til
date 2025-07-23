@@ -407,6 +407,10 @@ export function createSidebar() {
         ],
       },
       {
+        text: "core",
+        items: [{ text: "动态注入", link: "/nest/active-inject" }],
+      },
+      {
         text: "应用",
         items: [
           { text: "基于 RBAC 的授权", link: "/nest/RBAC-role" },
