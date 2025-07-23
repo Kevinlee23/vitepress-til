@@ -12,10 +12,8 @@ export interface ISideBar {
   [MY_TAB.CSS]: IItems[];
   [MY_TAB.VUE3]: IItems[];
   [MY_TAB.REACT]: IItems[];
-  [MY_TAB.REACT_NATIVE]?: IItems[];
   [MY_TAB.NEST]: IItems[];
   [MY_TAB.NUXT]: IItems[];
-  [MY_TAB.NEXT]?: IItems[];
   [MY_TAB.CONFIG]: IItems[];
   [MY_TAB.FIX]: IItems[];
   [MY_TAB.MARK]: IItems[];
@@ -40,10 +38,8 @@ export enum MY_TAB {
   CSS = "/css/",
   VUE3 = "/vue3/",
   REACT = "/react/",
-  REACT_NATIVE = "/react-native/",
   NEST = "/nest/",
   NUXT = "/nuxt/",
-  NEXT = "/next/",
   CONFIG = "/config/",
   FIX = "/fix/",
   MARK = "/mark/",
@@ -374,18 +370,6 @@ export function createSidebar() {
       },
       { text: "返回上层", link: "/framework-map" },
     ],
-    // TODO: 暂时隐藏
-    // "/react-native/": [
-    //   {
-    //     text: "RN (React Mative)",
-    //     items: [
-    //       { text: "RN 中样式的写法", link: "/react-native/styleSheet" },
-    //       { text: "RN 中的组件", link: "/react-native/rn-components" },
-    //       { text: "RN 中图片资源的引用方式", link: "/react-native/images" },
-    //     ],
-    //   },
-    //   { text: "返回上层", link: "/framework-map" },
-    // ],
     "/nest/": [
       {
         text: "NestJs",
@@ -460,28 +444,6 @@ export function createSidebar() {
         link: "/framework-map",
       },
     ],
-    // TODO: 暂时隐藏
-    // "/next/": [
-    //   {
-    //     text: "Next",
-    //     items: [
-    //       { text: "Layout", link: "/next/next-layout" },
-    //       { text: "Route 相关接口", link: "/next/next-route-rel" },
-    //       {
-    //         text: "服务端组件和客户端组件",
-    //         link: "/next/server-and-client-component",
-    //       },
-    //       {
-    //         text: "Server Action",
-    //         link: "/next/server-action",
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     text: "返回上层",
-    //     link: "/framework-map",
-    //   },
-    // ],
     "/config/": [
       {
         text: "配置",
