@@ -47,6 +47,8 @@ export default defineConfig({
           { text: "vim", link: "/vim/direct" },
           { text: "SQL", link: "/sql/my-sql-single-table-operation" },
           { text: "OSS", link: "/oss/get-sts" },
+          { text: "mongodb", link: "/mongodb/multi-document-query" },
+          { text: "Redis", link: "/redis/basic" },
           { text: "Docker", link: "/docker/docker-basic" },
           { text: "Echarts", link: "/echarts/options" },
         ],

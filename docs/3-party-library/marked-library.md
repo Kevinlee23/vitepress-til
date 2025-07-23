@@ -58,9 +58,10 @@
 - [fuse.js](https://github.com/krisk/fuse): 中小型的、`client-side` 的模糊搜索 `(fuzzy search)` 工具
 - [dnum](https://github.com/bpierre/dnum): 大精度计算
 - [Path-to-RegExp](https://github.com/pillarjs/path-to-regexp): 将路径字符串转换为正则表达式
-- [nanoid](https://github.com/ai/nanoid): js 下的 ID 生成器
+- [nanoid](https://github.com/ai/nanoid): ID 生成器
 - [timeago](https://github.com/hustcc/timeago.js): 显示 `xx 分钟以前` 的库
 - [gray-matter](https://github.com/jonschlinkert/gray-matter): `YAML` 前端数据解析 (`md` 文件元数据读取)
 - [globby](https://github.com/sindresorhus/globby): 使用友好的 `glob` (全局模式使用通配符指定文件名集) 库
 - [blueimp-md5](https://www.npmjs.com/package/blueimp-md5): 生成 `md5` 哈希
 - [rrweb](https://github.com/rrweb-io/rrweb): 录制和回放 web 内容
+- [exifr](https://github.com/MikeKovarik/exifr): 读取照片的元数据

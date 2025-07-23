@@ -23,6 +23,7 @@ export interface ISideBar {
   [MY_TAB.VIM]: IItems[];
   [MY_TAB.SQL]: IItems[];
   [MY_TAB.MONGODB]: IItems[];
+  [MY_TAB.REDIS]: IItems[];
   [MY_TAB.OSS]: IItems[];
   [MY_TAB.DOCKER]: IItems[];
   [MY_TAB.THREE_PARTY_LIBRARY]: IItems[];
@@ -49,6 +50,7 @@ export enum MY_TAB {
   VIM = "/vim/",
   SQL = "/sql/",
   MONGODB = "/mongodb/",
+  REDIS = "/redis/",
   OSS = "/oss/",
   DOCKER = "/docker/",
   THREE_PARTY_LIBRARY = "/3-party-library/",
@@ -645,9 +647,16 @@ export function createSidebar() {
       {
         text: "MongoDB",
         items: [
-          { text: "Mongo 中的多表联查", link: "/mongodb/muti-document-query" },
+          { text: "Mongo 中的多表联查", link: "/mongodb/multi-document-query" },
         ],
       },
+    ],
+    "/redis/": [
+      {
+        text: "Redis",
+        items: [{ text: "Redis 基础", link: "/redis/redis-basic" }],
+      },
+      { text: "返回上层", link: "/tools-map" },
     ],
     "/oss/": [
       {
