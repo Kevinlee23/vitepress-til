@@ -647,6 +647,7 @@ export function createSidebar() {
       {
         text: "MongoDB",
         items: [
+          { text: "Mongo 基础操作", link: "/mongodb/mongo-basic" },
           { text: "Mongo 中的多表联查", link: "/mongodb/multi-document-query" },
         ],
       },

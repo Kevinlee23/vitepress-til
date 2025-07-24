@@ -129,6 +129,24 @@ this.blogModel.findOne({ _id: blogId }).populate({
 console.log(blog.commentIds);
 ```
 
+## 多重投影
+
+> 假设有用户表，角色表和权限表，是 1:1:n 的关系
+> 
+> 即通过 user.roleRef.permissions 的链路获取到用户的权限
+> 
+> 我们可以通过多重投影的方式拿到
+
+```ts
+const user: User = await this.userModel
+  .findOne({ username })
+  .populate({
+    path: "roleRef",
+    populate: { path: "permissions" },
+  })
+  .exec();
+```
+
 ## 参考
 
 - [mongoose 链接](<https://mongoosejs.com/docs/api/document.html#Document.prototype.populate()>)
