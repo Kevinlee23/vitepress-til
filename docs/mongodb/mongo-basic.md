@@ -42,3 +42,15 @@ const existingPhotos = await this.photoModel
   )
   .lean();
 ```
+
+## 模糊查询
+
+```typescript
+const filter = { name: "snowinlu" };
+
+const query: any = {};
+
+query.name = { $regex: filter.name, $options: "i" };
+
+Model.find(query).exec();
+```
