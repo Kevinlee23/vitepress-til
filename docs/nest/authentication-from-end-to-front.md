@@ -44,7 +44,7 @@ access token 和 refresh token 本质上都是一样的，都是通过 jwtServic
     PassportModule.register({ defaultStrategy: "jwt" }),
     JwtModule.register({
       secret: process.env.JWT_SECRET,
-      signOptions: { expiresIn: "15m" }, // access token 15分钟过期
+      signOptions: { expiresIn: "15m" }, // access token 15 分钟过期
     }),
   ],
   providers: [AuthService, JwtStrategy, RefreshTokenStrategy],
@@ -66,7 +66,7 @@ export class AuthService {
     };
   }
 
-  // token 过期, 通过 refresh token 刷新
+  // token 过期，通过 refresh token 刷新
   async refreshAccessToken(userId: string) {
     const user = await this.usersService.findById(userId);
     if (!user) {
@@ -79,12 +79,12 @@ export class AuthService {
   }
 
   private generateRefreshToken(userId: string): string {
-    // 通常refresh token有更长的有效期，并且需要单独存储验证
+    // 通常 refresh token 有更长的有效期，并且需要单独存储验证
     return this.jwtService.sign(
       { sub: userId },
       {
         secret: process.env.REFRESH_TOKEN_SECRET,
-        expiresIn: "7d", // refresh token 7天过期
+        expiresIn: "7d", // refresh token 7 天过期
       }
     );
   }
@@ -155,7 +155,7 @@ export class AuthController {
   @Post("logout")
   @UseGuards(AuthGuard("jwt"))
   async logout() {
-    // 实际应用中可能需要将token加入黑名单
+    // 实际应用中可能需要将 token 加入黑名单
     return { message: "Logged out successfully" };
   }
 }
@@ -183,7 +183,7 @@ const login = async (username, password) => {
 
     const { access_token, refresh_token } = response.data;
 
-    // 存储token
+    // 存储 token
     localStorage.setItem("access_token", access_token);
     localStorage.setItem("refresh_token", refresh_token);
 
