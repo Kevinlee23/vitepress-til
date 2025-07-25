@@ -132,9 +132,9 @@ console.log(blog.commentIds);
 ## 多重投影
 
 > 假设有用户表，角色表和权限表，是 1:1:n 的关系
-> 
+>
 > 即通过 user.roleRef.permissions 的链路获取到用户的权限
-> 
+>
 > 我们可以通过多重投影的方式拿到
 
 ```ts
@@ -145,6 +145,36 @@ const user: User = await this.userModel
     populate: { path: "permissions" },
   })
   .exec();
+```
+
+## 投影后做过滤
+
+> 某张 Model 对另一个 Model 的引用，我这里将它称为 ref(refs), 例如 album 表上，封面字段 (cover) 引用了照片表的的 document, 写作 coverRef
+> 
+> 在投影后，我们可能需要对 ref(refs) 进行属性的筛选或者分页
+
+属性筛选：
+
+```typescript
+const query = this.albumModel
+  .find({}, { photos: 0 })
+  .populate({ path: "coverRef", options: { select: { imageUrl: 1 } } });
+```
+
+分页：
+
+```typescript
+const album = await this.albumModel
+  .findOne({ _id })
+  .populate("coverRef")
+  .populate({
+    path: "photos",
+    options: {
+      skip: 0,
+      limit: 10,
+      sort: { createTime: -1 }, // 按创建时间降序排列
+    },
+  });
 ```
 
 ## 参考
