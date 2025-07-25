@@ -89,28 +89,32 @@ export const markData: MarkData = {
     },
     {
       title: "Server Action",
-      link: "/next/server-action",
+      link: "/",
       tagName: TagName.Next,
+      tagStatus: "DELETED",
       createDate: "2024-10-08",
     },
   ],
   SEPT: [
     {
       title: "服务端组件和客户端组件",
-      link: "/next/server-and-client-component",
+      link: "/",
       tagName: TagName.Next,
+      tagStatus: "DELETED",
       createDate: "2024-09-27",
     },
     {
       title: "Route 相关接口",
-      link: "/next/next-route-rel",
+      link: "/",
       tagName: TagName.Next,
+      tagStatus: "DELETED",
       createDate: "2024-09-25",
     },
     {
       title: "Next 中的布局组件",
-      link: "/next/next-layout",
+      link: "/",
       tagName: TagName.Next,
+      tagStatus: "DELETED",
       createDate: "2024-09-24",
     },
     {
@@ -121,14 +125,16 @@ export const markData: MarkData = {
     },
     {
       title: "RN 中的组件",
-      link: "/react-native/rn-components",
+      link: "/",
       tagName: TagName.ReactNative,
+      tagStatus: "DELETED",
       createDate: "2024-09-09",
     },
     {
       title: "RN 中图片资源的引用方式",
-      link: "/react-native/images",
+      link: "/",
       tagName: TagName.ReactNative,
+      tagStatus: "DELETED",
       createDate: "2024-09-09",
     },
     {
@@ -311,7 +317,7 @@ export const markData: MarkData = {
     },
     {
       title: "Mongo 中的多表联查",
-      link: "/mongodb/muti-document-query",
+      link: "/mongodb/multi-document-query",
       tagName: TagName.MongoDB,
       createDate: "2024-06-20",
     },
@@ -543,7 +549,7 @@ export const markData: MarkData = {
     },
     {
       title: "StyleSheet",
-      link: "/react-native/styleSheet",
+      link: "/",
       tagName: TagName.ReactNative,
       createDate: "2024-04-11",
     },

@@ -29,7 +29,7 @@ const tagLink = computed(() =>
       :text="statusMap[model.tagStatus].text"
     />
     /
-    <a :href="`${hostpath}${tagLink?.link}`" target="_blank">
+    <a :href="`${hostpath}${tagLink?.link ?? '/'}`" target="_blank">
       {{ model.tagName }}
       <span class="link-icon">↗</span>
     </a>

@@ -6,6 +6,7 @@ const filter = [
   { text: "BETA", color: "#915930" },
   { text: "MERGED", color: "#b8272c" },
   { text: "UPDATED", color: "#2c9678" },
+  { text: "DELETED", color: "#2c5b96" },
 ];
 const handleFilter = (value: string) => {
   emit("update", value);

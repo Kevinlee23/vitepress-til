@@ -17,7 +17,7 @@ export interface TagStatus {
 }
 
 // 特殊状态：未完成，合并到其他文件，持续更新
-export type StautsItem = "BETA" | "MERGED" | "UPDATED" | "";
+export type StautsItem = "BETA" | "MERGED" | "UPDATED" | "DELETED" | "";
 // 具体分类
 export enum TagName {
   Javascript = "Javascript",
@@ -60,6 +60,7 @@ export const tagStatusMap = {
   BETA: { type: "warning", text: "Beta" },
   MERGED: { type: "danger", text: "Merged" },
   UPDATED: { type: "tip", text: "Updated" },
+  DELETED: { type: "danger", text: "Deleted" },
 };
 
 export function createTag(): TagGroup[] {
@@ -80,10 +81,8 @@ export function createTag(): TagGroup[] {
       items: [
         { title: "Vue3", link: "/vue3/get-component-instance-in-setup" },
         { title: "React", link: "/react/create" },
-        { title: "React Native", link: "/react-native/styleSheet" },
         { title: "NestJs", link: "/nest/nest-basic" },
         { title: "Nuxt", link: "/nuxt/nuxt-config" },
-        { title: "Next", link: "/next/next-layout" },
       ],
     },
     {

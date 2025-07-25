@@ -7,11 +7,7 @@ noComment: true
 
 [React](/react/create)
 
-[React Native](/react-native/styleSheet)
-
 [NestJs](/nest/nest-basic)
 
 [Nuxt](/nuxt/nuxt-config)
-
-[Next](/next/next-layout)
 :::

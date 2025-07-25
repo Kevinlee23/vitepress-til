@@ -48,7 +48,7 @@ export class User {
 export const UserSchema = SchemaFactory.createForClass(User);
 ```
 
-关于关联表的操作，查阅[章节](/mongodb/muti-document-query)
+关于关联表的操作，查阅[章节](/mongodb/multi-document-query)
 
 ## Using in Service
 

@@ -11,7 +11,7 @@ noComment: true
 
 [Docker](/docker/docker-basic)
 
-[MongoDB](/mongodb/muti-document-query)
+[MongoDB](/mongodb/multi-document-query)
 
 [Echarts](/echarts/options)
 :::
