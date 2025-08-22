@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # nginx 配置
 
 ## linux 下默认 nginx 文件地址
@@ -155,6 +159,7 @@ http {
 
 - https://snowinlu.top
 - https://memos.snowinlu.top
+- https://gallery.snowinlu.top
 
 在 conf 文件 (nginx.conf) 中添加：
 
@@ -164,7 +169,9 @@ http {
 }
 ```
 
-/etc/nginx/conf.d/blog.confg:
+### /etc/nginx/conf.d/blog.confg:
+
+这是一个 hexo 博客服务
 
 ```nginx
 server {
@@ -192,7 +199,9 @@ server {
 }
 ```
 
-/etc/nginx/conf.d/memos.conf:
+### /etc/nginx/conf.d/memos.conf:
+
+这是一个自部署的 memos 服务
 
 ```nginx
 
@@ -218,6 +227,48 @@ server {
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
+```
+
+### /etc/nginx/conf.d/gallery.conf
+
+这是一个 vite 服务
+
+假设这个服务需要调用本地的 3000 的接口
+
+```nginx
+
+server {
+    listen 80;
+    server_name gallery.snowinlu.top;
+    return 301 https://$host$request_uri; # HTTP 重定向到 HTTPS
+}
+
+server {
+    listen 443 ssl;
+    server_name gallery.snowinlu.top;
+
+    # 这两个是 ssl 的私钥和公钥文件
+    ssl_certificate /etc/nginx/cert/gallery.snowinlu.top.pem;
+    ssl_certificate_key /etc/nginx/cert/gallery.snowinlu.top.key;
+
+    ssl_protocols TLSv1.2 TLSv1.3; # 支持的协议版本
+    ssl_ciphers HIGH:!aNULL:!MD5; # 加密套件
+
+    location / {
+        root /usr/local/project/gallery-project/dist;
+        index index.html index.htm;
+        try_files $uri $uri/ /index.html; # 支持 Vue Router 的 history 模式
+    }
+
+    # 在前端项目中将接口 baseURL 设置为 /api
+    location /api/ {
+        proxy_pass http://localhost:3000/; # 你的后端服务地址
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
 ```
