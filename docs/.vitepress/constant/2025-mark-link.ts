@@ -9,7 +9,7 @@ import {
 } from "../utils/mark-util";
 
 export const markDate: MarkDate = {
-  AUG: [22],
+  AUG: [22, 22],
   JUL: [7, 8, 8, 18, 23],
   JUN: [12, 27],
   MAY: [29],
