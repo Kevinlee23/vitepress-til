@@ -9,12 +9,27 @@ import {
 } from "../utils/mark-util";
 
 export const markDate: MarkDate = {
+  AUG: [22],
   JUL: [7, 8, 8, 18, 23],
   JUN: [12, 27],
   MAY: [29],
 };
 
 export const markData: MarkData = {
+  AUG: [
+    {
+      title: "mongodb 数据迁移",
+      link: "/mongodb/mongo-migrate",
+      tagName: TagName.MongoDB,
+      createDate: "2025-08-22",
+    },
+    {
+      title: "获取 oss 图片时的压缩和优化",
+      link: "/oss/compression",
+      tagName: TagName.OSS,
+      createDate: "2025-08-22",
+    },
+  ],
   JUL: [
     {
       title: "Nest 动态注入",

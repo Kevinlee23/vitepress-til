@@ -649,6 +649,7 @@ export function createSidebar() {
         items: [
           { text: "Mongo 基础操作", link: "/mongodb/mongo-basic" },
           { text: "Mongo 中的多表联查", link: "/mongodb/multi-document-query" },
+          { text: "Mongo 数据迁移", link: "/mongodb/mongo-migrate" },
         ],
       },
     ],
@@ -670,6 +671,12 @@ export function createSidebar() {
           { text: "列举文件", link: "/oss/list-object" },
           { text: "读取加密文件", link: "/oss/read-encryption-file" },
           { text: "分片上传", link: "/oss/part-upload" },
+        ],
+      },
+      {
+        text: "优化",
+        items: [
+          { text: "获取 oss 图片时的压缩和优化", link: "/oss/compression" },
         ],
       },
       { text: "返回上层", link: "/tools-map" },

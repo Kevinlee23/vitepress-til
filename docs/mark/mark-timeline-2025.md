@@ -20,9 +20,9 @@ const junLink:Link[] = markData.JUN
 // /* 七月数据 */
 const julyDate: number[] = markDate.JUL
 const julyLink: Link[] = markData.JUL
-// /* 八月数据 */
-// const augDate: number[] = markDate.AUG
-// const augLink: Link[] = markData.AUG
+/* 八月数据 */
+const augDate: number[] = markDate.AUG
+const augLink: Link[] = markData.AUG
 // /* 九月数据 */
 // const septDate: number[] = markDate.SEPT
 // const septLink: Link[] = markData.SEPT
@@ -75,9 +75,9 @@ const filterTag = ref<string>('')
 
 <!-- <MarkPage :filterValue="filterTag" :monthLink="septLink" :markedDate="septDate" :tagsMap="tagsMap" :year="2024" :month="9" :length="30" /> -->
 
-<!-- ### 八月 -->
+### 八月
 
-<!-- <MarkPage :filterValue="filterTag" :monthLink="augLink" :markedDate="augDate" :tagsMap="tagsMap" :year="2024" :month="8" :length="31" /> -->
+<MarkPage :filterValue="filterTag" :monthLink="augLink" :markedDate="augDate" :tagsMap="tagsMap" :year="2024" :month="8" :length="31" />
 
 ### 七月
 

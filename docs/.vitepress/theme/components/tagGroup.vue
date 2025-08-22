@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import type { PropType } from "vue";
-import type { TagGroup } from "../../utils/createTag";
-import { getTagNums, type TagNums } from "../../constant/2024-mark-link";
-import { type TagName } from "../../utils/createTag";
+import type { TagGroup, TagName } from "../../utils/createTag";
+import type { TagNums } from "../../utils/mark-util";
+
+import { getTagNums } from "../../constant/2024-mark-link";
 
 defineProps({ tagGroups: { type: Object as PropType<Array<TagGroup>> } });
 
