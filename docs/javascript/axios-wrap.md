@@ -22,13 +22,21 @@ export const request = (
 
   // 请求拦截
   service.interceptors.request.use(
-    (config) => {},
-    (error) => {}
+    (config) => {
+      // config code
+    },
+    (error) => {
+      // error code
+    }
   );
   // 响应拦截
   service.interceptors.response.use(
-    (response) => {},
-    (error) => {}
+    (response) => {
+      // config code
+    },
+    (error) => {
+      // error code
+    }
   );
 
   return service;
@@ -108,12 +116,11 @@ request.interceptors.response.use(
   (response) => {
     const responseBody = response.data;
 
-    if (responseBody.code === 0) {
-      response.data = responseBody.data;
-      return response;
+    if (responseBody.code === 200) {
+      return responseBody;
     } else {
       // custom error 也可以根据不同的 code 来分流不同的错误
-      throw new Error(responseBody.message);
+      // throw new Error(responseBody.message);
       return Promise.reject(new Error(responseBody.message));
     }
   },

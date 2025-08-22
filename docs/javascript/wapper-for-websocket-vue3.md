@@ -1,4 +1,4 @@
-# Websocket
+# Websocket 封装
 
 ```javascript:line-numbers=1
 import modal from "@/plugins/modal";

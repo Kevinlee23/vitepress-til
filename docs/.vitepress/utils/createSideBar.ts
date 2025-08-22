@@ -96,7 +96,7 @@ export function createSidebar() {
         items: [
           { text: "AbortController", link: "/javascript/AbortController" },
           {
-            text: "create-object-url",
+            text: "createObjectUrl",
             link: "/javascript/create-object-url",
           },
           {
@@ -112,10 +112,6 @@ export function createSidebar() {
       {
         text: "JS Code",
         items: [
-          {
-            text: "websocket ",
-            link: "/javascript/wapper-for-websocket-vue3",
-          },
           { text: "download", link: "/javascript/download" },
           { text: "p-limit", link: "/javascript/p-limit" },
           { text: "flat", link: "/javascript/flat" },
@@ -131,6 +127,10 @@ export function createSidebar() {
             link: "/javascript/get-text-width(height)",
           },
           { text: "px-to-other", link: "/javascript/px2other" },
+          {
+            text: "websocket 封装",
+            link: "/javascript/wapper-for-websocket-vue3",
+          },
           { text: "axios 封装", link: "/javascript/axios-wrap" },
         ],
       },
