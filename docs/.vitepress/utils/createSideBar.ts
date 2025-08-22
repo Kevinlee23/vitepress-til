@@ -750,6 +750,10 @@ export function createSidebar() {
             text: "nginx 配置",
             link: "/ops/nginx-config",
           },
+          {
+            text: "linux 速查",
+            link: "/ops/linux-memo",
+          },
         ],
       },
       {
