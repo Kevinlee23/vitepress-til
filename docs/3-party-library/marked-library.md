@@ -8,12 +8,15 @@
 - [SWR](https://swr.vercel.app/zh-CN): 用于数据请求的 React Hook 库
 - [ofetch](https://github.com/unjs/ofetch): `fetch api`
 - [axios-retry](https://github.com/softonic/axios-retry): axios 重传插件
+- [got](https://github.com/sindresorhus/got):  http request library for node
 
 ## Text
 
 - [element-tiptap](https://github.com/Leecason/element-tiptap): 使用了 Elementplus 风格 和 tiptap 的富文本编辑器
 - [plate](https://github.com/udecode/plate): React 富文本组件
 - [quill](https://github.com/slab/quill): 通用的富文本编辑器
+- [overtype](https://github.com/panphora/overtype): 通用的 md 编辑器
+- [md-editor-v3](https://github.com/imzbf/md-editor-v3): vue3 版本的 md 编辑器
 
 ## Layout
 
@@ -35,9 +38,10 @@
 - [shiki](https://github.com/shikijs/shiki): 代码高亮显示模块
 - [tailwind-merge](https://github.com/dcastil/tailwind-merge): 解决 `Tailwind` Css 类名合并时候的冲突
 - [tailwind-motion](https://github.com/romboHQ/tailwindcss-motion): tailwind 的动画类库
-- [霞鹜文楷](https://github.com/lxgw/LxgwWenKai): 优美的汉字字体
+- [LxgwWenKai](https://github.com/lxgw/LxgwWenKai): 优美的汉字字体：霞鹜文楷
 - [tailwindcss-motion](https://github.com/romboHQ/tailwindcss-motion): 基于 tailwindcss 的预设类动画库
 - [css-doodle](https://github.com/css-doodle/css-doodle): 通过 css 生成随机图像
+- [stylelint](https://github.com/stylelint/stylelint) css linter
 
 ## Storage
 
@@ -45,11 +49,23 @@
 - [dexie](https://github.com/dexie/Dexie.js): 快捷使用 `IndexedDB`
 - [FileSaver.js](https://github.com/eligrey/FileSaver.js): 客户端保存文件的方案
 - [vfile](https://github.com/vfile/vfile): 虚拟文件系统
+- [rxdb](https://github.com/pubkey/rxdb): 本地优先的响应式数据库
 
 ## Status
 
-- [jotai](https://github.com/pmndrs/jotai) React 状态管理
-- [zustand](https://github.com/pmndrs/zustand) React 状态管理
+- [jotai](https://github.com/pmndrs/jotai): React 状态管理
+- [zustand](https://github.com/pmndrs/zustand): React 状态管理
+- [pinia](https://github.com/vuejs/pinia): Vue 状态管理
+
+## Archi
+
+- [modukle-federation/vite](https://github.com/module-federation/vite): 模块联邦 vite
+- [vite-plugin-federation](https://github.com/originjs/vite-plugin-federation/tree/main): 模块联邦 vite【2】
+
+## Monitor
+
+- [web-see](https://github.com/M-cheng-web/web-tracing): web 监控平台
+- [web-tracing](https://github.com/xy-sea/web-see): web 监控平台【2】
 
 ## Other
 
@@ -65,3 +81,6 @@
 - [blueimp-md5](https://www.npmjs.com/package/blueimp-md5): 生成 `md5` 哈希
 - [rrweb](https://github.com/rrweb-io/rrweb): 录制和回放 web 内容
 - [exifr](https://github.com/MikeKovarik/exifr): 读取照片的元数据
+- [Leaflet](https://github.com/Leaflet/Leaflet): 地图接口
+- [fnm](https://github.com/Schniz/fnm): node 版本管理工具 in rust
+- [pinyin-pro](https://github.com/zh-lx/pinyin-pro): 中文转拼音

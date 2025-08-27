@@ -4,6 +4,8 @@ outline: deep
 
 # linux (ubuntu, macOs) 速查
 
+> 日拱一卒，功不唐捐
+
 ## 数据类
 
 ### 【数据库】mongoDB 路径
@@ -49,3 +51,9 @@ $ sudo vim /etc/mongod.conf
 ### 关闭应用
 
 `killall appName`
+
+## nginx
+
+### 重启
+
+- sudo nginx -s reload
