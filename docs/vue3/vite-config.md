@@ -162,6 +162,16 @@ const worker = new MyWorker();
 .env.[mode].local   # 只在指定模式下加载，但会被 git 忽略
 ```
 
+指定模式是指：
+
+- vite --mode dev, 此时的 mode = dev
+
+默认情况下：
+
+- pnpm run dev mode = development;
+- pnpm run build, mode = prodcution;
+- 如果需要指定模式，看下节代码
+
 只有带 `VITE_` 前缀的变量才会暴露给经过 `vite` 处理的代码：`VITE_SOME_KEY`
 
 ### 模式
