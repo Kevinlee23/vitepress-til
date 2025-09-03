@@ -39,6 +39,11 @@ $ sudo vim /etc/mongod.conf
 
 ## 指令类
 
+### 查看当前文件夹所有文件（夹）
+
+- ls
+- ls -a (包括隐藏文件) 
+
 ### 查看端口占用
 
 - sudo netstat -tulnp | grep :3000
@@ -57,3 +62,13 @@ $ sudo vim /etc/mongod.conf
 ### 重启
 
 - sudo nginx -s reload
+
+## docker 
+
+### 查看所有容器（包括已关闭的）
+
+docker ps -a
+
+### 重启关闭的容器
+
+docker start（不能使用 docker run, run 是创建一个新容器）

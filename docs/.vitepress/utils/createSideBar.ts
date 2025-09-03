@@ -615,6 +615,15 @@ export function createSidebar() {
         ],
       },
       {
+        text: "最佳实践",
+        items: [
+          {
+            text: "git 合并与变基最佳实践",
+            link: "/git/git-merge-and-rebase-best-practice",
+          },
+        ],
+      },
+      {
         text: "返回上层",
         link: "/tools-map",
       },
