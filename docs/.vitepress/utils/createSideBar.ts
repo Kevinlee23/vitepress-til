@@ -107,6 +107,10 @@ export function createSidebar() {
             text: "IntersectionObserver",
             link: "/javascript/IntersectionObserver",
           },
+          {
+            text: 'URLSearchParams',
+            link: '/javascript/url-search-params'
+          }
         ],
       },
       {
