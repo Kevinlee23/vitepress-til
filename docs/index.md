@@ -36,7 +36,10 @@ import { useData } from 'vitepress'
 import NewBlogs from './.vitepress/theme/views/newBlogs.vue'
 
 const { isDark } = useData()
-const skillLink = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=js,ts,scss,tailwind,vue,vite,nuxtjs,nestjs,pinia,git,mongodb,nodejs,npm,pnpm,yarn`)
+const skillLinkNo1 = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=js,ts,scss,tailwind,vue,vite`)
+const skillLinkNo2 = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=nuxtjs,nestjs,pinia,git,mongodb,nodejs`)
+const skillLinkNo3 = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=npm,pnpm,yarn`)
+
 const toolLink = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=apple,github,gitlab,vscode,gmail,md`)
 const learningLink = computed(() => `https://skillicons.dev/icons?theme=${isDark.value ? 'light' : 'dark'}&i=mysql,docker`)
 </script>
@@ -51,7 +54,9 @@ const learningLink = computed(() => `https://skillicons.dev/icons?theme=${isDark
 
 **技术栈：**
 
-<img  :src="skillLink" />
+  <img :src="skillLinkNo1" class="mb-[20px]" />
+  <img :src="skillLinkNo2" class="mb-[20px]" />
+  <img :src="skillLinkNo3" />
 
 **使用工具：**
 

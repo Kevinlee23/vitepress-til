@@ -61,44 +61,49 @@ onMounted(() => {
 
 <template>
   <footer>
-    <div class="flex items-center justify-center gap-x-[10px] mb-[4px]">
-      <div class="flex items-center">
-        {{ year }}( <img class="w-[24px] h-[24px]" :src="currentIcon" />)
-      </div>
-      <div class="w-[100px] group/today">
-        <div class="group-hover/today:hidden">
-          今日 {{ ((today / 24) * 100).toFixed(2) }}%
+    <div class="w-full flex justify-center">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 items-center gap-x-[10px] mb-[4px]"
+      >
+        <div class="flex items-center">
+          {{ year }}( <img class="w-[24px] h-[24px]" :src="currentIcon" />)
         </div>
-        <div class="hidden group-hover/today:block">
-          还剩{{ 24 - today }}小时
+        <div class="w-full group/today hidden sm:block">
+          <div class="group-hover/today:hidden">
+            今日 {{ ((today / 24) * 100).toFixed(2) }}%
+          </div>
+          <div class="hidden group-hover/today:block">
+            还剩{{ 24 - today }}小时
+          </div>
         </div>
-      </div>
-      <div class="w-[100px] group/week">
-        <div class="group-hover/week:hidden">
-          本周 {{ week === 0 ? "100" : ((week / 7) * 100).toFixed(2) }}%
+        <div class="group/week hidden md:block">
+          <div class="group-hover/week:hidden">
+            本周 {{ week === 0 ? "100" : ((week / 7) * 100).toFixed(2) }}%
+          </div>
+          <div class="hidden group-hover/week:block">
+            还剩 {{ week === 0 ? 0 : 7 - week }}天
+          </div>
         </div>
-        <div class="hidden group-hover/week:block">
-          还剩 {{ week === 0 ? 0 : 7 - week }}天
+        <div class="group/month hidden md:block">
+          <div class="group-hover/month:hidden">
+            本月 {{ ((date / monthList[month]) * 100).toFixed(2) }}%
+          </div>
+          <div class="hidden group-hover/month:block">
+            还剩 {{ monthList[month] - date }}天
+          </div>
         </div>
-      </div>
-      <div class="w-[100px] group/month">
-        <div class="group-hover/month:hidden">
-          本月 {{ ((date / monthList[month]) * 100).toFixed(2) }}%
-        </div>
-        <div class="hidden group-hover/month:block">
-          还剩 {{ monthList[month] - date }}天
-        </div>
-      </div>
-      <div class="w-[100px] group/year">
-        <div class="group-hover/year:hidden">
-          本年 {{ ((pastDay / fullYear) * 100).toFixed(2) }}%
-        </div>
-        <div class="hidden group-hover/year:block">
-          还剩 {{ fullYear - pastDay }}天
+        <div class="group/year hidden md:block">
+          <div class="group-hover/year:hidden">
+            本年 {{ ((pastDay / fullYear) * 100).toFixed(2) }}%
+          </div>
+          <div class="hidden group-hover/year:block">
+            还剩 {{ fullYear - pastDay }}天
+          </div>
         </div>
       </div>
     </div>
-    <div>
+
+    <div class="px-[10px] text-wrap">
       Powered by
       <a href="https://github.com/Kevinlee23" target="_blank" title="作者">
         Snowinlu

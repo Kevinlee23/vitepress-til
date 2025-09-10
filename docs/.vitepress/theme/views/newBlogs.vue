@@ -13,7 +13,7 @@ const handleTo = (link: string) => {
 <template>
   <div class="new-blog-container">
     <div class="new-blog-title">最新笔记 (Newest {{ newNum }})</div>
-    <div class="new-blog-grid">
+    <div class="grid gap-[10px] 2xl:grid-cols-5 2xl:gap-[20px] lg:grid-cols-4 md:grid-cols-2">
       <div
         v-for="(blog, index) in newBlogs"
         :key="index"
@@ -41,12 +41,6 @@ const handleTo = (link: string) => {
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 16px;
-}
-
-.new-blog-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 20px;
 }
 
 .new-blogs-box {

@@ -1,14 +1,24 @@
 <template>
   <div
-    class="w-full h-screen bg-cover relative"
+    class="w-full hidden sm:block sm:h-[400px] xl:h-[600px] 2xl:h-screen bg-cover relative transition-all duration-300"
     :style="{ 'background-image': `url(${wallpage})` }"
   >
     <div
       class="absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] text-white"
     >
-      <div class="text-[40px] text-[#2c9678] motion-preset-slide-down motion-duration-500">Snowinlu</div>
-      <div class="text-[28px] motion-preset-slide-down motion-duration-1000">TIL(Today I Learned)</div>
-      <div class="text-[28px] mb-[10px] motion-preset-slide-down motion-duration-2000">
+      <div
+        class="text-[40px] text-[#2c9678] motion-preset-slide-down motion-duration-500"
+      >
+        Snowinlu
+      </div>
+      <div
+        class="text-[28px] mb-[10px] md:mb-0 motion-preset-slide-down motion-duration-1000"
+      >
+        TIL(Today I Learned)
+      </div>
+      <div
+        class="hidden md:block text-[28px] mb-[10px] motion-preset-slide-down motion-duration-2000"
+      >
         A week is 2% of a year, keep learning
       </div>
       <div
