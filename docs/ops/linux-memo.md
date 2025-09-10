@@ -8,7 +8,7 @@ outline: deep
 
 ## 数据类
 
-### 【数据库】mongoDB 路径
+### 数据库：mongoDB 路径
 
 | 项目                | 标准路径                    | 查看方法                                         |
 | ------------------- | --------------------------- | ------------------------------------------------ |
@@ -17,7 +17,7 @@ outline: deep
 | 数据目录 (dbPath)   | /var/lib/mongodb            | 查看 mongod.conf 文件，或 db.serverCmdLineOpts() |
 | 日志文件            | /var/log/mongodb/mongod.log | 查看 mongod.conf 文件                            |
 
-### 【数据库】：修改 mongo server 出口
+### 数据库：修改 mongo server 出口
 
 服务器上的 mongo server 只能够在本地连接
 
@@ -32,6 +32,7 @@ $ sudo vim /etc/mongod.conf
 ### 解压缩
 
 - _`zip`_ unzip xxx.zip
+- _`.tar`_ tar -xf file.tar
 - _`tar.gz`_ tar -xzvf file.tar.gz
 - _`.tar.bz2`_ tar -xjvf file.tar.bz2
 - _`rar`_ unrar x file.rar（需要安装：sudo apt install unrar）
