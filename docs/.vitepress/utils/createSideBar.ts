@@ -89,6 +89,7 @@ export function createSidebar() {
           { text: "JSDoc", link: "/javascript/JSDoc" },
           { text: "web-worker ", link: "/javascript/web-worker" },
           { text: "SSE", link: "/javascript/sse-trans" },
+          { text: "BroadcastChannel", link: "/javascript/BroadcastChannel" },
         ],
       },
       {
@@ -108,9 +109,9 @@ export function createSidebar() {
             link: "/javascript/IntersectionObserver",
           },
           {
-            text: 'URLSearchParams',
-            link: '/javascript/url-search-params'
-          }
+            text: "URLSearchParams",
+            link: "/javascript/url-search-params",
+          },
         ],
       },
       {
