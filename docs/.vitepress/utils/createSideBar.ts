@@ -183,6 +183,7 @@ export function createSidebar() {
       {
         text: "杂项",
         items: [
+          { text: "伪类", link: "/css/pseudo-classes" },
           { text: "gradient-color", link: "/css/gradient-color" },
           { text: "常用片段", link: "/css/snippets" },
           { text: "style 初始化", link: "/css/style-init" },
